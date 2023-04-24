@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=360px, initial-scale=1.0">
+  <title>키움 퀀트</title>
+  <!-- font -->
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/al-home.css">
+  <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        document.getElementById("openPopup").click();
+      });
+    </script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    
+
+    <div class="open_popup">
+      <button type="button" class="btn none" id="openPopup" data-bs-toggle="modal" data-bs-target="#popup-modal">open popup</button>
+    
+      <div class="popup modal fade" id="popup-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-txt">
+              <strong>회원 전용 메뉴입니다.</strong>
+              서비스 신청 후 이용이 가능합니다.
+            </div>
+            <div class="modal-btn">
+              <button class="btn" type="button" data-bs-dismiss="modal">다음에</button>
+              <button class="btn btn-bg" type="button">서비스 신청</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+
+      <div class="content-header">
+        <div class="content-nav">
+          <a href="" class="active">성정추구</a>
+          <a href="" class="">가치추구</a>
+          <a href="" class="">시장추종</a>
+        </div>
+        <div><button class="invest-info">투자정보</button></div>
+      </div> <!--class="content-header"-->
+
+      <section class="alhome_section1">
+
+        <div class="sec-main">
+
+          <div class="main-top">
+            <div class="main-txt">
+              <span>장기적, 고수익 추구 <br> 실적 성장속도가 가파른 <br> 종목을 학습</span>
+              <button type="button" onclick="location.href=''">성장추구형 상세보기</button>
+            </div>
+            <div class="chart1">
+              <img src="img/al-home/chart1.png" alt="chart1">
+            </div>
+          </div> <!--class="main-top"-->
+
+          <div class="main-bot">
+            <div class="main-box">
+              <div class="box-top">
+                <div>
+                  <em>KOSPI대비</em>
+                  <span>성장추구형 수익률</span>
+                </div>
+                <div>
+                  <em>2022.09.28</em>
+                </div>
+              </div>
+              <div class="box-bot">
+                <div class="bot-box">
+                  <div class="bot-boxt">
+                    <span>3개월</span>
+                    <strong class="up">+**.*%</strong>
+                  </div>
+                  <div class="bot-boxb">
+                    <div>
+                      <em>AI</em>
+                      <span class="up">+**.*%</span>
+                    </div>
+                    <div>
+                      <em>KOSPI</em>
+                      <span class="down">-**.*%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bot-box">
+                  <div class="bot-boxt">
+                    <span>6개월</span>
+                    <strong class="up">+**.*%</strong>
+                  </div>
+                  <div class="bot-boxb">
+                    <div>
+                      <em>AI</em>
+                      <span class="up">+**.*%</span>
+                    </div>
+                    <div>
+                      <em>KOSPI</em>
+                      <span class="down">-**.*%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bot-box">
+                  <div class="bot-boxt">
+                    <span>12개월</span>
+                    <strong class="up">+**.*%</strong>
+                  </div>
+                  <div class="bot-boxb">
+                    <div>
+                      <em>AI</em>
+                      <span class="up">+**.*%</span>
+                    </div>
+                    <div>
+                      <em>KOSPI</em>
+                      <span class="down">-**.*%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!--class="main-box"-->
+          </div> <!--class="main-bot"-->
+
+        </div> <!--class="sec-main"-->
+
+      </section> <!--class="alhome_section1"-->
+
+
+      <section class="alhome-section2">
+
+        <div class="rate sec-bg">
+
+          <div class="rate-header">
+            <div class="rate-headtxt">수익률 TOP5</div>
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                6개월
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="">3개월</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">6개월</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">9개월</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="">12개월</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="rate-box">
+            <button class="btn rate-list" type="button" data-bs-toggle="modal" data-bs-target="#rate-detail">
+              <div class="numname">
+                <div class="num first">1</div>
+                <div class="name text-truncate">삼***</div>
+              </div>
+              <div class="rate-flu">
+                <span class="up up-bg">+5.62%</span>
+              </div>
+            </button>
+            <button class="rate-list type=" button" data-bs-toggle="modal" data-bs-target="#rate-detail"">
+              <div class=" numname">
+              <div class="num">2</div>
+              <div class="name text-truncate">키***</div>
+          </div>
+          <div class="rate-flu">
+            <span class="up up-bg">+5.62%</span>
+          </div>
+          </button>
+          <button class="rate-list type=" button" data-bs-toggle="modal" data-bs-target="#rate-detail"">
+              <div class=" numname">
+            <div class="num">3</div>
+            <div class="name text-truncate">삼***</div>
+        </div>
+        <div class="rate-flu">
+          <span class="up up-bg">+5.62%</span>
+        </div>
+        </button>
+        <button class="rate-list type=" button" data-bs-toggle="modal" data-bs-target="#rate-detail"">
+              <div class=" numname">
+          <div class="num">4</div>
+          <div class="name text-truncate">L***</div>
+    </div>
+    <div class="rate-flu">
+      <span class="up up-bg">+5.62%</span>
+    </div>
+    </button>
+    <button class="rate-list type=" button" data-bs-toggle="modal" data-bs-target="#rate-detail"">
+              <div class=" numname">
+      <div class="num">5</div>
+      <div class="name text-truncate">에***</div>
+  </div>
+  <div class="rate-flu">
+    <span class="up up-bg">+5.62%</span>
+  </div>
+  </button>
+  </div>
+
+  <div class="modal fade" id="rate-detail" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-ratenamenum">
+            <div class="modal-ratename text-truncate">
+              삼성전자가나다라마바사아자차카타파하
+            </div>
+            <div class="modal-ratenum">005930</div>
+          </div>
+          <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <table class="modal-ratetable">
+            <colgroup>
+              <col width="40%">
+              <col width="60%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>실현수익률</th>
+                <th class="up">**.*%</th>
+              </tr>
+            <tbody>
+              <tr>
+                <th>매수일</th>
+                <td>2023.01.02</td>
+              </tr>
+              <tr class="table-bb">
+                <th>매수가</th>
+                <td>32,000원</td>
+              </tr>
+              <tr>
+                <th>매도일</th>
+                <td>2023.01.02</td>
+              </tr>
+              <tr class="table-bb">
+                <th>매도가</th>
+                <td>32,000원</td>
+              </tr>
+              <tr>
+                <th>보유기간</th>
+                <td>3일(개장일 기준)</td>
+              </tr>
+            </tbody>
+            </thead>
+          </table>
+        </div>
+        <button class="btn" type="button" data-bs-dismiss="modal">확인</button>
+      </div>
+    </div>
+  </div>
+
+  </div> <!--class="rate sec-bg"-->
+
+  </section> <!--class="alhome-section2"-->
+
+  <section class="alhome-section3">
+
+    <div class="sig sec-bg">
+
+      <div class="sig-header">
+        신호발생
+      </div>
+
+      <div class="swiper sig-swiper">
+        <div class="swiper-wrapper">
+          <button class="swiper-slide sig-slide" onclick="location.href=''">
+            <div class="sig-top">
+              <div class="sig-name text-truncate">DB하이텍</div>
+              <span>000990</span>
+              <div class="alarm">12시 매도예정</div>
+            </div>
+            <div class="sig-bot">
+              <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
+              <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
+              <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
+            </div>
+          </button>
+          <button class="swiper-slide sig-slide">
+            <div class="sig-top">
+              <div class="sig-name">DB하이텍</div>
+              <span>000990</span>
+              <div class="red-check up">매수완료</div>
+            </div>
+            <div class="sig-bot">
+              <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
+              <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
+              <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
+            </div>
+          </button>
+          <button class="swiper-slide sig-slide">
+            <div class="sig-top">
+              <div class="sig-name">DB하이텍</div>
+              <span>000990</span>
+              <div class="blue-check down">매도완료</div>
+            </div>
+            <div class="sig-bot">
+              <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
+              <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
+              <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
+            </div>
+          </button>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script>
+        var swiper = new Swiper('.sig-swiper', {
+          spaceBetween: 20,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+
+    </div> <!--class="sig"-->
+
+  </section> <!--class="alhome-section3"-->
+
+
+  <section class="alhome-section4">
+
+    <div class="pos sec-bg">
+
+      <div class="pos-header">
+        <div class="pos-header-name">보유종목</div>
+        <button class="pos-header-his">매수매도 내역</button>
+      </div>
+      <div class="pos-box">
+        <div class="nav nav-tabs tab-custom" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="pal" data-bs-toggle="tab" data-bs-target="#pal-tab" type="button"
+            aria-selected="true">평가손익</button>
+          <button class="nav-link" id="pri" data-bs-toggle="tab" data-bs-target="#pri-tab" type="button"
+            aria-selected="false">현재가격</button>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active swiper pal-swiper" id="pal-tab" tabindex="0">
+            <div class="swiper-wrapper">
+              <div class="pal swiper-slide">
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-2">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="pal swiper-slide">
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-2">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="pal swiper-slide">
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-2">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pal-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri up">****원</div>
+                    <div class="list-per up">
+                      <span>수익률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <script>
+            var swiper = new Swiper('.pal-swiper', {
+              spaceBetween: 20,
+              pagination: {
+                el: '.swiper-pagination',
+              },
+            });
+          </script>
+
+
+          <div class="tab-pane fade swiper pri-swiper" id="pri-tab" tabindex="0">
+            <div class="swiper-wrapper">
+              <div class="pri swiper-slide">
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-2">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="pri swiper-slide">
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-2">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <div class="pri swiper-slide">
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-2">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-1">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+                <button class="pri-list">
+                  <div class="list-left">
+                    <div class="list-icn bg-3">삼</div>
+                    <div class="list-name text-truncate">삼***</div>
+                  </div>
+                  <div class="list-right">
+                    <div class="list-pri">****원</div>
+                    <div class="list-per up">
+                      <span>등락률</span>
+                      ****%
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <script>
+            var swiper = new Swiper('.pri-swiper', {
+              spaceBetween: 20,
+              pagination: {
+                el: '.swiper-pagination',
+              },
+            });
+          </script>
+
+
+        </div> <!--class="tab-content"-->
+      </div> <!--class="pos-box"-->
+
+    </div> <!--class="pos"-->
+
+  </section> <!--class="alhome-section4"-->
+
+
+  <section class="alhome-section5">
+
+    <div class="inv sec-bg">
+
+      <div class="inv-header">알아두면 유익한 투자정보</div>
+      <div class="inv-info">
+        <button class="info-list">
+          <div class="info-icn icn-bg1"><img src="img/al-home/info-icn1.png" alt="info-icn1"></div>
+          <div class="info-txt">
+            <div class="info-txtt">
+              <span>NEW</span>
+              장마감 일제히 이틀째 상승
+            </div>
+            <div class="info-txtb">
+              01.03 17:30 씽크풀
+            </div>
+          </div>
+        </button>
+        <button class="info-list">
+          <div class="info-icn icn-bg2"><img src="img/al-home/info-icn2.png" alt="info-icn1"></div>
+          <div class="info-txt">
+            <div class="info-txtt">
+              <span>NEW</span>
+              장마감 일제히 이틀째 상승
+            </div>
+            <div class="info-txtb">
+              01.03 17:30 씽크풀
+            </div>
+          </div>
+        </button>
+        <button class="info-list">
+          <div class="info-icn icn-bg3"><img src="img/al-home/info-icn3.png" alt="info-icn1"></div>
+          <div class="info-txt">
+            <div class="info-txtt">
+              장마감 일제히 이틀째 상승
+            </div>
+            <div class="info-txtb">
+              01.03 17:30 씽크풀
+            </div>
+          </div>
+        </button>
+      </div>
+      <button class="more">더 보기</button>
+
+    </div>
+
+
+  </section>  <!--class="alhome-section5"-->
+
+
+
+
+  </div> <!--id="content"-->
+
+  <footer id="alHome_footer">
+
+  </footer> <!--id="alHome_footer"-->
+
+  </div> <!--id="wrap"-->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
