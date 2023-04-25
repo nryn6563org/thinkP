@@ -24,6 +24,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
 body {
 	line-height: 1;
 }
@@ -88,6 +92,7 @@ button.more{
 
 .content-header{
 	width: 100%;
+	min-width: 360px;
 	height: 50px;
 	position: fixed;
 	background: #fff;
@@ -201,6 +206,10 @@ button.more{
 
 .pt-50{
 	padding-top: 50px !important;
+}
+
+.mr-10{
+	margin-right: 10px !important;
 }
 
 .center{

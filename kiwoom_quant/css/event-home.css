@@ -1,6 +1,4 @@
 .content-header{
-  width: 100%;
-  height: 50px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -74,11 +72,12 @@ button.back-btn{
 }
 
 .evt-pri span.evt-per{
+  display: inline-block;
   font-weight: 500;
   font-size: 13px;
   line-height: 16.28px;
   color: #FFA0A0;
-  margin-left: 36px;
+  margin-left: 6px;
 } 
 
 .evt-time{
@@ -98,13 +97,17 @@ button.back-btn{
 }
 
 .evt-alarm{
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 100px;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 13px;
   line-height: 17px;
   margin-bottom: 20px;
+}
+
+.evt-alarm-b{
+  padding: 5px 10px;
+  border-radius: 100px;
 }
 
 .evt-alarm img{
@@ -112,6 +115,15 @@ button.back-btn{
   vertical-align:middle;
   width: 20px;
   margin-right: 5px;
+}
+
+.evt-alarm span{
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
 }
 
 .evt-txt{
@@ -140,6 +152,9 @@ button.back-btn{
 }
 
 .evt-foot{
+  display: flex;
+  justify-content: start;
+  align-items: start;
   margin-top: 15px;
   font-weight: 400;
   font-size: 12px;
@@ -147,15 +162,11 @@ button.back-btn{
   color: #999;
 }
 
-.evt-foot::before{
-  background: url(../img/event-home/alarm.png) no-repeat 0px 0px;
-  background-size: 13px 13px;
-  content: "";
-  display: inline-block;
-  vertical-align:middle;
-  width: 16px;
-  height: 16px;
-  margin-right: 3px;
+.evt-foot img{
+  display: block;
+  width: 13px;
+  margin-right: 5px;
+  margin-top: 2.5px;
 }
 
 /* section1 */
