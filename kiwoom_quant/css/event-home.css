@@ -111,7 +111,6 @@ button.back-btn{
   display: inline-block;
   vertical-align:middle;
   width: 20px;
-  height: 20px;
   margin-right: 5px;
 }
 
@@ -150,6 +149,7 @@ button.back-btn{
 
 .evt-foot::before{
   background: url(../img/event-home/alarm.png) no-repeat 0px 0px;
+  background-size: 13px 13px;
   content: "";
   display: inline-block;
   vertical-align:middle;
@@ -184,6 +184,10 @@ button.back-btn{
 button.ai-icn{
   border: none;
   background: none;
+}
+
+.ai-icn img{
+  width: 16.5px;
 }
 
 .ai-box{
