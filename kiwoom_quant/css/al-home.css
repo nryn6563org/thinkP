@@ -1006,6 +1006,8 @@ button.nav-link{
   border-radius: 0px 0px 16px 16px !important;
 }
 
-
+.popup.modal{
+  padding-right: 0 !important;
+}
 
 /* open modal */
