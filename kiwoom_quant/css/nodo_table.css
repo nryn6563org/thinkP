@@ -54,11 +54,13 @@ table, td, th{
 .q_list_01 td, .q_list_01 th {
   border: 0;
   border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
   padding: 5px;
 }
 
 .q_list_01 td {
   background: #FFF;
+  border-right: 1px solid #cacbd5;
 }
 
 
