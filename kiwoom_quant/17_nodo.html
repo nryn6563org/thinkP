@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=360px">
+  <title>키움 퀀트</title>
+  <!-- font -->
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/nodo.css">
+  <link rel="stylesheet" href="css/nodo_table.css">
+</head>
+
+<body>
+
+  <div id="wrap">
+
+
+    <div id="content">
+
+      <div class="content-header">
+        <div class="content-nav">
+          <a href="" class="">성정추구</a>
+          <a href="" class="">가치추구</a>
+          <a href="" class="">시장추종</a>
+          <a href="" class="active">노도</a>
+        </div>
+        <div><button class="invest-info">투자정보</button></div>
+      </div> <!--class="content-header"-->
+
+      <div class="pt-50"></div>
+
+      <section class="nodo_section1">
+
+
+        <div class="nodo-main">
+
+          <div class="nodo-icn"></div>
+          <div class="main-header">
+            <div class="main-icn"><img src="img/nodo/main-icn.png" alt="main-icn"></div>
+            <button type="button" onclick="unfoldList()" class="unfold-btn" id="unfoldBtn"><img
+                src="img/nodo/unfold-btn.png" alt="unfold-btn"></button>
+            <span class="head-icn">NEW</span>
+            <div class="head-txt">퀀트 2.0으로<br>새롭게 태어났습니다.</div>
+          </div>
+          <div id="fold_list">
+            <div class="main-list">
+
+              <div class="list-box">
+                <div class="list-icn nodo-icn1">
+                  <img src="img/nodo/list-icn1.png" alt="list-icn1">
+                </div>
+                <div class="list-txt">
+                  새 알고리즘의 모든 매매신호를 <br>
+                  알려드립니다.
+                </div>
+              </div>
+              <div class="list-box">
+                <div class="list-icn nodo-icn2">
+                  <img src="img/nodo/list-icn2.png" alt="list-icn2">
+                </div>
+                <div class="list-txt">
+                  <span class="up">노도 알고리즘</span>의 보유종목은 <br>
+                  끝까지 책임지고 매도신호를 드립니다.
+                </div>
+              </div>
+              <div class="list-box">
+                <div class="list-icn nodo-icn3">
+                  <img src="img/nodo/list-icn3.png" alt="list-icn3">
+                </div>
+                <div class="list-txt">
+                  <span class="up">노도 알고리즘</span>은 더 이상 신규 종목을 <br>
+                  매수하지 않습니다.
+                </div>
+              </div>
+              <div class="list-box">
+                <div class="list-icn nodo-icn4">
+                  <img src="img/nodo/list-icn4.png" alt="list-icn4">
+                </div>
+                <div class="list-txt">
+                  <span class="up">노도 알고리즘</span> MY전략 페이지는 <br>
+                  2023년 12월까지 제공됩니다.
+                </div>
+              </div>
+
+            </div>
+
+            <div class="fold-btn">
+              <button class="fold" type="button" onclick="foldList()">
+                접기 <span><img src="img/nodo/fold-btn.png" alt="fold-btn"></span>
+              </button>
+            </div>
+
+            <script>
+
+              const fb = document.getElementById("fold_list");
+              const ufb = document.getElementById("unfoldBtn");
+
+              function foldList() {
+                fb.style.display = 'none';
+                ufb.style.display = 'block';
+              }
+
+              function unfoldList() {
+                fb.style.display = 'block';
+                ufb.style.display = 'none';
+              }
+
+            </script>
+
+          </div>
+
+        </div>
+
+
+      </section> <!--class="nodo_section1"-->
+
+      <section class="nodo_section2">
+
+        <div class="nodo-sig">
+          <div class="sig-header">노도 알고리즘 <span class="down">실시간 시그널</span></div>
+
+
+          <table class="q_list_02" cellspacing="0" border="1" summary="실시간 시그널 ">
+            <caption>실시간 시그널 </caption>
+            <colgroup>
+              <col width="30%">
+              <col width="21%">
+              <col width="27%">
+              <col width="22%">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th rowspan="2" scope="col">발생일시</th>
+                <th rowspan="2" scope="col">현재상태</th>
+                <th scope="col">종목명</th>
+                <th scope="col">편입가격</th>
+              </tr>
+              <tr>
+                <th>비중</th>
+                <th>수량</th>
+              </tr>
+            </tbody>
+            <tbody>
+
+              <tr>
+                <td rowspan="2" class="c_02">04/26 12:00</td>
+                <td rowspan="2" class="c_02" style="color:#f00">매수완료</td>
+                <td class="c_02">현대글로비스</td>
+                <td class="quantity_02">
+
+                  0
+
+                </td>
+              </tr>
+              <tr>
+                <td class="c_02">5.92%</td>
+                <td class="quantity_02">-</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">04/26 12:00</td>
+                <td rowspan="2" style="color:#06f">매도완료</td>
+                <td class="">현대제철</td>
+                <td class="quantity">
+
+                  35,700
+
+                </td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td class="quantity">81</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2" class="c_02">04/25 15:00</td>
+                <td rowspan="2" class="c_02" style="color:#f00">매수완료</td>
+                <td class="c_02">하림지주</td>
+                <td class="quantity_02">
+
+                  9,770
+
+                </td>
+              </tr>
+              <tr>
+                <td class="c_02">6.67%</td>
+                <td class="quantity_02">142</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">04/25 15:00</td>
+                <td rowspan="2" style="color:#f00">매수완료</td>
+                <td class="">유한양행</td>
+                <td class="quantity">
+
+                  56,500
+
+                </td>
+              </tr>
+              <tr>
+                <td>6.67%</td>
+                <td class="quantity">57</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2" class="c_02">04/25 12:00</td>
+                <td rowspan="2" class="c_02" style="color:#06f">매도완료</td>
+                <td class="c_02">대상홀딩스</td>
+                <td class="quantity_02">
+
+                  7,530
+
+                </td>
+              </tr>
+              <tr>
+                <td class="c_02">-</td>
+                <td class="quantity_02">343</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">04/25 12:00</td>
+                <td rowspan="2" style="color:#06f">매도완료</td>
+                <td class="">OCI</td>
+                <td class="quantity">
+
+                  121,700
+
+                </td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td class="quantity">16</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2" class="c_02">04/05 12:00</td>
+                <td rowspan="2" class="c_02" style="color:#f00">매수완료</td>
+                <td class="c_02">OCI</td>
+                <td class="quantity_02">
+
+                  101,800
+
+                </td>
+              </tr>
+              <tr>
+                <td class="c_02">3.90%</td>
+                <td class="quantity_02">16</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <button class="nodo-more">더 보기</button>
+        </div>
+
+      </section> <!--class="nodo_section2"-->
+
+
+      <section class="nodo_section3">
+
+        <div class="nodo-out">
+
+          <div class="out-header">노도 알고리즘 <span class="down">개요</span></div>
+
+          <div id="contents" class="contents">
+            <table class="q_list_01" cellspacing="0" border="1" summary="기본정보" style=" margin-top:5px;">
+              <caption>기본정보</caption>
+              <colgroup>
+                <col width="30%">
+                <col width="70%">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="col">투자개시일</th>
+                  <td scope="col">2013/02/01</td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr>
+                  <th>최초투자금액</th>
+                  <td>3,000만원</td>
+                </tr>
+                <tr>
+                  <th>총수익률</th>
+                  <td>
+                    <div class="t_red">201.83%</div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>대비 수익률</th>
+                  <td>코스피 대비<span class="t_red"> 174.97%</span></td>
+                </tr>
+                <tr>
+                  <th>유형</th>
+                  <td>시장주도형</td>
+                </tr>
+                <tr>
+                  <th>특징</th>
+                  <td>실적 모멘텀이 발생한 중형주 중에서 상대적으로 PER, PBR, ROA 등 투자지표를 사용하여 저평가된 종목을 선정</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div>
+              <img src="http://webchart.thinkpool.com/PROFIT/Qbot9_Profit/Qbot9M_00000742.gif" width="100%">
+            </div>
+
+
+
+          </div>
+
+      </section> <!--class="nodo_section3"-->
+
+
+
+      <section class="nodo_section4">
+
+        <div class="nodo-pos">
+          <div class="pos-header">노도 알고리즘 <span class="down">보유종목</span></div>
+
+          <table class="q_list_04" cellspacing="0" border="1" summary="매매완료종목" style=" margin-top:5px;">
+            <caption>실시간시그널</caption>
+            <colgroup>
+              <col width="30%">
+              <col width="21%">
+              <col width="23%">
+              <col width="26%">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="col">종목명</th>
+                <th scope="col">매수단가</th>
+                <th scope="col">현재가</th>
+                <th scope="col">당일등락률</th>
+              </tr>
+              <tr>
+                <th scope="col">비중</th>
+                <th scope="col">수량</th>
+                <th>평가손익</th>
+                <th>수익률</th>
+              </tr>
+            </tbody>
+            <tbody>
+
+              <tr>
+                <td class="item">OCI</td>
+                <td>22,350</td>
+                <td>22,200</td>
+                <td class="quantity"><span class="t_blue">-1.11%</span></td>
+              </tr>
+              <tr>
+                <td>6.61%</td>
+                <td>269</td>
+
+                <td><span class="t_red">345,600</span></td>
+                <td><span class="t_red">7.45%</span></td>
+
+              </tr>
+
+              <tr>
+                <td class="item_02">CJ프레시웨</td>
+                <td class="c_02">7,140</td>
+                <td class="c_02">6,820</td>
+                <td class="quantity_02"><span class="t_blue">-0.73%</span></td>
+              </tr>
+              <tr>
+                <td class="c_02">5.40%</td>
+                <td class="c_02">715</td>
+
+                <td class="c_02"><span class="t_red">21,600</span></td>
+                <td><span class="t_red">0.49%</span></td>
+
+              </tr>
+
+              <tr>
+                <td class="item">코리아써키트</td>
+                <td>28,300</td>
+                <td>28,800</td>
+                <td class="quantity"><span class="t_red">3.78%</span></td>
+              </tr>
+              <tr>
+                <td>7.01%</td>
+                <td>220</td>
+
+                <td><span class="t_red">924,630</span></td>
+                <td><span class="t_red">0.41%</span></td>
+
+              </tr>
+
+              <tr>
+                <td class="item_02">대한해운</td>
+                <td class="c_02">17,890</td>
+                <td class="c_02">17,310</td>
+                <td class="quantity_02"><span class="t_red">0.23%</span></td>
+              </tr>
+              <tr>
+                <td class="c_02">6.69%</td>
+                <td class="c_02">349</td>
+
+                <td class="c_02"><span class="t_blue">-769,700</span></td>
+                <td><span class="t_red">21.23%</span></td>
+
+              </tr>
+
+            </tbody>
+          </table>
+
+
+          <button class="nodo-more">더 보기</button>
+        </div>
+
+
+      </section> <!--class="nodo_section4"-->
+
+      <section class="nodo_section5">
+
+        <div class="nodo-tra">
+
+
+          <div class="tra-header">노도 알고리즘 <span class="down">매매완료 종목</span></div>
+
+          <table class="q_list_04" cellspacing="0" border="1" summary="매매완료종목" style=" margin-top:5px;">
+            <caption>매매완료종목</caption>
+            <colgroup>
+              <col width="26%">
+              <col width="27%">
+              <col width="21%">
+              <col width="26%">
+            </colgroup>
+            <tbody>
+              <tr>
+                <th scope="col">종목명</th>
+                <th scope="col">평균매수단가</th>
+                <th scope="col">평가손익</th>
+                <th scope="col">최초매수일</th>
+              </tr>
+              <tr>
+                <th scope="col">수량</th>
+                <th scope="col">평균매도단가</th>
+                <th>수익률</th>
+                <th>매도완료일</th>
+              </tr>
+            </tbody>
+            <tbody>
+
+              <tr>
+                <td class="item">케이씨</td>
+                <td><span>21,450</span></td>
+
+                <td><span class="t_blue">-214,560</span></td>
+
+
+                <td class="date">2023/03/27</td>
+              </tr>
+              <tr>
+                <td>122</td>
+
+                <td>19,470</td>
+                <td><span class="t_blue">-9.23%</span></td>
+
+                <td class="date">2023/04/25</td>
+              </tr>
+
+              <tr>
+                <td class="item_02">HD현대에너</td>
+                <td class="c_02"><span>53,500</span></td>
+
+                <td class="c_02"><span class="t_red">198,900</span></td>
+
+
+                <td class="date_02 c_02">2023/04/19</td>
+              </tr>
+              <tr>
+                <td class="c_02">117</td>
+
+                <td class="c_02">5,200</td>
+                <td class="c_02"><span class="t_red">3.18%</span></td>
+
+                <td class="date_02 c_02">2023/04/24</td>
+              </tr>
+
+              <tr>
+                <td class="item">하이록코리아</td>
+                <td><span>23,750</span></td>
+
+                <td><span class="t_blue">-683,300</span></td>
+
+
+                <td class="date">2023/04/04</td>
+              </tr>
+              <tr>
+                <td>263</td>
+
+                <td>21,150</td>
+                <td><span class="t_blue">-10.95%</span></td>
+
+                <td class="date">2023/04/13</td>
+              </tr>
+
+              <tr>
+                <td class="item_02">NICE</td>
+                <td class="c_02"><span>12,650</span></td>
+
+                <td class="c_02"><span class="t_blue">-241,920</span></td>
+
+
+                <td class="date_02 c_02">2022/11/24</td>
+              </tr>
+              <tr>
+                <td class="c_02">432</td>
+
+                <td class="c_02">12,090</td>
+                <td class="c_02"><span class="t_blue">-4.43%</span></td>
+
+                <td class="date_02 c_02">2023/04/04</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+          <button class="nodo-more">더 보기</button>
+
+        </div>
+
+
+
+      </section> <!--class="nodo_section5"-->
+
+
+      <section class="nodo_section6">
+
+        <div class="nodo-ten">
+
+          <div class="ten-header">노도 알고리즘 <span class="down">성향</span></div>
+
+
+          <div id="contents" class="contents">
+
+            <div class="strategy">
+              <dl>
+                <dt>투자원칙 및 운용철학</dt>
+                <dd class="t_gray">실적 모멘텀이 발생한 중형주 중에서 상대적으로 PER, PBR, ROA 등 투자지표를 사용하여 저평가된 종목을 선정</dd>
+                <dd>1)수익률 극대화를 위한 중기적 운용 2)모멘텀 비교우위 종목의 단기적 운용</dd>
+              </dl>
+            </div>
+            <table class="q_list_05" cellspacing="0" border="1" summary="전략성향">
+              <caption>
+                전략성향
+              </caption>
+              <colgroup>
+                <col width="22%">
+                <col width="16%">
+                <col width="20%">
+                <col width="20%">
+                <col width="22%">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="col">투자성향</th>
+                  <th scope="col">투자기간</th>
+                  <th scope="col">종목성향</th>
+                  <th scope="col">업종 내 위치</th>
+                  <th scope="col">적정 운용 규모</th>
+                </tr>
+              </tbody>
+              <tbody>
+
+                <tr>
+                  <td>리스크관리형</td>
+                  <td>장기</td>
+                  <td>성장</td>
+                  <td>업종 대표주</td>
+                  <td>1억 이상</td>
+                </tr>
+
+                <tr>
+                  <td>추종형</td>
+                  <td>중기</td>
+                  <td class="selection">가치</td>
+                  <td class="selection">준대표</td>
+                  <td class="selection">5천 ~ 1억</td>
+                </tr>
+
+                <tr>
+                  <td class="selection">시장주도형</td>
+                  <td class="selection">단기</td>
+                  <td>성장/가치</td>
+                  <td>기타</td>
+                  <td>2천 ~ 5천</td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>기타</td>
+                  <td></td>
+                  <td>2천 미만</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+      </section> <!--class="nodo_section6"-->
+
+
+
+
+    </div> <!--id="content"-->
+
+    <footer id="alHome_footer">
+
+    </footer> <!--id="alHome_footer"-->
+
+  </div> <!--id="wrap"-->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

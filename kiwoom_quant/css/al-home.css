@@ -354,10 +354,6 @@ ul.dropdown-menu li a.dropdown-item{
   margin-right: 14px;
 }
 
-.num.first{
-  background: #E81A1A;
-}
-
 .name{
   width: 77%;
   font-weight: 500;
@@ -813,7 +809,7 @@ button.nav-link{
 /* section5 */
 
 .inv{
-  padding: 20px 16px 65px;
+  padding: 20px 16px 40px;
 }
 
 .inv-header{

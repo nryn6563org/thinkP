@@ -1,0 +1,280 @@
+
+dt {
+  margin: 0px;
+  padding: 0px;
+}
+
+dl{
+  margin: 0;
+  padding: 0;
+}
+
+dd{
+  margin: 0;
+}
+
+table{
+  margin: 0;
+  padding: 0;
+  line-height: 1.25em;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+table, td, th{
+  border-collapse: collapse;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+
+.q_list_01 {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cacbd5;
+  border-spacing: 0;
+}
+
+.q_list_01 caption {
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.q_list_01 th {
+  background: #ebecee;
+  border-bottom: 1px solid #cacbd5;
+  text-align: left;
+  color: #556181;
+}
+
+.q_list_01 td, .q_list_01 th {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.q_list_01 td {
+  background: #FFF;
+}
+
+
+.q_list_02 {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cacbd5;
+  border-top: 1px solid #cacbd5;
+  border-right: 1px solid #cacbd5;
+  border-spacing: 0;
+}
+
+.q_list_02 caption {
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
+th{
+  font-weight: normal;
+  margin: 0;
+}
+
+.q_list_02 th {
+  background: #ebecee;
+  border-bottom: 1px solid #cacbd5;
+  text-align: center;
+  color: #556181;
+}
+
+.q_list_02 th {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.q_list_02 .c_02 {
+  background: #f6f6f6 !important;
+}
+
+.q_list_02 td {
+  background: #fff;
+  text-align: center;
+}
+
+.q_list_02 td {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.q_list_02 .quantity_02 {
+  text-align: right !important;
+  background: #f6f6f6;
+}
+
+.q_list_02 .quantity {
+  text-align: right !important;
+}
+
+
+.q_list_04 {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cacbd5;
+  border-top: 1px solid #cacbd5;
+  border-right: 1px solid #cacbd5;
+  border-spacing: 0;
+}
+
+.q_list_04 caption {
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.q_list_04 th {
+  background: #ebecee;
+  border-bottom: 1px solid #cacbd5;
+  text-align: center;
+  color: #556181;
+}
+
+.q_list_04 th {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.q_list_04 .item {
+  text-align: left;
+  font-size: 14px;
+}
+
+.q_list_04 .item_02 {
+  text-align: left;
+  font-size: 14px;
+  background: #f6f6f6;
+}
+
+.q_list_04 td {
+  background: #fff;
+  text-align: right;
+}
+
+.q_list_04 .c_02 {
+  background: #f6f6f6 !important;
+}
+
+.q_list_04 td {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.item {
+  font-size: 1.4em;
+  margin: 18px 0 10px;
+  padding-left: 10px;
+  height: 20px;
+}
+
+
+.q_list_05 {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cacbd5;
+  border-top: 1px solid #cacbd5;
+  border-right: 1px solid #cacbd5;
+  border-spacing: 0;
+  font-size: 0.8em;
+}
+
+.q_list_05 caption {
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.q_list_05 th {
+  background: #ebecee;
+  border-bottom: 1px solid #cacbd5;
+  text-align: center;
+  color: #556181;
+}
+
+.q_list_05 th {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 7px 3px;
+}
+
+.q_list_05 td {
+  background: #fff;
+  text-align: center;
+}
+
+.q_list_05 td {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 7px 3px;
+}
+
+.strategy {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.strategy dt {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+
+.strategy .t_gray {
+  color: #646464;
+  padding: 10px 0 7px;
+  line-height: 1.25em;
+}
+
+.strategy dd {
+  margin-bottom: 5px;
+  line-height: 1.25em;
+}
+
+
+
+
+
+
+
+
+.q_list_05 .selection {
+  background: #ea6da6;
+  color: #FFF;
+}
+
+.t_red {
+  color: #F00;
+}
+
+.t_blue {
+  color: #06F;
+}

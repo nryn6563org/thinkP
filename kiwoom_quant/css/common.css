@@ -100,7 +100,6 @@ button.more{
 }
 
 .text-truncate{
-  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -134,6 +133,10 @@ button.more{
 
 .up-bg{
 	background: #FDECEC !important;
+}
+
+.down-bg{
+	background: #E3F1FF !important;
 }
 
 .up-border{
@@ -196,6 +199,50 @@ button.more{
 	background: #2850DC;
 }
 
+.inv-icn1{
+	color: #E00D14;
+}
+
+.inv-icn1-bg{
+	background: #FDECEC;
+}
+
+.inv-icn2{
+	color: #0E82DB;
+}
+
+.inv-icn2-bg{
+	background: #ECF5FC;
+}
+
+.inv-icn3{
+	color: #21A93C;
+}
+
+.inv-icn3-bg{
+	background: #EDF8EF;
+}
+
+.nodo-icn1{
+	background: #79B286;
+}
+
+.nodo-icn2{
+	background: #5EB5AF;
+}
+
+.nodo-icn3{
+	background: #8C96CA;
+}
+
+.nodo-icn4{
+	background: #9C8CCA;
+}
+
+.first{
+  background: #E81A1A !important;
+}
+
 .pt-20{
 	padding-top: 20px !important;
 }
@@ -222,4 +269,28 @@ button.more{
 
 .right{
 	text-align: right;
+}
+
+span.lb01::before{
+	background: #FB6B77;
+}
+
+span.lb02::before{
+background: #1D5BCD;
+}
+
+span.lb03::before{
+	background: #1D5BCD;
+}
+
+span.lb04::before{
+	background: #0D6EFD;
+}
+
+span.lb05::before{
+	background: #A1D2FD;
+}
+
+span.lb06::before{
+	background: #C2DEF4;
 }
