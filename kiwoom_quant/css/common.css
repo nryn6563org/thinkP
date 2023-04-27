@@ -128,7 +128,7 @@ button.more{
 }
 
 .down{
-	color: #3F54C3 !important;
+	color: #225CFF !important;
 }
 
 .up-bg{
@@ -260,15 +260,15 @@ button.more{
 }
 
 .center{
-	text-align: center;
+	text-align: center !important;
 }
 
 .left{
-	text-align: left;
+	text-align: left !important;
 }
 
 .right{
-	text-align: right;
+	text-align: right !important;
 }
 
 span.lb01::before{
