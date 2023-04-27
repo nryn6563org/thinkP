@@ -653,6 +653,68 @@ ul.dropdown-menu li a.dropdown-item{
   margin-right: 5px;
 }
 
+.swiper-slide.sig-no-slide{
+  height: 58px;
+  background: #84B4C3;
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  margin: auto 0;
+}
+
+.sig-no{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+
+  /* animation */
+  animation-name: nosig;
+  animation-duration: 5s;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nosig{
+  0%{
+    bottom: 0px;
+  }
+
+  20%{
+    bottom: 0px;
+  }
+
+  40%{
+    bottom: 40px; 
+  }
+
+  60%{
+    bottom: 40px;
+  }
+
+  80%{
+    bottom: 80px;
+  }
+
+  100%{
+    bottom: 80px;
+  }
+}
+
+
+.sig-no img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  width: 22px;
+  height: 22px;
+}
+
 /* section3 */
 
 /* section4 */
