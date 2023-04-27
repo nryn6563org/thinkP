@@ -674,7 +674,7 @@ ul.dropdown-menu li a.dropdown-item{
 
   /* animation */
   animation-name: nosig;
-  animation-duration: 5s;
+  animation-duration: 7s;
   animation-delay: 0;
   animation-direction: normal;
   animation-iteration-count: infinite;
@@ -685,24 +685,28 @@ ul.dropdown-menu li a.dropdown-item{
     bottom: 0px;
   }
 
-  20%{
+  16.66%{
     bottom: 0px;
   }
 
-  40%{
+  33.32%{
     bottom: 40px; 
   }
 
-  60%{
+  49.98%{
     bottom: 40px;
   }
 
-  80%{
+  66.64%{
+    bottom: 80px;
+  }
+
+  83.3%{
     bottom: 80px;
   }
 
   100%{
-    bottom: 80px;
+    bottom: 0px;
   }
 }
 
