@@ -268,3 +268,19 @@ button.nodo-more{
 /* section6 */
 
 
+
+/* accordion */
+
+.accordion-item{
+  background: none;
+  border: none;
+}
+
+.collapsing{
+  transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+}
+/* accordion */
