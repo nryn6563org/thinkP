@@ -131,6 +131,10 @@ button.more{
 	color: #225CFF !important;
 }
 
+.his-down{
+	color: #777777 !important;
+}
+
 .up-bg{
 	background: #FDECEC !important;
 }
@@ -165,6 +169,10 @@ button.more{
 
 .table-bb{
 	border-bottom: 1px solid #DCDCDC !important;
+}
+
+.tb-b{
+	border-bottom: 1px solid #C1C1C1 !important;
 }
 
 .bg-1{

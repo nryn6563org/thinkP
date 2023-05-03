@@ -252,13 +252,14 @@ th{
 
 .strategy .t_gray {
   color: #646464;
-  padding: 10px 0 7px;
+  padding: 0px 0 7px;
   line-height: 1.25em;
 }
 
 .strategy dd {
   margin-bottom: 5px;
   line-height: 1.25em;
+  font-size: 14px;
 }
 
 
