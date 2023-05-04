@@ -231,6 +231,14 @@ button.more{
 	background: #EDF8EF;
 }
 
+.inv-icn4{
+	color: #858585;
+}
+
+.inv-icn4-bg{
+	background: #EFEFEF;
+}
+
 .nodo-icn1{
 	background: #79B286;
 }
@@ -267,6 +275,14 @@ button.more{
 	margin-right: 10px !important;
 }
 
+.mt-5{
+	margin-top: 5px !important;
+}
+
+.mt-10{
+	margin-top: 10px !important;
+}
+
 .center{
 	text-align: center !important;
 }
@@ -301,4 +317,8 @@ span.lb05::before{
 
 span.lb06::before{
 	background: #C2DEF4;
+}
+
+.bold{
+	font-weight: 700 !important;
 }
