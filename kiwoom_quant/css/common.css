@@ -167,6 +167,10 @@ button.more{
 	border: 1px solid #2850DC;
 }
 
+.event-bg{
+	background: #4C4E5D !important;
+}
+
 .table-bb{
 	border-bottom: 1px solid #DCDCDC !important;
 }
