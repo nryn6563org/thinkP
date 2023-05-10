@@ -1,83 +1,11 @@
-/* header */
-
-.navi-s{
-  position: relative;
-  display: block;
-  width: 100%;
-  min-width: 100%;
-  height: 56px;
-  line-height: 56px;
-  overflow: hidden;
-  float: left;
-  background: #32336B;
-}
-
-button.back-btn{
-  padding: 0;
-  padding-right: 10px;
-  line-height: 0;
-  border: none;
-  background: #32336B;
-  position: absolute;
-  left: 10px;
-  top: 17px;
-}
-
-.navi-s .nav{
-  display: flex;
-  min-width: 100%;
-  white-space: nowrap;
-  overflow: auto;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  border: none;
-  outline: none;
-  padding-left: 45px;
-}
-
-a.smenu span{
-  color: #9899B8;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-a.smenu span:hover{
-  color: #9899B8;
-  font-weight: 400;
-  font-size: 14px;
-}
-
-a.smenu span.active{
-  color: #fff;
-  font-weight: 700;
-}
-
-.nav-link{
-  border: none !important;
-  outline: none;
-  padding: 0px 10px;
-}
-
-button.plus-btn{
-  line-height: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  background: none;
-}
-
-/* header */
-
 /* content */
 
 /* content-header */
 
-.content-header{
+.content-header.sb-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #dee2e6;
   padding: 0px 16px;
 }
 
@@ -89,15 +17,15 @@ button.plus-btn{
 
 .content-nav a{
   display: block;
-  margin-right: 16px;
+  margin-right: 9px;
   color: #666;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .content-nav a.active{
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   color: #121212;
   border-bottom: 2px solid #121212;
 }
@@ -474,7 +402,6 @@ ul.dropdown-menu li a.dropdown-item{
 
 .modal-content button.btn{
   width: 100%;
-  background: #4F3FC6;
   border-radius: 0px 0px 16px 16px;
   border: none;
   height: 48px;
@@ -793,7 +720,7 @@ ul.dropdown-menu li a.dropdown-item{
   border-radius: 4px;
 }
 
-button.nav-link{
+.pos-nav.nav-link{
   padding: 10px 0px;
   margin: 2px !important;
   width: calc(50% - 4px);
@@ -805,11 +732,11 @@ button.nav-link{
   color: #999;
 }
 
-button.nav-link:hover{
+.pos-nav.nav-link:hover{
   color: #999;
 }
 
-.nav-tabs .nav-link.active{
+.pos-nav.nav-link.active{
   background-color: #fff;
   color: #212121;
 }

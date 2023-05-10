@@ -13,7 +13,7 @@ dd{
   margin: 0;
 }
 
-table{
+table.q_list_02, table.q_list_01, table.q_list_04, table.q_list_05{
   margin: 0;
   padding: 0;
   line-height: 1.25em;
@@ -21,10 +21,10 @@ table{
   table-layout: fixed;
 }
 
-table, td, th{
+table.q_list_02, td, th{
   border-collapse: collapse;
   box-sizing: border-box;
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 

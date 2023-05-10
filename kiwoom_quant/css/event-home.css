@@ -85,7 +85,7 @@ button.back-btn{
   color: #999;
 }
 
-.evt-box{
+.evtana-box{
   width: 100%;
   padding: 20px;
   margin-top: 20px;
@@ -175,7 +175,7 @@ button.back-btn{
   padding: 40px 16px;
 }
 
-.ai-header{
+.sco-ai-header{
   padding: 0px 10px;
   display: flex;
   justify-content: start;
@@ -206,7 +206,7 @@ button.ai-icn{
   padding: 20px;
 }
 
-.ai-chart{
+.ai-chart-img{
   margin-bottom: 22px;
 }
 
@@ -285,12 +285,11 @@ table.ai-table{
   margin-bottom: 15px;
 }
 
-.nav-tabs.tab-custom{
+.nav-tabs.per-custom{
   border: none;
-  margin: 0px 10px;
 }
 
-.nav-tabs.tab-custom .nav-link{
+.nav-tabs.per-custom .per-nav.nav-link{
   border: none;
   padding: 6.5px 12px;
   font-weight: 400;
@@ -302,7 +301,7 @@ table.ai-table{
   margin-right: 8px;
 }
 
-.nav-tabs.tab-custom .nav-link.active{
+.nav-tabs.per-custom .per-nav.nav-link.active{
   background: #6C7885;
   color: #fff;
 }
@@ -311,7 +310,7 @@ table.ai-table{
   margin-top: 20px;
 }
 
-.nav-tabs.tab-custom .tab-content .tab-pane img{
+.nav-tabs.per-custom .tab-content .tab-pane img{
   width: 100%;
 }
 
@@ -323,7 +322,7 @@ table.ai-table{
   padding: 40px 16px;
 }
 
-.ana-header{
+.evt-ana-header{
   padding: 0px 10px;
   font-weight: 500;
   font-size: 16px;
@@ -469,11 +468,11 @@ table.ai-table{
 
 /* section6 */
 
-.sig{
+.evt-sig{
   padding: 40px 26px 40px;
 }
 
-.sig-header{
+.evt-sig-header{
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;

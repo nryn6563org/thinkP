@@ -1,3 +1,12 @@
+@import url('al-history.css');
+@import url('al-home.css');
+@import url('al-intro.css');
+@import url('event-home.css');
+@import url('invest.css');
+@import url('nodo_table.css');
+@import url('nodo.css');
+@import url('ser-intro.css');
+
 /* reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -123,6 +132,10 @@ button.more{
 	background: #F0F4F7;
 }
 
+.con-border{
+	border-bottom: 1px solid #DEE2E6 !important;
+}
+
 .up{
 	color: #E81A1A !important;
 }
@@ -149,6 +162,14 @@ button.more{
 
 .down-border{
 	border: 1px solid rgba(34, 92, 255, 0.4) !important;
+}
+
+.btn-bg{
+	background: #4F3FC6 !important;
+}
+
+.borno{
+	border: none !important;
 }
 
 .evt-red{
@@ -276,7 +297,7 @@ button.more{
 }
 
 .pt-50{
-	padding-top: 50px !important;
+	padding-top: 49px !important;
 }
 
 .mr-10{

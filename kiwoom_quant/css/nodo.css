@@ -2,11 +2,10 @@
 
 /* content-header */
 
-.content-header{
+.content-header.sb-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #dee2e6;
   padding: 0px 16px;
 }
 
@@ -18,15 +17,15 @@
 
 .content-nav a{
   display: block;
-  margin-right: 11px;
+  margin-right: 9px;
   color: #666;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .content-nav a.active{
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   color: #121212;
   border-bottom: 2px solid #121212;
 }
@@ -73,9 +72,10 @@
   right: 4px;
 }
 
-.main-header{
+.nodo-main-header{
   position: relative;
   padding: 0px 10px 27px;
+  border: none !important;
 }
 
 span.head-icn{
@@ -89,7 +89,7 @@ span.head-icn{
   color: #fff;
 }
 
-.head-txt{
+.nodo-head-txt{
   margin-top: 3px;
   font-weight: 500;
   font-size: 22px;
@@ -172,7 +172,7 @@ span.head-icn{
   padding: 40px 16px;
 }
 
-.sig-header{
+.nodo-sig-header{
   padding: 0px 4px;
   font-weight: 500;
   font-size: 16px;
@@ -221,7 +221,7 @@ button.nodo-more{
   padding: 0 16px 40px;
 }
 
-.pos-header{
+.nodo-pos-header{
   padding: 0px 4px;
   font-weight: 500;
   font-size: 16px;

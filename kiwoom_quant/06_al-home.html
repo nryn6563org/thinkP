@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/al-home.css">
   <script>
     window.onload = function () {
       document.getElementById("openPopup").click();
@@ -60,7 +59,7 @@
 
     <div id="content">
 
-      <div class="content-header">
+      <div class="content-header con-border sb-header">
         <div class="content-nav">
           <a href="" class="active">성정추구</a>
           <a href="" class="">가치추구</a>
@@ -223,6 +222,7 @@
               pagination: {
                 el: '.swiper-pagination',
               },
+              loop: true,
             });
           </script>
 
@@ -240,9 +240,9 @@
           </div>
           <div class="pos-box">
             <div class="nav nav-tabs tab-custom" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="pal" data-bs-toggle="tab" data-bs-target="#pal-tab" type="button"
+              <button class="pos-nav nav-link active borno" id="pal" data-bs-toggle="tab" data-bs-target="#pal-tab" type="button"
                 aria-selected="true">평가손익</button>
-              <button class="nav-link" id="pri" data-bs-toggle="tab" data-bs-target="#pri-tab" type="button"
+              <button class="pos-nav nav-link borno" id="pri" data-bs-toggle="tab" data-bs-target="#pri-tab" type="button"
                 aria-selected="false">현재가격</button>
             </div>
             <div class="tab-content" id="nav-tabContent">
@@ -459,6 +459,7 @@
                   pagination: {
                     el: '.swiper-pagination',
                   },
+                  loop: true,
                 });
               </script>
 
@@ -676,6 +677,7 @@
                   pagination: {
                     el: '.swiper-pagination',
                   },
+                  loop: true,
                 });
               </script>
 
@@ -695,7 +697,7 @@
           <div class="rate-header">
             <div class="rate-headtxt">수익률 TOP5</div>
             <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn dropdown-toggle borno" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 6개월
               </button>
               <ul class="dropdown-menu">
@@ -810,7 +812,7 @@
                     </thead>
                   </table>
                 </div>
-                <button class="btn" type="button" data-bs-dismiss="modal">확인</button>
+                <button class="btn btn-bg" type="button" data-bs-dismiss="modal">확인</button>
               </div>
             </div>
           </div>
