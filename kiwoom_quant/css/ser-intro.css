@@ -150,55 +150,21 @@
   position: relative;
 }
 
-.alarm-ele02{
-  position: absolute;
-  top: 80px;
-  left: 11.5px;
-  animation: alaele01 8s infinite;
-}
-
 .alarm-ele03{
   position: absolute;
   top: 70px;
   left: -36px;
-  animation: alaele02 8s infinite;
-}
-
-@keyframes alaele01 {
-  0%{
-    opacity: 0;
-  }
-  20%{
-    opacity: 0;
-  }
-  30%{
-    opacity: 1;
-  }
-  60%{
-    opacity: 1;
-  }
-  80%{
-    opacity: 1;
-  }
-  90%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 0;
-  }
+  animation: alaele02 5s infinite;
 }
 
 @keyframes alaele02 {
   0%{
     opacity: 0;
   }
-  60%{
+  40%{
     opacity: 0;
   }
-  70%{
-    opacity: 1;
-  }
-  80%{
+  50%{
     opacity: 1;
   }
   90%{
