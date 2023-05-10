@@ -125,6 +125,92 @@
   margin-bottom: 30px;
 }
 
+/* alarm-animation */
+
+.alarm-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alarm-ele01 img{
+  width: 240px;
+}
+
+.alarm-ele02 img{
+  width: 220px;
+}
+
+.alarm-ele03 img{
+  width: 312px;
+}
+
+.alarm-ele01{
+  width: 240px;
+  position: relative;
+}
+
+.alarm-ele02{
+  position: absolute;
+  top: 80px;
+  left: 11.5px;
+  animation: alaele01 8s infinite;
+}
+
+.alarm-ele03{
+  position: absolute;
+  top: 70px;
+  left: -36px;
+  animation: alaele02 8s infinite;
+}
+
+@keyframes alaele01 {
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  60%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes alaele02 {
+  0%{
+    opacity: 0;
+  }
+  60%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+/* alarm-animation */
+
 /* section2 */
 
 /* section3 */
@@ -152,8 +238,12 @@
   height: 473px;
   padding: 20px 20px 30px;
   background: #FFFFFF;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  
   border-radius: 16px;
+}
+
+.ana-slide:first-child{
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .ana-num{
@@ -258,7 +348,7 @@ img.ana-img2, img.ana-img3, img.ana-img4{
 /* section4 */
 
 .ser-care{
-  padding: 60px 20px;
+  padding: 60px 0px;
   text-align: center;
 }
 
@@ -278,7 +368,6 @@ img.ana-img2, img.ana-img3, img.ana-img4{
   margin-bottom: 30px;
 }
 
-/* care-animation */
 
 .care-body{
   width: 100%;
@@ -302,132 +391,28 @@ img.ana-img2, img.ana-img3, img.ana-img4{
   width: 217px;
 }
 
-.bg-fade{
-  width: 230px;
-  height: 398px;
-  position: absolute;
-  top: 0;
-  left: 7px;
-  border-top-left-radius: 26px;
-  border-top-right-radius: 26px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0));
-  animation: bgfade 10s infinite ease-out;
-  opacity: 1;
-}
-
-@keyframes bgfade{
-  0%{
-    opacity: 0;
-  }
-  10%{
-    opacity: 0;
-  }
-  40%{
-    opacity: 1;
-  }
-  90%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
 
 .care-ele01, .care-ele02, .care-ele03{
   position: absolute;
 }
 
 .care-ele01{
+  top: 20px;
   left: -40px;
-  animation: ele01 10s infinite ease-out;
 }
 
-@keyframes ele01{
-  0%{
-    opacity: 0;
-    top: -120px;
-  }
-  20%{
-    opacity: 1;
-    top: -120px;
-  }
-  30%{
-    top: 20px;
-  }
-  90%{
-    top: 20px;
-    opacity: 1;
-  }
-  100%{
-    top: 20px;
-    opacity: 0;
-  }
-}
 
 .care-ele02{
+  top: 128px;
   right: -40px;
-  animation: ele02 10s infinite ease-out;
 }
 
-@keyframes ele02{
-  0%{
-    opacity: 0;
-    top: -120px;
-  }
-  40%{
-    opacity: 1;
-    top: -120px;
-  }
-  60%{
-    top: 128px;
-  }
-  80%{
-    top: 128px;
-  }
-  90%{
-    top: 128px;
-    opacity: 1;
-  }
-  100%{
-    top: 128px;
-    opacity: 0;
-  }
-}
 
 .care-ele03{
+  top: 260px;
   left: -40px;
-  animation: ele03 10s infinite ease-out;
 }
 
-@keyframes ele03{
-  0%{
-    opacity: 0;
-    top: -120px;
-  }
-  20%{
-    opacity: 1;
-    top: -120px;
-  }
-  50%{
-    top: -120px;
-  }
-  60%{
-    top: -120px;
-  }
-  80%{
-    top: 260px;
-  }
-  90%{
-    top: 260px;
-    opacity: 1;
-  }
-  100%{
-    top: 260px;
-    opacity: 0;
-  }
-}
-
-/* care-animation */
 
 /* section4 */
 
@@ -575,12 +560,43 @@ img.ana-img2, img.ana-img3, img.ana-img4{
   text-align: center;
 }
 
-.ai-swiper{
-  padding: 0px 20px;
+.splide{
+  width:100%;
+  margin:0 auto;
 }
 
-.swiper-wrapper{
-  box-sizing: border-box;
+button.splide__arrow{
+  display: none;
+}
+
+.splide__pagination{
+  position: static;
+  margin-top: 20px;
+}
+
+.splide__pagination__page {
+  background: #333D47;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  padding: 0;
+  position: relative;
+  transition: transform .2s linear;
+  width: 8px;
+  margin: 0px 5px;
+}
+
+.splide__pagination__page.is-active{
+  transform: none;
+  background: #000;
+  opacity: 1;
+}
+
+.ai-swiper{
+  position: relative;
 }
 
 .ai-slide{

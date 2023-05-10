@@ -14,6 +14,11 @@
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- animate -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- splide -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/ser-intro.css">
 </head>
@@ -85,7 +90,18 @@
             충분히 살펴보고, 여유 있게 투자할 수 있습니다.
           </div>
           <div class="alarm-body">
-            <img src="img/ser-intro/퀀트-이미지GIF_01.gif" alt="">
+            <!-- <img src="img/ser-intro/퀀트-이미지GIF_01.gif" alt=""> -->
+            <div class="alarm-ele01">
+              <img src="img/ser-intro/alarm-img01.png" alt="alarm-img01">
+              <div class="alarm-ele02">
+                <img src="img/ser-intro/alarm-img02.png" alt="alarm-img02">
+              </div>
+              <div class="alarm-ele03">
+                <img src="img/ser-intro/alarm-img03.png" alt="alarm-img03">
+              </div>
+            </div>
+            
+            
           </div>
 
         </div>
@@ -191,21 +207,19 @@
           <div class="care-body">
             <!-- <img src="img/ser-intro/퀀트-이미지GIF_02.gif" alt=""> -->
             <div class="care-bg">
-              <img src="img/ser-intro/ana-img.png" alt="ana-img">
-              <div class="bg-fade"></div>
-              <div class="care-ele01">
+              <img class="bg-fade" src="img/ser-intro/ana-img.png" alt="ana-img">
+              <!-- <div class="bg-fade"></div> -->
+              <div class="care-ele01" data-aos="zoom-in-right">
                 <img src="img/ser-intro/ana-img01.png" alt="ana-img01">
               </div>
-              <div class="care-ele02">
+              <div class="care-ele02" data-aos="zoom-in-left">
                 <img src="img/ser-intro/ana-img02.png" alt="ana-img02">
               </div>
-              <div class="care-ele03">
+              <div class="care-ele03" data-aos="zoom-in-right">
                 <img src="img/ser-intro/ana-img03.png" alt="ana-img03">
               </div>
             </div>
             </div>
-        
-            
 
         </div>
 
@@ -304,86 +318,86 @@
             ※ 모든 알고리즘 알림 제공 
           </div>
 
-          <div class="swiper ai-swiper">
-            
-            <div class="swiper-wrapper ai-swiper-wrapper">
-              <div class="swiper-slide ai-slide ai1">
-                <div class="ai-top">성장추구 알고리즘</div>
-                <div class="ai-tsub">실적 성장속도가 가파른 종목<br>저평가된 종목 선정</div>
-                <div class="ai-chart">
-                  <img src="" alt="">
-                </div>
-                <div class="ai-bot">
-                  <div class="bot-txt">
-                    <strong>AI분석요소</strong><br>
-                    매출액/영업이익 증가율,<br>
-                    PER/PBR 매력도, 시가총액 상대값,<br>
-                    AI상승강도 가중치 등 학습<br><br>
-                    <strong>매매스타일</strong><br>
-                    1주일 3~5종목 매매<br>
-                    매수 후 보유기간 10일 전후<br>
-                    보유 종목수 10~13 개
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide ai-slide ai2">
-                <div class="ai-top">성장추구 알고리즘</div>
-                <div class="ai-tsub">실적 성장속도가 가파른 종목<br>저평가된 종목 선정</div>
-                <div class="ai-chart">
-                  <img src="" alt="">
-                </div>
-                <div class="ai-bot">
-                  <div class="bot-txt">
-                    <strong>AI분석요소</strong><br>
-                    매출액/영업이익 증가율,<br>
-                    PER/PBR 매력도, 시가총액 상대값,<br>
-                    AI상승강도 가중치 등 학습<br><br>
-                    <strong>매매스타일</strong><br>
-                    1주일 3~5종목 매매<br>
-                    매수 후 보유기간 10일 전후<br>
-                    보유 종목수 10~13 개
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide ai-slide ai3">
-                <div class="ai-top">성장추구 알고리즘</div>
-                <div class="ai-tsub">실적 성장속도가 가파른 종목<br>저평가된 종목 선정</div>
-                <div class="ai-chart">
-                  <img src="" alt="">
-                </div>
-                <div class="ai-bot">
-                  <div class="bot-txt">
-                    <strong>AI분석요소</strong><br>
-                    매출액/영업이익 증가율,<br>
-                    PER/PBR 매력도, 시가총액 상대값,<br>
-                    AI상승강도 가중치 등 학습<br><br>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+          <div class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track ai-swiper">
     
-          <script>
-            var swiper = new Swiper('.ai-swiper', {
-              slidesPerView: "auto",
-              centeredSlides: true,
-              spaceBetween: 17,
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-              },
-              autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-              },
-              loop: true,
-              loopedSlides: 1,
-            });
-          </script>
-
-
+                <div class="splide__list ai-swiper-wrapper">
+    
+                    <div class="splide__slide ai-slide ai1">
+                        <div class="ai-top">성장추구 알고리즘</div>
+                    <div class="ai-tsub">실적 성장속도가 가파른 종목<br>저평가된 종목 선정</div>
+                    <div class="ai-chart">
+                      <img src="" alt="">
+                    </div>
+                    <div class="ai-bot">
+                      <div class="bot-txt">
+                        <strong>AI분석요소</strong><br>
+                        매출액/영업이익 증가율,<br>
+                        PER/PBR 매력도, 시가총액 상대값,<br>
+                        AI상승강도 가중치 등 학습<br><br>
+                        <strong>매매스타일</strong><br>
+                        1주일 3~5종목 매매<br>
+                        매수 후 보유기간 10일 전후<br>
+                        보유 종목수 10~13 개
+                      </div>
+                    </div>
+                    </div>
+    
+                    <div class="splide__slide ai-slide ai2">
+                        <div class="ai-top">성장추구 알고리즘</div>
+                    <div class="ai-tsub">실적 성장속도가 가파른 종목<br>저평가된 종목 선정</div>
+                    <div class="ai-chart">
+                      <img src="" alt="">
+                    </div>
+                    <div class="ai-bot">
+                      <div class="bot-txt">
+                        <strong>AI분석요소</strong><br>
+                        매출액/영업이익 증가율,<br>
+                        PER/PBR 매력도, 시가총액 상대값,<br>
+                        AI상승강도 가중치 등 학습<br><br>
+                        <strong>매매스타일</strong><br>
+                        1주일 3~5종목 매매<br>
+                        매수 후 보유기간 10일 전후<br>
+                        보유 종목수 10~13 개
+                      </div>
+                    </div>
+                    </div>
+    
+                    <div class="splide__slide ai-slide ai3">
+                        <div class="ai-top">성장추구 알고리즘</div>
+                    <div class="ai-tsub">실적 성장속도가 가파른 종목<br>저평가된 종목 선정</div>
+                    <div class="ai-chart">
+                      <img src="" alt="">
+                    </div>
+                    <div class="ai-bot">
+                      <div class="bot-txt">
+                        <strong>AI분석요소</strong><br>
+                        매출액/영업이익 증가율,<br>
+                        PER/PBR 매력도, 시가총액 상대값,<br>
+                        AI상승강도 가중치 등 학습<br><br>
+                      </div>
+                    </div>
+                    </div>
+    
+                </div>
+    
+            </div>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var splide = new Splide('.splide', {
+                    type: 'loop',
+                    padding: '30px',
+                    gap: '17px',
+                    autoplay: true,
+                    interval: 2000,
+                });
+                splide.mount();
+            });
+        </script>
+        
+        </div>
+        
 
 
       </section>  <!--class="serintro_section6"-->
@@ -567,6 +581,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+  <!-- animate -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
