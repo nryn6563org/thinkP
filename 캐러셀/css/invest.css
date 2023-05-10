@@ -1,0 +1,366 @@
+/* content-header */
+
+.content-header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+}
+
+button.back-btn{
+  background: none;
+  border: none;
+  margin-right: 10px;
+  line-height: 15px;
+}
+
+.header-txt{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #141414;
+}
+
+/* content-header */
+
+/* section1 */
+
+.invest-info{
+  padding: 20px 20px 40px;
+}
+
+.inv-list{
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  padding: 18px 0px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.inv-list:first-child{
+  padding-top: 0;
+}
+
+.inv-icn span{
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12.52px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.inv-txt{
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212121;
+}
+
+.inv-date{
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  color: #999;
+}
+
+.inv-date.new::after{
+  content:"N";
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13.77px;
+  color: #E00D14;
+}
+
+button.inv-more{
+  width: 100%;
+  margin-top: 23px;
+  border: none;
+  background: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #212121;
+  text-align: center;
+}
+
+button.inv-more span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  background: url(../img/invest/icon_arrow.png) no-repeat 0 0;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+/* section1 */
+
+
+/* section2 */
+
+.inv-isu{
+  padding: 40px 16px;
+}
+
+.isu-header{
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.isu-header-main{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212121;
+}
+
+.isu-header-date{
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #999;
+}
+
+.isu-box{
+  margin-top: 15px;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #EAECEF;
+  border-radius: 12px;
+}
+
+.isu-list{
+  padding: 12px 0px;
+  border-bottom: 1px solid #F5F7F6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.isu-list:first-child{
+  padding-top: 0;
+}
+
+.isu-list:last-child{
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.isu-list-left{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 65%;
+}
+
+.left-num{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  background: #C2C2C2;
+  margin-right: 14px;
+}
+
+.left-name{
+  width: calc(100% - 45px);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+
+.isu-list-right{
+  width: 35%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.right-per{
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16.28px;
+}
+
+.right-btn img{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+/* section2 */
+
+
+
+
+
+
+
+
+
+/* invest-detail */
+
+
+.inv-detail{
+  padding: 20px 0px 40px;
+}
+
+.detail-headname{
+  padding: 0px 20px 20px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.head-main{
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.head-date{
+  text-align: right;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #999;
+}
+
+.detail-txt{
+  padding: 20px 20px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #212121;
+}
+
+/* invest-detail */
+
+
+/* inv-isu-detail */
+
+.isu-evt1{
+  padding: 20px 20px 40px;
+}
+
+.evt-header{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #141414;
+}
+
+.evt-box{
+  margin-top: 15px;
+  padding: 15px 4px;
+  background: #FFFFFF;
+  border: 1px solid #DFE3E7;
+  border-radius: 12px;
+}
+
+.chart-label{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  width: 100%;
+}
+
+.chart-label span{
+  position: relative;
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+  padding-left: 18px;
+  font-size: 12px;
+  color: #4d4d4d;
+  font-weight: 400;
+}
+
+.chart-label span::before{
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 10px;
+  height: 3px;
+}
+
+
+.isu-evt2{
+  padding: 0px 20px;
+}
+
+.evt-box2{
+  margin-top: 15px;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #DFE3E7;
+  border-radius: 12px;
+}
+
+.evt-list{
+  padding: 18px 0px;
+  width: 100%;
+  border-top: 1px solid #EAEAEA;
+}
+
+.evt-list:first-child{
+  padding-top: 0;
+  border-top: none
+}
+
+
+.evt-list-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.top-name{
+  width: 70%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #141414;
+}
+
+.top-per span{
+  padding: 3px 6px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16.28px;
+  border-radius: 4px;
+}
+
+.evt-txt{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #4D4D4D;
+}
+
+button.evt-more{
+  width: 100px;
+  background: none;
+  border: none;
+}
+
+/* inv-isu-detail */

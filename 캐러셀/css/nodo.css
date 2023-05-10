@@ -1,0 +1,286 @@
+/* content */
+
+/* content-header */
+
+.content-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+  padding: 0px 16px;
+}
+
+.content-nav{
+  line-height: 48px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.content-nav a{
+  display: block;
+  margin-right: 11px;
+  color: #666;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.content-nav a.active{
+  font-weight: 500;
+  font-size: 16px;
+  color: #121212;
+  border-bottom: 2px solid #121212;
+}
+
+.content-header button.invest-info{
+  background: #fff;
+  border: 1px solid #666;
+  border-radius: 100px;
+  padding: 7.5px 12px;
+  color: #666;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* content-header */
+
+
+/* section1 */
+
+.nodo-main{
+  background: #8C96CA;
+  padding: 20px 16px 0px;
+  overflow: hidden;
+}
+
+.main-icn img{
+  width: 130px;
+  right: -16px;
+  top: -13px;
+  position: absolute;
+}
+
+.unfold-btn{
+  display: none;
+  border: none;
+  background: none;
+}
+
+.unfold-btn img{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  bottom: 10px;
+  right: 4px;
+}
+
+.main-header{
+  position: relative;
+  padding: 0px 10px 27px;
+}
+
+span.head-icn{
+  display: inline-block;
+  padding: 2px 5px;
+  background: #4115BC;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.head-txt{
+  margin-top: 3px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.list-box{
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.list-box:last-child{
+  margin-bottom: 0;
+}
+
+.list-icn{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.list-icn img{
+  width: 24px;
+  height: 24px;
+}
+
+.list-txt{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #212121;
+}
+
+.fold-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.fold{
+  padding: 5px 10px 5px 18px;
+  margin-top: 20px;
+  border: none;
+  background: #535E97;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #fff;
+}
+
+.fold span img{
+  width: 24px;
+}
+
+
+/* section1 */
+
+
+/* section2 */
+
+.nodo-sig{
+  padding: 40px 16px;
+}
+
+.sig-header{
+  padding: 0px 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+button.nodo-more{
+  height: 36px;
+  margin-top: 20px;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #EAECEF;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #212121;
+}
+
+
+/* section2 */
+
+
+/* section3 */
+
+.nodo-out{
+  padding: 0 16px 40px;
+}
+
+.out-header{
+  padding: 0px 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+/* section3 */
+
+/* section4 */
+
+.nodo-pos{
+  padding: 0 16px 40px;
+}
+
+.pos-header{
+  padding: 0px 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+/* section4 */
+
+/* section5 */
+
+.nodo-tra{
+  padding: 0 16px 40px;
+}
+
+.tra-header{
+  padding: 0px 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+/* section5 */
+
+
+/* section6 */
+
+.nodo-ten{
+  padding: 0 16px 40px;
+}
+
+.ten-header{
+  padding: 0px 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+/* section6 */
+
+
+
+/* accordion */
+
+.accordion-item{
+  background: none;
+  border: none;
+}
+
+.collapsing{
+  transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+}
+/* accordion */
