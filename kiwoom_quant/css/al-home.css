@@ -9,6 +9,13 @@
   padding: 0px 16px;
 }
 
+.al_conhead{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .content-nav{
   line-height: 48px;
   display: flex;
