@@ -154,17 +154,17 @@
   position: absolute;
   top: 70px;
   left: -36px;
-  animation: alaele02 5s infinite;
+  /* animation: alaele02 5s infinite; */
 }
-
+/* 
 @keyframes alaele02 {
   0%{
     opacity: 0;
   }
-  40%{
+  25%{
     opacity: 0;
   }
-  50%{
+  35%{
     opacity: 1;
   }
   90%{
@@ -173,7 +173,7 @@
   100%{
     opacity: 0;
   }
-}
+} */
 
 /* alarm-animation */
 
