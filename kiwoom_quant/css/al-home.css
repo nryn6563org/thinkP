@@ -873,6 +873,10 @@ ul.dropdown-menu li a.dropdown-item{
   width: 35px;
 }
 
+.info-txt{
+  width: calc(100% - 65px);
+}
+
 .info-txtt{
   font-weight: 400;
   font-size: 14px;
