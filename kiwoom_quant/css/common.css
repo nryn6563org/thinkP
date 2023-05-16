@@ -188,6 +188,14 @@ button.more{
 	border: 1px solid #2850DC;
 }
 
+.evt-up{
+	color: #FFA0A0 !important;
+}
+
+.evt-down{
+	color: #7EBFF0 !important;
+}
+
 .event-bg{
 	background: #4C4E5D !important;
 }
