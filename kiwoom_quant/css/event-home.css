@@ -509,6 +509,18 @@ table.ai-table{
   z-index: 5;
 }
 
+.sig-date-icn{
+  background: #4F3FC6;
+}
+
+.sig-list-date{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #141414;
+  margin-top: 4px;
+}
+
 .sig-list::after{
   content: "";
   width: 2px;
