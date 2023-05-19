@@ -551,3 +551,114 @@ table.ai-table{
 
 
 /* section6 */
+
+
+
+
+/* logic event-home */
+
+.ai-pre{
+  padding: 40px 16px 30px;
+}
+
+.pre-box{
+  padding: 20px;
+  margin-top: 16px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.pre-chart{
+  margin-bottom: 30px;
+}
+
+.pre-con{
+  padding-top: 30px;
+  border-top: 1px solid #DCDCDC;
+}
+
+.pre-con_head{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pre-con_left{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.03px;
+  color: #212121;
+}
+
+.pre-con_left span{
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16.28px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.pre-con_right{
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31.3px;
+}
+
+.pre-con_body{
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.dou-chart{
+  width: auto;
+}
+
+.doughnut-chart {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 0 0 10px #ECECEC inset;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.dou-per{
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+  top: 27px;
+  left: 23px;
+}
+
+.dou-txt{
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #212121;
+  margin-top: 25px;
+}
+
+.dou-txt strong{
+  font-weight: 700;
+}
+
+.pre-con_foot{
+  font-weight: 400;
+  font-size: 13px;
+  width: 100%;
+  text-align: center;
+  color: #999;
+  margin-top: 24px;
+}
+
+/* logic event-home */

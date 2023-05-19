@@ -278,6 +278,7 @@ button.nodo-more{
 .accordion-item{
   background: none;
   border: none;
+  position: relative;
 }
 
 .collapsing{
@@ -288,3 +289,112 @@ button.nodo-more{
   -o-transition: 0.6s ease;
 }
 /* accordion */
+
+
+
+/* logic  */
+
+.logic-main{
+  padding: 18px 16px 0px;
+  background: #47A767;
+  background-image: url(../img/nodo/bg_01.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.log-img img{
+  width: 245px;
+}
+
+.log-unfold-btn{
+  display: none;
+  border: none;
+  background: none;
+}
+
+.log-unfold-btn img{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.loghead{
+  width: 100%;
+  text-align: right;
+}
+
+.log_head-icn{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.02px;
+  color: #fff;
+  background: #225C35;
+  border-radius: 100px;
+  padding: 2px 5px;
+}
+
+.log-head-txt{
+  width: 100%;
+  text-align: right;
+  margin-top: 3px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.fold.log-fold{
+  background: #225C35;
+}
+
+.log_main-box{
+  width: 100%;
+  padding: 25px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.log_box-list{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-bottom: 22px;
+}
+
+.log_box-list:last-child{
+  padding-bottom: 0;
+}
+
+.log_box-icn{
+  width: 40px;
+  height: 40px;
+  background: #F0F0F0;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.log_box-icn img{
+  width: 24px;
+  height: 24px;
+}
+
+.log_box-txt{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #212121;
+}
+
+.log_box-txt strong{
+  color: #00AB6E;
+}
+
+/* logic  */

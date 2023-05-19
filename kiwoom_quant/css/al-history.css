@@ -107,3 +107,64 @@ button.back-btn{
   color: #999;
   margin-top: 8px;
 }
+
+
+
+
+/* logic al-history */
+
+.radio-btn{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.radio-txt{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  color: #212121;
+  margin-right: 8px;
+}
+
+.radio-btn input[type=checkbox]{
+  position: absolute;
+  display: none;
+}
+
+.radio-btn input[type=checkbox]:checked + .switch_label{
+  background: #3F54C3;
+}
+
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 24px;
+  background: #E9E9E9;
+  border-radius: 99px;
+  transition: 0.2s;
+}
+
+.radio-btn input[type=checkbox]:checked + .switch_label .onf_btn{
+  left: 18px;
+}
+
+.onf_btn{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 22px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+
+/* logic al-history */

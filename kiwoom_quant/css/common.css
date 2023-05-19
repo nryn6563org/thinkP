@@ -3,8 +3,8 @@
 @import url('al-intro.css');
 @import url('event-home.css');
 @import url('invest.css');
-@import url('nodo_table.css');
-@import url('nodo.css');
+@import url('quant_logic-table.css');
+@import url('quant_logic.css');
 @import url('ser-intro.css');
 
 /* reset */
@@ -200,8 +200,35 @@ button.more{
 	background: #4C4E5D !important;
 }
 
+.res-up{
+	color: #F16E51 !important;
+	background: #F5F8D9;
+}
+
+.res-down{
+	color: #30A3E4 !important;
+	background: #E4FBF2 !important;
+}
+
+.hisu-up{
+	color: #FFB9B9 !important;
+}
+
+.hisu-down{
+	color: #9EE2FF !important;
+}
+
+.hisu_first{
+	background: #fff !important;
+	color: #586CDD !important;
+}
+
 .white{
 	color: #fff !important;
+}
+
+.gray{
+	color: #666 !important;
 }
 
 .table-bb{
@@ -224,12 +251,16 @@ button.more{
 	background: #619BDF !important;
 }
 
+.fz-12{
+	font-size: 12px;
+}
+
 .icn-bg1{
 	background: #84B993 !important;
 }
 
 .icn-bg2{
-	background: #84B6B9 !important;
+	background: #9C8CCA !important;
 }
 
 .icn-bg3{
@@ -316,8 +347,16 @@ button.more{
 	margin-top: 5px !important;
 }
 
+.mt-7{
+	margin-top: 7px !important;
+}
+
 .mt-10{
 	margin-top: 10px !important;
+}
+
+.mt-17{
+	margin-top: 17px !important;
 }
 
 .center{
