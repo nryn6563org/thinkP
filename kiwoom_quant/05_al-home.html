@@ -15,11 +15,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/common.css">
-  <script>
+  <!-- <script>
     window.addEventListener('DOMContentLoaded', function () {
       document.getElementById("openPopup").click();
     });
-  </script>
+  </script> -->
 </head>
 
 <body>
@@ -70,7 +70,7 @@
             <div class="main-top">
               <div class="main-txt">
                 <span>장기적, 고수익 추구 <br> 실적 성장속도가 가파른 <br> 종목을 학습</span>
-                <button type="button" onclick="location.href=''">성장추구형 상세보기</button>
+                <button  type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">성장추구형 상세보기</button>
               </div>
               <div class="chart1">
                 <img src="img/al-home/chart1.png" alt="chart1">
@@ -287,7 +287,7 @@
 
             <div class="swiper sig-swiper">
               <div class="swiper-wrapper">
-                <button class="swiper-slide sig-slide" onclick="location.href=''">
+                <button class="swiper-slide sig-slide" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                   <div class="sig-top">
                     <div class="sig-name text-truncate">DB하이텍</div>
                     <span>000990</span>
@@ -299,7 +299,7 @@
                     <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
                   </div>
                 </button>
-                <button class="swiper-slide sig-slide">
+                <button class="swiper-slide sig-slide" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                   <div class="sig-top">
                     <div class="sig-name">DB하이텍</div>
                     <span>000990</span>
@@ -311,7 +311,7 @@
                     <div class="sig-txt text-truncate">동부그룹 계열의 시스템 반도체 전무 제계약 동부그룹 계열의 시스템 반도체</div>
                   </div>
                 </button>
-                <button class="swiper-slide sig-slide">
+                <button class="swiper-slide sig-slide" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                   <div class="sig-top">
                     <div class="sig-name">DB하이텍</div>
                     <span>000990</span>
@@ -375,7 +375,7 @@
                 <div class="tab-pane fade show active swiper pal-swiper" id="pal-tab" tabindex="0">
                   <div class="swiper-wrapper">
                     <div class="pal swiper-slide">
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -388,7 +388,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-2">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -401,7 +401,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -414,7 +414,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -427,7 +427,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -442,7 +442,7 @@
                       </button>
                     </div>
                     <div class="pal swiper-slide">
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -455,7 +455,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-2">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -468,7 +468,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -481,7 +481,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -494,7 +494,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -509,7 +509,7 @@
                       </button>
                     </div>
                     <div class="pal swiper-slide">
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -522,7 +522,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-2">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -535,7 +535,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -548,7 +548,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -561,7 +561,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pal-list">
+                      <button class="pal-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -593,7 +593,7 @@
                 <div class="tab-pane fade swiper pri-swiper" id="pri-tab" tabindex="0">
                   <div class="swiper-wrapper">
                     <div class="pri swiper-slide">
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -606,7 +606,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-2">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -619,7 +619,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -632,7 +632,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -645,7 +645,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -660,7 +660,7 @@
                       </button>
                     </div>
                     <div class="pri swiper-slide">
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -673,7 +673,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-2">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -686,7 +686,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -699,7 +699,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -712,7 +712,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -727,7 +727,7 @@
                       </button>
                     </div>
                     <div class="pri swiper-slide">
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -740,7 +740,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-2">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -753,7 +753,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -766,7 +766,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-1">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -779,7 +779,7 @@
                           </div>
                         </div>
                       </button>
-                      <button class="pri-list">
+                      <button class="pri-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                         <div class="list-left">
                           <div class="list-icn bg-3">삼</div>
                           <div class="list-name text-truncate">삼***</div>
@@ -822,7 +822,7 @@
 
             <div class="inv-header">알아두면 유익한 투자정보</div>
             <div class="inv-info">
-              <button class="info-list">
+              <button class="info-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                 <div class="info-icn icn-bg2"><img src="img/al-home/NG_SCH.png" alt="NG_SCH"></div>
                 <div class="info-txt">
                   <div class="info-txtt text-truncate">
@@ -834,7 +834,7 @@
                   </div>
                 </div>
               </button>
-              <button class="info-list">
+              <button class="info-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                 <div class="info-icn icn-bg3"><img src="img/al-home/NG_SIS.png" alt="NG_SIS"></div>
                 <div class="info-txt">
                   <div class="info-txtt text-truncate">
@@ -846,7 +846,7 @@
                   </div>
                 </div>
               </button>
-              <button class="info-list">
+              <button class="info-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
                 <div class="info-icn icn-bg1"><img src="img/al-home/NM_MKB.png" alt="NM_MKB"></div>
                 <div class="info-txt">
                   <div class="info-txtt text-truncate">
