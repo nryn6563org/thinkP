@@ -1,0 +1,504 @@
+
+dt {
+  margin: 0px;
+  padding: 0px;
+}
+
+dl{
+  margin: 0;
+  padding: 0;
+}
+
+dd{
+  margin: 0;
+}
+
+table.q_list_02, table.q_list_01, table.q_list_04, table.q_list_05{
+  margin: 0;
+  padding: 0;
+  line-height: 1.25em;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+table.q_list_02, td, th{
+  border-collapse: collapse;
+  box-sizing: border-box;
+  vertical-align: middle !important;
+}
+
+
+.q_list_01 {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cacbd5;
+  border-spacing: 0;
+}
+
+.q_list_01 caption {
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.q_list_01 th {
+  background: #ebecee;
+  border-bottom: 1px solid #cacbd5;
+  text-align: left;
+  color: #556181;
+}
+
+.q_list_01 td, .q_list_01 th {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.q_list_01 td {
+  background: #FFF;
+  border-right: 1px solid #cacbd5;
+}
+
+
+.q_list_02 {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cacbd5;
+  border-top: 1px solid #cacbd5;
+  border-right: 1px solid #cacbd5;
+  border-spacing: 0;
+}
+
+.q_list_02 caption {
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
+th{
+  font-weight: normal;
+  margin: 0;
+}
+
+.q_list_02 th {
+  background: #ebecee;
+  border-bottom: 1px solid #cacbd5;
+  text-align: center;
+  color: #556181;
+}
+
+.q_list_02 th {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.q_list_02 .c_02 {
+  background: #f6f6f6 !important;
+}
+
+.q_list_02 td {
+  background: #fff;
+  text-align: center;
+}
+
+.q_list_02 td {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.q_list_02 .quantity_02 {
+  text-align: right !important;
+  background: #f6f6f6;
+}
+
+.q_list_02 .quantity {
+  text-align: right !important;
+}
+
+
+.q_list_04 {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cacbd5;
+  border-top: 1px solid #cacbd5;
+  border-right: 1px solid #cacbd5;
+  border-spacing: 0;
+}
+
+.q_list_04 caption {
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.q_list_04 th {
+  background: #ebecee;
+  border-bottom: 1px solid #cacbd5;
+  text-align: center;
+  color: #556181;
+}
+
+.q_list_04 th {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.q_list_04 .item {
+  text-align: left;
+  font-size: 14px;
+}
+
+.q_list_04 .item_02 {
+  text-align: left;
+  font-size: 14px;
+  background: #f6f6f6;
+}
+
+.q_list_04 td {
+  background: #fff;
+  text-align: right;
+}
+
+.q_list_04 .c_02 {
+  background: #f6f6f6 !important;
+}
+
+.q_list_04 td {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 5px;
+}
+
+.item {
+  font-size: 1.4em;
+  margin: 18px 0 10px;
+  padding-left: 10px;
+  height: 20px;
+}
+
+
+.q_list_05 {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #cacbd5;
+  border-top: 1px solid #cacbd5;
+  border-right: 1px solid #cacbd5;
+  border-spacing: 0;
+  font-size: 0.8em;
+}
+
+.q_list_05 caption {
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.q_list_05 th {
+  background: #ebecee;
+  border-bottom: 1px solid #cacbd5;
+  text-align: center;
+  color: #556181;
+}
+
+.q_list_05 th {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 7px 3px;
+}
+
+.q_list_05 td {
+  background: #fff;
+  text-align: center;
+}
+
+.q_list_05 td {
+  border: 0;
+  border-top: 1px solid #cacbd5;
+  border-left: 1px solid #cacbd5;
+  padding: 7px 3px;
+}
+
+.strategy {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.strategy dt {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+
+.strategy .t_gray {
+  color: #646464;
+  padding: 0px 0 7px;
+  line-height: 1.25em;
+}
+
+.strategy dd {
+  margin-bottom: 5px;
+  line-height: 1.25em;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+.q_list_05 .selection {
+  background: #ea6da6;
+  color: #FFF;
+}
+
+.t_red {
+  color: #F00;
+}
+
+.t_blue {
+  color: #06F;
+}
+
+
+
+/* logic table */
+
+.tbl-bbs02 {
+  border-top: 1px solid #d5d5d5;
+}
+
+.tbl-bbs02 thead th:first-child {
+  border-left: none;
+}
+
+.tbl-bbs02 thead th {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  background: #f1f1f1;
+  border-left: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.tbl-bbs02 tbody td:first-child {
+  border-left: none;
+  text-align: center;
+}
+
+.tbl-bbs02 tbody td {
+  height: 37px;
+  line-height: 37px;
+  font-size: 12px;
+  color: #555;
+  border-bottom: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+}
+
+.tbl-bbs02 tbody td:nth-child(2n) {
+  text-align: center;
+}
+
+.tbl-bbs02 tbody td:nth-child(3n) {
+  padding-left: 10px;
+}
+
+.tbl-bbs02 tbody td:nth-child(4n) {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.cont01 li {
+  margin: 0 8px 10px 8px;
+  padding-left: 8px;
+  background: url(../img/nodo/bu_dot.png) no-repeat 0 6px;
+  font-size: 11px;
+  color: #555;
+  line-height: 18px;
+}
+
+.tbl-bbs03 {
+  border-top: 1px solid #d5d5d5;
+}
+
+.tbl-bbs03 tbody th {
+  height: 30px;
+  padding-left:10px;
+  background: #f1f1f1;
+  font-size: 11px;
+  color: #555;
+  border-bottom: 1px solid #d5d5d5;
+  text-align: center;
+}
+
+.tbl-bbs03 tbody td:nth-child(2n) {
+  text-align: center;
+  padding-right: 0;
+}
+
+.tbl-bbs03 tbody td {
+  height: 30px;
+  text-align: right;
+  font-size: 11px;
+  color: #555;
+  border-bottom: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+  padding-right: 10px;
+}
+
+.logic-img-guide {
+  height: 23px;
+  line-height: 23px;
+  background: #eaeaea;
+  text-align: center;
+}
+
+.logic-img-guide em.pass {
+  background: url(../img/nodo/bu_fund.png) no-repeat 0 50%;
+}
+
+.logic-img-guide em {
+  font-size: 11px;
+  color: #555;
+  padding-left: 29px;
+}
+
+.logic-img-guide em.kos {
+  background: url(../img/nodo/bu_pass.png) no-repeat 0 50%;
+  margin-left: 20px;
+}
+
+.logic-list {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logic-list li:first-child {
+  margin-left: 0;
+}
+
+.logic-list li {
+  margin-left: 10px;
+}
+
+.logic-list li button.active{
+  background: #dcdcdc !important;
+}
+
+.logic-list li button {
+  background: none !important;
+  display: inline-block !important;
+  width: 48px !important;
+  height: 19px !important;
+  line-height: 19px !important; 
+  border: 1px solid #b4b4b4 !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  color: #555 !important;
+  border-radius: 0% !important;
+  padding: 0;
+}
+
+.nav-tabs{
+  border: none;
+}
+
+.tbl-bbs04 thead th {
+  height: 27px;
+  padding: 7px 0 6px 0;
+  line-height: auto;
+  text-align: center;
+  font-size: 11px;
+  color: #333;
+  background: #f1f1f1;
+  border-bottom: 1px solid #888888;
+}
+
+.tbl-bbs04 tbody td {
+  padding: 10px 0 9px 0;
+  text-align: right;
+  font-size: 11px;
+  color: #555;
+  border-bottom: 1px solid #d5d5d5;
+  padding-right: 5px;
+}
+
+.tbl-bbs04 tbody td:first-child {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.tbl-bbs04 tbody td:nth-child(2n) {
+  text-align: center;
+  color: #E81A1A;
+  padding-right: 0;
+}
+
+.tbl-bbs04 tbody tr.bgline td {
+  background: #f7f7f7;
+}
+
+.tbl-bbs05 thead th {
+  height: 27px;
+  padding: 7px 0 6px 0;
+  line-height: auto;
+  text-align: center;
+  font-size: 11px;
+  color: #333;
+  background: #f1f1f1;
+  border-bottom: 1px solid #888888;
+}
+
+.tbl-bbs05 tbody td {
+  padding: 10px 5px 9px 0;
+  text-align: right;
+  font-size: 11px;
+  color: #555;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.tbl-bbs05 tbody td:first-child {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.tbl-bbs05 tbody td.date {
+  color: #E81A1A;
+}
+
+.tbl-bbs05 tbody td.date2 {
+  color: #225CFF;
+}
+
+.tbl-bbs05 tbody tr.bgline td {
+  background: #f7f7f7;
+}
+
+/* logic table */

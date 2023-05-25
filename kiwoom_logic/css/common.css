@@ -1,0 +1,400 @@
+@import url('al-history.css');
+@import url('al-home.css');
+@import url('al-intro.css');
+@import url('event-home.css');
+@import url('invest.css');
+@import url('quant_logic-table.css');
+@import url('quant_logic.css');
+@import url('ser-intro.css');
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+button{
+	padding: 0;
+	margin: 0;
+}
+
+img{
+	width: 100%;
+}
+
+/* reset */
+
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important; }
+
+#wrap{
+	width: 100%;
+	max-width: 100%;
+	min-width: 360px;
+	height: 100%;
+}
+
+#content{
+	width: 100%;
+	min-width: 360px;
+	max-width: 100%;
+	height: 100%;
+}
+
+button.more{
+  width: 100%;
+  height: 36px;
+  background: #E7EBEF;
+  border: 1px solid #DFE3E7;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #212121;
+}
+
+.content-header{
+	width: 100%;
+	min-width: 360px;
+	height: 50px;
+	position: fixed;
+	background: #fff;
+	z-index: 1000;
+}
+
+.text-truncate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-truncate2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important; 
+  -webkit-box-orient: vertical !important;
+}
+
+.sec-bg{
+	background: #F7F9FA !important;
+}
+
+.sec-border{
+	width: 100%;
+	height: 8px;
+	background: #F0F4F7;
+}
+
+.con-border{
+	border-bottom: 1px solid #DEE2E6 !important;
+}
+
+.up{
+	color: #E81A1A !important;
+}
+
+.down{
+	color: #225CFF !important;
+}
+
+.his-down{
+	color: #777777 !important;
+}
+
+.up-bg{
+	background: #FDECEC !important;
+}
+
+.down-bg{
+	background: #E3F1FF !important;
+}
+
+.up-border{
+	border: 1px solid rgba(239, 34, 71, 0.4) !important;
+}
+
+.down-border{
+	border: 1px solid rgba(34, 92, 255, 0.4) !important;
+}
+
+.btn-bg{
+	background: #4F3FC6 !important;
+}
+
+.borno{
+	border: none !important;
+}
+
+.evt-red{
+	color: #EA5863;
+}
+
+.evt-red-border{
+	border: 1px solid #EA5863;
+}
+
+.evt-blue{
+	color: #2850DC;
+}
+
+.evt-blue-border{
+	border: 1px solid #2850DC;
+}
+
+.evt-up{
+	color: #FFA0A0 !important;
+}
+
+.evt-down{
+	color: #7EBFF0 !important;
+}
+
+.event-bg{
+	background: #4C4E5D !important;
+}
+
+.res-up{
+	color: #F16E51 !important;
+	background: #F5F8D9;
+}
+
+.res-down{
+	color: #30A3E4 !important;
+	background: #E4FBF2 !important;
+}
+
+.hisu-up{
+	color: #FFB9B9 !important;
+}
+
+.hisu-down{
+	color: #9EE2FF !important;
+}
+
+.hisu_first{
+	background: #fff !important;
+	color: #586CDD !important;
+}
+
+.white{
+	color: #fff !important;
+}
+
+.gray{
+	color: #666 !important;
+}
+
+.table-bb{
+	border-bottom: 1px solid #DCDCDC !important;
+}
+
+.tb-b{
+	border-bottom: 1px solid #C1C1C1 !important;
+}
+
+.bg-1{
+	background: #CB7BAB !important;
+}
+
+.bg-2{
+	background: #81C07F !important;
+}
+
+.bg-3{
+	background: #619BDF !important;
+}
+
+.fz-12{
+	font-size: 12px;
+}
+
+.icn-bg1{
+	background: #84B993 !important;
+}
+
+.icn-bg2{
+	background: #9C8CCA !important;
+}
+
+.icn-bg3{
+	background: #8499B9 !important;
+}
+
+.alarm-bg-red{
+	background: #E81A1A;
+}
+
+.alarm-bg-blue{
+	background: #2850DC;
+}
+
+.inv-icn1{
+	color: #E00D14;
+}
+
+.inv-icn1-bg{
+	background: #FDECEC;
+}
+
+.inv-icn2{
+	color: #0E82DB;
+}
+
+.inv-icn2-bg{
+	background: #ECF5FC;
+}
+
+.inv-icn3{
+	color: #21A93C;
+}
+
+.inv-icn3-bg{
+	background: #EDF8EF;
+}
+
+.inv-icn4{
+	color: #858585;
+}
+
+.inv-icn4-bg{
+	background: #EFEFEF;
+}
+
+.nodo-icn1{
+	background: #79B286;
+}
+
+.nodo-icn2{
+	background: #5EB5AF;
+}
+
+.nodo-icn3{
+	background: #8C96CA;
+}
+
+.nodo-icn4{
+	background: #9C8CCA;
+}
+
+.first{
+  background: #E81A1A !important;
+}
+
+.pt-20{
+	padding-top: 20px !important;
+}
+
+.pt-40{
+	padding-top: 40px !important;
+}
+
+.pt-50{
+	padding-top: 49px !important;
+}
+
+.mr-10{
+	margin-right: 10px !important;
+}
+
+.mt-5{
+	margin-top: 5px !important;
+}
+
+.mt-7{
+	margin-top: 7px !important;
+}
+
+.mt-10{
+	margin-top: 10px !important;
+}
+
+.mt-17{
+	margin-top: 17px !important;
+}
+
+.center{
+	text-align: center !important;
+}
+
+.left{
+	text-align: left !important;
+}
+
+.right{
+	text-align: right !important;
+}
+
+span.lb01::before{
+	background: #FB6B77;
+}
+
+span.lb02::before{
+background: #1D5BCD;
+}
+
+span.lb03::before{
+	background: #1D5BCD;
+}
+
+span.lb04::before{
+	background: #0D6EFD;
+}
+
+span.lb05::before{
+	background: #A1D2FD;
+}
+
+span.lb06::before{
+	background: #C2DEF4;
+}
+
+.bold{
+	font-weight: 700 !important;
+}

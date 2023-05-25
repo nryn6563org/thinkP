@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=360px">
+  <title>키움 영웅로직 (알고리즘 홈(비가입자))</title>
+  <!-- font -->
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <script>
+    // window.onload = function () {
+    //   document.getElementById("openPopup").click();
+    // }
+  </script>
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <div id="container">
+
+      <div class="open_popup">
+        <button type="button" class="btn none" id="openPopup" data-bs-toggle="modal" data-bs-target="#popup-modal">open
+          popup</button>
+
+        <div class="popup modal fade" id="popup-modal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-txt">
+                <strong>회원 전용 메뉴입니다.</strong>
+                서비스 신청 후 이용이 가능합니다.
+              </div>
+              <div class="modal-btn">
+                <button class="btn" type="button" data-bs-dismiss="modal">다음에</button>
+                <button class="btn btn-bg" type="button">서비스 신청</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="content">
+
+        <div class="content-header con-border sb-header">
+          <div class="al_conhead">
+            <div class="content-nav">
+              <a href="" class="active">당일매매</a>
+              <a href="" class="">5일매매</a>
+              <a href="" class="">10일매매</a>
+            </div>
+            <div><button class="invest-info">투자정보</button></div>
+          </div>
+        </div> <!--class="content-header"-->
+
+        <div class="pt-50"></div>
+
+        <section class="alhome_section1">
+
+          <div class="log1">
+            <div class="log1_top">
+              <div class="top-txt">
+                <span>
+                  오늘 사서 오늘 판다! <br>
+                  AI의 빠른 판단으로 수익극대화
+                </span>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">알고리즘 상세보기</button>
+              </div>
+              <div class="top-img">
+                <img src="img/al-home/Isolation_Mode.png" alt="isolation">
+              </div>
+            </div>
+            <div class="log1_bot">
+              <!-- 신호발생 -->
+              <button class="bot-con">
+              <div class="con-txt">04.22 매매신호</div>
+              <div class="con-val up">
+                <span class="val-txt">매수</span>
+                <span>12</span>
+              </div>
+              <div class="con-val down">
+                <span class="val-txt">매도</span>
+                <span>7</span>
+              </div>
+            </button>
+            <!-- 신호발생 -->
+              <!-- 신호 미발생 -->
+              <!-- <button class="bot-con">
+                <div class="con-txt">04.22 매매신호</div>
+                <div class="con-val">
+                  <img src="img/al-home/track_changes.png" alt="track">
+                  <span class="val-txt fz-12">매수종목 <span class="blink1">탐색중</span></span>
+                </div>
+                <div class="con-val">
+                  <img src="img/al-home/equalizer.png" alt="equalizer">
+                  <span class="val-txt fz-12">매도종목 <span class="blink2">감시중</span></span>
+                </div>
+              </button> -->
+              <!-- 신호 미발생 -->
+              <button class="bot-con" type="button" data-bs-toggle="modal" data-bs-target="#rate-detail">
+                <div class="con-txt">매매수익</div>
+                <div class="con-stxt">3월 12일 매도 <em>(3일보유)</em></div>
+                <div class="con-per up">**.*%</div>
+              </button>
+            </div>
+          </div>
+
+          <div class="modal fade" id="rate-detail" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="modal-ratenamenum">
+                    <div class="modal-ratename text-truncate">
+                      삼성전자가나다라마바사아자차카타파하
+                    </div>
+                    <div class="modal-ratenum">005930</div>
+                  </div>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="modal-ratetable">
+                    <colgroup>
+                      <col width="40%">
+                      <col width="60%">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>실현수익률</th>
+                        <th class="up">**.*%</th>
+                      </tr>
+                    <tbody>
+                      <tr>
+                        <th>매수일</th>
+                        <td>2023.01.02</td>
+                      </tr>
+                      <tr class="table-bb">
+                        <th>매수가</th>
+                        <td>32,000원</td>
+                      </tr>
+                      <tr>
+                        <th>매도일</th>
+                        <td>2023.01.02</td>
+                      </tr>
+                      <tr class="table-bb">
+                        <th>매도가</th>
+                        <td>32,000원</td>
+                      </tr>
+                      <tr>
+                        <th>보유기간</th>
+                        <td>3일(개장일 기준)</td>
+                      </tr>
+                    </tbody>
+                    </thead>
+                  </table>
+                </div>
+                <button class="btn btn-bg" type="button" data-bs-dismiss="modal">확인</button>
+              </div>
+            </div>
+          </div>
+
+        </section> <!--class="alhome_section1"-->
+
+        <section class="alhome-section2">
+
+          <div class="log2">
+
+            <div class="log2_mo">
+              <div class="mo-box">
+                <div class="cosp">
+                  <div class="cosp-name">코스피</div>
+                  <div class="cosp-num">
+                    2,483.64
+                    <span class="up up-bg">+0.62</span>
+                  </div>
+                </div>
+                <div class="cosp">
+                  <div class="cosp-name">코스닥</div>
+                  <div class="cosp-num">
+                    983.64
+                    <span class="down down-bg">-0.62</span>
+                  </div>
+                </div>
+                <div class="cosp">
+                  <div class="cosp-name">코스피</div>
+                  <div class="cosp-num">
+                    2,483.64
+                    <span class="up up-bg">+0.62</span>
+                  </div>
+                </div>
+                <div class="cosp">
+                  <div class="cosp-name">코스닥</div>
+                  <div class="cosp-num">
+                    983.64
+                    <span class="up up-bg">+0.62</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="log2_today">
+
+              <div class="scr-buy">
+
+                <button class="today-buy up-bg" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                  <div class="buy-txt">
+                    <span class="up">오늘매수</span>
+                    <strong class="text-truncate">삼***</strong>
+                    <em class="buy-pri">매수가 63,000원</em>
+                  </div>
+                  <div class="buy-img">
+                    <img src="img/al-home/to-chart.png" alt="chart">
+                  </div>
+                </button>
+                <button class="today-buy up-bg" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                  <div class="buy-txt">
+                    <span class="up">오늘매수</span>
+                    <strong class="text-truncate">삼***</strong>
+                    <em class="buy-pri">매수가 63,000원</em>
+                  </div>
+                  <div class="buy-img">
+                    <img src="img/al-home/to-chart.png" alt="chart">
+                  </div>
+                </button>
+                <button class="today-buy up-bg" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                  <div class="buy-txt">
+                    <span class="up">오늘매수</span>
+                    <strong class="text-truncate">삼***</strong>
+                    <em class="buy-pri">매수가 63,000원</em>
+                  </div>
+                  <div class="buy-img">
+                    <img src="img/al-home/to-chart.png" alt="chart">
+                  </div>
+                </button>
+                <!-- 보유종목 없을 때 -->
+                <button class="today-buy up-bg no-pos">
+                  <div class="no-img search_img spinner-grow">
+                    <img src="img/al-home/search.png" alt="search">
+                  </div>
+                  <div class="no-txt">오늘 수익낼 종목을 <br>열심히 탐색하고 있습니다.</div>
+                </button>
+                <!-- 보유종목 없을 때 -->
+                <!-- 보유종목 없을 때 -->
+                <button class="today-buy up-bg no-pos">
+                  <div class="no-img">
+                    <div class="mask up-bg"></div>
+                    <img src="img/al-home/no-chart.png" alt="no-chart">
+                  </div>
+                  <div class="no-txt">지금,수익을 극대화 시킬 <br>종목을 찾고 있습니다.</div>
+                </button>
+                <!-- 보유종목 없을 때 -->
+
+              </div>
+
+              <div class="scr-buy">
+
+                <button class="today-buy down-bg" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                  <div class="buy-txt">
+                    <span class="down">오늘매도 &nbsp;<em class="up">(+3.22%)</em></span>
+                    <strong class="text-truncate">삼***</strong>
+                    <em class="buy-pri">매수가 63,000원</em>
+                  </div>
+                  <div class="buy-img">
+                    <img src="img/al-home/to-chart.png" alt="chart">
+                  </div>
+                </button>
+                <button class="today-buy down-bg" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                  <div class="buy-txt">
+                    <span class="down">오늘매도 &nbsp;<em class="up">(+3.22%)</em></span>
+                    <strong class="text-truncate">삼***</strong>
+                    <em class="buy-pri">매수가 63,000원</em>
+                  </div>
+                  <div class="buy-img">
+                    <img src="img/al-home/to-chart.png" alt="chart">
+                  </div>
+                </button>
+                <button class="today-buy down-bg" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                  <div class="buy-txt">
+                    <span class="down">오늘매도 &nbsp;<em class="down">(-3.22%)</em></span>
+                    <strong class="text-truncate">삼***</strong>
+                    <em class="buy-pri">매수가 63,000원</em>
+                  </div>
+                  <div class="buy-img">
+                    <img src="img/al-home/to-chart.png" alt="chart">
+                  </div>
+                </button>
+                <button class="today-buy down-bg" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                  <div class="buy-txt">
+                    <span class="down">오늘매도 &nbsp;<em class="up">(+3.22%)</em></span>
+                    <strong class="text-truncate">삼***</strong>
+                    <em class="buy-pri">매수가 63,000원</em>
+                  </div>
+                  <div class="buy-img">
+                    <img src="img/al-home/to-chart.png" alt="chart">
+                  </div>
+                </button>
+                <button class="today-buy down-bg" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                  <div class="buy-txt">
+                    <span class="down">오늘매도 &nbsp;<em class="up">(+3.22%)</em></span>
+                    <strong class="text-truncate">삼***</strong>
+                    <em class="buy-pri">매수가 63,000원</em>
+                  </div>
+                  <div class="buy-img">
+                    <img src="img/al-home/to-chart.png" alt="chart">
+                  </div>
+                </button>
+              </div>
+
+              <div class="all-btn"><button type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">매매 모두
+                  보기</button></div>
+
+            </div>
+
+          </div>
+
+        </section> <!--class="alhome-section2"-->
+
+        <section class="alhome-section3">
+
+          <div class="log3">
+
+            <div class="log-tran">
+              <div class="tran-head">
+                <div class="tran-txt">수익률 추이 <span class="up">+***.*%</span></div>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle borno" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    6개월
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="">3개월</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">6개월</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">9개월</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">12개월</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tran-img_blend"><img src="img/al-home/tran-chart.png" alt="tran-chart"></div>
+            </div>
+
+            <div class="log-res">
+
+              <div class="res-head">
+                <div class="res-headname">최근 매매성과</div>
+                <span>3월2일기준</span>
+              </div>
+              <div class="res-list">
+                <button class="list-con" type="button" data-bs-toggle="modal" data-bs-target="#rate-detail">
+                  <div class="list-con_name"><span class="text-truncate">미***</span><em></em> </div>
+                  <div class="list-con_per"><span class="res-up">+***.*% <em>수익</em></span></div>
+                </button>
+                <button class="list-con" type="button" data-bs-toggle="modal" data-bs-target="#rate-detail">
+                  <div class="list-con_name"><span class="text-truncate">로***</span><em></em></div>
+                  <div class="list-con_per"><span class="res-up">+***.*% <em>수익</em></span></div>
+                </button>
+                <button class="list-con" type="button" data-bs-toggle="modal" data-bs-target="#rate-detail">
+                  <div class="list-con_name"><span class="text-truncate">L***</span><em></em></div>
+                  <div class="list-con_per"><span class="res-down">-***.*% <em>손실</em></span></div>
+                </button>
+                <button class="list-con" type="button" data-bs-toggle="modal" data-bs-target="#rate-detail">
+                  <div class="list-con_name"><span class="text-truncate">스***</span><em></em></div>
+                  <div class="list-con_per"><span class="res-up">+***.*% <em>수익</em></span></div>
+                </button>
+                <button class="list-con" type="button" data-bs-toggle="modal" data-bs-target="#rate-detail">
+                  <div class="list-con_name"><span class="text-truncate">비***</span><em></em></div>
+                  <div class="list-con_per"><span class="res-up">+***.*% <em>수익</em></span></div>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="log-hisu">
+
+              <div class="hisu-head">
+                <div class="hisu-headname">실시간 핫이슈</div>
+                <span>02.03. 11:23기준</span>
+              </div>
+              <div class="hisu-list">
+                <div class="hisu-con">
+                  <div class="hisu-con_left">
+                    <div class="hisu-num hisu_first">1</div>
+                    <div class="hisu-name text-truncate">자동차</div>
+                  </div>
+                  <div class="hisu-con_right">
+                    <div class="hisu-per hisu-up">+5.62%</div>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#popup-modal" href=""
+                      class="hisu_right-btn"><img src="img/al-home/hisu-right.png" alt="hisu-right"></a>
+                  </div>
+                </div>
+                <div class="hisu-con">
+                  <div class="hisu-con_left">
+                    <div class="hisu-num">2</div>
+                    <div class="hisu-name text-truncate">전기 충전소</div>
+                  </div>
+                  <div class="hisu-con_right">
+                    <div class="hisu-per hisu-up">+5.62%</div>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#popup-modal" href=""
+                      class="hisu_right-btn"><img src="img/al-home/hisu-right.png" alt="hisu-right"></a>
+                  </div>
+                </div>
+                <div class="hisu-con">
+                  <div class="hisu-con_left">
+                    <div class="hisu-num">3</div>
+                    <div class="hisu-name text-truncate">수소</div>
+                  </div>
+                  <div class="hisu-con_right">
+                    <div class="hisu-per hisu-down">-5.62%</div>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#popup-modal" href=""
+                      class="hisu_right-btn"><img src="img/al-home/hisu-right.png" alt="hisu-right"></a>
+                  </div>
+                </div>
+                <div class="hisu-con">
+                  <div class="hisu-con_left">
+                    <div class="hisu-num">4</div>
+                    <div class="hisu-name text-truncate">탄소중립</div>
+                  </div>
+                  <div class="hisu-con_right">
+                    <div class="hisu-per hisu-up">+5.62%</div>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#popup-modal" href=""
+                      class="hisu_right-btn"><img src="img/al-home/hisu-right.png" alt="hisu-right"></a>
+                  </div>
+                </div>
+                <div class="hisu-con">
+                  <div class="hisu-con_left">
+                    <div class="hisu-num">5</div>
+                    <div class="hisu-name text-truncate">2차전지</div>
+                  </div>
+                  <div class="hisu-con_right">
+                    <div class="hisu-per hisu-up">+5.62%</div>
+                    <a type="button" data-bs-toggle="modal" data-bs-target="#popup-modal" href=""
+                      class="hisu_right-btn"><img src="img/al-home/hisu-right.png" alt="hisu-right"></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+
+        </section> <!--class="alhome-section3"-->
+
+
+        <section class="alhome-section4">
+
+          <div class="log_inv">
+
+            <div class="inv-head">알아두면 유익한 투자정보</div>
+            <div class="log_inv-info">
+              <button class="info-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                <div class="info-icn log-icn-bg"><img src="img/al-home/log-info1.png" alt="info1"></div>
+                <div class="info-txt">
+                  <div class="info-txtt text-truncate gray">
+                    <span>NEW</span>
+                    장마감 일제히 이틀째 상승
+                  </div>
+                  <div class="info-txtb">
+                    01.03 17:30 씽크풀
+                  </div>
+                </div>
+              </button>
+              <button class="info-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                <div class="info-icn log-icn-bg"><img src="img/al-home/log-info2.png" alt="info2"></div>
+                <div class="info-txt">
+                  <div class="info-txtt text-truncate gray">
+                    <span>NEW</span>
+                    장마감 일제히 이틀째 상승
+                  </div>
+                  <div class="info-txtb">
+                    01.03 17:30 씽크풀
+                  </div>
+                </div>
+              </button>
+              <button class="info-list" type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">
+                <div class="info-icn log-icn-bg"><img src="img/al-home/log-info3.png" alt="info3"></div>
+                <div class="info-txt">
+                  <div class="info-txtt text-truncate gray">
+                    장마감 일제히 이틀째 상승
+                  </div>
+                  <div class="info-txtb">
+                    01.03 17:30 씽크풀
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="info-more"><button type="button" data-bs-toggle="modal" data-bs-target="#popup-modal">투자정보 더
+                보기</button></div>
+
+          </div>
+
+        </section> <!--class="alhome-section4"-->
+
+
+
+
+
+
+
+        <section class="alhome-section5">
+
+
+        </section> <!--class="alhome-section5"-->
+
+
+
+
+      </div> <!--id="content"-->
+
+      <footer id="alHome_footer">
+
+      </footer> <!--id="alHome_footer"-->
+
+    </div> <!--id="container"-->
+
+  </div> <!--id="wrap"-->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
