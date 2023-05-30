@@ -323,6 +323,66 @@ button.more{
 	background: #9C8CCA;
 }
 
+.intro01_bg{
+	background: #0785FE !important;
+}
+
+.intro02_bg{
+	background: #6A61E0 !important;
+}
+
+.intro03_bg{
+	background: #47A767 !important;
+}
+
+.intro01_tag_bg{
+	background: #1767B5 !important;
+}
+
+.intro02_tag_bg{
+	background: #2D2597 !important;
+}
+
+.intro03_tag_bg{
+	background: #167536 !important;
+}
+
+.stand_bg01{
+	background: #8C8649 !important;
+}
+
+.stand_bg02{
+	background: #769846 !important;
+}
+
+.stand_bg03{
+	background: #57AC7E !important; 
+}
+
+.intro01_txt{
+	color: #A6D3FF !important;
+}
+
+.intro02_txt{
+	color: #D8D6FF !important;
+}
+
+.intro03_txt{
+	color: #C3FBD6 !important;
+}
+
+.log_main_bg{
+	background: #47A767 !important;
+}
+
+.log_ser_bg{
+	background: #104E24 !important;
+}
+
+.bg_green{
+	background: #104E24 !important;
+}
+
 .first{
   background: #E81A1A !important;
 }
@@ -357,6 +417,10 @@ button.more{
 
 .mt-17{
 	margin-top: 17px !important;
+}
+
+.mb-28{
+	margin-bottom: 28px !important;
 }
 
 .center{

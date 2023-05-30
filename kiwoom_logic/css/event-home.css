@@ -352,6 +352,7 @@ table.ai-table{
 .table-left{
   display: block;
   width: 128px;
+  float: left;
 }
 
 .table-custom-ana th, .table-custom-ana2 th{
@@ -359,8 +360,13 @@ table.ai-table{
   background: #F8F8F8; 
 }
 
-.table-custom-ana th, .table-custom-ana td, .table-custom-ana2 th, .table-custom-ana2 td{
+.table-custom-ana td{
+  background: #F8F8F8;
+}
+
+.table-custom-ana th, .table-custom-ana2 th{
   height: 40px;
+  min-height: 40px !important;
   vertical-align: middle;
   text-align: center;
   font-size: 13px;
@@ -369,6 +375,25 @@ table.ai-table{
   color: #212121;
   border-right: 1px solid #DCDCDC;
   border-bottom: 1px solid #DCDCDC;
+  padding: 8px 0 !important;
+}
+
+.table-custom-ana td, .table-custom-ana2 td{
+  height: 40px;
+  min-height: 40px !important;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.28px;
+  color: #212121;
+  border-right: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  padding: 7px !important;
+}
+
+.table>:not(caption)>*>* {
+  padding: 0;
 }
 
 .table-custom-ana tbody tr th:first-child{
@@ -376,8 +401,10 @@ table.ai-table{
 }
 
 .table-right{
+  display: block;
   width: calc(100% - 128px);
   overflow-x: auto;
+  float: left;
 }
 
 .ana_rdo{
