@@ -11,7 +11,7 @@
   font-size: 9px;
   line-height: 11.27px;
   color: rgb(255, 255, 255, 0.5);
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .main-header{
@@ -848,3 +848,224 @@ table{
 }
 
 /* ser-table */
+
+
+
+/* logic ser-intro */
+
+.log_body_txt{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25.04px;
+  color: #0F4220;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.log_ser_con{
+  padding: 20px;
+  background: #EFF4FF;
+}
+
+.ser_con_box{
+  padding: 50px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ser_box_txt{
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27.54px;
+  color: #212121;
+}
+
+.ser_box_stxt{
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #212121;
+}
+
+.ser_box_txt span{
+  color: #47A764;
+}
+
+.ser_box_img{
+  margin-top: 40px;
+  position: relative;
+}
+
+.ser-img03{
+  position: absolute;
+  top: -30px;
+  right: -6px;
+}
+
+.ser-img04{
+  position: absolute;
+  bottom: -40px;
+  left: -9px;
+}
+
+.ser-recom{
+  background: #575A73;
+  padding: 50px 35px;
+} 
+
+.recom-head{
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.recom-head span{
+  color: #FFF6A7;
+}
+
+.recom-list-box{
+  width: 100%;
+  margin-top: 40px;
+}
+
+.recom-list{
+  display: flex; 
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recom-list:last-child{
+  margin-bottom: 0;
+}
+
+.recom-icn img{
+  width: 50px;
+}
+
+.recom-txt{
+  margin-left: 25px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #D3D6F3;
+}
+
+.ser-exp{
+  padding: 50px 20px 30px;
+}
+
+.exp-head{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #212121;
+  text-align: center;
+}
+
+.exp-head span{
+  color: #47A767;
+}
+
+.exp-img{
+  margin-top: 30px;
+  position: relative;
+}
+
+.exp-main-img{
+  overflow: hidden;
+  border-radius: 20px;
+  width: 100%;
+  height: 216px;
+}
+
+.buy1{
+  width: 32px;
+  position: absolute;
+  left: 21px;
+  bottom: 25px;
+}
+
+.sell1{
+  width: 32px;
+  position: absolute;
+  left: 37px;
+  top: 85px;
+}
+
+.buy2{
+  width: 32px;
+  position: absolute;
+  left: 75px;
+  bottom: 31px;
+}
+
+.sell2{
+  width: 32px;
+  position: absolute;
+  left: 104px;
+  top: 62px;
+}
+
+.buy3{
+  width: 32px;
+  position: absolute;
+  right: 131px;
+  bottom: 56px;
+}
+
+.sell3{
+  width: 32px;
+  position: absolute;
+  top: 30px;
+  right: 101px;
+}
+
+.buy4{
+  width: 32px;
+  position: absolute;
+  top: 82px;
+  right: 39px;
+}
+
+
+.money1{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 5;
+}
+
+.money2{
+  position: absolute;
+  right: 13px;
+  bottom: 16px;
+  z-index: 4;
+}
+
+.money3{
+  position: absolute;
+  right: 16px;
+  bottom: 22px;
+  z-index: 3;
+}
+
+.money4{
+  position: absolute;
+  right: 19px;
+  bottom: 28px;
+  z-index: 2;
+}
+
+.money5{
+  position: absolute;
+  right: 22px;
+  bottom: 35px;
+  z-index: 1;
+}

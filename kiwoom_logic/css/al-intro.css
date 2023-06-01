@@ -293,3 +293,142 @@ button.back-btn img{
 
 
 /* section3 */
+
+
+/* logic al-intro */
+.content-header.log_al_intro-header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+}
+
+button.back-btn{
+  border: none;
+  background: none;
+  margin-right: 10px;
+  line-height: 15px;
+}
+
+button.back-btn img{
+  width: 24px;
+  height: 24px;
+}
+
+.header-txt{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.intro-main{
+  padding: 2px 16px 40px;
+  background: #fff;
+}
+
+.logmain-box{
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.logmain_tag{
+  width: 100%;
+  text-align: left;
+}
+
+.logmain_tag span{
+  display: inline-block;
+  padding: 3px 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.02px;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.logmain_con{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logmain_txt{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.logmain_txt strong{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #F9FF54;
+}
+
+.logmain_img img{
+  width: 90px;
+}
+
+.logmain_foot{
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #A6D3FF;
+}
+
+
+
+.log_con01{
+  padding: 0px 30px;
+}
+
+.log_con01 span{
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 100px;
+  padding: 6px 15px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.log_con02{
+  padding: 10px 16px 20px;
+}
+
+.log-stand{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+.stand_tag{
+  border-radius: 100px;
+  padding: 6px 15px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.stand_txt{
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+
+.stand_img{
+  text-align: center;
+}

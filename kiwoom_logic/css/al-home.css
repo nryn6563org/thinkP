@@ -1375,6 +1375,10 @@ ul.dropdown-menu li a.dropdown-item{
   color: rgba(102, 102, 102, 0.8);
 }
 
+.buy-img{
+  border-radius: 12px;
+}
+
 .buy-img img{
   width: 100px;
 }
