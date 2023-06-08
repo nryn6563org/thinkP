@@ -323,6 +323,30 @@ button.more{
 	background: #9C8CCA;
 }
 
+.al-intro_bg1{
+	background: #F0F0F5 !important;
+}
+
+.al-intro_bg2{
+	background: #F0F5F5 !important;
+}
+
+.al-intro_bg3{
+	background: #EFF6F1 !important;
+}
+
+.al-intro_span1{
+	background: #5B66A7 !important;
+}
+
+.al-intro_span2{
+	background: #38958F !important; 
+}
+
+.al-intro_span3{
+	background: #609D6D !important;
+}
+
 .intro01_bg{
 	background: #0785FE !important;
 }

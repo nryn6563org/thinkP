@@ -1169,6 +1169,7 @@ ul.dropdown-menu li a.dropdown-item{
 }
 
 .con-stxt{
+  height: 34px;
   font-weight: 400;
   font-size: 13px;
   line-height: 17px;
@@ -1181,7 +1182,6 @@ ul.dropdown-menu li a.dropdown-item{
 }
 
 .con-per{
-  margin-top: 18px;
   width: 100%;
   text-align: right;
   font-weight: 500;
@@ -1317,6 +1317,10 @@ ul.dropdown-menu li a.dropdown-item{
 
 .no-img img{
   width: 50px;
+}
+
+.nopos{
+  width: 100%;
 }
 
 .spinner-grow{
