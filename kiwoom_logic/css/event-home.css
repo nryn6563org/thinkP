@@ -668,13 +668,15 @@ table.ai-table{
 }
 
 .dou-per{
+  width: 56px;
+  text-align: center;
   position: absolute;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
   color: #000;
   top: 27px;
-  left: 23px;
+  left: 10px;
 }
 
 .dou-txt{

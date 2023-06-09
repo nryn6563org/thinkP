@@ -184,7 +184,7 @@ button.back-btn img{
 .gro-table table thead tr th{
   text-align: center;
   background: #F8F8F8;
-  border-right: 1px solid #C1C1C1;
+  border-right: 1px solid #DCDCDC;
   color: #212121;
 }
 
@@ -193,11 +193,11 @@ button.back-btn img{
 }
 
 .gro-table table tbody tr{
-  border-bottom: 1px solid #F0F0F0; 
+  border-bottom: 1px solid #DCDCDC; 
 }
 
 .gro-table table tbody tr td{
-  border-right: 1px solid #C1C1C1;
+  border-right: 1px solid #DCDCDC;
 }
 
 .gro-table table tbody tr td:first-child{
@@ -220,7 +220,8 @@ button.back-btn img{
   height: 14px;
   line-height: 5;
   vertical-align: middle;
-  margin-bottom: 2px;
+  margin-bottom: 2.3px;
+  margin-left: 5px;
 }
 
 
