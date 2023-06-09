@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=360px">
+  <title>키움 퀀트</title>
+  <!-- font -->
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+
+  <div id="wrap">
+    <div id="container">
+
+
+      <div id="content">
+
+        <div class="content-header al_intro-header nodo-icn1">
+
+          <button class="back-btn"><img src="img/al-intro/back-btn.png" alt="back-btn"></button>
+          <div class="header-txt white">가치추구 알고리즘 소개</div>
+
+        </div>
+
+        <div class="pt-50"></div>
+
+        <section class="alintro-section1">
+
+          <div class="gro-main nodo-icn1">
+
+            <div class="main-txt">
+              <div class="txt1">퀀트 2.0 <br> 가치추구 알고리즘은</div>
+              <div class="txt2">가치가 좋은 종목으로 <br> 큰 수익을 내기 위해</div>
+              <div class="txt3">벨류에이션이 높은 종목 중, <br> 최근 실적이 좋은 종목을 <br> 학습하여 추천합니다.</div>
+            </div>
+
+            <div class="main-img">
+              <img src="img/al-intro/main-chart3.png" alt="main-chart3">
+              <img class="img-cir" src="img/al-intro/main-img.png" alt="mian-img">
+            </div>
+
+          </div>
+
+        </section> <!--class="alintro-section1"-->
+
+        <section class="alintro-section2">
+
+          <div class="gro-content">
+
+            <div class="swiper gro-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide gro-slide al-intro_bg3">
+                  <div class="slide-top">
+                    <span class="al-intro_span3">최근 1년 매매성과</span>
+                    <div class="slide-bot">
+                      <div class="slide-txt">
+                        최고의 수익 <strong class="up">23.3%</strong> <br>
+                        투자수익금 <strong class="up">2,262만원</strong><em> (1000만원투자시)</em><br>
+                        최근 1년 수익률 <strong class="up">+231.3%</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-img">
+                    <img src="img/al-intro/chart1.png" alt="chart1">
+                  </div>
+                </div>
+                <div class="swiper-slide gro-slide al-intro_bg3">
+                  <div class="slide-top">
+                    <span class="al-intro_span3">종목선정 기준</span>
+                    <div class="slide-bot">
+                      <div class="slide-txt">
+                        밸류에이션이 높은 종목 중 최근 <br>
+                        실적이 좋은 종목 선정
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-img">
+                    <img src="img/al-intro/chart3-2.png" alt="chart3-2">
+                  </div>
+                </div>
+                <div class="swiper-slide gro-slide al-intro_bg3">
+                  <div class="slide-top">
+                    <span class="al-intro_span3">AI분석요소</span>
+                    <div class="slide-bot">
+                      <div class="slide-txt">
+                        PER/PBR 매력도, <br>
+                        최근 실적 기대값, 실적 스펙트럼 상대값 <br>
+                        AI밸류에이션 가중치 등 학습
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-img">
+                    <img src="img/al-intro/chart3-3.png" alt="chart3-3">
+                  </div>
+                </div>
+                <div class="swiper-slide gro-slide al-intro_bg3">
+                  <div class="slide-top">
+                    <span class="al-intro_span3">매매스타일</span>
+                    <div class="slide-bot">
+                      <div class="slide-txt">
+                        1주일 3~5종목 매매 <br>
+                        매수 후 보유기간 10일 전후 <br>
+                        보유 종목수 10~13 개
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-img">
+                    <img src="img/al-intro/chart4.png" alt="chart4">
+                  </div>
+                </div>
+                <div class="swiper-slide gro-slide al-intro_bg3">
+                  <div class="slide-top">
+                    <span class="al-intro_span3">종목매도 기준</span>
+                    <div class="slide-bot">
+                      <div class="slide-txt">
+                        목표가/손절가 도달 시, <br>
+                        보유기간 종료 시 <br>
+                        종목 교체
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-img">
+                    <img src="img/al-intro/chart5.png" alt="chart5">
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <script>
+              var swiper = new Swiper('.gro-swiper', {
+                spaceBetween: 20,
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+                loop: true,
+              });
+            </script>
+
+          </div>
+        </section> <!--class="alintro-section2"-->
+
+
+
+
+        <section class="alintro-section3">
+
+
+          <div class="gro-table">
+
+            <table>
+
+
+              <colgroup>
+                <col width="35%">
+                <col width="calc((100%-35%)/3)">
+                <col width="calc((100%-35%)/3)">
+                <col width="calc((100%-35%)/3)">
+              </colgroup>
+
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>성장추구</th>
+                  <th>가치추구</th>
+                  <th>시장추종</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="left">최고수익률</td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                </tr>
+                <tr>
+                  <td class="left">누적수익률</td>
+                  <td class="right">321.10%</td>
+                  <td class="right">321.10%</td>
+                  <td class="right">321.10%</td>
+                </tr>
+                <tr class="tb-b">
+                  <td class="left">평균수익률</td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                </tr>
+                <tr>
+                  <td class="left">
+                    최근1년승률
+                    <span>
+                      <button class="gro-info" data-bs-toggle="modal" data-bs-target="#yper" type="button">
+                        <img src="img/al-intro/information.png" alt="information">
+                      </button>
+                    </span>
+                  </td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                </tr>
+                <tr>
+                  <td class="left">상승기승률</td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                </tr>
+                <tr>
+                  <td class="left">하락기승률</td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                  <td class="right">23.3%</td>
+                </tr>
+              </tbody>
+
+
+            </table>
+
+
+          </div>
+
+          <div class="modal fade" id="yper" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="yper-head">최근 1년 승률 이란?</div>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="yper-body">
+                    최근 1년동안 알고리즘의 추천 적중률을 측정하는 척도로, 추천종목 중 수익실현한 종목 비율을 확인할 수 있습니다. <br><br>
+                    승률 = 플러스수익률 / 1년간 매매횟수)
+                  </div>
+                </div>
+                <button class="moclose btn btn-bg" type="button" data-bs-dismiss="modal">닫기</button>
+              </div>
+            </div>
+          </div>
+
+
+        </section> <!--class="alintro-section3"-->
+
+
+
+
+      </div> <!--id="content"-->
+
+      <footer id="">
+
+      </footer> <!--id="alHome_footer"-->
+    </div> <!--id="container"-->
+
+  </div> <!--id="wrap"-->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
