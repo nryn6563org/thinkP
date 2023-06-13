@@ -112,7 +112,7 @@
 
             <div class="sco-ai-header">
               <div class="ai-headertxt">AI평가점수</div>
-              <button class="ai-icn"><img src="img/event-home/ai-icn.png" alt="ai-icn"></button>
+              <button class="ai-icn" data-bs-toggle="modal" data-bs-target="#aiSco" type="button"><img src="img/event-home/ai-icn.png" alt="ai-icn"></button>
             </div>
             <div class="ai-box">
               <div class="ai-chart-img"><img src="img/event-home/ai-chart.png" alt="ai-chart"></div>
@@ -159,6 +159,42 @@
               </table>
             </div>
 
+          </div>
+
+          <div class="modal fade" id="aiSco" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <div class="aisco-head">AI 평가점수</div>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="aisco-body">
+                    <div class="aisco-body_txt">
+                      5가지 항목 점수를 종합적으로 반영하여 AI평가점수에 반영합니다. 
+                    </div>
+                    <ul class="aisco-body_list">
+                      <li>
+                        <strong>AI상승확률</strong> : 재무 정보, 수급 정보, 주가 정보 등을 토대로 AI가 학습해서 15일 이내 상승할 확률을 점수로 환산한 값입니다.
+                      </li>
+                      <li>
+                        <strong>주가매력도</strong> : 실적 대비 현재 주가 수준을 평가하여 점수로 환산한 값입니다. 저평가 된 종목일수록 높은 점수입니다.
+                      </li>
+                      <li>
+                        <strong>성장성</strong> : 매출액, 영업이익, 자기자본등의 증가율을 기준으로 산출한 점수입니다. 
+                      </li>
+                      <li>
+                        <strong>안정성</strong> : 부채비율, 순부채비율, 당좌비율, 이자보상비율, 자본유보율 등을 기준으로 기업의 재무 건전성을 평가한 점수입니다. 
+                      </li>
+                      <li>
+                        <strong>수익성</strong> : 영업이익률, 순이익률, 자기자본이익률(ROE), 총자산이익률(ROA) 등을 도대로 기업의 수익성을 평가한 점수입니다.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="moclose btn btn-bg" type="button" data-bs-dismiss="modal">확인</button>
+              </div>
+            </div>
           </div>
 
         </section> <!--class="evthome_section2"-->
