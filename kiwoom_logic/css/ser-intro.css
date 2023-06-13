@@ -1679,10 +1679,6 @@ p.guide {
   margin-bottom: 0;
 }
 
-.table>:not(:last-child)>:last-child>* {
-  border-bottom-color: currentColor;
-}
-
 .table-c-row thead tr th:first-child, .table-c-row thead tr th:nth-child(2), .table-c-row thead tr th:nth-child(3) {
   font-weight: 700;
 }

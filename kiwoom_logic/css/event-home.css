@@ -349,6 +349,10 @@ table.ai-table{
   overflow: hidden;
 }
 
+table.table-custom-ana, table.table-custom-ana2{
+  table-layout: fixed;
+}
+
 .table-left{
   display: block;
   width: 128px;
@@ -396,7 +400,7 @@ table.ai-table{
   padding: 0;
 }
 
-.table-custom-ana tbody tr th:first-child{
+.table-custom-ana tbody tr td:first-child{
   color: #666;
 }
 
