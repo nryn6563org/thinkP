@@ -706,3 +706,57 @@ table.table-custom-ana, table.table-custom-ana2{
 }
 
 /* logic event-home */
+
+/* modal */
+
+.aisco-head{
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25.04px;
+  text-align: center;
+  color: #000;
+}
+
+.aisco-body_txt{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #141414;
+  margin-bottom: 10px;
+}
+
+ul.aisco-body_list li{
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #141414;
+}
+
+ul.aisco-body_list li strong{
+  font-weight: 700;
+}
+
+ul.aisco-body_list li:last-child{
+  margin-bottom: 0;
+}
+
+ul.aisco-body_list li::before{
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 4px;
+  height: 4px;
+  content: "";
+  background: #141414;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* modal */
