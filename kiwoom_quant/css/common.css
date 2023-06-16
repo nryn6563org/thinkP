@@ -108,6 +108,10 @@ button.more{
 	z-index: 1000;
 }
 
+.content-header::-webkit-scrollbar{
+	display: none;
+}
+
 .text-truncate{
   overflow: hidden;
   text-overflow: ellipsis;
@@ -409,6 +413,14 @@ button.more{
 
 .first{
   background: #E81A1A !important;
+}
+
+.quant_banner{
+  background: #6A61E0 !important;
+}
+
+.logic_banner{
+	background: #47A767 !important;
 }
 
 .pt-20{

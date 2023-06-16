@@ -415,6 +415,14 @@ button.more{
   background: #E81A1A !important;
 }
 
+.quant_banner{
+  background: #6A61E0 !important;
+}
+
+.logic_banner{
+	background: #47A767 !important;
+}
+
 .pt-20{
 	padding-top: 20px !important;
 }

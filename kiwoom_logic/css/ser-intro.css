@@ -669,7 +669,7 @@ button.splide__arrow{
 /* section7 */
 
 .ser-guide{
-  padding: 40px 20px;
+  padding: 40px 20px 75px;
 }
 
 .accordion{
@@ -710,7 +710,6 @@ button.splide__arrow{
 .accordion-body{
   padding: 0;
   padding-bottom: 13px;
-  padding-top: 5px;
   font-weight: 400;
   font-size: 13px;
   line-height: 17px;
@@ -779,8 +778,8 @@ table{
 .table-c-row{
   width: 100%;
   border-top: 2px solid #3E3E3E;
-  margin-bottom: 0;
-  margin-top: 10px;
+  margin-bottom: 16px;
+  margin-top: 0px;
 }
 
 .table-c-row.mobi thead tr th:first-child, .table-c-row.mobi thead tr th:nth-child(2) {
@@ -1217,7 +1216,7 @@ table{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 175px 0 50px;
+  padding: 0px 150px 0 50px;
 }
 
 .ana-slide.pc{
@@ -1673,12 +1672,6 @@ p.guide {
   padding-right: 5px;
 }
 
-.table-c-row {
-  width: 100%;
-  border-top: 2px solid #3e3e3e;
-  margin-bottom: 0;
-}
-
 .table-c-row thead tr th:first-child, .table-c-row thead tr th:nth-child(2), .table-c-row thead tr th:nth-child(3) {
   font-weight: 700;
 }
@@ -1743,3 +1736,59 @@ p.guide_p {
 
 
 /* tab-chargePer */
+
+
+
+/* banner */
+
+.banner{
+  width: 100%;
+  margin: 0 auto;
+  height: 45px;
+  text-align: center;
+  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999999;
+}
+
+.banner.pc{
+  max-width: 1128px;
+}
+
+button.ban-btn{
+  width: 100%;
+  height: 45px;
+  border: none;
+}
+
+.ban-txt{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  color: #fff;
+}
+
+button.close-btn{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+}
+
+button.close-btn img{
+  width: 24px;
+}
+
+.nobanner{
+  transform: translateY(150px);
+  transition: 2s;
+}
+
+
+/* banner */
