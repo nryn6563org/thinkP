@@ -759,4 +759,11 @@ ul.aisco-body_list li::before{
   text-align: center;
 }
 
+.aiPre-body_txt{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #212121;
+}
+
 /* modal */
