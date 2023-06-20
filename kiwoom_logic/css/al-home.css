@@ -1381,6 +1381,8 @@ ul.dropdown-menu li a.dropdown-item{
 }
 
 .buy-img{
+  width: 100%;
+  overflow: hidden;
   border-radius: 12px;
 }
 
@@ -1612,18 +1614,22 @@ ul.dropdown-menu li a.dropdown-item{
 }
 
 .hisu-list{
-  padding-top: 18px;
+  margin-top: 6px;
 }
 
 .hisu-con{
+  width: 100%;
+  border: none;
+  text-align: left;
+  background: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  padding: 12px 0;
 }
 
 .hisu-con:last-child{
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .hisu-con_left{
