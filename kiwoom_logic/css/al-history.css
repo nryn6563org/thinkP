@@ -168,3 +168,22 @@ button.back-btn{
 
 
 /* logic al-history */
+
+
+/* nohis */
+
+.nohis-box{
+  height: 100vh;
+}
+
+.nohis{
+  width: 100%;
+  text-align: center;
+  padding: 160px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #212121;
+}
+
+/* nohis */
