@@ -73,12 +73,28 @@ button.back-btn{
 }
 
 .his-list .his-name{
-  width: 100%;
+  display: flex;
+  justify-content: start;  
+  align-items: center;
+}
+
+.his-name strong{
   display: block;
+  width: auto;
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   color: #212121;
+}
+
+.his-name em{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #999;
+  display: block;
+  margin-left: 6px;
+  margin-right: 3px;
 }
 
 .his-list .his-pri{

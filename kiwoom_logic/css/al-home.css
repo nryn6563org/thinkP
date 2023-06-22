@@ -1364,9 +1364,23 @@ ul.dropdown-menu li a.dropdown-item{
   font-size: 12px;
 }
 
-.buy-txt strong{
+.buy-name{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.buy-name .arrow{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #999;
+  margin-left: 6px;
+}
+
+.buy-name strong{
   display: inline-block;
-  width: 150px;
+  width: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
