@@ -1346,6 +1346,7 @@ ul.dropdown-menu li a.dropdown-item{
 }
 
 .buy-txt{
+  width: 150px;
   margin-left: 10px;
   margin-right: 13px;
 }
@@ -1381,7 +1382,7 @@ ul.dropdown-menu li a.dropdown-item{
 }
 
 .buy-img{
-  width: 100%;
+  width: 100px;
   overflow: hidden;
   border-radius: 12px;
 }
@@ -1563,6 +1564,7 @@ ul.dropdown-menu li a.dropdown-item{
   font-size: 11px;
   line-height: 17.03px;
   color: rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
 }
 
 .list-con_per{
