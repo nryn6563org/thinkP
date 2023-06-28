@@ -136,6 +136,10 @@ th{
   border-spacing: 0;
 }
 
+.q_list_04 th, .q_list_04 td{
+  white-space: nowrap;
+}
+
 .q_list_04 caption {
   visibility: hidden;
   overflow: hidden;
