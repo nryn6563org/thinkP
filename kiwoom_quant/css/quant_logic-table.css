@@ -430,6 +430,14 @@ th{
   border: none;
 }
 
+.tbl-bbs04{
+  table-layout: fixed;
+}
+
+.tbl-bbs05{
+  table-layout: fixed;
+}
+
 .tbl-bbs04 thead th {
   height: 27px;
   padding: 7px 0 6px 0;

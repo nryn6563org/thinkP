@@ -1105,7 +1105,7 @@ ul.dropdown-menu li a.dropdown-item{
   text-align: left;
   width: 48%;
   height: 115px;
-  padding: 15px 10px 15px 15px;
+  padding: 15px;
   background: #FFFFFF;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -1346,6 +1346,7 @@ ul.dropdown-menu li a.dropdown-item{
 }
 
 .buy-txt{
+  width: 150px;
   margin-left: 10px;
   margin-right: 13px;
 }
@@ -1363,9 +1364,23 @@ ul.dropdown-menu li a.dropdown-item{
   font-size: 12px;
 }
 
-.buy-txt strong{
+.buy-name{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.buy-name .arrow{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #999;
+  margin-left: 6px;
+}
+
+.buy-name strong{
   display: inline-block;
-  width: 150px;
+  width: auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1381,6 +1396,8 @@ ul.dropdown-menu li a.dropdown-item{
 }
 
 .buy-img{
+  width: 100px;
+  overflow: hidden;
   border-radius: 12px;
 }
 
@@ -1561,6 +1578,7 @@ ul.dropdown-menu li a.dropdown-item{
   font-size: 11px;
   line-height: 17.03px;
   color: rgba(255, 255, 255, 0.7);
+  margin-right: 10px;
 }
 
 .list-con_per{
@@ -1612,18 +1630,22 @@ ul.dropdown-menu li a.dropdown-item{
 }
 
 .hisu-list{
-  padding-top: 18px;
+  margin-top: 6px;
 }
 
 .hisu-con{
+  width: 100%;
+  border: none;
+  text-align: left;
+  background: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  padding: 12px 0;
 }
 
 .hisu-con:last-child{
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .hisu-con_left{

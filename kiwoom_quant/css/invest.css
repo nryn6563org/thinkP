@@ -130,13 +130,17 @@ button.inv-more span {
 
 .isu-box{
   margin-top: 15px;
-  padding: 20px;
+  padding: 8px 20px;
   background: #FFFFFF;
   border: 1px solid #EAECEF;
   border-radius: 12px;
 }
 
 .isu-list{
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
   padding: 12px 0px;
   border-bottom: 1px solid #F5F7F6;
   display: flex;
@@ -144,12 +148,7 @@ button.inv-more span {
   align-items: center;
 }
 
-.isu-list:first-child{
-  padding-top: 0;
-}
-
 .isu-list:last-child{
-  padding-bottom: 0;
   border-bottom: none;
 }
 

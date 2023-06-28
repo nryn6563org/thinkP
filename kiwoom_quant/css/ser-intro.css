@@ -1163,7 +1163,7 @@ table{
   height: 50px;
   line-height: 50px;
   font-weight: 500;
-  font-size: 22px; 
+  font-size: 22px;
   color: #282828;
   background: #CCCCCC;
   border-width: 1px 0px 1px 1px;
@@ -1592,6 +1592,7 @@ table{
   font-size: 26px;
   color: #3e3e3e;
   font-weight: 500;
+  padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 30px;
   background: url(../img/ser-intro/bu_tit.gif) no-repeat 0 100%;

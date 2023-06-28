@@ -514,6 +514,16 @@ table.table-custom-ana, table.table-custom-ana2{
   margin: 20px 0;
 }
 
+.sig-con .nosig-con{
+  width: 100%;
+  text-align: center;
+  padding: 100px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #212121;
+}
+
 .sig-list{
   padding-bottom: 18px;
   position: relative;
@@ -706,7 +716,6 @@ table.table-custom-ana, table.table-custom-ana2{
 }
 
 /* logic event-home */
-
 
 /* modal */
 
