@@ -136,10 +136,6 @@ th{
   border-spacing: 0;
 }
 
-.q_list_04 th, .q_list_04 td{
-  white-space: nowrap;
-}
-
 .q_list_04 caption {
   visibility: hidden;
   overflow: hidden;
@@ -165,12 +161,12 @@ th{
 
 .q_list_04 .item {
   text-align: left;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .q_list_04 .item_02 {
   text-align: left;
-  font-size: 14px;
+  font-size: 13px;
   background: #f6f6f6;
 }
 
@@ -191,7 +187,6 @@ th{
 }
 
 .item {
-  font-size: 1.4em;
   margin: 18px 0 10px;
   padding-left: 10px;
   height: 20px;
@@ -205,7 +200,6 @@ th{
   border-top: 1px solid #cacbd5;
   border-right: 1px solid #cacbd5;
   border-spacing: 0;
-  font-size: 0.8em;
 }
 
 .q_list_05 caption {
