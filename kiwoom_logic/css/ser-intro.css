@@ -446,10 +446,15 @@ img.ana-img2, img.ana-img3, img.ana-img4{
 
 .care-mid strong{
   font-weight: 500;
+  display: inline-block;
+}
+
+.care-mid span{
+  line-height: 0;
 }
 
 .care-mid ul li{
-  padding-left: 20px;
+  padding-left: 15px;
   position: relative;
 }
 
@@ -463,6 +468,10 @@ img.ana-img2, img.ana-img3, img.ana-img4{
   font-weight: 700;
   line-height: 25px;
   text-align: center;
+}
+
+.nobefore::before{
+  content: "" !important;
 }
 
 

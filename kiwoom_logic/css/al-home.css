@@ -57,7 +57,6 @@
 
 .sec-main{
   width: 100%;
-  background: #8C96CA;
   padding: 25px 16px 40px;
 }
 
@@ -84,7 +83,6 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 17px;
-  color: #333C6A;
   position: relative;
 }
 
@@ -106,7 +104,7 @@
 }
 
 .chart1 img{
-  width: 90px;
+  width: 80px;
 }
 
 .main-bot{
