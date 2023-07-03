@@ -35,13 +35,18 @@
 }
 
 .content-header button.invest-info{
+  width: 70px;
+  height: 30px;
+  padding: 0;
   background: #fff;
   border: 1px solid #666;
   border-radius: 100px;
-  padding: 7.5px 12px;
   color: #666;
   font-size: 13px;
   font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* content-header */
