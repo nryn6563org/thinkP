@@ -90,7 +90,7 @@
   font-size: 10px;
   line-height: 13px;
   text-align: center;
-  padding: 20px 16px;
+  padding: 20px 15px;
   color: rgb(255, 255, 255, 0.6);
 }
 
@@ -104,7 +104,7 @@
 /* section2 */
 
 .ser-alarm{
-  padding: 60px 20px;
+  padding: 60px 0px;
   text-align: center;
 }
 
@@ -272,6 +272,10 @@ img.ana-img1{
   margin-right: 15px;
 }
 
+img.log_ana-img1{
+  width: 152px;
+}
+
 img.ana-img1-1{
   width: 92px;
   margin-bottom: 8px;
@@ -410,6 +414,10 @@ img.ana-img2, img.ana-img3, img.ana-img4{
   padding: 0px 20px 20px;
 }
 
+.log_care-swiper{
+  padding: 0px 20px 20px;
+}
+
 .care-slide{
   width: 100%;
   height: 290px;
@@ -502,6 +510,38 @@ img.ana-img2, img.ana-img3, img.ana-img4{
 }
 
 .care-swiper .swiper-pagination-bullet-active{
+  font-weight: 500;
+  color: #212121;
+  border-bottom: 2px solid #212121;
+}
+
+.log_care-swiper .swiper-pagination{
+  position: relative;
+  bottom: 0;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.log_care-swiper .swiper-pagination-bullet{
+  width: auto;
+  background: transparent;
+  padding: 0 0 22px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #999;
+  border-radius: 0%;
+  margin: 0 40px 0 0 !important;
+  opacity: 1;
+  border: none;
+}
+
+.log_care-swiper .swiper-pagination-bullet:last-child{
+  margin: 0 !important;
+}
+
+.log_care-swiper .swiper-pagination-bullet-active{
   font-weight: 500;
   color: #212121;
   border-bottom: 2px solid #212121;
@@ -857,221 +897,209 @@ table{
 
 /* logic ser-intro */
 
+.log_header_txt{
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.log_header_txt span{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31.3px;
+  text-align: center;
+  padding: 0px 13px;
+  border: 2px solid #D558FF;
+  border-radius: 100px;
+  color: #FCFF54;
+}
+
+.log_header_txt strong{
+  font-weight: 700;
+  font-size: 35px;
+  color: #A8B0FF;
+}
+
 .log_body_txt{
   font-weight: 500;
-  font-size: 20px;
-  line-height: 25.04px;
-  color: #0F4220;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.log_ser_con{
-  padding: 20px;
+.log_body_img{
+  width: 100%;
+  text-align: center;
+}
+
+.log_body_img img{
+  width: 103px;
+}
+
+.log_ser_ser{
+  padding: 60px 30px 77px;
+}
+
+.ser-head{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+.ser-body{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #DD41E0;
+  margin-bottom: 15px;
+}
+
+.ser-body strong{
+  font-size: 30px;
+  line-height: 37.56px;
+}
+
+.ser-sbody{
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+  margin-bottom: 43px;
+}
+
+.ser-al{
+  padding: 60px 0px;
   background: #EFF4FF;
 }
 
-.ser_con_box{
-  padding: 50px 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.ser_box_txt{
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 27.54px;
-  color: #212121;
-}
-
-.ser_box_stxt{
-  margin-top: 15px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17.53px;
-  color: #212121;
-}
-
-.ser_box_txt span{
-  color: #47A764;
-}
-
-.ser_box_img{
-  margin-top: 40px;
-  position: relative;
-}
-
-.ser-img03{
-  position: absolute;
-  top: -30px;
-  right: -6px;
-}
-
-.ser-img04{
-  position: absolute;
-  bottom: -40px;
-  left: -9px;
-}
-
-.ser-recom{
-  background: #575A73;
-  padding: 50px 35px;
-} 
-
-.recom-head{
-  text-align: center;
+.al-head{
   font-weight: 500;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 30px;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 15px;
+}
+
+.al-shead{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.al-swiper{
+  padding: 0px 20px;
+}
+
+.al-slide{
+  width: 100%;
+  height: 493px;
+  padding: 30px 20px 40px;
+  background: #fff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.al-slide_top{
+  border-bottom: 1px solid #DADADA; 
+}
+
+.top-tag{
+  width: 100%;
+  text-align: center;
+}
+
+.top-tag span{
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 100px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
   color: #fff;
 }
 
-.recom-head span{
-  color: #FFF6A7;
-}
-
-.recom-list-box{
-  width: 100%;
-  margin-top: 40px;
-}
-
-.recom-list{
-  display: flex; 
-  justify-content: start;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.recom-list:last-child{
-  margin-bottom: 0;
-}
-
-.recom-icn img{
-  width: 50px;
-}
-
-.recom-txt{
-  margin-left: 25px;
+.al-slide_top_txt{ 
+  text-align: center;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 19px;
-  color: #D3D6F3;
+  margin-bottom: 15px;
 }
 
-.ser-exp{
-  padding: 50px 20px 30px;
+.al-slide_body{
+  margin-top: 15px;
 }
 
-.exp-head{
+.al-slide_body_txt{
   font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
-  color: #212121;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.al-slide_body_stxt{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.al-slide_body_img{
+  width: 100%;
   text-align: center;
 }
 
-.exp-head span{
-  color: #47A767;
+.al-slide_body_img img{
+  width: 250px;
 }
 
-.exp-img{
-  margin-top: 30px;
-  position: relative;
-}
-
-.exp-main-img{
-  overflow: hidden;
-  border-radius: 20px;
+.alarm-swiper{
+  background-image: url(../img/ser-intro/log_ser-alarm.png);
+  background-size: 240px 317px;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 216px;
 }
 
-.buy1{
-  width: 32px;
-  position: absolute;
-  left: 21px;
-  bottom: 25px;
+.alarm-slide{
+  padding-top: 90px;
 }
 
-.sell1{
-  width: 32px;
-  position: absolute;
-  left: 37px;
-  top: 85px;
+.alarm-slide img{
+  width: 320px;
 }
 
-.buy2{
-  width: 32px;
-  position: absolute;
-  left: 75px;
-  bottom: 31px;
+.alarm-pagination{
+  margin-top: 40px !important;
 }
 
-.sell2{
-  width: 32px;
-  position: absolute;
-  left: 104px;
-  top: 62px;
-}
-
-.buy3{
-  width: 32px;
-  position: absolute;
-  right: 131px;
-  bottom: 56px;
-}
-
-.sell3{
-  width: 32px;
-  position: absolute;
-  top: 30px;
-  right: 101px;
-}
-
-.buy4{
-  width: 32px;
-  position: absolute;
-  top: 82px;
-  right: 39px;
-}
-
-
-.money1{
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  z-index: 5;
-}
-
-.money2{
-  position: absolute;
-  right: 13px;
-  bottom: 16px;
-  z-index: 4;
-}
-
-.money3{
-  position: absolute;
-  right: 16px;
-  bottom: 22px;
-  z-index: 3;
-}
-
-.money4{
-  position: absolute;
-  right: 19px;
-  bottom: 28px;
-  z-index: 2;
-}
-
-.money5{
-  position: absolute;
-  right: 22px;
-  bottom: 35px;
-  z-index: 1;
+.ana-sub{
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #666;
+  text-align: center;
 }
 
 /* quant-ser_pc */
@@ -1091,7 +1119,7 @@ table{
 } 
 
 .ser-ana.pc{
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .ser-care.pc{
@@ -1422,6 +1450,37 @@ table{
 
 /* logic-ser_pc */
 
+.log_header_txt.pc{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 63px;
+  text-align: left;
+}
+
+.log_header_txt.pc span{
+  padding: 3px 13px;
+  border: 2px solid #D558FF;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 38px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.log_header_txt.pc strong{
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.log_header_stxt{
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+}
+
 .log_body_txt.pc{
   margin-bottom: 42px;
   font-weight: 500;
@@ -1430,74 +1489,178 @@ table{
 }
 
 .content_tab button.log_ser_tab.tab-link.active{
-  color: #1E803E !important;
-  border: 1px solid #47A767 !important;
+  color: #3C32BC !important;
+  border: 1px solid #6A61E0 !important;
   background: #fff;
 }
 
 .content_tab button.log_ser_tab.tab-link:hover{
-  color: #1E803E !important;
-  border: 1px solid #47A767 !important;
+  color: #3C32BC !important;
+  border: 1px solid #6A61E0 !important;
   background: #fff;
   transition: 0.5s;
 }
 
-.log_ser_con.pc{
-  padding: 30px 40px;
-}
-
-.ser_con_box.pc{
+.log_ser_ser.pc{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 70px 110px;
 }
 
-.ser_box_txt.pc{
+.ser-head.pc{
+  font-weight: 500;
   font-size: 30px;
   line-height: 40px;
-  text-align: left;
 }
 
-.ser_box_stxt.pc{
-  margin-top: 26px;
+.ser-body.pc{
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 31.3px;
+  margin-bottom: 30px;
+}
+
+.ser-body.pc strong{
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 43.82px;
+}
+
+.ser-sbody.pc{
+  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  text-align: left;
 }
 
-.ser_box_img.pc{
-  position: relative;
-  margin-top: 0;
+.ser-img.pc img{
+  width: 307px;
 }
 
-.img_txt_pc{
-  position: absolute;
-  bottom: 0;
-  left: -130px;
-  font-weight: 700;
+.ser-al.pc{
+  padding: 50px 54px;
+}
+
+.al-head.pc{
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.al-shead.pc{
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.ser-al_boxwrap{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.ser-alarm.pc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 150px;
+}
+
+.alarm-swiper.pc{
+  width: 350px;
+}
+
+
+
+
+
+.log_ana-txt{
+  font-weight: 400;
   font-size: 20px;
   line-height: 25px;
-  text-align: right;
-  color: #6F68C5;
+  color: #212121;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
-.ser-img03.pc{
-  right: -52px;
+
+.log_pc_ana-right .swiper-pagination1.pc{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-left: 30px;
+  padding-left: 49px;
 }
 
-.ser-img04.pc{
-  left: -60px;
+.log_pc_ana-right .swiper-pagination-bullet{
+  width: auto;
+  background: transparent;
+  display: block;
+  padding: 22px 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27.54px;
+  color: #CBB0E1;
+  opacity: 1;
 }
 
-.ser_box_right{
-  margin-left: 197px;
+.log_pc_ana-right .swiper-pagination-bullet-active{
+  color: #B446DA;
+  font-weight: 500;
+  position: relative;
+}
+
+.log_pc_ana-right .swiper-pagination-bullet-active::before{
+  background: url(../img/ser-intro/log_confirm_solid.png) no-repeat 0px 0px;
+  background-size: 35px 35px;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -55px;
+  top: 17px;
+}
+
+
+
+
+.ser-cap.pc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 130px;
+}
+
+.log_care-swiper.pc{
+  width: 360px;
+}
+
+
+
+
+.ser-recom.pc{
+  background: #575A73;
+  padding: 70px 130px;
 }
 
 .recom-head.pc{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 36px;
   font-size: 30px;
+  font-weight: 500;
   line-height: 40px;
+  color: #fff;
 }
+
+.recom-head.pc span{
+  color: #FFF6A7;
+}
+
 
 .recom-list-box.pc{
   display: grid;
@@ -1506,89 +1669,27 @@ table{
   place-content: center;
 }
 
+.recom-list{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .recom-icn.pc img{
   width: 70px;
 }
 
 .recom-txt.pc{
+  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  margin-left: 25px;
+  color: #D3D6F3;
 }
 
-.exp-head.pc{
-  font-size: 30px;
-  line-height: 40px;
-  text-align: left;
-}
 
-.exp-img.pc{
-  margin-top: 0;
-  position: relative;
-}
 
-.exp-main-img.pc{
-  height: auto;
-}
 
-.buy1.pc{
-  left: 24.5px;
-  bottom: 33px;
-}
-
-.buy2.pc{
-  left: 100px;
-  bottom: 46px;
-}
-
-.buy3.pc{
-  left: 196px;
-  bottom: 70px;
-}
-
-.buy4.pc{
-  right: 55px;
-  top: 105px;
-}
-
-.sell1.pc{
-  left: 50px;
-  top: 108px;
-}
-
-.sell2.pc{
-  left: 130px;
-  top: 84px;
-}
-
-.sell3.pc{
-  right: 130px;
-  top: 36px;
-}
-
-.money5.pc{
-  right: 38.75px;
-  bottom: 49.57px;
-}
-
-.money4.pc{
-  right: 32.5px;
-  bottom: 40.54px;
-}
-
-.money3.pc{
-  right: 28.75px;
-  bottom: 32.83px;
-}
-
-.money2.pc{
-  right: 25px;
-  bottom: 25.13px;
-}
-
-.money1.pc{
-  right: 21.25px;
-  bottom: 17.42px;
-}
 
 /* logic-ser_pc */
 

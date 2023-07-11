@@ -327,6 +327,18 @@ button.more{
 	background: #9C8CCA;
 }
 
+.sig-00000839{
+	background: #84B4C3 !important;
+}
+
+.sig-00000840{
+	background: #69B499 !important;
+}
+
+.sig-00000841{
+	background: #BFAF96 !important;
+}
+
 .nodo-icn00000839{
 	background: #8C96CA !important;
 }
@@ -399,6 +411,30 @@ button.more{
 	background: #167536 !important;
 }
 
+.S001_bg{
+	background: #0785FE !important;
+}
+
+.S002_bg{
+	background: #6A61E0 !important;
+}
+
+.S003_bg{
+	background: #47A767 !important;
+}
+
+.S001_txt{
+	color: #0785FE !important;
+}
+
+.S002_txt{
+	color: #6A61E0 !important;
+}
+
+.S003_txt{
+	color: #47A767 !important;
+}
+
 .stand_bg01{
 	background: #8C8649 !important;
 }
@@ -424,15 +460,20 @@ button.more{
 }
 
 .log_main_bg{
-	background: #47A767 !important;
+	background: #464966 !important;
 }
 
 .log_ser_bg{
-	background: #104E24 !important;
+	border: 1px solid #575A73 !important;
+	background: #B446DA !important;
 }
 
 .bg_green{
 	background: #104E24 !important;
+}
+
+.bg_lightgray{
+	background: #F3F4F4 !important;
 }
 
 .first{
@@ -444,7 +485,7 @@ button.more{
 }
 
 .logic_banner{
-	background: #47A767 !important;
+	background: #464966 !important;
 }
 
 .pt-20{
@@ -457,6 +498,10 @@ button.more{
 
 .pt-50{
 	padding-top: 49px !important;
+}
+
+.pl-0{
+	padding-left: 0 !important;
 }
 
 .mr-10{
@@ -479,12 +524,28 @@ button.more{
 	margin-top: 17px !important;
 }
 
+mb-0{
+	margin-bottom: 0 !important;
+}
+
+.mb-15{
+	margin-bottom: 15px !important;
+}
+
 .mb-20{
 	margin-bottom: 20px !important;
 }
 
 .mb-28{
 	margin-bottom: 28px !important;
+}
+
+.mb-30{
+	margin-bottom: 30px !important;
+}
+
+.mb-50{
+	margin-bottom: 50px !important;
 }
 
 .center{

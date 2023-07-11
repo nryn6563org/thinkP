@@ -461,7 +461,6 @@ ul.dropdown-menu li a.dropdown-item{
   text-align: left;
   width: 100%;
   padding: 20px;
-  background: #84B4C3;
   border-radius: 12px;
   color: #fff;
 }
@@ -599,7 +598,6 @@ ul.dropdown-menu li a.dropdown-item{
 
 .swiper-slide.sig-no-slide{
   height: 58px;
-  background: #84B4C3;
   border: none;
   border-radius: 12px;
   width: 100%;
