@@ -943,6 +943,21 @@ ul.dropdown-menu li a.dropdown-item{
   color: #212121;
 }
 
+.modal-top-txt{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.modal-bot-txt{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #212121;
+}
+
 .open_popup .modal-btn{
   display: flex;
   justify-content: space-between;
