@@ -19,10 +19,10 @@
 }
 
 .head-top{
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 16.28px;
-  color: #CECAFF;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
 }
 
 .head-top span{
@@ -38,10 +38,28 @@
 }
 
 .head-txt{
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 40px;
+  margin-top: 12px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.head-txt span{
+  display: inline-block;
+  padding: 1px 12px;
+  border-radius: 100px;
+  background: #282550;  
+  color: #DC75FF;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 10px;
+}
+
+.head-txt strong{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
   color: #fff;
 }
 
@@ -1135,23 +1153,28 @@ table{
 }
 
 .head-top.pc{
-  font-size: 16px;
+  font-size: 35px;
+  line-height: 46px;
 }
 
-.head-top span.pc{
-  font-size: 14px;
+.head-txt.pc span {
+  font-size: 33px;
+  padding: 0px 15px;
+  margin-right: 20px;
+}
+
+.head-txt.pc{
+  margin-top: 16px;
+}
+
+.head-txt.pc strong{
+  font-size: 50px;
 }
 
 .ser-main-top.pc{
   font-size: 12px;
   text-align: center;
   margin-bottom: 101px;
-}
-
-.head-txt.pc{
-  font-size: 45px;
-  line-height: 58px;
-  margin-top: 30px;
 }
 
 .body-icn.pc{
