@@ -94,7 +94,7 @@ button.back-btn img{
 
 .gro-slide{
   border-radius: 16px;
-  height: 375px;
+  min-height: 375px;
   padding: 20px 10px 35px;
 }
 
