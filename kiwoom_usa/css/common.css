@@ -1,0 +1,337 @@
+@import url('us-home.css');
+@import url('ai.css');
+@import url('etf.css');
+@import url('news.css');
+@import url('event-home.css');
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body{
+	max-width: 100%;
+	/* overflow-x: hidden; */
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+button{
+	padding: 0;
+	margin: 0;
+}
+
+img{
+	width: 100%;
+}
+
+/* reset */
+
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important; }
+
+#wrap{
+	width: 100%;
+	height: 100%;
+}
+
+#content{
+	width: 100%;
+	height: 100%;
+}
+
+button.more{
+  width: 100%;
+  height: 36px;
+  background: #E7EBEF;
+  border: 1px solid #DFE3E7;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #212121;
+}
+
+.content-header{
+	width: 100%;
+	min-width: 360px;
+	height: 48px;
+	display: flex;
+  align-items: center;
+  padding: 0px 16px;
+	position: fixed;
+	background: #fff;
+	z-index: 1000;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.content-header::-webkit-scrollbar{
+	display: none;
+}
+
+.text-truncate{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-truncate2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important; 
+  -webkit-box-orient: vertical !important;
+}
+
+.text-truncate4{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4 !important; 
+  -webkit-box-orient: vertical !important;
+}
+
+.eventhome-bg{
+	background: #454860 !important;
+}
+
+.sec-bg{
+	background: #F7F8FA !important;
+}
+
+.up{
+	color: #FFCECE !important;
+}
+
+.down{
+	color: #D8C0FF !important;
+}
+
+.buy{
+	color: #E81A1A !important;
+}
+
+.buy-bg{
+	background: #FBEBEB !important;
+}
+
+.sell{
+	color: #6333CB !important;
+}
+
+.sell-bg{
+	background: #F2EDFF !important;
+}
+
+.evt-sell{
+	color: #225CFF !important;
+}
+
+.evt-sell-bg{
+	background: #E7F0FF !important;
+}
+
+.evt-mainup{
+	color: #FFBEB6 !important;
+}
+
+.etf-upbg1{
+	background: #D83337 !important;
+}
+
+.etf-upbg2{
+	background: #FFF2F2 !important;
+}
+
+.etf-downbg1{
+	background: #3865E1 !important;
+}
+
+.etf-downbg2{
+	background: #E7F0FF !important;
+}
+
+.hig-per_up{
+	color: #F0FF41 !important;
+}
+
+.btn-bg{
+	background: #4F3FC6 !important;
+}
+
+.borno{
+	border: none !important;
+}
+
+.white{
+	color: #fff !important;
+}
+
+.gray{
+	color: #666 !important;
+}
+
+.darkgray{
+	color: #333 !important;
+}
+
+.fz-12{
+	font-size: 12px !important;
+}
+
+.fz-16{
+	font-size: 16px !important;
+}
+
+.pt-20{
+	padding-top: 20px !important;
+}
+
+.pt-40{
+	padding-top: 40px !important;
+}
+
+.pt-48{
+	padding-top: 48px !important;
+}
+
+.pt-50{
+	padding-top: 49px !important;
+}
+
+.pt-300{
+	padding-top: 300px !important;
+}
+
+.h-vh{
+	height: 100vh !important;
+}
+
+.pl-0{
+	padding-left: 0 !important;
+}
+
+.ml-8{
+	margin-left: 8px !important;
+}	
+
+.mr-10{
+	margin-right: 10px !important;
+}
+
+.mt-5{
+	margin-top: 5px !important;
+}
+
+.mt-7{
+	margin-top: 7px !important;
+}
+
+.mt-10{
+	margin-top: 10px !important;
+}
+
+.mt-15{
+	margin-top: 15px !important;
+}
+
+.mt-17{
+	margin-top: 17px !important;
+}
+
+.mb-0{
+	margin-bottom: 0 !important;
+}
+
+.mb-8{
+	margin-bottom: 8px !important; 
+}
+
+.mb-15{
+	margin-bottom: 15px !important;
+}
+
+.mb-20{
+	margin-bottom: 20px !important;
+}
+
+.mb-28{
+	margin-bottom: 28px !important;
+}
+
+.mb-30{
+	margin-bottom: 30px !important;
+}
+
+.mb-50{
+	margin-bottom: 50px !important;
+}
+
+.table-bt{
+	border-top: 1px solid #DCDCDC !important;
+}
+
+.center{
+	text-align: center !important;
+}
+
+.left{
+	text-align: left !important;
+}
+
+.right{
+	text-align: right !important;
+}
+
+.bold{
+	font-weight: 700 !important;
+}
+
+.none{
+	display: none !important;
+}
+
+.jcend{
+	justify-content: end !important;
+}

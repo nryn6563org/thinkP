@@ -1,0 +1,456 @@
+/* header */
+.back-btn{
+  border: none;
+  background: none;
+}
+
+.back-btn img{
+  width: 24px;
+  height: 24px;
+}
+
+.header-txt{
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-left: 8px;
+  margin-bottom: 2px;
+}
+/* header */
+
+/* header-tab */
+.header-tab{
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-bottom: 1px solid #DEE2E6;
+  padding: 0px 16px;
+  position: fixed;
+  background: #fff;
+  z-index: 1030;
+}
+
+.header-tab button{
+  width: 50%;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  background: #fff;
+  z-index: 1030;
+}
+
+.header-tab button.nav-link.active{
+  font-weight: 500;
+  color: #222;
+  border: none;
+  border-bottom: 2px solid #222;
+  background: #fff;
+  z-index: 1030;
+}
+
+.header-tab button.nav-link:hover{
+  color: #666;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-border-width: 1px;
+  --bs-nav-tabs-border-radius: 0.375rem;
+  --bs-nav-tabs-link-hover-border-color: #fff #fff #dee2e6;
+  --bs-nav-tabs-link-active-color: #495057;
+  --bs-nav-tabs-link-active-bg: #fff;
+  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
+  border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
+}
+
+.nav-link {
+  border-top: none !important;
+  border-left: none !important; 
+  border-right: none !important; 
+}
+
+/* header-tab */
+
+/* ai-intro */
+.ai-intro{
+  margin-top: 10px;
+}
+/* ai-intro */
+
+/* trading */
+.trad-hig{
+  padding: 20px 16px 10px;
+}
+
+.trad-hig_box{
+  padding: 25px 20px;
+  border-radius: 12px;
+  background: #2BA6A4;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.trad-hig_icn{
+  display: inline-block;
+  padding: 3px 13px;
+  border-radius: 100px;
+  background: #1F626B;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 19px;
+}
+/* trading */
+
+/* 매수/매도 탭*/
+.bs-tab{
+  padding: 20px 16px 0;
+}
+
+.buysell-tab{
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+}
+
+.buysell-tab button.bs-nav{
+  width: 50%;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  background: #dee2e6;
+  border-radius: 0px;
+  border: 1px solid #C3CACE !important;
+}
+
+.buysell-tab button.bs-nav.active{
+  background: #454860;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #454860 !important;
+}
+
+button.bs-nav:first-child{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+button.bs-nav:last-child{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/* 매수/매도 탭*/
+
+/* 매수 탭 */
+.buy-head{
+  margin-top: 30px;
+  padding: 0px 26px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-btn{
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.radio-txt{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333;
+  margin-right: 8px;
+}
+
+.radio-btn input[type=checkbox]{
+  position: absolute;
+  display: none;
+}
+
+.radio-btn input[type=checkbox]:checked + .switch_label{
+  background: #454860;
+}
+
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 24px;
+  background: #BFBFBF;
+  border-radius: 99px;
+  transition: 0.2s;
+}
+
+.radio-btn input[type=checkbox]:checked + .switch_label .onf_btn{
+  left: 18px;
+}
+
+.onf_btn{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 22px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.offcan-btn button{
+  padding: 0;
+  width: 100%;
+  border: none;
+  background: none;
+  display: flex;
+  align-content: center;
+}
+
+.offcan-btn button div{
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.offcan-btn button img{
+  width: 24px;
+  height: 24px;
+}
+
+.offcanvas-order{
+  --bs-offcanvas-height: auto;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.order-header{
+  padding: 24px 20px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-headertxt{
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.order-header button:focus {
+  box-shadow: none;
+}
+
+.order-con{
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.order-con_list{
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: none;
+  color: #141414;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 60px;
+  position: relative;
+}
+
+.order-con_list.active{
+  background: #F4F6FD;
+  color: #4F3FC6;
+  font-weight: 500;
+}
+
+.order-con_list.active::after{
+  position: absolute;
+  content: "";
+  background-image: url(../img/ai/order-btn.png);
+  background-position: center;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  right: 20px; 
+  top: 18px;
+}
+
+.buy-con{
+  padding: 0px 16px 150px;
+}
+
+.buy-con_box{
+  width: 100%;
+  text-align: left;
+  border-radius: 8px;
+  border: 1px solid #D5D9DD;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.buy-box_top{
+  padding: 20px 20px 15px;
+  background: #F7F9FA;
+}
+
+.top1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.top1-left{
+  color: #969696;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.buy-box_bot{
+  padding: 15px 20px;
+}
+
+.top1-right{
+  position: relative;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #666;
+  border: none;
+  background: none;
+  padding-right: 20px;
+}
+
+.top1-right::after{
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 1px solid #666;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
+}
+
+.top2{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.box_name{
+  display: inline-block;
+  width: auto;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-right: 8px;
+}
+
+.top3{
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.buy-box_bot div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.buy-box_bot div:last-child{
+  margin-bottom: 0;
+}
+
+.buy-box_bot div span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #666;
+}
+
+.buy-con_txt{
+  font-weight: 400;
+  color: #666;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+/* 매수 탭 */
+
+/* 비가입자 */
+.join{
+  padding: 0px 16px;
+}
+
+.join-con{
+  width: 100%;
+  height: 234px;
+  padding: 50px 0;
+  background-image: url(../img/ai/notjoin.png);
+  background-size: 100%;
+  border-radius: 8px;
+}
+
+.join-txt{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.join-btn{
+  width: 100%;
+  text-align: center;
+}
+
+.join-btn button{
+  width: 155px;
+  height: 48px;
+  border-radius: 8px;
+  background: #454860;
+  border: none;
+  font-size: 16px; 
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+}
+/* 비가입자 */
+
+/* 안정추구 ai */
+.stab-hig{
+  background: #8450FD !important;
+}
+
+.stab-hig_icn{
+  background: #5A36AE !important;
+}
+
+.stab-join-btn{
+  background: #4F3FC6 !important;
+}
+/* 안정추구 ai */

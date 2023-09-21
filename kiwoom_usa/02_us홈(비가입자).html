@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=360px">
+  <title>키움 미국주식</title>
+  <!-- font -->
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelector("openPopup").click();
+    });
+  </script> -->
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <div id="container">
+
+      <div class="open_popup">
+        <button type="button" class="btn none" id="openPopup" data-bs-toggle="modal" data-bs-target="#popup-modal">open
+          popup</button>
+      
+        <div class="popup modal fade" id="popup-modal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-txt">
+                <div class="modal-mtxt">회원 전용 메뉴입니다.</div>
+                <div class="modal-stxt">상단 [가입하기]를 통해 가입 후 이용가능합니다.</div>
+              </div>
+              <div class="modal-btn">
+                <button class="btn" data-bs-dismiss="modal" type="button">다음에</button>
+                <button class="btn btn-bg white bold modal-btn_right" type="button">서비스 신청</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+      <div id="content">
+
+        <div class="content-header">
+          <div class="content-nav">
+            <a href="" class="active">US홈</a>
+            <a href="" class="">수익추구</a>
+            <a href="" class="">안정추구</a>
+            <a href="" class="">인기ETF</a>
+            <a href="" class="">US속보</a>
+          </div>
+        </div> <!--class="content-header"-->
+
+        <div class="pt-48"></div>
+
+        
+        <!-- section1 -->
+        <section class="ushome-section1">
+
+          <div class="ushome-bri">
+            <button class="bri-btn">
+              <div class="bri-top">
+                <span class="bri-date">4월5일 모닝브리핑</span>
+                <div class="bri-more">더보기</div>
+              </div>
+              <div class="bri-txt text-truncate4">
+                뉴욕증시는 제롬 파월 미국 중앙은행(Fed) 의장이 상원에 출석해 긴축을 지속할 것을
+                재확인한 가운데 대체로 오름세를 보였습니다. 현지시간 22일 뉴욕증권거래소(NYSE)에서
+                다우존스30산업평균지수는 전장보다 4.81포인트(0.01%) 하락한 33,946.71로 거래를
+                마쳤습니다. 스탠더드앤드푸어스(S&P)500지수는 전장보다 16.20포인트(0.37%) 오른
+                4,381.89로,
+              </div>
+            </button>
+            <div class="bri-con">
+              <button>
+                <div class="name-en text-truncate">TSLA</div>
+                <div class="name-ko text-truncate">테슬라</div>
+              </button>
+              <button>
+                <div class="name-en text-truncate">AMD</div>
+                <div class="name-ko text-truncate">어드밴스드 마이크로 디바이시스</div>
+              </button>
+              <button>
+                <div class="name-en text-truncate">NVDA</div>
+                <div class="name-ko text-truncate">엔비디아</div>
+              </button>
+              <button>
+                <div class="name-en text-truncate">AAPL</div>
+                <div class="name-ko text-truncate">애플</div>
+              </button>
+              <button>
+                <div class="name-en text-truncate">TSLA</div>
+                <div class="name-ko text-truncate">테슬라</div>
+              </button>
+              <button>
+                <div class="name-en text-truncate">AMD</div>
+                <div class="name-ko text-truncate">어드밴스드 마이크로 디바이시스</div>
+              </button>
+              <button>
+                <div class="name-en text-truncate">NVDA</div>
+                <div class="name-ko text-truncate">엔비디아</div>
+              </button>
+              <button>
+                <div class="name-en text-truncate">AAPL</div>
+                <div class="name-ko text-truncate">애플</div>
+              </button>
+              <button>
+                <div class="name-en text-truncate">TSLA</div>
+                <div class="name-ko text-truncate">테슬라</div>
+              </button>
+            </div>
+          </div>
+
+        </section>  
+        <!-- section1 -->
+
+        <!-- section2 -->
+        <section class="ushome-section2">
+
+          <div class="ushome-rev">
+            <div class="rev-header">
+              <div class="rev-title">수익추구 알고리즘</div>
+              <button class="rev-more">더보기</button>
+            </div>
+            <div class="rev-stxt">변동성 큰 중소형주로 높은 수익을 추구합니다.</div>
+            <div class="rev-con">
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag buy buy-bg">매수예정</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">테***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per up">+21.0%</div>
+                </div>
+              </button>
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag sell sell-bg">매도완료</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">크***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per up">+5.8%</div>
+                </div>
+              </button>
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag buy buy-bg">매수완료</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">애***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per down">-0.5%</div>
+                </div>
+              </button>
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag buy buy-bg">보유중</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">마***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per up">+121.0%</div>
+                </div>
+              </button>
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag sell sell-bg">매도예정</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">크***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per up">+21.0%</div>
+                </div>
+              </button>
+
+              <div class="rev-con_more">
+                <button>더보기</button>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+        <!-- section2 -->
+
+        <!-- section3 -->
+        <section class="ushome-section3">
+
+          <div class="ushome-sta">
+            <div class="rev-header">
+              <div class="rev-title">안정추구 알고리즘</div>
+              <button class="rev-more">더보기</button>
+            </div>
+            <div class="rev-stxt">성장성 높은 중대형주 중심으로 안정적인 자산증식</div>
+            <div class="sta-con">
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag buy buy-bg">매수예정</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">테***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per up">+21.0%</div>
+                </div>
+              </button>
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag sell sell-bg">매도완료</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">크***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per up">+5.8%</div>
+                </div>
+              </button>
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag buy buy-bg">매수완료</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">애***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per down">-0.5%</div>
+                </div>
+              </button>
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag buy buy-bg">보유중</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">마***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per up">+121.0%</div>
+                </div>
+              </button>
+              <button class="rev-list">
+                <div class="rev-list_left">
+                  <div class="left_top">
+                    <div class="icn-tag sell sell-bg">매도예정</div>
+                    <span>A***</span>
+                    <span>08.23</span>
+                  </div>
+                  <div class="left_bot">
+                    <div class="rev-name text-truncate">크***</div>
+                    <div class="rev-rightarrow">
+                      <img src="img/us-home/icon_top.png" alt="rev-rightarrow">
+                    </div>
+                  </div>
+                </div>
+                <div class="rev-list_right">
+                  <div class="rev-per up">+21.0%</div>
+                </div>
+              </button>
+
+              <div class="rev-con_more">
+                <button>더보기</button>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+        <!-- section3 -->
+
+        <!-- section4 -->
+        <section class="ushome-section4">
+
+          <div class="ushome-hig">
+            <div class="hig-title">주간 하이라이트</div>
+            <div class="hig-con">
+              <button class="hig-con_list">
+                <span class="hig-date">05/31</span>
+                <span id="listName" class="hig-name text-truncate">애플</span>
+                <span id="listPer" class="hig-per text-truncate hig-per_up"> +32.1% 급등+32.1% 급등+32.1% 급등+32.1% 급등</span>
+              </button>
+              <button class="hig-con_list">
+                <span class="hig-date">05/31</span>
+                <span id="listName" class="hig-name text-truncate">아마존닷컴컴컴컴</span>
+                <span id="listPer" class="hig-per text-truncate"> -32.1% 급락락-32.1% 급등+32.1% 급등+32.1% 급등</span>
+              </button>
+              <button class="hig-con_list">
+                <span class="hig-date">05/31</span>
+                <span id="listName" class="hig-name text-truncate">테슬라</span>
+                <span id="listPer" class="hig-per text-truncate hig-per_up"> +32.1% 급등+32.1% 급등+32.1% 급등+32.1% 급등</span>
+              </button>
+              <button class="hig-con_list">
+                <span class="hig-date">05/31</span>
+                <span id="listName" class="hig-name text-truncate">아마존닷컴컴컴컴</span>
+                <span id="listPer" class="hig-per text-truncate"> -32.1% 급락락-32.1% 급등+32.1% 급등+32.1% 급등</span>
+              </button>
+              <button class="hig-con_list">
+                <span class="hig-date">05/31</span>
+                <span id="listName" class="hig-name text-truncate">아마존닷컴컴컴컴컴</span>
+                <span id="listPer" class="hig-per text-truncate hig-per_up"> +32.1% 급등+32.1% 급등+32.1% 급등+32.1% 급등</span>
+              </button>
+            </div>
+          </div>
+
+          <script>
+
+            const cutName = document.querySelectorAll(".hig-name");
+            const cutPer = document.querySelectorAll(".hig-per");
+            // const widName = document.querySelectorAll(".hig-name").offsetWidth;
+            // const widPer = document.querySelectorAll(".hig-per").offsetWidth;
+            
+            for (var i = 0; i < cutName.length; i++) {
+
+              const widName = (cutName[i].innerHTML).length;
+              const widPer = (cutPer[i].innerHTML).length;
+
+              // console.log(widName, widPer);
+
+              if(widName <= 1) {    // 종목명 1글자
+                cutName[i].style.minWidth = "15px";
+              } else if(widName == 2) {   // 종목명 2글자
+                cutName[i].style.minWidth = "30px";
+              } else if(widName == 3) {   // 종목명 3글자
+                cutName[i].style.minWidth = "43px";
+              } else if(widName == 4) {   // 종목명 4글자   
+                cutName[i].style.minWidth = "55px";
+              } else if(widName == 5) {   //종목명 5글자
+                cutName[i].style.minWidth = "70px";
+              } else if(widName == 6) {   //종목명 6글자
+                cutName[i].style.minWidth = "83px";
+              } else if(widName > 6) {    // 종목명 6글자 이상
+                cutName[i].style.minWidth = "92px";
+              }
+
+            }
+
+        </script>
+
+        </section>
+        <!-- section4 -->
+        
+        <!-- section5 -->
+        <section class="ushome-section5">
+
+          <div class="ushome-etf">
+            <div class="rev-header">
+              <div class="rev-title">한국인이 선호하는 레버리지 ETF</div>
+              <button class="rev-more">더보기</button>
+            </div>
+            <div class="rev-stxt">잘 모르는 미국회사 대신,2배 3배 ETF 어때요?</div>
+            <div class="etf-con">
+              <div class="etf-con_top etf-upbg2">
+                <div class="etf-top_left etf-upbg1">
+                  <div>
+                    <span class="icn_name">나스닥100</span>
+                    <span>X3</span>
+                  </div>
+                </div>
+                <div class="etf-top_right">
+                  <div class="right_top">
+                    <div class="top-name">TQQQ</div>
+                    <div class="top-num">
+                      <span class="top-per buy">4.26%</span>
+                      <span>39.26</span>
+                    </div>
+                  </div>
+                  <div class="right_bot">
+                    나스닥 100 지수의 일수익률 3배에 해당하는 결과를 추종
+                  </div>
+                </div>
+              </div>
+              <div class="etf-con_bot">
+                <img src="img/etf/etf-grap_up(notjoin).png" alt="ushome-grap">
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <!-- section5 -->
+
+
+      </div> <!--id="content"-->
+
+    </div> <!--id="container"-->
+
+  </div> <!--id="wrap"-->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

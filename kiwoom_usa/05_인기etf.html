@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=360px">
+  <title>키움 미국주식</title>
+  <!-- font -->
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="css/common.css">
+  <!-- <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelector("openPopup").click();
+    });
+  </script> -->
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <div id="container">
+
+      <div class="open_popup">
+        <button type="button" class="btn none" id="openPopup" data-bs-toggle="modal" data-bs-target="#popup-modal">open
+          popup</button>
+
+        <div class="popup modal fade" id="popup-modal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-txt">
+                <div class="modal-mtxt">회원 전용 메뉴입니다.</div>
+                <div class="modal-stxt">상단 [가입하기]를 통해 가입 후 이용가능합니다.</div>
+              </div>
+              <div class="modal-btn">
+                <button class="btn" data-bs-dismiss="modal" type="button">다음에</button>
+                <button class="btn btn-bg white bold modal-btn_right" type="button">서비스 신청</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="content">
+
+        <div class="content-header">
+          <button class="back-btn"><img src="img/ai/icon_back.png" alt="icon_back"></button>
+          <div class="header-txt">인기 ETF</div>
+        </div> <!--class="content-header"-->
+
+        <div class="pt-48"></div>
+
+        <!-- section1 -->
+        <section class="etf-section1 sec-bg">
+
+          <div class="etf-title">
+
+            <div class="etf-title_box">
+              <div class="etf-title_icn">
+                <span>바쁜 투자자의 현명한 선택</span>
+              </div>
+              <div class="etf-title_txt">모르는 미국회사 고민 STOP~<br><span>2배,3배 ETF에 투자!!</span></div>
+              <div class="etf-title_stxt">영어 때문에 머리 아플 때, <br>2배 3배 추구하는 <br> ETF를 활용하세요.</div>
+              <div class="etf-title_img">
+                <img src="img/etf/etf-title_img.png" alt="etf-title_img">
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+        <!-- section1 -->
+
+        <!-- section2 -->
+        <section class="etf-section2 sec-bg">
+
+          <div class="etf-recom">
+
+            <div class="recom-title">
+              <button class="data-cho" type="button" data-bs-toggle="offcanvas" data-bs-target="#dateCho">
+                <em>6월 22일</em> 추천ETF
+              </button>
+              <button class="etf-info" data-bs-toggle="modal" data-bs-target="#etfInfo">
+                <img src="img/etf/etf-info.png" alt="etf-info">
+              </button>
+            </div>
+
+            <div class="offcanvas-order offcanvas offcanvas-bottom" id="dateCho">
+              <div class="order-header">
+                <div class="order-headertxt">날짜선택</div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="order-con">
+                <button class="order-con_list active">2023.06.30(금)</button>
+                <button class="order-con_list">2023.06.29(목)</button>
+                <button class="order-con_list">2023.06.28(수)</button>
+                <button class="order-con_list">2023.06.27(화)</button>
+                <button class="order-con_list">2023.06.26(월)</button>
+                <button class="order-con_list">2023.06.23(금)</button>
+                <button class="order-con_list">2023.06.22(목)</button>
+              </div>
+            </div>
+
+            <div class="modal fade" id="etfInfo" aria-hidden="true">
+              <div class="popup modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="aisco-head">한국인 선호하는 ETF</div>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body p-0">
+                    <div class="aisco-body">
+                      <div class="aiPre-body_txt">
+                        <div class="aiPre_title">
+                          추천 ETF는 AI가 한국인 선호 ETF 22종목 대상으로 매일 상승확률이 높은 3종목을 제공합니다.
+                        </div>
+                        <ul>
+                          <li>
+                            <span class="bold">TQQQ</span> : 나스닥 100 지수의 일수익률 3배에 해당하는  결과를 추종
+                          </li>
+                          <li>
+                            <span class="bold">SOXL</span> : ICE 반도체 섹터 지수의 일별 수익률 300%의 투자 성과를 추종
+                          </li>
+                          <li>
+                            <span class="bold">QQQ</span> : 나스닥 100 지수의 가격과 수익률을 추종하는 투자 결과를 추구
+                          </li>
+                          <li>
+                            <span class="bold">SPY</span> : S&P 500지수의 가격과 수익률에 부합하는 투자 결과 제공을 목표
+                          </li>
+                          <li>
+                            <span class="bold">TMF</span> : ICE 미국 국채 20년 이상 채권 지수  300%를 추종
+                          </li>
+                          <li>
+                            <span class="bold">VOO</span> : S&P 500의 성과를 추적
+                          </li>
+                          <li>
+                            <span class="bold">QLD</span> : 나스닥 100 지수의 일일 실적 2배에 해당하는 일일 투자 결과를 추구
+                          </li>
+                          <li>
+                            <span class="bold">JEPI</span> : S&P 500 지수 구성 종목의 액티브 포트폴리오로 ELN및 콜옵션 매도를 통해 투자목표를 추종
+                          </li>
+                          <li>
+                            <span class="bold">SCHD</span> : 다우존스 미국 배당 100 지수의 총 수익률을 가능한 한 가깝게 추적
+                          </li>
+                          <li>
+                            <span class="bold">SQQQ</span> : 나스닥 100 지수의 역방향 3배수(-3x)에 해당하는 성과를 추종
+                          </li>
+                          <li>
+                            <span class="bold">SOXX</span> : ICE 반도체 지수의 투자 결과를 추종
+                          </li>
+                          <li>
+                            <span class="bold">TLT</span> : ICE 미국 국채 20+년 채권지수의 투자 성과를 추종
+                          </li>
+                          <li>
+                            <span class="bold">QYLD</span> : CBOE NASDAQ-100 BuyWrite 인덱스의 가격 및 수익성과 밀접하게 일치하는 투자 결과에 근접하게 추종.
+                          </li>
+                          <li>
+                            <span class="bold">IVV</span> : S&P 500지수의 투자 성과 추종
+                          </li>
+                          <li>
+                            <span class="bold">SOXS</span> : ICE 반도체 지수의 일별 성과의 -3배에 상응하는 일별 성과를 추종
+                          </li>
+                          <li>
+                            <span class="bold">XLI</span> : Industrial Select Sector Index(산업선택지수)에 있는 기업의 상장주식증권의 가격과 수익성과에 상응하는 투자 성과 추종
+                          </li>
+                          <li>
+                            <span class="bold">SHV</span> : ICE U.S. Treasury Short Bond Index(ICE 미 재무부 단기 채권 지수)의 투자 성과를 추종
+                          </li>
+                          <li>
+                            <span class="bold">BIL</span> : Bloomberg Barclays 1-3 Month U.S. Treasury Bill Index(블룸버그 바클레이스 1-3개월 미 재무부 채권 지수)의 가격과 수익률에 상응하는 투자 성과 추종
+                          </li>
+                          <li>
+                            <span class="bold">KOLD</span> : Bloomberg Natural Gas Subindex 일일 수익률의 -2배를 추종
+                          </li>
+                          <li>
+                            <span class="bold">LABU</span> : S&P 바이오테크놀로지 선택산업지표의 하루 실적 중 수수료와 비용 전 300%의 일일 투자 성과 추종
+                          </li>
+                          <li>
+                            <span class="bold">JEPQ</span> : 나스닥 100 지수에 포함된 종목을 대상으로 한 액티브 포트폴리오로  ELN및 콜옵션 매도를 통해 투자목표를 추종
+                          </li>
+                          <li>
+                            <span class="bold">TSLQ</span> : 테슬라(Tesla) 보통주 일일 수익률에 -1배의 투자 결과추종
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="moclose btn-bg" type="button" data-bs-dismiss="modal">확인</button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="recom-con">
+
+              <div class="etf-con">
+                <div class="etf-con_top etf-upbg2">
+                  <div class="etf-top_left etf-upbg1">
+                    <div>
+                      <span class="icn_name">나스닥100</span>
+                      <span>X3</span>
+                    </div>
+                  </div>
+                  <div class="etf-top_right">
+                    <div class="right_top">
+                      <div class="top-name">TQQQ</div>
+                      <div class="top-num">
+                        <span class="top-per buy">4.26%</span>
+                        <span>39.26</span>
+                      </div>
+                    </div>
+                    <div class="right_bot">
+                      나스닥 100 지수의
+                    </div>
+                  </div>
+                </div>
+                <div class="etf-con_bot">
+                  <img src="img/etf/etf-grap_up.png" alt="etf-grap_up">
+                </div>
+              </div>
+
+              <div class="etf-con">
+                <div class="etf-con_top etf-upbg2">
+                  <div class="etf-top_left etf-upbg1">
+                    <div>
+                      <span class="icn_name">S&P <br>바이오테크<br>놀로지</span>
+                      <span class="fz-16">액티브</span>
+                    </div>
+                  </div>
+                  <div class="etf-top_right">
+                    <div class="right_top">
+                      <div class="top-name">TQQQ</div>
+                      <div class="top-num">
+                        <span class="top-per buy">4.26%</span>
+                        <span>39.26</span>
+                      </div>
+                    </div>
+                    <div class="right_bot">
+                      나스닥 100 지수의 일수익률 3배에 해당하는 결과를 추종
+                    </div>
+                  </div>
+                </div>
+                <div class="etf-con_bot">
+                  <img src="img/etf/etf-grap_up.png" alt="etf-grap_up">
+                </div>
+              </div>
+
+              <div class="etf-con">
+                <div class="etf-con_top etf-upbg2">
+                  <div class="etf-top_left etf-upbg1">
+                    <div>
+                      <span class="icn_name">S&P <br>바이오테크<br>놀로지</span>
+                      <span>X-3</span>
+                    </div>
+                  </div>
+                  <div class="etf-top_right">
+                    <div class="right_top">
+                      <div class="top-name">TQQQ</div>
+                      <div class="top-num">
+                        <span class="top-per buy">4.26%</span>
+                        <span>39.26</span>
+                      </div>
+                    </div>
+                    <div class="right_bot">
+                      나스닥 100 지수의 일수익률 3배에 해당하는 결과를 추종
+                    </div>
+                  </div>
+                </div>
+                <div class="etf-con_bot">
+                  <img src="img/etf/etf-grap_up.png" alt="etf-grap_up">
+                </div>
+              </div>
+
+              <div class="etf-con">
+                <div class="etf-con_top etf-downbg2">
+                  <div class="etf-top_left etf-downbg1">
+                    <div>
+                      <span class="icn_name">나스닥100</span>
+                      <span>X3</span>
+                    </div>
+                  </div>
+                  <div class="etf-top_right">
+                    <div class="right_top">
+                      <div class="top-name">TQQQ</div>
+                      <div class="top-num">
+                        <span class="top-per sell">-4.26%</span>
+                        <span>39.26</span>
+                      </div>
+                    </div>
+                    <div class="right_bot">
+                      나스닥 100 지수의 일수익률 3배에 해당하는 결과를 추종
+                    </div>
+                  </div>
+                </div>
+                <div class="etf-con_bot">
+                  <img src="img/etf/etf-grap_down.png" alt="etf-grap_down">
+                </div>
+              </div>
+
+
+              <!-- 비가입자 그래프 이미지 -->
+              <!-- 상승 -->
+              <!-- <img src="img/etf/etf-grap_up(notjoin).png" alt="">  -->
+              <!-- 하강 -->
+              <!-- <img src="img/etf/etf-grap_down(notjoin).png" alt="">  -->
+              <!-- 비가입자 그래프 이미지 -->
+
+
+              
+              
+            </div>
+
+
+          </div>
+
+        </section>
+        <!-- section2 -->
+
+        
+
+
+
+      </div> <!--id="content"-->
+
+    </div> <!--id="container"-->
+
+  </div> <!--id="wrap"-->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
