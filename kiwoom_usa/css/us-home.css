@@ -1,10 +1,10 @@
 /* header */
-.content-nav{
+.us_content-nav{
   display: flex;
   gap: 16px;
 }
 
-.content-nav a{
+.us_content-nav a{
   height: 48px;
   font-size: 16px;
   font-weight: 400;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.content-nav a.active{
+.us_content-nav a.active{
   font-weight: 500;
   color: #222;
   border-bottom: 2px solid #222;
@@ -438,7 +438,7 @@ span.icn_name{
   margin-bottom: 6px;
 }
 
-.top-name{
+.us_top-name{
   color: #333;
   font-size: 18px;
   font-weight: 700;
@@ -488,7 +488,7 @@ span.top-per{
   border: none;
 }
 
-.modal-txt{
+.us_modal-txt{
   width: 100%;
   padding: 30px 20px;
   text-align: center;

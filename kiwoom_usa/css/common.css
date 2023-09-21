@@ -1,8 +1,17 @@
+@import url('al-history.css');
+@import url('al-home.css');
+@import url('al-intro.css');
+@import url('event-home.css');
+@import url('invest.css');
+@import url('quant_logic-table.css');
+@import url('quant_logic.css');
+@import url('ser-intro.css');
+
 @import url('us-home.css');
 @import url('ai.css');
 @import url('etf.css');
 @import url('news.css');
-@import url('event-home.css');
+@import url('us_event-home.css');
 
 /* reset */
 html, body, div, span, applet, object, iframe,
@@ -95,6 +104,15 @@ button.more{
 .content-header{
 	width: 100%;
 	min-width: 360px;
+	height: 50px;
+	position: fixed;
+	background: #fff;
+	z-index: 1000;
+}
+
+.kiwoom_usa .us_content-header{
+	width: 100%;
+	min-width: 360px;
 	height: 48px;
 	display: flex;
   align-items: center;
@@ -107,6 +125,10 @@ button.more{
 }
 
 .content-header::-webkit-scrollbar{
+	display: none;
+}
+
+.us_content-header::-webkit-scrollbar{
 	display: none;
 }
 
@@ -132,68 +154,58 @@ button.more{
   -webkit-box-orient: vertical !important;
 }
 
-.eventhome-bg{
+.sec-bg{
+	background: #F7F9FA !important;
+}
+
+.kiwoom_usa .eventhome-bg{
 	background: #454860 !important;
 }
 
-.sec-bg{
-	background: #F7F8FA !important;
+.sec-border{
+	width: 100%;
+	height: 8px;
+	background: #F0F4F7;
+}
+
+.con-border{
+	border-bottom: 1px solid #DEE2E6 !important;
 }
 
 .up{
-	color: #FFCECE !important;
-}
-
-.down{
-	color: #D8C0FF !important;
-}
-
-.buy{
 	color: #E81A1A !important;
 }
 
-.buy-bg{
-	background: #FBEBEB !important;
-}
-
-.sell{
-	color: #6333CB !important;
-}
-
-.sell-bg{
-	background: #F2EDFF !important;
-}
-
-.evt-sell{
+.down{
 	color: #225CFF !important;
 }
 
-.evt-sell-bg{
-	background: #E7F0FF !important;
+.kiwoom_usa .up{
+	color: #FFCECE !important;
 }
 
-.evt-mainup{
-	color: #FFBEB6 !important;
+.kiwoom_usa .down{
+	color: #D8C0FF !important;
 }
 
-.etf-upbg1{
-	background: #D83337 !important;
+.his-down{
+	color: #777777 !important;
 }
 
-.etf-upbg2{
-	background: #FFF2F2 !important;
+.up-bg{
+	background: #FDECEC !important;
 }
 
-.etf-downbg1{
-	background: #3865E1 !important;
+.down-bg{
+	background: #E3F1FF !important;
 }
 
-.etf-downbg2{
-	background: #E7F0FF !important;
+.up-border{
+	border: 1px solid rgba(239, 34, 71, 0.4) !important;
 }
 
-.hig-per_up{
-	color: #F0FF41 !important;
+.down-border{
+	border: 1px solid rgba(34, 92, 255, 0.4) !important;
 }
 
 .btn-bg{
@@ -202,6 +214,105 @@ button.more{
 
 .borno{
 	border: none !important;
+}
+
+.kiwoom_usa .buy{
+	color: #E81A1A !important;
+}
+
+.kiwoom_usa .buy-bg{
+	background: #FBEBEB !important;
+}
+
+.kiwoom_usa .sell{
+	color: #6333CB !important;
+}
+
+.kiwoom_usa .sell-bg{
+	background: #F2EDFF !important;
+}
+
+.kiwoom_usa .evt-sell{
+	color: #225CFF !important;
+}
+
+.kiwoom_usa .evt-sell-bg{
+	background: #E7F0FF !important;
+}
+
+.kiwoom_usa .evt-mainup{
+	color: #FFBEB6 !important;
+}
+
+.kiwoom_usa .etf-upbg1{
+	background: #D83337 !important;
+}
+
+.kiwoom_usa .etf-upbg2{
+	background: #FFF2F2 !important;
+}
+
+.kiwoom_usa .etf-downbg1{
+	background: #3865E1 !important;
+}
+
+.kiwoom_usa .etf-downbg2{
+	background: #E7F0FF !important;
+}
+
+.kiwoom_usa .hig-per_up{
+	color: #F0FF41 !important;
+}
+
+.evt-red{
+	color: #EA5863;
+}
+
+.evt-red-border{
+	border: 1px solid #EA5863;
+}
+
+.evt-blue{
+	color: #2850DC;
+}
+
+.evt-blue-border{
+	border: 1px solid #2850DC;
+}
+
+.evt-up{
+	color: #FFA0A0 !important;
+}
+
+.evt-down{
+	color: #7EBFF0 !important;
+}
+
+.event-bg{
+	background: #4C4E5D !important;
+}
+
+.res-up{
+	color: #F16E51 !important;
+	background: #F5F8D9;
+}
+
+.res-down{
+	color: #30A3E4 !important;
+	background: #E4FBF2 !important;
+}
+
+.hisu-up{
+	color: #FFB9B9 !important;
+}
+
+.hisu-down{
+	color: #9EE2FF !important;
+}
+
+.hisu_first{
+	background: #fff !important;
+	color: #586CDD !important;
 }
 
 .white{
@@ -216,12 +327,261 @@ button.more{
 	color: #333 !important;
 }
 
+.table-bb{
+	border-bottom: 1px solid #DCDCDC !important;
+}
+
+.tb-b{
+	border-bottom: 1px solid #C1C1C1 !important;
+}
+
+.bg-1{
+	background: #CB7BAB !important;
+}
+
+.bg-2{
+	background: #81C07F !important;
+}
+
+.bg-3{
+	background: #619BDF !important;
+}
+
 .fz-12{
-	font-size: 12px !important;
+	font-size: 12px;
 }
 
 .fz-16{
 	font-size: 16px !important;
+}
+
+.icn-bg1{
+	background: #84B993 !important;
+}
+
+.icn-bg2{
+	background: #9C8CCA !important;
+}
+
+.icn-bg3{
+	background: #8499B9 !important;
+}
+
+.alarm-bg-red{
+	background: #E81A1A;
+}
+
+.alarm-bg-blue{
+	background: #2850DC;
+}
+
+.inv-icn1{
+	color: #E00D14;
+}
+
+.inv-icn1-bg{
+	background: #FDECEC;
+}
+
+.inv-icn2{
+	color: #0E82DB;
+}
+
+.inv-icn2-bg{
+	background: #ECF5FC;
+}
+
+.inv-icn3{
+	color: #21A93C;
+}
+
+.inv-icn3-bg{
+	background: #EDF8EF;
+}
+
+.inv-icn4{
+	color: #858585;
+}
+
+.inv-icn4-bg{
+	background: #EFEFEF;
+}
+
+.nodo-icn1{
+	background: #79B286;
+}
+
+.nodo-icn2{
+	background: #5EB5AF;
+}
+
+.nodo-icn3{
+	background: #8C96CA;
+}
+
+.nodo-icn4{
+	background: #9C8CCA;
+}
+
+.sig-00000839{
+	background: #84B4C3 !important;
+}
+
+.sig-00000840{
+	background: #69B499 !important;
+}
+
+.sig-00000841{
+	background: #BFAF96 !important;
+}
+
+.nodo-icn00000839{
+	background: #8C96CA !important;
+}
+
+.nodo-icn00000840{
+	background: #5EB5AF !important;
+}
+
+.nodo-icn00000841{
+	background: #79B286 !important;
+}
+
+.txt-col00000839{
+	color: #333C6A !important;
+}
+
+.txt-col00000840{
+	color: #2B5D5A !important;
+}
+
+.txt-col00000841{
+	color: #2C5134 !important;
+}
+
+.al-intro_bg1{
+	background: #F0F0F5 !important;
+}
+
+.al-intro_bg2{
+	background: #F0F5F5 !important;
+}
+
+.al-intro_bg3{
+	background: #EFF6F1 !important;
+}
+
+.al-intro_span1{
+	background: #5B66A7 !important;
+}
+
+.al-intro_span2{
+	background: #38958F !important; 
+}
+
+.al-intro_span3{
+	background: #609D6D !important;
+}
+
+.intro01_bg{
+	background: #0785FE !important;
+}
+
+.intro02_bg{
+	background: #6A61E0 !important;
+}
+
+.intro03_bg{
+	background: #47A767 !important;
+}
+
+.S001_tag_bg{
+	background: #1767B5 !important;
+}
+
+.S002_tag_bg{
+	background: #2D2597 !important;
+}
+
+.S003_tag_bg{
+	background: #167536 !important;
+}
+
+.S001_bg{
+	background: #0785FE !important;
+}
+
+.S002_bg{
+	background: #6A61E0 !important;
+}
+
+.S003_bg{
+	background: #47A767 !important;
+}
+
+.S001_txt{
+	color: #0785FE !important;
+}
+
+.S002_txt{
+	color: #6A61E0 !important;
+}
+
+.S003_txt{
+	color: #47A767 !important;
+}
+
+.stand_bg01{
+	background: #8C8649 !important;
+}
+
+.stand_bg02{
+	background: #769846 !important;
+}
+
+.stand_bg03{
+	background: #57AC7E !important; 
+}
+
+.intro01_txt{
+	color: #A6D3FF !important;
+}
+
+.intro02_txt{
+	color: #D8D6FF !important;
+}
+
+.intro03_txt{
+	color: #C3FBD6 !important;
+}
+
+.log_main_bg{
+	background: #464966 !important;
+}
+
+.log_ser_bg{
+	border: 1px solid #575A73 !important;
+	background: #B446DA !important;
+}
+
+.bg_green{
+	background: #104E24 !important;
+}
+
+.bg_lightgray{
+	background: #F3F4F4 !important;
+}
+
+.first{
+  background: #E81A1A !important;
+}
+
+.quant_banner{
+  background: #6A61E0 !important;
+}
+
+.logic_banner{
+	background: #464966 !important;
 }
 
 .pt-20{
@@ -280,12 +640,8 @@ button.more{
 	margin-top: 17px !important;
 }
 
-.mb-0{
+mb-0{
 	margin-bottom: 0 !important;
-}
-
-.mb-8{
-	margin-bottom: 8px !important; 
 }
 
 .mb-15{
@@ -322,6 +678,30 @@ button.more{
 
 .right{
 	text-align: right !important;
+}
+
+span.lb01::before{
+	background: #FB6B77;
+}
+
+span.lb02::before{
+background: #1D5BCD;
+}
+
+span.lb03::before{
+	background: #1D5BCD;
+}
+
+span.lb04::before{
+	background: #0D6EFD;
+}
+
+span.lb05::before{
+	background: #A1D2FD;
+}
+
+span.lb06::before{
+	background: #C2DEF4;
 }
 
 .bold{

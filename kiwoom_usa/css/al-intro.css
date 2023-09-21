@@ -1,0 +1,431 @@
+/* content-header */
+
+.content-header.al_intro-header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 15px;
+}
+
+button.back-btn{
+  border: none;
+  background: none;
+  margin-right: 10px;
+  line-height: 15px;
+}
+
+button.back-btn img{
+  width: 24px;
+  height: 24px;
+}
+
+.header-txt{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+
+
+/* content-header */
+
+/* section1 */
+
+.gro-main{
+  padding: 0px 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-txt{
+  margin-top: 10px;
+}
+
+.txt1{
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #F7FAB8;
+  margin-bottom: 20px;
+}
+
+.txt2{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.txt3{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+
+
+.main-img img{
+  width: 95px;
+}
+
+.img-cir{
+  position: absolute;
+  width: 276px !important;
+  height: 276px !important;
+  right: -70px;
+  bottom: -40px;
+}
+
+/* section1 */
+
+/* section2 */
+
+.gro-content{
+  margin-top: 32px;
+}
+
+.gro-swiper{
+  padding: 0px 16px 10px;
+}
+
+.gro-slide{
+  border-radius: 16px;
+  height: 375px;
+  padding: 20px 10px 35px;
+}
+
+.slide-top{
+  padding: 0px 10px;
+}
+
+.slide-top span{
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 100px;
+  padding: 6px 15px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.slide-bot{
+  width: 100%;
+  height: 78px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: start;
+}
+
+.slide-txt{
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #212121;
+}
+
+.slide-txt strong{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.slide-txt em{
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.slide-img{
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gro-swiper .swiper-pagination{
+  position: relative;
+  bottom: 0;
+  z-index: 1;
+  margin-top: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+/* section2 */
+
+
+/* section3 */
+
+.gro-table{
+  padding: 30px 16px 40px;
+}
+
+.gro-table table{
+  width: 100%;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16.28px;
+  color: #666;
+}
+
+.gro-table table th, .gro-table table td{
+  padding: 14px 8px;
+}
+
+.gro-table table thead tr{
+  border-top: 1px solid #C1C1C1;
+  border-bottom: 1px solid #C1C1C1;
+}
+
+.gro-table table thead tr th{
+  text-align: center;
+  background: #F8F8F8;
+  border-right: 1px solid #DCDCDC;
+  color: #212121;
+}
+
+.gro-table table thead tr th:last-child{
+  border-right: none;
+}
+
+.gro-table table tbody tr{
+  border-bottom: 1px solid #DCDCDC; 
+}
+
+.gro-table table tbody tr td{
+  border-right: 1px solid #DCDCDC;
+}
+
+.gro-table table tbody tr td:first-child{
+  background: #F8F8F8;
+}
+
+.gro-table table tbody tr td:last-child{
+  border-right: none;
+}
+
+.gro-table table tbody tr td span button{
+  border: none;
+  background: none;
+  display: inline-block;
+}
+
+.gro-table table tbody tr td span button img{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 5;
+  vertical-align: middle;
+  margin-bottom: 2.3px;
+  margin-left: 5px;
+}
+
+
+/* modal */
+
+.modal{
+  width: 100%;
+  height: 100%;
+}
+
+.modal-dialog{
+  margin: 0;
+  padding: 0px 16px;
+}
+
+.modal-content{
+  width: 100%;
+  border-radius: 16px;
+  border: none;
+}
+
+.modal-header{
+  padding: 16px 20px;
+  text-align: center;
+}
+
+.modal-header .yper-head{
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25.04px;
+  color: #000;
+}
+
+.modal-header button.btn-close{
+  position: absolute;
+  right: 20px;
+}
+
+.modal-body{
+  width: 100%;
+  padding: 25px 20px;
+}
+
+.yper-body{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #212121;
+}
+
+.moclose.btn{
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 0px 0px 16px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.03px;
+  color: #fff;
+  text-align: center;
+}
+
+/* modal */
+
+
+/* section3 */
+
+
+/* logic al-intro */
+.content-header.log_al_intro-header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+}
+
+button.back-btn{
+  border: none;
+  background: none;
+  margin-right: 10px;
+  line-height: 15px;
+}
+
+button.back-btn img{
+  width: 24px;
+  height: 24px;
+}
+
+.header-txt{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.intro-main{
+  padding: 2px 16px 40px;
+  background: #fff;
+}
+
+.logmain-box{
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.logmain_tag{
+  width: 100%;
+  text-align: left;
+}
+
+.logmain_tag span{
+  display: inline-block;
+  padding: 3px 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15.02px;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.logmain_con{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logmain_txt{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.logmain_txt strong{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #F9FF54;
+}
+
+.logmain_img img{
+  width: 90px;
+}
+
+.logmain_foot{
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #A6D3FF;
+}
+
+
+
+.log_con01{
+  padding: 0px 30px;
+}
+
+.log_con01 span{
+  display: inline-block;
+  margin-bottom: 12px;
+  border-radius: 100px;
+  padding: 6px 15px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.log_con02{
+  padding: 10px 16px 20px;
+}
+
+.log-stand{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+.stand_tag{
+  border-radius: 100px;
+  padding: 6px 15px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.stand_txt{
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666;
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+
+.stand_img{
+  text-align: center;
+}

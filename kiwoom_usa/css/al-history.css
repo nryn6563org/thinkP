@@ -1,0 +1,205 @@
+.content-header{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+}
+
+button.back-btn{
+  background: none;
+  border: none;
+  margin-right: 10px;
+  line-height: 15px;
+}
+
+.header-txt{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+
+.alhistory_section{
+  padding: 20px 16px 40px;
+}
+
+.his-box{
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid #DFE3E7;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.his-date{
+  padding-bottom: 14px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #292929;
+}
+
+.his-list{
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: left;
+  border-bottom: 1px solid #F5F7F6;
+  padding: 16px 0;
+}
+
+.his-list:last-child{
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.his-list-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.his-list .his-icn{
+  display: inline-block;
+  width: 42px;
+  height: 26px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.his-list .his-name{
+  display: flex;
+  justify-content: start;  
+  align-items: center;
+}
+
+.his-name strong{
+  display: block;
+  width: auto;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #212121;
+}
+
+.his-name em{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #999;
+  display: block;
+  margin-left: 6px;
+  margin-right: 3px;
+}
+
+.his-list .his-pri{
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16.28px;
+  color: #212121;
+}
+
+.his-list .his-per{
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.53px;
+  color: #212121;
+}
+
+.his-list-bot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #999;
+  margin-top: 8px;
+}
+
+
+
+
+/* logic al-history */
+
+.radio-btn{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.radio-txt{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  color: #212121;
+  margin-right: 8px;
+}
+
+.radio-btn input[type=checkbox]{
+  position: absolute;
+  display: none;
+}
+
+.radio-btn input[type=checkbox]:checked + .switch_label{
+  background: #3F54C3;
+}
+
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 24px;
+  background: #BFBFBF;
+  border-radius: 99px;
+  transition: 0.2s;
+}
+
+.radio-btn input[type=checkbox]:checked + .switch_label .onf_btn{
+  left: 18px;
+}
+
+.onf_btn{
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 22px;
+  background: #fff;
+  transition: 0.2s;
+}
+
+
+/* logic al-history */
+
+
+/* nohis */
+
+.nohis-box{
+  height: 100vh;
+}
+
+.nohis{
+  width: 100%;
+  text-align: center;
+  padding: 160px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #212121;
+}
+
+/* nohis */

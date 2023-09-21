@@ -61,7 +61,6 @@
   --bs-nav-tabs-link-active-color: #495057;
   --bs-nav-tabs-link-active-bg: #fff;
   --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
-  border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
 
 .nav-link {
@@ -152,7 +151,7 @@ button.bs-nav:last-child{
   align-items: center;
 }
 
-.radio-btn{
+.us_radio-btn{
   position: relative;
   display: flex;
   justify-content: start;
@@ -168,12 +167,12 @@ button.bs-nav:last-child{
   margin-right: 8px;
 }
 
-.radio-btn input[type=checkbox]{
+.us_radio-btn input[type=checkbox]{
   position: absolute;
   display: none;
 }
 
-.radio-btn input[type=checkbox]:checked + .switch_label{
+.us_radio-btn input[type=checkbox]:checked + .switch_label{
   background: #454860;
 }
 
@@ -188,7 +187,7 @@ button.bs-nav:last-child{
   transition: 0.2s;
 }
 
-.radio-btn input[type=checkbox]:checked + .switch_label .onf_btn{
+.us_radio-btn input[type=checkbox]:checked + .switch_label .onf_btn{
   left: 18px;
 }
 
