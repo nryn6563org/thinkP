@@ -81,10 +81,6 @@
   margin-bottom: 15px;
 }
 
-.strat-box:last-child{
-  margin-bottom: 0;
-}
-
 .strat-box_icn span{
   display: inline-block;
   padding: 3px 12px;
