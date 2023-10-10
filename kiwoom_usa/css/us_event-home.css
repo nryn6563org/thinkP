@@ -96,6 +96,10 @@
   margin-bottom: 20px;
 }
 
+.strat-box_icn span em{
+  font-weight: 500;
+}
+
 .strat-box ul li{
   color: #333;
   font-size: 14px;
