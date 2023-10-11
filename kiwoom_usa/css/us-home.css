@@ -439,6 +439,7 @@ span.icn_name{
 }
 
 .us_top-name{
+  max-width: 115px;
   color: #333;
   font-size: 18px;
   font-weight: 700;

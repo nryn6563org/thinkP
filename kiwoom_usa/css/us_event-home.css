@@ -240,7 +240,7 @@ table.his-table{
 }
 
 table.his-table tr td span{
-  display: inline-block;
+  display: block;
 }
 
 table.his-table thead tr th{
