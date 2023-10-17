@@ -11,6 +11,12 @@
   color: rgba(255, 255, 255, 0.70);
 }
 
+.header-txt_name{
+  margin-right: 0 !important;
+  width: auto;
+  max-width: 160px;
+}
+
 .evthome-main{
   padding: 20px 16px 30px;
 }

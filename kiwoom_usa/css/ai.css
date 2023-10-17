@@ -357,6 +357,7 @@ button.bs-nav:last-child{
 .box_name{
   display: inline-block;
   width: auto;
+  max-width: calc(100% - 62px);
   color: #000;
   font-size: 16px;
   font-weight: 500;

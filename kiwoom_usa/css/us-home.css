@@ -29,6 +29,7 @@
 }
 
 .bri-btn{
+  width: 100%;
   padding: 20px 0;
   background: inherit;
   border: none;
