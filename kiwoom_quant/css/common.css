@@ -7,6 +7,13 @@
 @import url('quant_logic.css');
 @import url('ser-intro.css');
 
+@import url('us-home.css');
+@import url('ai.css');
+@import url('etf.css');
+@import url('news.css');
+@import url('us_event-home.css');
+@import url('us_ser-intro.css');
+
 /* reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -35,7 +42,7 @@ footer, header, hgroup, menu, nav, section {
 }
 html, body{
 	max-width: 100%;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 body {
 	line-height: 1;
@@ -75,15 +82,11 @@ img{
 
 #wrap{
 	width: 100%;
-	max-width: 100%;
-	min-width: 360px;
 	height: 100%;
 }
 
 #content{
 	width: 100%;
-	min-width: 360px;
-	max-width: 100%;
 	height: 100%;
 }
 
@@ -108,7 +111,25 @@ button.more{
 	z-index: 1000;
 }
 
+.kiwoom_usa .us_content-header{
+	width: 100%;
+	min-width: 360px;
+	height: 48px;
+	display: flex;
+  align-items: center;
+  padding: 0px 16px;
+	position: fixed;
+	background: #fff;
+	z-index: 1000;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
 .content-header::-webkit-scrollbar{
+	display: none;
+}
+
+.us_content-header::-webkit-scrollbar{
 	display: none;
 }
 
@@ -126,8 +147,20 @@ button.more{
   -webkit-box-orient: vertical !important;
 }
 
+.text-truncate4{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4 !important; 
+  -webkit-box-orient: vertical !important;
+}
+
 .sec-bg{
 	background: #F7F9FA !important;
+}
+
+.kiwoom_usa .eventhome-bg{
+	background: #454860 !important;
 }
 
 .sec-border{
@@ -146,6 +179,18 @@ button.more{
 
 .down{
 	color: #225CFF !important;
+}
+
+.kiwoom_usa .up{
+	color: #FFCECE !important;
+}
+
+.kiwoom_usa .down{
+	color: #D8C0FF !important;
+}
+
+.kiwoom_usa .us_up{
+	color: #E81A1A !important;
 }
 
 .his-down{
@@ -174,6 +219,54 @@ button.more{
 
 .borno{
 	border: none !important;
+}
+
+.kiwoom_usa .buy{
+	color: #E81A1A !important;
+}
+
+.kiwoom_usa .buy-bg{
+	background: #FBEBEB !important;
+}
+
+.kiwoom_usa .sell{
+	color: #6333CB !important;
+}
+
+.kiwoom_usa .sell-bg{
+	background: #F2EDFF !important;
+}
+
+.kiwoom_usa .evt-sell{
+	color: #225CFF !important;
+}
+
+.kiwoom_usa .evt-sell-bg{
+	background: #E7F0FF !important;
+}
+
+.kiwoom_usa .evt-mainup{
+	color: #FFBEB6 !important;
+}
+
+.kiwoom_usa .etf-upbg1{
+	background: #D83337 !important;
+}
+
+.kiwoom_usa .etf-upbg2{
+	background: #FFF2F2 !important;
+}
+
+.kiwoom_usa .etf-downbg1{
+	background: #3865E1 !important;
+}
+
+.kiwoom_usa .etf-downbg2{
+	background: #E7F0FF !important;
+}
+
+.kiwoom_usa .hig-per_up{
+	color: #F0FF41 !important;
 }
 
 .evt-red{
@@ -235,6 +328,10 @@ button.more{
 	color: #666 !important;
 }
 
+.darkgray{
+	color: #333 !important;
+}
+
 .table-bb{
 	border-bottom: 1px solid #DCDCDC !important;
 }
@@ -257,6 +354,10 @@ button.more{
 
 .fz-12{
 	font-size: 12px;
+}
+
+.fz-16{
+	font-size: 16px !important;
 }
 
 .icn-bg1{
@@ -496,13 +597,29 @@ button.more{
 	padding-top: 40px !important;
 }
 
+.pt-48{
+	padding-top: 48px !important;
+}
+
 .pt-50{
 	padding-top: 49px !important;
+}
+
+.pt-300{
+	padding-top: 300px !important;
+}
+
+.h-vh{
+	height: 100vh !important;
 }
 
 .pl-0{
 	padding-left: 0 !important;
 }
+
+.ml-8{
+	margin-left: 8px !important;
+}	
 
 .mr-10{
 	margin-right: 10px !important;
@@ -518,6 +635,10 @@ button.more{
 
 .mt-10{
 	margin-top: 10px !important;
+}
+
+.mt-15{
+	margin-top: 15px !important;
 }
 
 .mt-17{
@@ -546,6 +667,10 @@ mb-0{
 
 .mb-50{
 	margin-bottom: 50px !important;
+}
+
+.table-bt{
+	border-top: 1px solid #DCDCDC !important;
 }
 
 .center{
@@ -586,4 +711,12 @@ span.lb06::before{
 
 .bold{
 	font-weight: 700 !important;
+}
+
+.none{
+	display: none !important;
+}
+
+.jcend{
+	justify-content: end !important;
 }

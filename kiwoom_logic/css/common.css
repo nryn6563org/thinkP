@@ -12,6 +12,7 @@
 @import url('etf.css');
 @import url('news.css');
 @import url('us_event-home.css');
+@import url('us_ser-intro.css');
 
 /* reset */
 html, body, div, span, applet, object, iframe,
@@ -110,7 +111,7 @@ button.more{
 	z-index: 1000;
 }
 
-.kiwoom_usa .content-header{
+.kiwoom_usa .us_content-header{
 	width: 100%;
 	min-width: 360px;
 	height: 48px;
@@ -125,6 +126,10 @@ button.more{
 }
 
 .content-header::-webkit-scrollbar{
+	display: none;
+}
+
+.us_content-header::-webkit-scrollbar{
 	display: none;
 }
 
@@ -182,6 +187,10 @@ button.more{
 
 .kiwoom_usa .down{
 	color: #D8C0FF !important;
+}
+
+.kiwoom_usa .us_up{
+	color: #E81A1A !important;
 }
 
 .his-down{

@@ -12,6 +12,7 @@
 @import url('etf.css');
 @import url('news.css');
 @import url('us_event-home.css');
+@import url('us_ser-intro.css');
 
 /* reset */
 html, body, div, span, applet, object, iframe,
@@ -186,6 +187,10 @@ button.more{
 
 .kiwoom_usa .down{
 	color: #D8C0FF !important;
+}
+
+.kiwoom_usa .us_up{
+	color: #E81A1A !important;
 }
 
 .his-down{

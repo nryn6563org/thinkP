@@ -73,7 +73,151 @@
           <!-- ai소개 -->
           <div class="tab-pane fade show active sec-bg" id="aiIntro">
             <div class="ai-intro">
-              <img src="img/ai/aiIntro.png" alt="">
+
+              <!-- ai 메인 -->
+              <div style="padding: 0px 16px;">
+                <div class="us_ai-intro_main ai_rev-main">
+                  <span class="us_aiintro-main_icn ai_rev-icn">수익추구형 AI</span>
+                  <div class="us_aiintro-txt">
+                    한번쯤 나도<br>
+                    <span>미친 수익률을 경험하고 싶다!!</span>
+                  </div>
+                  <div class="us_aiintro-bot">
+                    <div class="us_aiintro-stxt">
+                      상한가 없는 미국 주식, <br>
+                      변동성이 큰 중소형주로 <br>
+                      높은 수익률을 추구합니다.
+                    </div>
+                    <div class="us_aiintro-main_img">
+                      <img src="img/ai/aiIntro_rev.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ai 메인 -->
+
+              <!-- ai-section1 -->
+              <div class="us_aiintro-con01">
+                <div class="swiper us_rec-swiper us_box-style">
+                  <div class="us_rec-box_top">
+                    <span class="us_box-icn us_rev-box_icn">최근 종목 매매성과</span>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide us_rec-slide">
+                      <div class="us_rec-slide_name text-truncate"><span>TSLA</span>테**</div>
+                      <div class="us_rec-slide_num">
+                        <div class="us_rec-num_txt">수익률 : <span class="us_up">**.**%</span></div>
+                        <div class="us_rec-num_txt">보유기간 : <span class="us_up">*일</span></div>
+                      </div>
+                      <div class="us_rec-slide_img">
+                        <img src="img/ai/aiintro-con01-1.png" alt="">
+                        <!-- 매도부분 -->
+                        <div class="us_text-box sell-position">
+                          매도가 : ***.** <br>
+                          보유기간 : *일 <br> 
+                          수익률 : <span class="us_up">+**.**%</span> <br>
+                          매도사유 :  <br>
+                            - 단기 주가 급등으로 목표가 근접 
+                        </div>
+                        <!-- 매수부분 -->
+                        <div class="us_text-box buy-position">
+                          <strong>투자포인트</strong> <br>
+                          주가는 연초 이후 37% 상승. 견조한 사이버 <br>
+                          보안 업황과 차별화된 실적 증가흐름 <br>
+                          보여주며 시장 대비 아웃퍼폼하는 모습
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide us_rec-slide">
+                      <div class="us_rec-slide_name text-truncate"><span>MSFT</span>마**</div>
+                      <div class="us_rec-slide_num">
+                        <div class="us_rec-num_txt">수익률 : <span class="us_up">**.**%</span></div>
+                        <div class="us_rec-num_txt">보유기간 : <span class="us_up">*일</span></div>
+                      </div>
+                      <div class="us_rec-slide_img">
+                        <img src="img/ai/aiintro-con01-1.png" alt="">
+                        <!-- 매도부분 -->
+                        <div class="us_text-box sell-position">
+                          매도가 : ***.** <br>
+                          보유기간 : *일 <br> 
+                          수익률 : <span class="us_up">+**.**%</span> <br>
+                          매도사유 :  <br>
+                            - 단기 주가 급등으로 목표가 근접 
+                        </div>
+                        <!-- 매수부분 -->
+                        <div class="us_text-box buy-position">
+                          <strong>투자포인트</strong> <br>
+                          주가는 연초 이후 37% 상승. 견조한 사이버 <br>
+                          보안 업황과 차별화된 실적 증가흐름 <br>
+                          보여주며 시장 대비 아웃퍼폼하는 모습
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination us_rec-pgn"></div>
+                </div>
+
+                <script>
+                  var swiper = new Swiper('.us_rec-swiper', {
+                    spaceBetween: 20,
+                    pagination: {
+                      el: '.swiper-pagination',
+                      clickable : true,
+                      renderBullet: function (index, className) {
+                        return '<span class="' + className + '">' + (index + 1) + "</span>";
+                      },
+                    },
+                    autoplay: {
+                      delay: 2500,
+                      disableOnInteraction: false,
+                    },
+                    loop: true,
+                  });
+                </script>
+
+              </div>
+              <!-- ai-section1 -->
+
+              <!-- ai-section2 -->
+              <div class="us_aiintro-con02">
+
+                <div class="us_box-style">
+                  <span class="us_box-icn us_rev-box_icn mb-20">수익추구형 투자대상</span>
+                  <div class="us_ai-box_maintxt">미래 성장 기업을 예측하고 발굴통해<br>성장 가능성이 높고 잠재력이 지닌 종목 선별</div>
+                  <div class="us_ai-box_stxt">
+                    수익을 추구하는 <span>주가 10달러미만</span> 중에, <br>
+                    변동성 투자 팩터를 통해 상승 확률이 가장 높은<br>종목 선정
+                  </div>
+                  <div class="us_ai-box_img">
+                    <img src="img/ai/aiintro-con02-1.png" alt="">
+                  </div>
+                </div>
+
+                <div class="us_box-style">
+                  <span class="us_box-icn us_rev-box_icn mb-20">수익추구형 종목선별</span>
+                  <div class="us_ai-box_img">
+                    <img style="margin-bottom: 30px;" src="img/ai/aiintro-con02-2.png" alt="">
+                    <div class="center"><img style="width: 255px;" src="img/ai/aiintro-con02-3.png" alt=""></div>
+                  </div>
+                </div>
+
+                <div class="us_box-style">
+                  <span class="us_box-icn us_rev-box_icn mb-20">수익추구 매매시점</span>
+                  <div class="us_ai-box_maintxt">이익실현,종목교체,보유기간등에 따라<br>종목 매도 기준선정</div>
+                  <div class="us_ai-box_stxt">
+                    <span>장중 실시간 시세 반영</span><br>
+                    목표가 도달 시 <span>이익 실현.</span><br>
+                    당일 AI분석결과 주가 상승강도 낮은 경우 <br>
+                    <span>상승확률 높은 종목으로 교체.</span>
+                  </div>
+                  <div class="us_ai-box_img">
+                    <img src="img/ai/aiintro-con02-4.png" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <!-- ai-section2 -->
+
             </div>
           </div>
           <!-- ai소개 -->

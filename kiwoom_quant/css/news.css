@@ -1,0 +1,169 @@
+/* section2 */
+.usnews{
+  padding: 30px 16px 80px;
+}
+
+.usnews-con{
+  padding: 20px 20px 25px;
+  border-radius: 15px;
+  border: 1px solid #DFE3E7;
+  background: #FFF;
+  margin-top: 20px;
+}
+
+.usnews-con_list{
+  text-align: left;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 16px 0;
+  border-top: 1px solid #EAEAEA;
+}
+
+.usnews-con_list:first-child{
+  padding-top: 0;
+  border-top: none;
+}
+
+.usnews-list_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.usnews-list_name{
+  max-width: 170px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #3C36BD;
+}
+
+.usnews-list_name span{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.usnews-list_time{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #999;
+  display: flex;
+  gap: 8px;
+}
+
+.usnews-list_line::after{
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background: #D7D7D7;
+}
+
+.usnews-list_bot{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #333;
+}
+/* section2 */
+
+
+/* us속보_상세보기 */
+.news-detail{
+  padding: 20px 16px 90px;
+}
+
+.detail-head{
+  padding-bottom: 16px;
+  border-bottom: 1px solid #CACACA;
+}
+
+.detail-title{
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.detail-info{
+  width: 100%;
+  padding: 5px;
+  margin-top: 20px;
+  background: #F8F5EC;
+}
+
+.detail-info_txt{
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  line-height: 20px;
+  padding-left: 23px;
+  position: relative;
+}
+
+.detail-info_txt span{
+  color: #10A37F;
+}
+
+.detail-info_txt::before{
+  display: inline-block;
+  content: "";
+  background-image: url(../img/news/detail-info.png);
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.detail-txt1{
+  margin-top: 20px;
+  padding: 15px 8px 15px 13px;
+  border-top: 1px solid #7ABAAA;
+  border-bottom: 1px solid #7ABAAA;
+  background: #F7F7F8;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.detail-data{
+  margin-top: 30px;
+  width: 100%;
+  color: #333;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.detail-data a{
+  display: block;
+  font-weight: 400;
+  color: #333;
+  text-decoration: underline;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.detail-txt2{
+  color: #333;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.detail-graph_title{
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-bottom: 17px;
+}
+/* us속보_상세보기 */
