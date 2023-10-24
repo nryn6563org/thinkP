@@ -21,7 +21,7 @@
 
 .us_ser-maintxt span{
   display: block;
-  color: #87C5FF;
+  color: #C0B6FF;
   background: none;
   font-size: 15px;
   line-height: 22px;
@@ -38,7 +38,7 @@
 }
 
 .us_ser-mainstxt span{
-  color: #E9A9FF;
+  color: #C0B6FF;
 }
 
 .us_ser-mainsstxt{
@@ -320,7 +320,7 @@ button.us_ser-btn{
 .us_report-phone_img{
   width: 270px;
   position: absolute;
-  z-index: 55;
+  z-index: 33;
 }
 
 .us_report-phone_img img{
