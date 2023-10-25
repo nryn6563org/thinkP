@@ -212,13 +212,17 @@
 
 .icn-tag{
   display: inline-block;
-  color: #666;
+  color: #666 !important;
   background: #E7EBF1;
   font-size: 11px;
   font-weight: 500;
   line-height: 14px;
   padding: 3px 6px;
   border-radius: 4px;
+}
+
+.icn-tag em{
+  display: inline-block;
 }
 
 .left_top span{
@@ -261,6 +265,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
+  color: rgba(255, 255, 255, 0.50);
 }
 
 .rev-con_more{
@@ -399,6 +404,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #F2F2F2;
 }
 
 .etf-top_left{
@@ -410,6 +416,7 @@
   border-radius: 5px;
   text-align: center;
   margin-right: 10px;
+  background: #777;
 }
 
 .etf-top_left span{
@@ -460,6 +467,7 @@ span.top-per{
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  color: #666666;
 }
 
 .right_bot{
@@ -533,3 +541,16 @@ span.top-per{
   border-radius: 0px 0px 15px 0px !important;
 }
 /* 회원전용 팝업창 */
+
+
+/* 매수예정, 매도예정 깜빡임 애니메이션 */
+.blink{
+  animation: blink-effect 1.3s step-end infinite;
+}
+
+@keyframes blink-effect {
+  50%{
+    opacity: 0;
+  }
+}
+/* 매수예정, 매도예정 깜빡임 애니메이션 */
