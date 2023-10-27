@@ -88,7 +88,7 @@
 }
 
 
-.bri-con{
+.bri-con_box{
   padding-left: 16px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -96,7 +96,7 @@
   gap: 10px;
 }
 
-.bri-con::-webkit-scrollbar{
+.bri-con_box::-webkit-scrollbar{
   display: none;
 }
 

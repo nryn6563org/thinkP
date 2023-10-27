@@ -70,52 +70,55 @@
                 4,381.89로,
               </div>
             </button>
+          
             <div class="bri-con">
-              <button id="briConBtn01" class="bri_con-btn">
-                <div class="name-en text-truncate">TSLA</div>
-                <div class="name-ko text-truncate">테슬라</div>
-              </button>
-              <button id="briConBtn02" class="bri_con-btn">
-                <div class="name-en text-truncate">AMD</div>
-                <div class="name-ko text-truncate">어드밴스드 마이크로 디바이시스</div>
-              </button>
-              <button id="briConBtn03" class="bri_con-btn">
-                <div class="name-en text-truncate">NVDA</div>
-                <div class="name-ko text-truncate">엔비디아</div>
-              </button>
-              <button id="briConBtn04" class="bri_con-btn">
-                <div class="name-en text-truncate">AAPL</div>
-                <div class="name-ko text-truncate">애플</div>
-              </button>
-              <button id="briConBtn05" class="bri_con-btn">
-                <div class="name-en text-truncate">TSLA</div>
-                <div class="name-ko text-truncate">테슬라</div>
-              </button>
-              <button id="briConBtn06" class="bri_con-btn">
-                <div class="name-en text-truncate">AMD</div>
-                <div class="name-ko text-truncate">어드밴스드 마이크로 디바이시스</div>
-              </button>
-              <button id="briConBtn07" class="bri_con-btn">
-                <div class="name-en text-truncate">NVDA</div>
-                <div class="name-ko text-truncate">엔비디아</div>
-              </button>
-              <button id="briConBtn08" class="bri_con-btn">
-                <div class="name-en text-truncate">AAPL</div>
-                <div class="name-ko text-truncate">애플</div>
-              </button>
-              <button id="briConBtn09" class="bri_con-btn">
-                <div class="name-en text-truncate">TSLA</div>
-                <div class="name-ko text-truncate">테슬라</div>
-              </button>
-              <button id="briConBtn10" class="bri_con-btn">
-                <div class="name-en text-truncate">AMD</div>
-                <div class="name-ko text-truncate">어드밴스드 마이크로 디바이시스</div>
-              </button>
+              <div class="bri-con_box">
+                <button id="briConBtn01" class="bri_con-btn">
+                  <div class="name-en text-truncate">TSLA</div>
+                  <div class="name-ko text-truncate">테슬라</div>
+                </button>
+                <button id="briConBtn02" class="bri_con-btn">
+                  <div class="name-en text-truncate">AMD</div>
+                  <div class="name-ko text-truncate">어드밴스드 마이크로 디바이시스</div>
+                </button>
+                <button id="briConBtn03" class="bri_con-btn">
+                  <div class="name-en text-truncate">NVDA</div>
+                  <div class="name-ko text-truncate">엔비디아</div>
+                </button>
+                <button id="briConBtn04" class="bri_con-btn">
+                  <div class="name-en text-truncate">AAPL</div>
+                  <div class="name-ko text-truncate">애플</div>
+                </button>
+                <button id="briConBtn05" class="bri_con-btn">
+                  <div class="name-en text-truncate">TSLA</div>
+                  <div class="name-ko text-truncate">테슬라</div>
+                </button>
+                <button id="briConBtn06" class="bri_con-btn">
+                  <div class="name-en text-truncate">AMD</div>
+                  <div class="name-ko text-truncate">어드밴스드 마이크로 디바이시스</div>
+                </button>
+                <button id="briConBtn07" class="bri_con-btn">
+                  <div class="name-en text-truncate">NVDA</div>
+                  <div class="name-ko text-truncate">엔비디아</div>
+                </button>
+                <button id="briConBtn08" class="bri_con-btn">
+                  <div class="name-en text-truncate">AAPL</div>
+                  <div class="name-ko text-truncate">애플</div>
+                </button>
+                <button id="briConBtn09" class="bri_con-btn">
+                  <div class="name-en text-truncate">TSLA</div>
+                  <div class="name-ko text-truncate">테슬라</div>
+                </button>
+                <button id="briConBtn10" class="bri_con-btn">
+                  <div class="name-en text-truncate">AMD</div>
+                  <div class="name-ko text-truncate">어드밴스드 마이크로 디바이시스</div>
+                </button>
+              </div>
             </div>
           </div>
 
           <script>
-            const briCon = document.querySelector('.bri-con');
+            const briCon = document.querySelector('.bri-con_box');
             const briConBtn = document.querySelectorAll('.bri_con-btn');
             for (let i = 0; i < briConBtn.length; i++) {
               briConBtn[i].addEventListener('click', function () {
