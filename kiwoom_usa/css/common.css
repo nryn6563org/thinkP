@@ -720,3 +720,7 @@ span.lb06::before{
 .jcend{
 	justify-content: end !important;
 }
+
+.detail-body div strong{
+	font-weight: 700 !important;
+}

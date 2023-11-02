@@ -91,6 +91,9 @@
 
 .detail-body{
   margin-top: 20px;
+  font-size: 16px;
+  color: #000;
+  line-height: 26px;
 }
 
 .detail-info{
@@ -170,3 +173,9 @@
   margin-bottom: 17px;
 }
 /* us속보_상세보기 */
+
+
+.usnews-list_right{
+  width: 100%;
+  justify-content: end;
+}
