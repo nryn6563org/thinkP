@@ -715,3 +715,46 @@ button.bs-nav:last-child{
   background: #4F3FC6 !important;
 }
 /* 안정추구 ai */
+
+
+/* 상장폐지 팝업창*/
+.modal.list-popup .modal-body {
+  width: 100%;
+  padding: 30px 19px;
+}
+
+.modal.list-popup .modal-body strong{
+  display: block;
+  color: #212121;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+
+.modal.list-popup .modal-body span{
+  display: block;
+  color: #212121;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.listmodal-btn{
+  width: 100%;
+}
+
+.listmodal-btn button{
+  width: 100%;
+  height: 48px;
+  border-radius: 0px 0px 16px 16px;
+  border: none;
+  background: #4F3FC6;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+/* 상장폐지 팝업창*/

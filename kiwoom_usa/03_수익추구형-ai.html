@@ -183,7 +183,10 @@
 
                 <div class="us_box-style">
                   <span class="us_box-icn us_rev-box_icn mb-20">수익추구형 투자대상</span>
-                  <div class="us_ai-box_maintxt">미래 성장 기업을 예측하고 발굴통해<br>성장 가능성이 높고 잠재력이 지닌 종목 선별</div>
+                  <div class="us_ai-box_maintxt">
+                    미래 성장 기업을 예측하고, 발굴을 통해<br>
+                    성장 가능성이 높고 잠재력을 지닌 종목 선별
+                  </div>
                   <div class="us_ai-box_stxt">
                     수익을 추구하는 <span>주가 10달러미만</span> 중에, <br>
                     변동성 투자 팩터를 통해 상승 확률이 가장 높은<br>종목 선정
@@ -329,7 +332,8 @@
 
                 <div class="buy-con">
 
-                  <button class="buy-con_box">
+                  <!-- 상장폐지일 때 -->
+                  <button class="buy-con_box" type="button" data-bs-toggle="modal" data-bs-target="#listedPopup">
                     <div class="buy-box_top">
                       <div class="top1">
                         <div class="top1-left">AMZNI</div>
@@ -362,6 +366,7 @@
                       </div>
                     </div>
                   </button>
+                  <!-- 상장폐지일 때 -->
 
                   <button class="buy-con_box">
                     <div class="buy-box_top">
@@ -649,7 +654,21 @@
 
         </div>
 
-
+        <!-- 상장폐지 팝업창 -->
+        <div class="modal fade list-popup" id="listedPopup">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <strong>상장폐지 종목입니다.</strong>
+                <span>매매에 참고하여 주시기 바랍니다.</span>
+              </div>
+              <div class="listmodal-btn">
+                <button type="button" data-bs-dismiss="modal">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 상장폐지 팝업창 -->
 
       </div> <!--id="content"-->
 
