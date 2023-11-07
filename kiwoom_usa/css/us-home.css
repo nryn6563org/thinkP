@@ -485,7 +485,7 @@ span.top-per{
 
 /* 회원전용 팝업창 */
 .popup{
-  padding: 0px 16px;
+  padding: 0px;
 }
 
 .modal-dialog{

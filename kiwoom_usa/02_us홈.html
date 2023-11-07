@@ -148,7 +148,7 @@
             </div>
             <div class="rev-stxt">변동성 큰 중소형주로 높은 수익을 추구합니다.</div>
             <div class="rev-con">
-              <button class="rev-list">
+              <button class="rev-list" data-bs-toggle="modal" data-bs-target="#listedPopup">
                 <div class="rev-list_left">
                   <div class="left_top">
                     <div class="icn-tag buy buy-bg"><em class="blink">매수예정</em></div>
@@ -470,6 +470,22 @@
 
         </section>
         <!-- section5 -->
+
+        <!-- 상장폐지 팝업창 -->
+        <div class="modal fade list-popup" id="listedPopup">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <strong>상장폐지 종목입니다.</strong>
+                <span>매매에 참고하여 주시기 바랍니다.</span>
+              </div>
+              <div class="listmodal-btn">
+                <button type="button" data-bs-dismiss="modal">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 상장폐지 팝업창 -->
 
 
       </div> <!--id="content"-->
