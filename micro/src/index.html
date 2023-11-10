@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마이크로사이트</title>
+  <!-- font -->
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- AOS 애니메이션 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- GSAP 애니메이션 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="h-full">
+  
+  <div id="wrap">
+
+    <!-- 헤더 -->
+    <header id="header" class="mainHeader">
+      
+      <div class="headerWrapper">
+        <div><img class="logoImg" src="../img/logo.png" alt="logo"></div>
+        <div class="flex justify-center gap-[10px] items-center">
+          <button class="headerBtn join">가입하기</button>
+          <button class="headerBtn download">앱다운로드</button>
+        </div>
+      </div>
+
+      <div class="md-headerWrapper">
+
+        <div class="mdFlex">
+          <div class="md-header_left">
+            <img class="w-[24px]" src="../img/rassi-logo.png" alt="rassi-logo">
+            <span>라씨매매비서</span>
+          </div>
+        
+          <div class="md-header_right">
+            <button class="md-headerBtn">앱 다운로드</button>
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#mdMenu">
+              <img class="w-[24px]" src="../img/menu-icn.png" alt="menu-icn">
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="offcanvas offcanvas-end" id="mdMenu">
+        <div class="offcanvas-header">
+          <div class="md-header_left">
+            <img class="w-[24px]" src="../img/rassi-logo.png" alt="rassi-logo">
+            <span>라씨매매비서</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="md-menu_btn">
+            <button class="join">가입하기</button>
+            <button class="download">앱 다운로드</button>
+          </div>
+          <div class="md-menu_link">
+            <button>자주 묻는 질문</button>
+            <button>블로그</button>
+            <button>카카오톡 상담</button>
+          </div>
+        </div>
+      </div>
+
+    </header>
+    <!-- 헤더 -->
+
+    <!-- 컨텐츠 부분 -->
+    <section id="container">
+
+      <!-- section1 -->
+      <div id="section1" class="section bg-bgColor">
+
+        <div class="sectionWrapper sectionWrapper01">
+
+          <div>
+            <div class="sec-maintxt" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+              <strong>언제 살까? 언제 팔까?</strong>
+              <span>주식을 잘하는 방법, <em>라씨 매매비서</em></span>
+            </div>
+            <div class="qrcode" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+              <div class="qrcodeImg"><img src="../img/appdownQR.png" alt="QR코드"></div>
+              <div class="qrcodeTxt">
+                <strong>APP다운로드</strong>
+                <span>QR코드 스캔 또는 스토어에서 ‘라씨매매비서’를 검색하세요</span>
+              </div>
+            </div>
+            <div class="storeBtn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="-100">
+              <button>
+                <img src="../img/gglogo.png" alt="구글로고">
+                구글플레이
+              </button>
+              <button>
+                <img src="../img/aplogo.png" alt="애플로고">
+                앱 스토어
+              </button>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-offset="0" class="max-md:flex max-md:justify-center">
+            <img class="w-[542px] max-md:w-[200px]" src="../img/section1-main.png" alt="section1 메인이미지">
+          </div>
+
+          <div class="md-appDown" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+            <button>앱 다운로드</button>
+          </div>
+
+        </div>
+
+        <div class="scrollDown">
+          <img class="w-[68px]" src="../img/scrollDown.png" alt="스크롤다운">
+        </div>
+
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+            gsap.to("#section1", {
+              scrollTrigger: {
+                trigger: "#section1",
+                toggleActions: "restart none reverse none",
+                start: "-1% top",
+                end: "99% top",
+                // markers: true,
+                toggleClass: { targets: '#header', className: 'bg-bgColor' },
+              },
+            });
+        </script>
+
+      </div>
+      <!-- section1 -->
+
+      <!-- section2 -->
+      <div id="section2" class="section bg-white">
+
+        <div class="sectionWrapper">
+
+          <div>
+            <div class="sectionTxt">
+              <strong data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">매매타이밍의 정답, <br>AI매매신호</strong>
+              <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                어떤 종목을 매매하던지 고도화된<br class="md_br"> 알고리즘이<br class="lg_br"> 사고 팔 시점과 정확한<br class="md_br"> 가격을 알려드립니다.
+              </span>
+            </div>
+            <div class="sec02-icn" data-aos="fade-up" data-aos-duration="1000"
+              data-aos-delay="400" data-aos-offset="0">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#anaPop">
+                <div class="sec02-icn_img"><img class="w-[59px] max-md:w-[32px]" src="../img/analyze.png" alt="분석아이콘"></div>
+                <div class="sec02-icn_txt">전종목<br>분석</div>
+              </button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#sigPop">
+                <div class="sec02-icn_img"><img class="w-[59px] max-md:w-[32px]" src="../img/signal.png" alt="신호아이콘"></div>
+                <div class="sec02-icn_txt">나만의<br>매도신호</div>
+              </button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#alaPop">
+                <div class="sec02-icn_img"><img class="w-[59px] max-md:w-[32px]" src="../img/alarm.png" alt="알림아이콘"></div>
+                <div class="sec02-icn_txt">실시간<br>알림</div>
+              </button>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="sec02-mainImg" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-offset="0">
+              <img src="../img/section2-main.png" alt="section2 메인이미지">
+            </div>
+            <div class="sec02-subImg shake" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="0">
+              <img src="../img/section2-sub.png" alt="section2 서브이미지">
+            </div>
+          </div>
+
+        </div>
+
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+            gsap.to("#section2", {
+              scrollTrigger: {
+                trigger: "#section2",
+                toggleActions: "restart none reverse none",
+                start: "-1% top",
+                end: "99% top",
+                // markers: true,
+                toggleClass: { targets: '#header', className: 'bg-white' },
+              },
+            });
+        </script>
+
+      </div>
+      <!-- section2 -->
+
+      <!-- section3 -->
+      <div id="section3" class="section bg-bgColor">
+
+        <div class="sectionWrapper">
+
+          <div>
+            <div class="sectionTxt">
+              <strong data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                모든 매매내역 100% 공개<br>검증된 성과
+              </strong>
+              <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                2015년 최초의 주식 AI서비스 출시, <br>
+                라씨 연구소에서는 지속적인 연구 개발로 <br>
+                알고리즘을 고도화합니다. <br>
+                모든 <em class="md_none">AI매매신호와</em> 성과는 <em class="md_none">라씨 매매비서 <br>
+                앱에서</em> 100% 투명하게 공개됩니다.
+              </span>
+            </div>
+            <div class="sec03-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="-100">
+              <button>라씨 매매비서의 매매 브리핑보기</button>
+            </div>
+            <div class="md-sec03-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+              <button>매매 브리핑보기</button>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="sec03-mainImg" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+              <img src="../img/section3-main.png" alt="section3 메인이미지">
+            </div>
+            <div class="sec03-subImg circle md-circle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="0">
+              <img src="../img/section3-sub.png" alt="section3 서브이미지">
+            </div>
+          </div>
+
+        </div>
+
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+            gsap.to("#section3", {
+              scrollTrigger: {
+                trigger: "#section3",
+                toggleActions: "restart none reverse none",
+                start: "-1% top",
+                end: "99% top",
+                // markers: true,
+                toggleClass: { targets: '#header', className: 'bg-bgColor' },
+              },
+            });
+        </script>
+
+      </div>
+      <!-- section3 -->
+
+      <!-- section4 -->
+      <div id="section4" class="section bg-white">
+
+        <div class="sectionWrapper">
+        
+          <div>
+            <div class="sectionTxt">
+              <strong data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                매매전 종목 정보 확인은, <br>
+                종목 인사이트
+              </strong>
+              <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                이슈, 실적 투자자별 매매동행, 대차/공매 등 <br>
+                모든 데이터를 시각화하여 쉽게 분석할 수 있습니다. <br>
+                <em class="md_none">종목의 시세를 움직이는 힘을 꿰뚫어보세요.</em>
+              </span>
+            </div>
+          </div>
+        
+          <div class="sec04-con" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+            <div class="sec04-con_txt">종목 인사이트 미리보기</div>
+            <div class="sec04-con_box">
+        
+              <div class="sec04-con_boxname">
+                <span>이벤트 차트</span>
+              </div>
+
+              <div class="swiper chartSwiper">
+
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <img class="w-[346px] max-md:w-[253px]" src="../img/chart01.png" alt="chart01">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w-[346px] max-md:w-[253px]" src="../img/chart02.png" alt="chart02">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w-[346px] max-md:w-[253px]" src="../img/chart03.png" alt="chart03">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w-[346px] max-md:w-[253px]" src="../img/chart04.png" alt="chart04">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w-[346px] max-md:w-[253px]" src="../img/chart05.png" alt="chart05">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="w-[346px] max-md:w-[253px]" src="../img/chart06.png" alt="chart06">
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              
+              <script>
+                var swiper = new Swiper(".chartSwiper", {
+                  spaceBetween: 30,
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                  },
+                  autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                  },
+                  loop: true,
+                });
+              </script>
+              
+            </div>
+
+            <div class="chart-txt"><span>주가 흐름과 발생된 이벤트의 연관성을 한눈에 살펴 <br>보실 수 있습니다.</span></div>
+
+          </div>
+        </div>
+
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+            gsap.to("#section4", {
+              scrollTrigger: {
+                trigger: "#section4",
+                toggleActions: "restart none reverse none",
+                start: "-1% top",
+                end: "99% top",
+                // markers: true,
+                toggleClass: { targets: '#header', className: 'bg-white' },
+              },
+            });
+        </script>
+
+        </div>
+      <!-- section4 -->
+
+      <!-- section5 -->
+      <div id="section5" class="section bg-bgColor">
+
+        <div class="sectionWrapper">
+
+          <div>
+            <div class="sectionTxt">
+              <strong data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">시장의 주류를 알고 싶다면 <br>이슈와 테마</strong>
+              <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                매일 업데이트 되는 ‘오늘의 이슈’ <br>
+                대장주와 추세를 본석해주는 ‘테마주도주’ <br>
+                시장을 움직이는 주류와 관련된 종목을 모두 <br>
+                알려드립니다.
+              </span>
+            </div>
+          </div>
+
+          <div class="sec05-con" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+
+            <div class="con-tab nav">
+              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#todayIsu" type="button" aria-selected="true">
+                오늘의 이슈
+              </button>
+              <div class="tab-line"></div>
+              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#thema" type="button" aria-selected="false">
+                테마 주도주
+              </button>
+            </div>
+
+            <div class="tab-content">
+
+              <!-- 오늘의 이슈 -->
+              <div class="tab-pane fade show active" id="todayIsu">
+                <div class="max-md:flex max-md:justify-center">
+                  <div class="bubble-chart">
+                
+                    <div data-aos="zoom-in" data-aos-delay="500" data-aos-offset="-100"><img class="w-[270px]" src="../img/bubble-center.png"
+                        alt="bubbleCenter"></div>
+                
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="600" class="bubble01 absolute"><img
+                        class="max-w-[90px] w-[90px]" src="../img/bubble01.png" alt="bubble01"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="700" class="bubble02 absolute"><img
+                        class="max-w-[85px] w-[85px]" src="../img/bubble02.png" alt="bubble02"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="800" class="bubble03 absolute"><img
+                        class="max-w-[160px] w-[160px]" src="../img/bubble03.png" alt="bubble03"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="900" class="bubble04 absolute"><img
+                        class="max-w-[50px] w-[50px]" src="../img/bubble04.png" alt="bubble04"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="1000" class="bubble05 absolute"><img
+                        class="max-w-[120px] w-[120px]" src="../img/bubble05.png" alt="bubble05"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="1100" class="bubble06 absolute"><img
+                        class="max-w-[85px] w-[85px]" src="../img/bubble06.png" alt="bubble06"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="1200" class="bubble07 absolute"><img
+                        class="max-w-[85px] w-[85px]" src="../img/bubble07.png" alt="bubble07"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="1300" class="bubble08 absolute"><img
+                        class="max-w-[130px] w-[130px]" src="../img/bubble08.png" alt="bubble08"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="1400" class="bubble09 absolute"><img
+                        class="max-w-[115px] w-[115px]" src="../img/bubble09.png" alt="bubble09"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="1500" class="bubble10 absolute"><img
+                        class="max-w-[70px] w-[70px]" src="../img/bubble10.png" alt="bubble10"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="1600" class="bubble11 absolute"><img
+                        class="max-w-[60px] w-[60px]" src="../img/bubble11.png" alt="bubble11"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="1700" class="bubble12 absolute"><img
+                        class="max-w-[58px] w-[58px]" src="../img/bubble12.png" alt="bubble12"></div>
+                    <div data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="1800" class="bubble13 absolute"><img
+                        class="max-w-[72px] w-[72px]" src="../img/bubble13.png" alt="bubble13"></div>
+                
+                  </div>
+
+                  <div class="md-bubble-chart">
+
+                    <div data-aos="zoom-in" data-aos-delay="500" data-aos-offset="0"><img class="w-[122px]" src="../img/md-bubble-center.png"
+                      alt="bubbleCenter"></div>
+              
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="600" class="md-bubble01 absolute"><img
+                      class="max-w-[44px] w-[44px]" src="../img/md-bubble01.png" alt="bubble01"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="700" class="md-bubble02 absolute"><img
+                      class="max-w-[37px] w-[37px]" src="../img/md-bubble02.png" alt="bubble02"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="800" class="md-bubble03 absolute"><img
+                      class="max-w-[73px] w-[73px]" src="../img/md-bubble03.png" alt="bubble03"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="900" class="md-bubble04 absolute"><img
+                      class="max-w-[22px] w-[22px]" src="../img/md-bubble04.png" alt="bubble04"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1000" class="md-bubble05 absolute"><img
+                      class="max-w-[53px] w-[53px]" src="../img/md-bubble05.png" alt="bubble05"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1100" class="md-bubble06 absolute"><img
+                      class="max-w-[38px] w-[38px]" src="../img/md-bubble06.png" alt="bubble06"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1200" class="md-bubble07 absolute"><img
+                      class="max-w-[38px] w-[38px]" src="../img/md-bubble07.png" alt="bubble07"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1300" class="md-bubble08 absolute"><img
+                      class="max-w-[58px] w-[58px]" src="../img/md-bubble08.png" alt="bubble08"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1400" class="md-bubble09 absolute"><img
+                      class="max-w-[50px] w-[50px]" src="../img/md-bubble09.png" alt="bubble09"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1500" class="md-bubble10 absolute"><img
+                      class="max-w-[30px] w-[30px]" src="../img/md-bubble10.png" alt="bubble10"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1600" class="md-bubble11 absolute"><img
+                      class="max-w-[28px] w-[28px]" src="../img/md-bubble11.png" alt="bubble11"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1700" class="md-bubble12 absolute"><img
+                      class="max-w-[25px] w-[25px]" src="../img/md-bubble12.png" alt="bubble12"></div>
+                  <div data-aos="zoom-in" data-aos-offset="0" data-aos-delay="1800" class="md-bubble13 absolute"><img
+                      class="max-w-[32px] w-[32px]" src="../img/md-bubble13.png" alt="bubble13"></div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- 오늘의 이슈 -->
+
+              <!-- 테마 주도주 -->
+              <div class="tab-pane fade" id="thema">
+                <div class="thema-con">
+                  <div><img class="max-w-[334px] w-[334px] max-md:w-[192px] max-md:max-w-[192px]" src="../img/thema-img.png" alt="thema-con"></div>
+                </div>
+              </div>
+              <!-- 테마 주도주 -->
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+            gsap.to("#section5", {
+              scrollTrigger: {
+                trigger: "#section5",
+                toggleActions: "restart none reverse none",
+                start: "-1% top",
+                end: "99% top",
+                // markers: true,
+                toggleClass: { targets: '#header', className: 'bg-bgColor' },
+              },
+            });
+        </script>
+
+      </div>
+      <!-- section5 -->
+
+      <!-- section6 -->
+      <div id="section6" class="section bg-[#364083]">
+
+        <div class="sectionWrapper-block">
+
+          <div class="sec06-headtxt">
+            <strong data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">최근 AI매매신호 현황</strong>
+            <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+              라씨 매매비서에서는 <em class="md_none">수익률과 매매내역을 모두 공개합니다.</em> 
+              <em class="md_block">투자에 유용한<br> 전략적 정보를 제공 합니다.</em>
+            </span>
+          </div>
+
+          <div class="sec06-con">
+
+            <div class="sec06-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+              <div class="event-code">002255</div>
+              <div class="event-name">삼성전자</div>
+              <div class="event-per"><span>8.25%</span></div>
+              <div class="event-tag"><span>매도가</span></div>
+              <div class="event-pri">70,600원</div>
+              <div class="event-date">2023.10.01 09:20</div>
+            </div>
+            <div class="sec06-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+              <div class="event-code">002255</div>
+              <div class="event-name">삼성전자</div>
+              <div class="event-per"><span>8.25%</span></div>
+              <div class="event-tag"><span>매도가</span></div>
+              <div class="event-pri">70,600원</div>
+              <div class="event-date">2023.10.01 09:20</div>
+            </div>
+            <div class="sec06-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+              <div class="event-code">002255</div>
+              <div class="event-name">삼성전자</div>
+              <div class="event-per"><span>8.25%</span></div>
+              <div class="event-tag"><span>매도가</span></div>
+              <div class="event-pri">70,600원</div>
+              <div class="event-date">2023.10.01 09:20</div>
+            </div>
+            <div class="sec06-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="0">
+              <div class="event-code">002255</div>
+              <div class="event-name">삼성전자</div>
+              <div class="event-per"><span>8.25%</span></div>
+              <div class="event-tag"><span>매도가</span></div>
+              <div class="event-pri">70,600원</div>
+              <div class="event-date">2023.10.01 09:20</div>
+            </div>
+
+          </div>
+
+          <div class="md-sec06-con" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+
+            <div class="swiper aiSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide aiSwiper-slide">
+                  <div class="slide-box">
+                    <div>
+                      <div class="event-code">002222</div>
+                      <div class="event-name">삼성전자</div>
+                      <div class="event-per"><span>+22.25%</span></div>
+                    </div>
+                    <div class="mt-[53px]">
+                      <div class="event-tag"><span>매수가</span></div>
+                      <div class="event-pri">70,600원</div>
+                      <div class="event-date">2023/10/01 09:20</div>
+                    </div>
+                  </div>
+                  <div class="slide-box">
+                    <div>
+                      <div class="event-code">002222</div>
+                      <div class="event-name">삼성전자</div>
+                      <div class="event-per"><span>+22.25%</span></div>
+                    </div>
+                    <div class="mt-[53px]">
+                      <div class="event-tag"><span>매수가</span></div>
+                      <div class="event-pri">70,600원</div>
+                      <div class="event-date">2023/10/01 09:20</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide aiSwiper-slide">
+                  <div class="slide-box">
+                    <div>
+                      <div class="event-code">002222</div>
+                      <div class="event-name">삼성전자</div>
+                      <div class="event-per"><span>+22.25%</span></div>
+                    </div>
+                    <div class="mt-[53px]">
+                      <div class="event-tag"><span>매수가</span></div>
+                      <div class="event-pri">70,600원</div>
+                      <div class="event-date">2023/10/01 09:20</div>
+                    </div>
+                  </div>
+                  <div class="slide-box">
+                    <div>
+                      <div class="event-code">002222</div>
+                      <div class="event-name">삼성전자</div>
+                      <div class="event-per"><span>+22.25%</span></div>
+                    </div>
+                    <div class="mt-[53px]">
+                      <div class="event-tag"><span>매수가</span></div>
+                      <div class="event-pri">70,600원</div>
+                      <div class="event-date">2023/10/01 09:20</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide aiSwiper-slide">
+                  <div class="slide-box">
+                    <div>
+                      <div class="event-code">002222</div>
+                      <div class="event-name">삼성전자</div>
+                      <div class="event-per"><span>+22.25%</span></div>
+                    </div>
+                    <div class="mt-[53px]">
+                      <div class="event-tag"><span>매수가</span></div>
+                      <div class="event-pri">70,600원</div>
+                      <div class="event-date">2023/10/01 09:20</div>
+                    </div>
+                  </div>
+                  <div class="slide-box">
+                    <div>
+                      <div class="event-code">002222</div>
+                      <div class="event-name">삼성전자</div>
+                      <div class="event-per"><span>+22.25%</span></div>
+                    </div>
+                    <div class="mt-[53px]">
+                      <div class="event-tag"><span>매수가</span></div>
+                      <div class="event-pri">70,600원</div>
+                      <div class="event-date">2023/10/01 09:20</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide aiSwiper-slide">
+                  <div class="slide-box">
+                    <div>
+                      <div class="event-code">002222</div>
+                      <div class="event-name">삼성전자</div>
+                      <div class="event-per"><span>+22.25%</span></div>
+                    </div>
+                    <div class="mt-[53px]">
+                      <div class="event-tag"><span>매수가</span></div>
+                      <div class="event-pri">70,600원</div>
+                      <div class="event-date">2023/10/01 09:20</div>
+                    </div>
+                  </div>
+                  <div class="slide-box">
+                    <div>
+                      <div class="event-code">002222</div>
+                      <div class="event-name">삼성전자</div>
+                      <div class="event-per"><span>+22.25%</span></div>
+                    </div>
+                    <div class="mt-[53px]">
+                      <div class="event-tag"><span>매수가</span></div>
+                      <div class="event-pri">70,600원</div>
+                      <div class="event-date">2023/10/01 09:20</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <script>
+              var swiper = new Swiper(".aiSwiper", {
+                spaceBetween: 30,
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+                autoplay: {
+                  delay: 2000,
+                  disableOnInteraction: false,
+                },
+                loop: true,
+              });
+            </script>
+
+          </div>
+
+        </div>
+
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+            gsap.to("#section6", {
+              scrollTrigger: {
+                trigger: "#section6",
+                toggleActions: "restart none reverse none",
+                start: "-1% top",
+                end: "99% top",
+                // markers: true,
+                toggleClass: { targets: '#header', className: 'bg-white' },
+              },
+            });
+        </script>
+      </div>
+      <!-- section6 -->
+
+      <!-- section7 -->
+      <div id="section7" class="section">
+
+        <div class="sectionWrapper-block">
+
+          <div class="sec07-headtxt">
+            <strong data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">라씨 매매비서의 주간 브리핑</strong>
+            <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+              매주 금요일 주간 브리핑에서 라씨 매매비서의<br>
+              한주간 매매와 시장 이슈를 확인해 보세요.  
+            </span>
+          </div>
+
+          <div class="sec07-con">
+
+            <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+              <div><img class="w-[300px]" src="../img/sec07-img01.png" alt=""></div>
+              <div class="bri-tag"><span>관련종목</span></div>
+              <div class="bri-txt">
+                <span>에코프로비엠</span>
+                <span>에코프로</span>
+              </div>
+            </div>
+            <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+              <div><img class="w-[300px]" src="../img/sec07-img02.png" alt=""></div>
+              <div class="bri-tag"><span>관련종목</span></div>
+              <div class="bri-txt">
+                <span>에코프로비엠</span>
+                <span>에코프로</span>
+              </div>
+            </div>
+            <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+              <div><img class="w-[300px]" src="../img/sec07-img03.png" alt=""></div>
+              <div class="bri-tag"><span>관련종목</span></div>
+              <div class="bri-txt">
+                <span>에코프로비엠</span>
+                <span>에코프로</span>
+              </div>
+            </div>
+            <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="0">
+              <div><img class="w-[300px]" src="../img/sec07-img04.png" alt=""></div>
+              <div class="bri-tag"><span>관련종목</span></div>
+              <div class="bri-txt">
+                <span>에코프로비엠</span>
+                <span>에코프로</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="md-sec07-con">
+
+            <div class="swiper briSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide briSwiper-slide">
+                  <div class="bri-con">
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img01.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img02.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bri-con">
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img03.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img04.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide briSwiper-slide">
+                  <div class="bri-con">
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img01.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img02.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bri-con">
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img03.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img04.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide briSwiper-slide">
+                  <div class="bri-con">
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img01.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img02.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bri-con">
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img03.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img04.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide briSwiper-slide">
+                  <div class="bri-con">
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img01.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img02.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bri-con">
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img03.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                    <div class="sec07-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="0">
+                      <div><img class="w-[137px]" src="../img/sec07-img04.png" alt=""></div>
+                      <div class="bri-tag"><span>관련종목</span></div>
+                      <div class="bri-txt">
+                        <span>에코프로비엠</span>
+                        <span>에코프로</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <script>
+              var swiper = new Swiper(".briSwiper", {
+                spaceBetween: 30,
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+                // autoplay: {
+                //   delay: 2000,
+                //   disableOnInteraction: false,
+                // },
+                loop: true,
+              });
+            </script>
+
+          </div>
+
+        </div>
+
+
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+            gsap.to("#section7", {
+              scrollTrigger: {
+                trigger: "#section7",
+                toggleActions: "restart none reverse none",
+                start: "-1% top",
+                end: "99% top",
+                // markers: true,
+                toggleClass: { targets: '#header', className: 'bg-white' },
+              },
+            });
+        </script>
+      </div>
+      <!-- section7 -->
+
+      <!-- section8 -->
+      <div id="section8" class="section bg-bgColor">
+
+        <div class="sectionWrapper-block">
+
+          <div class="sec08-headtxt">
+            <strong data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">라씨 매매비서의 진짜 리뷰</strong>
+            <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+              라씨 매매비서를 이용해보신 분들의 <br>
+              진짜 리뷰를 확인해 보세요.
+            </span>
+          </div>
+
+          <div class="sec08-con">
+
+            <div class="sec08-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+              <div class="name">
+                <div class="name-icn">앤</div>
+                <div class="name-txt">앤***님</div>
+              </div>
+              <div class="star">
+                <div class="star-icn">
+                  <span class="active"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="star-date">23/08/25</div>
+              </div>
+              <div class="con-txt">
+                아직사용기간이 길진 않지만..만족하고 
+                사용하고 있습니다. 아직사용기간이 길진 않지만..만족하고 사용하고 있습니다. 
+                아직사용기간이 길진 않지만..만족하고 
+                사용하고 있습니다. 아직사용기간이 길진 않지만..아직사용기간이 길진 않지만..만족하고 
+                사용하고 있습니다. 아직사용기간이 길진 않지만..
+              </div>
+              <div class="tag">
+                <span>#주식초보</span>
+                <span>#직장인</span>
+              </div>
+            </div>
+            <div class="sec08-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="0">
+              <div class="name">
+                <div class="name-icn">앤</div>
+                <div class="name-txt">앤***님</div>
+              </div>
+              <div class="star">
+                <div class="star-icn">
+                  <span class="active"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="star-date">23/08/25</div>
+              </div>
+              <div class="con-txt">
+                아직사용기간이 길진 않지만..만족하고 
+                사용하고 있습니다. 아직사용기간이 길진 않지만..만족하고 사용하고 있습니다. 
+                아직사용기간이 길진 않지만..만족하고 
+                사용하고 있습니다. 아직사용기간이 길진 않지만..아직사용기간이 길진 않지만..만족하고 
+                사용하고 있습니다. 아직사용기간이 길진 않지만..
+              </div>
+              <div class="tag">
+                <span>#주식초보</span>
+                <span>#직장인</span>
+              </div>
+            </div>
+            <div class="sec08-con_box" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+              <div class="name">
+                <div class="name-icn">앤</div>
+                <div class="name-txt">앤***님</div>
+              </div>
+              <div class="star">
+                <div class="star-icn">
+                  <span class="active"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="star-date">23/08/25</div>
+              </div>
+              <div class="con-txt">
+                아직사용기간이 길진 않지만..만족하고 
+                사용하고 있습니다. 아직사용기간이 길진 않지만..만족하고 사용하고 있습니다. 
+                아직사용기간이 길진 않지만..만족하고 
+                사용하고 있습니다. 아직사용기간이 길진 않지만..아직사용기간이 길진 않지만..만족하고 
+                사용하고 있습니다. 아직사용기간이 길진 않지만..
+              </div>
+              <div class="tag">
+                <span>#주식초보</span>
+                <span>#직장인</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mb-sec08-con" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-offset="0">
+
+            <div class="swiper reviewSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="sec08-con_box">
+                    <div class="name">
+                      <div class="name-icn">앤</div>
+                      <div class="name-txt">앤***님</div>
+                    </div>
+                    <div class="star">
+                      <div class="star-icn">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="star-date">23/08/25</div>
+                    </div>
+                    <div class="con-txt">
+                      아직사용기간이 길진 않지만..만족하고 
+                      사용하고 있습니다. 아직사용기간이 길진 않지만..만족하고 사용하고 있습니다. 
+                    </div>
+                    <div class="tag">
+                      <span>#주식초보</span>
+                      <span>#직장인</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="sec08-con_box">
+                    <div class="name">
+                      <div class="name-icn">앤</div>
+                      <div class="name-txt">앤***님</div>
+                    </div>
+                    <div class="star">
+                      <div class="star-icn">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="star-date">23/08/25</div>
+                    </div>
+                    <div class="con-txt">
+                      아직사용기간이 길진 않지만..만족하고 
+                      사용하고 있습니다. 아직사용기간이 길진 않지만..만족하고 사용하고 있습니다. 
+                    </div>
+                    <div class="tag">
+                      <span>#주식초보</span>
+                      <span>#직장인</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="sec08-con_box">
+                    <div class="name">
+                      <div class="name-icn">앤</div>
+                      <div class="name-txt">앤***님</div>
+                    </div>
+                    <div class="star">
+                      <div class="star-icn">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="star-date">23/08/25</div>
+                    </div>
+                    <div class="con-txt">
+                      아직사용기간이 길진 않지만..만족하고 
+                      사용하고 있습니다. 아직사용기간이 길진 않지만..만족하고 사용하고 있습니다. 
+                    </div>
+                    <div class="tag">
+                      <span>#주식초보</span>
+                      <span>#직장인</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="sec08-con_box">
+                    <div class="name">
+                      <div class="name-icn">앤</div>
+                      <div class="name-txt">앤***님</div>
+                    </div>
+                    <div class="star">
+                      <div class="star-icn">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="star-date">23/08/25</div>
+                    </div>
+                    <div class="con-txt">
+                      아직사용기간이 길진 않지만..만족하고 
+                      사용하고 있습니다. 아직사용기간이 길진 않지만..만족하고 사용하고 있습니다. 
+                    </div>
+                    <div class="tag">
+                      <span>#주식초보</span>
+                      <span>#직장인</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <script>
+              var swiper = new Swiper(".reviewSwiper", {
+                slidesPerView: 1.3,
+                spaceBetween: 20,
+                pagination: {
+                  el: '.swiper-pagination',
+                },
+                autoplay: {
+                  delay: 2000,
+                  disableOnInteraction: false,
+                },
+                loop: true,
+              });
+            </script>
+
+          </div>
+
+        </div>
+
+        <script>
+          gsap.registerPlugin(ScrollTrigger);
+            gsap.to("#section8", {
+              scrollTrigger: {
+                trigger: "#section8",
+                toggleActions: "restart none reverse none",
+                start: "-1% top",
+                end: "99% top",
+                // markers: true,
+                toggleClass: { targets: '#header', className: 'bg-bgColor' },
+              },
+            });
+        </script>
+      </div>
+      <!-- section8 --> 
+
+    </section>
+    <!-- 컨텐츠 부분 -->
+
+    <footer id="footer" class="mainFooter">
+    
+      <div class="footerWrapper">
+
+        <div class="footer-left">
+          <div class="footer-logo"><img class="w-[110px]" src="../img/footer-logo.png" alt="footer-logo"></div>
+        
+          <div class="footer-con">
+            <div class="footer-menu">
+              <button>회사소개</button>
+              <button>서비스이용약관</button>
+              <button>개인정보처리방침</button>
+              <button>블로그</button>
+            </div>
+            <div class="footer-txt">
+              주식회사 씽크풀 대표이사 : 김동진 <br>
+              서울특별시 영등포구 국제금융로 70, 15층 <br class="md_br">
+              (여의도동, 미원빌딩) <br>
+              대표번호 : 1666-6300 help@thinkpool.com <br>
+              사업자등록번호 : 116-81-54775 <br>
+              Copyright ©2023 ThinkPool Co.,Ltd. <br class="md_br">
+              All Rights Reserved
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-chat">
+          <div class="chat-txt">
+            <strong>고객센터</strong>
+            <span>라씨 매매비서가 궁금하시다면<br class="md_br"> 무엇이든 물어보세요!</span>
+          </div>
+          <div class="chat-icn">
+            <div class="icn-box">
+              <div><img class="w-[43px]" src="../img/call.png" alt="call-icn"></div>
+              <span>전화</span>
+            </div>
+            <div class="icn-box">
+              <div><img class="w-[43px]" src="../img/chat.png" alt="chat-icn"></div>
+              <span>채팅</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <script>
+        gsap.registerPlugin(ScrollTrigger);
+          gsap.to("#footer", {
+            scrollTrigger: {
+              trigger: "#footer",
+              toggleActions: "restart none reverse none",
+              start: "-1% top",
+              end: "99% top",
+              // markers: true,
+              toggleClass: { targets: '#header', className: 'bg-white' },
+            },
+          });
+      </script>
+
+    </footer>
+
+    <!-- 팝업창 -->
+    <!-- 전종목 분석 -->
+    <div class="modal fade" id="anaPop" aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="pop-maintxt">전종목 분석</div>
+            <div class="pop-subtxt">코스피, 코스닥은 물론, ETF까지
+              전종목에 대해서 AI매매신호를 제공합니다.
+              어떤 종목을 매매하시더라도 라씨 매매비서는 놓치지 않습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 전종목 분석 -->
+
+    <!-- 나만의 매도 신호 -->
+    <div class="modal fade" id="sigPop" aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="pop-maintxt">나만의 매도 신호</div>
+            <div class="pop-subtxt">
+              오직 한사람을 위한 맞춤형 매도신호! <br>
+              내 매수가를 입력하신 후 나를 위해 최적화된 매도타이밍을 실시간으로 받아보세요!
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 나만의 매도 신호 -->
+
+    <!-- 실시간 알림 -->
+    <div class="modal fade" id="alaPop" aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <div class="pop-maintxt">실시간 알림</div>
+            <div class="pop-subtxt">
+              AI가 분석한 최적의 매매타이밍을 실시간으로 받아보세요! 실시간으로 분석하고, 발생 그 즉시 실시간으로 알려드립니다.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 실시간 알림 -->
+    <!-- 팝업창 -->
+
+  </div>
+  
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- AOS 애니메이션 -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
