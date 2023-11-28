@@ -636,6 +636,10 @@
   @apply w-full flex justify-center items-center gap-[30px] max-md:hidden;
 }
 
+.sec07-con_box{
+  @apply text-left;
+}
+
 .md-sec07-con{
   @apply hidden max-md:block p-[0px_30px];
 }

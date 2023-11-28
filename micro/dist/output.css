@@ -2460,6 +2460,10 @@ video {
   }
 }
 
+.sec07-con_box {
+  text-align: left;
+}
+
 .md-sec07-con {
   display: none;
   padding: 0px 30px;
