@@ -4,6 +4,15 @@
 
 * { font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important; }
 
+/* 매수 테두리 색 */
+.buyColor{
+  @apply !border-[#FF3482] !text-[#FF3482];
+}
+/* 매도 테두리 색 */
+.sellColor{
+  @apply !border-mainColor !text-mainColor;
+}
+
 /* 헤더 */
 .text-truncate{
   overflow: hidden;
@@ -582,11 +591,15 @@
 }
 
 .event-per{
-  @apply flex justify-center items-center mb-[34px] max-md:mb-0 max-md:justify-start;
+  @apply relative flex justify-center items-center mb-[34px] max-md:mb-0 max-md:justify-start max-md:flex-col max-md:items-start;
 }
 
 .event-per span{
   @apply rounded-full w-[176px] h-[176px] bg-[#F8F8F8] flex justify-center items-center text-[#FF3482] text-[36px] font-bold max-md:w-auto max-md:h-auto max-md:bg-white max-md:text-[24px];
+}
+
+.event-per em{
+  @apply absolute not-italic top-[45px] text-[14px] text-[#FF3482] font-normal max-md:static max-md:block max-md:text-[12px];
 }
 
 .event-tag{
@@ -656,7 +669,7 @@
 }
 
 .bri-txt{
-  @apply w-full flex flex-col gap-[5px] max-md:flex-row;
+  @apply w-full flex flex-col gap-[5px] max-md:gap-0;
 }
 
 .bri-txt span{
