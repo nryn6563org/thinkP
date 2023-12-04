@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font Css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/admin.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- //ie 호환 -->
+    <!-- cdn for modernizr, if you haven't included it already -->
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+    <!-- polyfiller file to detect and load polyfills -->
+    <script src="http://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+    <script>
+        webshims.setOptions('waitReady', false);
+        webshims.setOptions('forms-ext', {
+            types: 'date'
+        });
+        webshims.polyfill('forms forms-ext');
+    </script>
+    <title>라씨매매신호 결제</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>라씨매매비서</h1>
+
+            <a href="#" class="user">로그아웃</a>
+        </div>
+        <!-- //header -->
+
+        <div id="container">
+            <div class="admin">
+                <menu class="admin-title">
+                    <li class="on"><a href="admin01.html">결제회원리스트</a></li>
+                    <li><a href="admin02.html">결제 통계</a></li>
+                </menu>
+                <!-- //admin-title -->
+
+                <div class="admin-content">
+                    <div class="sch-group">
+
+                        <!-- 
+                            //input date control url : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date
+                        -->
+
+                        <div class="input-group">
+                            <input type="date" aria-label="시작날짜" class="form-control w150 schDate" required>
+                            <span>~</span>
+                            <input type="date" aria-label="종료날짜" class="form-control w150 schDate" required>
+                        </div>
+
+                        <!-- //input-group -->
+
+                        <div class="input-group">
+                            <select class="form-select mr20" aria-label="Default select example">
+                                <option selected>전체</option>
+                                <option value="1">아이디</option>
+                                <option value="2">이름</option>
+                                <option value="3">휴대폰 번호</option>
+                            </select>
+                            <select class="form-select mr20" aria-label="Default select example">
+                                <option selected>전체</option>
+                                <option value="1">정기결제</option>
+                                <option value="2">장기결제</option>
+                            </select>
+                            <select class="form-select mr20" aria-label="Default select example">
+                                <option selected>전체</option>
+                                <option value="1">WEB(웹결제)</option>
+                                <option value="2">APP(앱결제)</option>
+                            </select>
+                            <input type="text" aria-label="First name" class="form-control w150 mr20">
+                            <button class="btn btn-dark">검색</button>
+                        </div>
+                        <!-- //input-group -->
+                    </div>
+                    <!-- //sch-group -->
+
+                    <div class="admin-data">
+                        <div class="admin-table">
+                            <table class="table table-hover table-bordered">
+                                <thead>
+                                    <tr class="table-secondary">
+                                        <th scope="col">결제일시</th>
+                                        <th scope="col">아이디</th>
+                                        <th scope="col">이름</th>
+                                        <th scope="col">휴대폰번호</th>
+                                        <th scope="col">이용기간</th>
+                                        <th scope="col">상품명</th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">결제금액</th>
+                                        <th scope="col">자동결제해지</th>
+                                        <th scope="col">환불처리</th>
+                                        <th scope="col">환불내역</th>
+                                        <th scope="col">환불내역</th>
+                                        <th scope="col">환불내역</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">
+                                            2020/10/10 <br>
+                                            15:30
+                                        </td>
+                                        <td class="text-center">0000208772@sa</td>
+                                        <td class="text-center">홍길동</td>
+                                        <td class="text-center">01000000000</td>
+                                        <td class="text-center">
+                                            2020/10/10 <br>
+                                            ~2020/11/11
+                                        </td>
+                                        <td class="text-center">
+                                            장기결제(6개월)
+                                        </td>
+                                        <td class="text-center">WEB</td>
+                                        <td class="text-center">338,000</td>
+                                        <td class="text-center">
+                                            해지완료 <br>
+                                            (2020.11.11 14:00)
+                                        </td>
+                                        <td class="text-center">
+                                            해지완료 <br>
+                                            (2020.11.11 14:00)
+                                        </td>
+                                        <td class="text-center">
+                                            해지완료 <br>
+                                            (2020.11.11 14:00)
+                                        </td>
+                                        <td class="text-center">환불불가</td>
+                                        <td>
+                                            50,000원 <br>
+                                            21/12/14 18:03 - 부분환불 입력버튼
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- //table -->
+
+                            <nav class="paging text-center" aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">◀︎</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item on"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">▶︎</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- //pagination -->
+                        </div>
+                        <!-- //tbl -->
+                    </div>
+                    <!-- // -->
+                </div>
+                <!-- //admin-content -->
+            </div>
+            <!-- //admin -->
+
+
+            <!-- 
+                // modal-handler => https://getbootstrap.com/docs/5.0/components/modal/#events
+            -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="Termination" tabindex="-1" aria-labelledby="결제해지팝업" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="">자동결제해지</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- //header -->
+                        <div class="modal-body">
+                            <span class="text-center">
+                                정기결제를 해지하시면<br>
+                                서비스이용기간 만료 후 자동 결제가<br>
+                                해지 됩니다. <br>
+                                <br>
+                                해지 하시겠습니까?
+                            </span>
+                        </div>
+                        <!-- //body -->
+                        <div class="modal-footer text-center">
+                            <button type="button" class="btn btn-outline-danger">예</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">취소</button>
+                        </div>
+                        <!-- //footer -->
+                    </div>
+                    <!-- //content -->
+                </div>
+                <!-- //dialog -->
+            </div>
+            <!-- //modal -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="refund" tabindex="-1" aria-labelledby="결제해지팝업" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="">환불</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- //header -->
+                        <div class="modal-body">
+                            <dl class="text-start">
+                                <dt>결제일</dt>
+                                <dd><input type="text" placeholder="2021/03/25 15:30" disabled></dd>
+                                <!-- //결제일 -->
+                                <dt>결제금액</dt>
+                                <dd><input type="text" placeholder="59,400" disabled></dd>
+                                <!-- //결제금액 -->
+                                <dt>사용기간</dt>
+                                <dd><input type="text" placeholder="3일" disabled></dd>
+                                <!-- //사용기간 -->
+                                <dt>환불금액</dt>
+                                <dd><input type="text" placeholder="0" disabled></dd>
+                                <!-- //환불금액 -->
+                                <dt>&nbsp;</dt>
+                                <dd>
+                                    <input type="checkbox" name="" id="chkforsv" checked>
+                                    <label for="chkforsv">서비스 기간 즉시 종료</label>
+                                </dd>
+                                <!-- // -->
+                            </dl>
+
+                            <p class="modal-guide text-start">
+                                환불을 받더라도 사용료가 지급된 월에 대해서는 <br>
+                                사용기간을 보장 받습니다. <br>
+                                즉시 서비스 기간을 종료할 경우 꼭 서비스 기간 즉시 <br>
+                                종료를 선택해 주세요. <br>
+                                (★처리 후 수정 불가 ★)
+                            </p>
+
+                        </div>
+                        <!-- //body -->
+                        <div class="modal-footer text-center">
+                            <button type="button" class="btn btn-outline-danger">확인</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">취소</button>
+                        </div>
+                        <!-- //footer -->
+                    </div>
+                    <!-- //content -->
+                </div>
+                <!-- //dialog -->
+            </div>
+            <!-- //modal -->
+        </div>
+        <!-- //container -->
+    </div>
+    <!-- //wrap -->
+</body>
+
+</html>

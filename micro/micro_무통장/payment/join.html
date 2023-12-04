@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font Css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>라씨매매신호 결제</title>
+  </head>
+  <body>
+      <div id="wrap">
+        <section id="content">
+            <div class="top">
+                <span><img src="img/top.png" alt="top.png"></span>
+                <strong>라씨 매매비서</strong>
+            </div>
+            <!-- //top -->
+
+            <div class="con">
+                <div class="guide">
+                    <div class="top">
+                        <strong>
+                            라씨 매매비서 서비스 이용을 위해<br>
+                            가입약관에 동의해 주세요.
+                        </strong>
+                    </div>
+                    <!-- //top -->
+
+                    <div class="joinus">
+                        <div class="check-ag">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="chk01">
+                                <label class="form-check-label" for="chk01">&nbsp;</label>
+                                <div class="labelling-text"><a href="#">서비스 이용약관</a>에 동의합니다.</div>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="chk02" checked>
+                                <label class="form-check-label" for="chk02">&nbsp;</label>
+                                <div class="labelling-text"><a href="#">개인정보 처리방침</a>에 동의합니다.</div>
+                            </div>
+                        </div>
+                        <!-- // -->
+
+                        <div class="referral">
+                            <p>추천인 코드를 선택하세요</p>
+
+                            <div class="rdo-rf">
+                                <!-- /*
+                                    id & for & name 변경 하세요
+                                    추천인코드 id 는 하단 스크립트에도 변경해주세요
+                                */ -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        추천인 코드 없음
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        추천인 코드 있음
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- // -->
+
+                            <div class="referral-code">
+                                <input id="inputCode" type="text" class="form-control" placeholder="추천인 코드를 입력하세요." disabled>
+
+                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#codeFail">회원가입완료</button>
+                            </div>
+
+                            <script>
+                                const codeBtn = document.getElementById("flexRadioDefault2") //추천인코드 있을때
+                                const notCodeBtn = document.getElementById("flexRadioDefault1") // ,, 없을때
+                                const codeInput = document.getElementById("inputCode")
+
+                                codeBtn.addEventListener("click", event => { //클릭시 활성화
+                                    codeInput.removeAttribute("disabled")
+                                })
+                                notCodeBtn.addEventListener("click", event => { //클릭시 비활성화
+                                    codeInput.setAttribute("disabled", "")
+                                })
+                            </script>
+
+                        </div>
+                        <!-- //추천인 코드 -->
+
+                        
+                    </div>
+                    <!-- //joinus -->
+                </div>
+                <!-- //guide -->
+            </div>
+            <!-- //con -->
+
+            <div id="codeFail" class="custom modal fade" tabindex="-1" aria-labelledby="코드인증 실패" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title sr-only">코드인증 실패</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- //header -->
+
+                        <div class="modal-body">
+                            추천인 코드가 맞지 않습니다.  <br>
+                            확인 후 다시 입력해주세요.
+                        </div>
+                        <!-- //body -->
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button>
+                        </div>
+                        <!-- //footer -->
+
+                    </div>
+                    <!-- //content -->
+                </div>
+                <!-- //dialog -->
+            </div>
+            <!-- //codeFail -->
+
+            <div id="joinClear" class="custom modal fade" tabindex="-1" aria-labelledby="회원가입완료" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title sr-only">회원가입완료</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!-- //header -->
+
+                        <div class="modal-body">
+                            회원가입 되었습니다. <br>
+                            로그인 합니다.
+                        </div>
+                        <!-- //body -->
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">확인</button>
+                        </div>
+                        <!-- //footer -->
+
+                    </div>
+                    <!-- //content -->
+                </div>
+                <!-- //dialog -->
+            </div>
+            <!-- //joinClear -->
+
+        </section>
+        <!-- // -->
+        <footer>
+            <div class="fnb">
+                <menu type="list">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">메인화면으로</a></li>
+                </menu>
+            </div>
+            <!-- // fnb -->
+            <address>
+                <strong>㈜ 씽크풀</strong> 서울시 영등포구 국제금융로 70, 15층(여의도동, 미원빌딩) <br>
+                사업자 등록번호 : 116-81-54775<em>대표 : 김동진</em> <br>
+                고객센터: <a href="tel:1666-6300">1666-6300</a> 
+            </address>
+            <!-- //address -->
+        </footer>
+        <!-- // -->
+    </div>
+  </body>
+</html>

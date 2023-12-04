@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="주식 잘하는 방법은 라씨 매매비서와 함께하는 것"/>
+    <title>라씨 매매비서</title>
+    <link rel="stylesheet" href="./font/font.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/import.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="./js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.bxslider.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="top_banner">
+            <a href="https://stock.thinkpool.com/event/sbsrassi2/index.do" target="_blank">
+                <img src="./img/top_banner.jpg" alt="주식투자Ai대표" class="web">
+            </a>
+        </div>
+        <!-- //top_banner -->
+
+        <div id="header_w">
+            <div id="header">
+                <h1 class="logo">
+                    <a href="#"><img src="./img/logo.png" alt="라씨매매비서"></a>
+                </h1>
+
+                <div class="nav">
+                    <a href="http://info.thinkpool.com" target="_blank" class="first">자주 묻는 질문</a>
+                    <a href="https://blog.naver.com/think_web" target="_blank">블로그</a>
+                    <a href="https://rassiassist.page.link/zDUX" target="_blank" class="app">앱 다운로드</a>
+                    <a href="https://rassiassist.page.link/zDUX" target="_blank" class="join">가입하기</a>
+                </div>
+                <!-- 
+                    // nav - 21.03 수정 
+                    m_nav 삭제 
+                -->
+            </div>
+            <!-- //header -->
+        </div>
+        <!-- //header_w -->
+        <script>
+            $(window).scroll(function(){
+                var hTop = $(window).scrollTop();
+                var sHeight = $(window).innerHeight();
+
+                if(hTop >= 174){
+                    $('#header_w').css({
+                        position : 'fixed',
+                        top: -70,
+                        left: 0,
+                        opacity:0
+                    }).stop().animate({
+                        top: 0,
+                        opacity: 1
+                    }, 250);
+                }else{
+                    $('#header_w').css({
+                        position: 'relative',
+                        top:0,
+                        opacity:1
+                    })
+                }
+            });
+        </script>
+        <hr>
+        
+        <div id="container">
+            <div class="con con00">
+                <div class="txt">
+                    <strong class="sa sa-up">언제 팔까? 언제 살까?</strong>
+                    <span class="sa sa-up" data-sa-delay="200">
+                        주식을 잘하는 방법 <br>
+                        라씨 매매비서
+                    </span>
+                </div>
+                <!-- //txt  -->
+
+                <div class="btn">
+                    <a class="sa sa-left" data-sa-delay="600" href="https://rassiassist.page.link/zDUX" target="_blank"><img src="./img/gplay.png" alt="플레이스토어 다운로드"></a>
+                    <a class="sa sa-right" data-sa-delay="400" href="https://app.wisetracker.co.kr/10273/sld.do?trackId=M00102731615425905942" target="_blank"><img src="./img/apstore.png" alt="앱스토어 다운로드"></a>
+                </div>
+                <!-- //btn -->
+
+                <div class="bg">
+                    <img src="./img/mn01.jpg" alt="백그라운드 이미지" width="100%">
+                </div>
+            </div>
+            <!-- //con -->
+
+            <div class="con con01">
+                <div class="txt">
+                    <strong class="sa sa-up">진짜 수익나는 AI매매신호</strong>
+                    <span class="sa sa-up" data-sa-delay="200">
+                        10억 개 이상의 데이터 학습과 11만번 이상 매매테스트로 <br>
+                        입증된 AI매매신호를 경험해 보세요!
+                    </span>
+                </div>
+                <!-- //txt -->
+
+                <div class="box sa sa-up" data-sa-delay="400">
+                    <div class="tit">라씨매매비서 매매 수익 현황</div>
+                    <!-- //tit -->
+
+                    <div class="per_w">
+
+                        <!-- 
+                            data-num-ani-slow-point - 해당 숫자까지 도달하면서 slow 되는 포인트, 높으면 슬로우가 안되고 쭉 올라감
+                            data-num-ani-slow-add-interval - 슬로우 될때 부드럽게되는 느낌, 높으면 안부드럽게 갑자기 슬로우 포인트에 도달함
+                            data-num-ani-interval - 높을수록 숫자가 오르는 속도가 매우 느림
+                            data-num-ani-stride - 오르는 숫자 간격 100이면 100씩 오르고 1이면 1씩 오름
+                            data-num-ani-start - 시작 숫자
+                            data-num-ani-end - 끝나는 숫자
+                        -->
+                        <div class="per">
+                            <span>전 종목 매매 적중률</span>
+                            <strong>
+                                <em class="conter" data-num-ani-slow-point="0.01" data-num-ani-slow-add-interval="1" data-num-ani-interval="1" data-num-ani-stride="1" data-num-ani-start="0" data-num-ani-end="99"></em>%
+                            </strong>
+                        </div>
+                        <!-- // -->
+                        <div class="per center">
+                            <span>종목당 평균 수익률</span>
+                            <strong>
+                                <em class="conter" data-num-ani-slow-point="0.01" data-num-ani-slow-add-interval="1" data-num-ani-interval="1" data-num-ani-stride="1" data-num-ani-start="0" data-num-ani-end="99"></em>%
+                            </strong>
+                        </div>
+                        <!-- // -->
+                        <div class="per">
+                            <span>1회 매매 최고 수익률</span>
+                            <strong>
+                                <em class="conter" data-num-ani-slow-point="0.01" data-num-ani-slow-add-interval="1" data-num-ani-interval="1" data-num-ani-stride="1" data-num-ani-start="0" data-num-ani-end="99"></em>%
+                            </strong>
+                        </div>
+                        <!-- // -->
+                    </div>
+                    <script>
+                        function NumAni__start(selector) {
+                            $(selector).each(function(index, node) {
+                                var $el = $(node);
+                                
+                                var start = parseInt($el.attr('data-num-ani-start'));
+                                var interval = parseInt($el.attr('data-num-ani-interval'));
+
+                                $el.attr('data-num-ani-interval-current', interval);
+
+                                $el.text(start);
+
+                                NumAni__increaseWon($el);
+                            });
+                        }
+
+                        function NumAni__increaseWon($el) {
+                            var current = parseInt($el.text());
+                            var end = parseInt($el.attr('data-num-ani-end'));
+                            var stride = parseInt($el.attr('data-num-ani-stride'));
+                            var interval = parseInt($el.attr('data-num-ani-interval-current'));
+                            var slowPoint = parseFloat($el.attr('data-num-ani-slow-point'))
+
+                            if (current < end) {
+                                if ( current > end * slowPoint ) {
+                                    interval += parseInt($el.attr('data-num-ani-slow-add-interval'));
+                                    if ( interval > 100 ) {
+                                        interval = 100;
+                                    }
+                                    $el.attr('data-num-ani-interval-current', interval);
+                                }
+                                
+                                if ( current + stride > end ) {
+                                    $el.text(end);
+                                }
+                                else {
+                                    $el.text(current + stride);
+                                }
+
+                                setTimeout(function () {
+                                    NumAni__increaseWon($el);
+                                }, interval);
+                            }
+                            else {
+                                $el.addClass('num-action-done');
+                            }
+                        }
+
+                        NumAni__start('.conter');
+                    </script>
+                    <!-- // -->
+
+                    <div class="date">2020.12.31 기준 최근 1년간</div>
+                    <!-- //date -->
+                </div>
+                <!-- //box -->
+            </div>
+            <!-- //con -->
+
+            <div class="con con02">
+                <div class="section">
+                    <div class="txt">
+                        <strong class="sa sa-up">한 사람을 위한 개인화 매도신호</strong>
+
+                        <span class="sa sa-up" data-sa-delay="200">
+                            나만을 위한 맞춤 매도신호가 필요하신가요? <br>
+                            내 종목의 매수가를 입력하면 매수가에 맞는 <br>
+                            개인화된 매도신호를 알려드립니다.
+                        </span>
+                    </div>
+                    <!-- //txt -->
+
+                    <div class="box sa sa-left" data-sa-delay="400">
+                        <div class="boxSlider">
+                            <div><img src="./img/con0201.jpg" alt="매도신호1"></div>
+                            <div><img src="./img/con0202.jpg" alt="매도신호2"></div>
+                        </div>
+                    </div>
+                    <!-- //box -->
+
+                    <script>
+                        $(function(){
+                            $('.con02 .box .boxSlider').bxSlider({
+                                auto : true,
+                                pager: false,
+                                controls: false
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+            <!-- //con -->
+
+            <div class="con con03">
+                <div class="box">
+                    <div class="list list01 sa sa-up" data-sa-delay="200">코스피</div>
+                    <div class="list list02 sa sa-up" data-sa-delay="400">코스닥</div>
+                    <div class="list list03 sa sa-up" data-sa-delay="600">ETF</div>
+                </div>
+                <!-- //box -->
+
+                <div class="txt">
+                    <strong class="sa sa-up">전 종목의 매매타이밍, 라씨 매매비서로 고민 끝!</strong>
+                    
+                    <span class="sa sa-up" data-sa-delay="200">
+                        라씨 매매비서는 코스피, 코스닥부터 ETF까지 <br>
+                        모든 종목에 대한 AI매매신호를 제공합니다.
+                    </span>
+                </div>
+                <!-- //txt -->
+            </div>
+            <!-- //con -->
+
+            <div class="con con04">
+                <div class="txt">
+                    <strong class="sa sa-scaleUp" data-sa-delay="200">적중률과 수익률로 검증된 성과</strong>
+
+                    <span class="sa sa-scaleUp" data-sa-delay="400">
+                        적중률, 수익난 매매, 누적수익률, 평균수익률, 최대수익률의 다양한 지표로 검증된 성과를 확인하시고 <br>
+                        성과 TOP 종목을 새로운 매매에 활용해 보세요.
+                    </span>
+                </div>
+                <!-- //txt -->
+
+                <div class="box gallery sa sa-up" data-sa-delay="600">
+                    <div class="boxList gallery-container">
+                        <div class="gallery-item list list01">
+                            <strong><img src="./img/bullet.png" alt="블릿">적중률 TOP 50</strong>
+
+                            <ul>
+                                <li>
+                                    <div class="left">
+                                        <span class="name">종목명종목명종</span>
+                                        <span class="num">012345</span>
+                                    </div>
+                                    <!-- //left -->
+
+                                    <div class="right">
+                                        <span class="up">+100%</span>
+                                    </div>
+                                    <!-- //right -->
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <span class="name">종목명종목명종</span>
+                                        <span class="num">012345</span>
+                                    </div>
+                                    <!-- //left -->
+
+                                    <div class="right">
+                                        <span class="up">+100%</span>
+                                    </div>
+                                    <!-- //right -->
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <span class="name">종목명종목명종</span>
+                                        <span class="num">012345</span>
+                                    </div>
+                                    <!-- //left -->
+
+                                    <div class="right">
+                                        <span class="up">+100%</span>
+                                    </div>
+                                    <!-- //right -->
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <span class="name">종목명종목명종</span>
+                                        <span class="num">012345</span>
+                                    </div>
+                                    <!-- //left -->
+
+                                    <div class="right">
+                                        <span class="up">+100%</span>
+                                    </div>
+                                    <!-- //right -->
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <span class="name">종목명종목명종</span>
+                                        <span class="num">012345</span>
+                                    </div>
+                                    <!-- //left -->
+
+                                    <div class="right">
+                                        <span class="up">+100%</span>
+                                    </div>
+                                    <!-- //right -->
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list -->
+                        <div class="gallery-item list list02">
+                            <strong>수익난 매매 TOP 50</strong>
+
+                            <ul>
+                                <li>
+                                    <div class="left">
+                                        <span class="name">종목명종목명종</span>
+                                        <span class="num">012345</span>
+                                    </div>
+                                    <!-- //left -->
+
+                                    <div class="right">
+                                        <span class="up">
+                                            <em>매매횟수</em>
+                                            53번
+                                        </span>
+                                    </div>
+                                    <!-- //right -->
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list -->
+                        <div class="gallery-item list list03">
+                            <strong>누적수익률 TOP 50</strong>
+
+                            <ul>
+                                <li>
+                                    <div class="left">
+                                        <span class="name">종목명종목명종목명</span>
+                                        <span class="num">012345</span>
+                                    </div>
+                                    <!-- //left -->
+
+                                    <div class="right">
+                                        <span class="up">+100%</span>
+                                    </div>
+                                    <!-- //right -->
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list -->
+                        <div class="gallery-item list list04">
+                            <strong>최대수익률 TOP 50</strong>
+
+                            <ul>
+                                <li>
+                                    <div class="left">
+                                        <span class="name">종목명종목명종목명</span>
+                                        <span class="num">012345</span>
+                                    </div>
+                                    <!-- //left -->
+
+                                    <div class="right">
+                                        <span class="up">+100%</span>
+                                    </div>
+                                    <!-- //right -->
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list -->
+                        <div class="gallery-item list list05">
+                            <strong>평균수익률 TOP 50</strong>
+
+                            <ul>
+                                <li>
+                                    <div class="left">
+                                        <span class="name">종목명종목명종목명</span>
+                                        <span class="num">012345</span>
+                                    </div>
+                                    <!-- //left -->
+
+                                    <div class="right">
+                                        <span class="up">+100%</span>
+                                    </div>
+                                    <!-- //right -->
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- list -->
+                    </div>
+                    <!-- // -->
+                    <div class="gallery-controls"></div>
+                </div>
+                <!-- //box -->
+            </div>
+            <!-- //con -->
+
+            <div class="con con05">
+                <div class="section">
+                    <div class="box sa sa-right">
+                        <div class="box_list">
+                            <div class="list"><img src="./img/mn0501.jpg" width="100%" height="489px" alt="AI속보"></div>
+                            <div class="list"><img src="./img/mn0502.jpg" width="100%" height="489px" alt="이슈키워드"></div>
+                            <div class="list"><img src="./img/mn0503.jpg" width="100%" height="489px" alt="소셜지수"></div>
+                        </div>
+                    </div>
+                    <script>
+                        $(function(){
+                            $('.con05 .box_list').bxSlider({
+                                auto: true,
+                                controls: false,
+                            });
+                        });
+                    </script>
+                    <!-- //box -->
+
+                    <div class="txt">
+                        <strong class="sa sa-up" data-sa-delay="200">비서가 제안하는 또 다른 정보</strong>
+
+                        <span class="sa sa-up" data-sa-delay="400">
+                            수급, 실적, 공시 등을 실시간 AI분석으로 생성하는 <br>
+                            "<em>AI속보</em>" <br>
+                            내 종목이 속한 이슈성 정보와 관련 키워드를 <br>
+                            한눈에 보는 "<em>이슈키워드</em>" <br>
+                            종목커뮤니티의 활동을 실시간 수집하여 조용조용부터 <br>
+                            폭발까지 현재 토론 참여도를 알려드리는 "<em>소셜지수</em>"
+                        </span>
+                    </div>
+                    <!-- //txt -->
+                </div>
+                <!-- // -->
+            </div>
+            <!-- //con -->
+
+            <div class="con con06">
+                <div class="txt">
+                    <strong class="sa sa-scaleUp">최근 라씨 매매비서가 매매한 종목은?</strong>
+                    <span class="sa sa-scaleUp" data-sa-delay="200">최근 AI매매신호 발생 현황</span>
+                </div>
+                <!-- //txt -->
+
+                <div class="box sa sa-up" data-sa-delay="400">
+                    <div class="box_list">
+
+                        <div class="list">
+                            <div class="listbox">
+                                <div class="left">
+                                    <div class="item">
+                                        <span class="name">종목명종목명종</span>
+                                        <span class="num">019170</span>
+                                    </div>
+                                    <!-- //item -->
+
+                                    <div class="info">
+                                        <span>매도가 <em>30,100</em>원</span>
+                                        <span>발생 <em>2020.12.31 13:40</em></span>
+                                    </div>
+                                    <!-- //info -->
+                                </div>
+                                <!-- //left -->
+
+                                <div class="right">
+                                    <div class="today up">Today 매수</div>
+                                    <div class="per up">+35%</div>
+                                </div>
+                                <!-- //right -->
+                            </div>
+                        </div>
+                        <!-- //list -->
+                        <div class="list">
+                            <div class="listbox">
+                                <div class="left">
+                                    <div class="item">
+                                        <span class="name">종목명종목명종</span>
+                                        <span class="num">019170</span>
+                                    </div>
+                                    <!-- //item -->
+
+                                    <div class="info">
+                                        <span>매도가 <em>30,100</em>원</span>
+                                        <span>발생 <em>2020.12.31 13:40</em></span>
+                                    </div>
+                                    <!-- //info -->
+                                </div>
+                                <!-- //left -->
+
+                                <div class="right">
+                                    <div class="today up">Today 매수</div>
+                                    <div class="per up">+35%</div>
+                                </div>
+                                <!-- //right -->
+                            </div>
+                        </div>
+                        <!-- //list -->
+
+                        <div class="list">
+                            <div class="listbox">
+                                <div class="left">
+                                    <div class="item">
+                                        <span class="name">종목명종목명종</span>
+                                        <span class="num">019170</span>
+                                    </div>
+                                    <!-- //item -->
+
+                                    <div class="info">
+                                        <span>매도가 <em>30,100</em>원</span>
+                                        <span>발생 <em>2020.12.31 13:40</em></span>
+                                    </div>
+                                    <!-- //info -->
+                                </div>
+                                <!-- //left -->
+
+                                <div class="right">
+                                    <div class="today dn">Today 매도</div>
+                                    <div class="per up">+35%</div>
+                                </div>
+                                <!-- //right -->
+                            </div>
+                        </div>
+                        <!-- //list -->
+
+                    </div>
+                    <!-- //box_list -->
+
+                    <script>
+                        $(function(){
+                            $('.con06 .box_list').bxSlider({
+                                auto:false,
+                                pager: false
+                            });
+                        });
+                    </script>
+                </div>
+                <!-- //box -->
+
+                <div class="review">
+                    <strong class="sa sa-up" data-sa-delay="600">구글 플레이스토어 사용자 리뷰</strong>
+
+                    <div class="list_w sa sa-scaleDown" data-sa-delay="200">
+                        <div class="list">
+                            <div class="top">
+                                <div class="thumb"><!-- 50x50 --></div>
+                                <!-- //thumb -->
+                                <div class="info">
+                                    <div class="name">김*****</div>
+                                    <!-- //name -->
+                                    <div class="usr">
+                                        <span class="rate">★★★★☆</span>
+                                        <span class="date">2020년 11월 12일</span>
+                                    </div>
+                                    <!-- //usr -->
+                                </div>
+                                <!-- //info -->
+                            </div>
+                            <!-- //top -->
+                            <div class="con">
+                                주식은 아무나 아무때나 돈만 있으면 살수있죠.  <br>
+                                가장 중요한건 매도시점인데 그것을 제일 잘 잡아주는것 같네요. <br>
+                                주식을 새로 시작한 주린이들 보면 매도 타이밍 못잡아서 벌벌 떨고 있는게 대부분인데..  <br>
+                                요거는 물건이네요.
+                            </div>
+                        </div>
+                        <!-- //reviewbox -->
+
+                        <div class="list"></div>
+                        <!-- //reviewbox -->
+                        <div class="list"></div>
+                        <!-- //reviewbox -->
+                        <div class="list"></div>
+                        <!-- //reviewbox -->
+                        <div class="list"></div>
+                        <!-- //reviewbox -->
+                        <div class="list"></div>
+                        <!-- //reviewbox -->
+                    </div>
+                    <!-- //list -->
+
+                    <script>
+                        $('.review .list_w').bxSlider({
+                            minSlides: 2,
+                            maxSlides: 2,
+                            slideWidth: 550,
+                            slideMargin: 20,
+                            nextText: '>',
+                            prevText: '<'
+                        });
+                    </script>
+                </div>
+                <!-- //review -->
+            </div>
+            <!-- //con -->
+
+            <div class="con con10">
+                <div class="section">
+                    <div class="tit sa sa-down" data-sa-delay="100">
+                        <strong>지금, 프리미엄 서비스를 이용해 보세요!</strong>
+                    </div>
+                    <!-- //tit -->
+                    <div class="txt sa sa-left" data-sa-delay="100">
+                        <span>
+                            시장 이슈 종목의 매매 타이밍 즉시 확인 <br>
+                            지인에게 추천 받은 종목 살까? 말까? 지금 확인 <br>
+                            전문가 추천 종목, 지금 사도 될까? AI에게 한번 더 확인 <br>
+                            애물단지 내 종목 언제 팔까? <br>
+                            장중 급등 종목, 매도 타이밍 실시간 알림!! <br>
+                            급등 종목 살까? 팔까? AI가 정확한 타이밍 포착
+                        </span>
+                    </div>
+                    <!-- //txt -->
+
+                    <div class="btn sa sa-scaleUp" data-sa-delay="200">
+                        <a href="#">정답은?  라씨 매매비서 프리미엄 서비스 가입하기 →</a>
+                    </div>
+                </div>
+                <!-- //section -->
+            </div>
+            <!-- //202109 add content -->
+
+            <div class="con con09">
+                <div class="sbs_w">
+                    <div class="thumb sa sa-right">
+                        <img src="./img/sbs.jpg" alt="AI">
+                    </div>
+                    <!-- //thumb -->
+
+                    <div class="c_txt">
+                        <div class="tit sa sa-up" data-sa-delay="100">
+                            <strong>세기의 대결 AI vs 인간 출연</strong>
+                            <span>
+                                2021년 2월 5일 SBS특집 세기의 대결 'AI vs 인간'에서 <br>
+                                주식투자 AI대표로 출연
+                            </span>
+                        </div>
+                        <!-- //tit -->
+
+                        <div class="txt sa sa-up" data-sa-delay="200">
+                            대한민국 주식투자AI의 대표로 인정받은 라씨 매매비서를 직접 경험해 보세요! <br>
+                            라씨 매매비서는 각 분야의 대표AI와 그 분야의 최고봉인 인간이 자존심과 <br>
+                            인류의 운명을 걸고 펼친 세기의 대결에서 주식하는 AI로 큰 반향을 일으키며, <br>
+                            진짜 AI의 놀라운 모습과 고도화된 분석 기술력을 증명하였습니다.
+                        </div>
+                        <!-- //txt -->
+                    </div>
+                    <!-- //txt -->
+                </div>
+            </div>
+            <!-- //con -->
+
+            <div class="con con07">
+                <div class="txt">
+                    <strong class="sa sa-up">
+                        궁금한 종목을 <br>
+                        라씨 매매비서에게 물어보세요.
+                    </strong>
+
+                    <span class="sa sa-up" data-sa-delay="400">
+                        회원가입 없이, 로그인을 하지 않아도 바로 AI매매신호 확인이 가능합니다. <br>
+                        앱을 다운로드하시고, 종목을 검색해 보세요.
+                    </span>
+                </div>
+                <!-- //txt -->
+
+                <div class="box">
+                    <a href="#" class="sa sa-scaleDown">라씨 매매비서 만나기</a>
+
+                    <div class="txt sa sa-down">
+                        구글 플레이 스토어와 앱 스토어에서 <span>'라씨 매매비서'</span>를 검색해보세요.
+                    </div>
+                </div>
+            </div>
+            <!-- //con -->
+
+            <div class="con con08">
+                <strong class="sa sa-down">자주 묻는 질문</strong>
+
+                <div class="qna">
+                    <div class="list sa sa-left">
+                        <div class="qsn">Q. 라씨 매매비서는 어떤 서비스인가요?</div>
+                        <!-- //질문 -->
+                        <div class="anw">
+                            라씨 매매비서는 고도화된 매매신호가 특징으로 개인투자자들이 가장 고민하는 <br>
+                            '어떤 타이밍에 어떤 종목을 매매해야 수익이 날까?' 에 대한 질문에 포커스를 두고 고안한 서비스입니다. <br><br>
+                            특히 개인투자자들의 제대로 된 수익을 위해 보편적인 정보가 아닌 개인화된 맞춤 매매신호와 주식정보를 제공합니다. (개인화된 매도가 제공) <br><br>
+                            라씨 매매비서에 종목만 추가하면 최적의 AI매매신호, 종목에 대한 AI속보, 다양한 종목소식 등을 한 번에 받아보고 관리할 수 있습니다.
+                        </div>
+                        <!-- //답변 -->
+                    </div>
+                    <!-- //list -->
+
+                    <div class="list sa sa-right">
+                        <div class="qsn">Q. AI매매신호는 언제 발생하나요?</div>
+                        <!-- //질문 -->
+                        <div class="anw">
+                            AI매매신호는 정해진 시각에 발생하는 것이 아닌 인공지능이 종목별로 분석한 최적의 매매타이밍에 실시간으로 제공됩니다. <br><br>
+                            AI매매신호는 AI매매신호 페이지에서 전체 발생내역을 확인하실 수 있으며, 보유 종목 혹은 관심 종목을 포켓에 등록해 놓으면 정확한 매매타이밍과 매매가를 실시간 푸시 알림으로 전송해드립니다. <br><br>
+                            종목 등록 한번으로 내 종목의 AI매매신호를 실시간으로 받아보세요.
+                        </div>
+                        <!-- //답변 -->
+                    </div>
+                    <!-- //list -->
+
+                    <div class="list sa sa-left">
+                        <div class="qsn">Q. AI매매신호 특징이 뭔가요?</div>
+                        <!-- //질문 -->
+                        <div class="anw">
+                            라씨 매매비서가 제공하는 AI매매신호는 과거 5년, 10억건 이상의 빅데이터를 기반으로 종목별 매매신호 서비스 입니다. <br>
+                            코스피, 코스닥은 물론 ETF까지 전종목에 대한 실시간 매수/매도 시그널을 정확한 시점과 가격으로 제시해 드립니다. <br><br>
+                            AI의 완성도는 물론 투자자가 실전 매매에서 쉽게 활용할 수 있도록 활용성에 중점을 두어 누구나 쉽게 AI매매신호를 따라 매매할 수 있도록 구성하였습니다.
+                        </div>
+                        <!-- //답변 -->
+                    </div>
+                    <!-- //list -->
+
+                    <div class="list sa sa-right">
+                        <div class="qsn">Q. AI매매신호의 평균 적중률과 보유 기간은 어떻게 되나요?</div>
+                        <!-- //질문 -->
+                        <div class="anw">
+                            라씨 매매비서는 10만 번 이상의 매매로 쌓아올린 데이터로 적중률 68%에 달하는 고도화된 AI매매신호 로직을 구축했습니다. <br>
+                            ( 시작일: 2014/ 10/ 16, 종료일: 2020/ 05/ 11) <br><br>
+                            AI매매신호는 투자자들이 실전 매매에 쉽게 활용 가능한 중기형 시그널로 대부분 2주 이내 매매 완료되나 변동성이 적을수록 보유기간은 증가합니다. <br><br>
+                            종목별 연평균 수익률이 18.7%에 달하며 평균 7회 매매를 실행합니다.
+                        </div>
+                        <!-- //답변 -->
+                    </div>
+                    <!-- //list -->
+
+                    <div class="list sa sa-left">
+                        <div class="qsn">Q. 종목 별 매매신호의 성과도 알 수 있나요?</div>
+                        <!-- //질문 -->
+                        <div class="anw">
+                            라씨 매매비서의 차별화된 특징 중 하나가 종목별 매매신호의 적중률과 수익률 데이터를 제공한다는 것입니다. <br><br>
+                            종목별 AI매매신호의 적중률, 평균 수익률, 누적 수익률과 투자시 수익 예측까지 100% 투명하게 공개됩니다. <br><br>
+                            지금 바로 관심 종목에 대한 상세한 성과를 확인하고 투자에 활용해 보세요!
+                        </div>
+                        <!-- //답변 -->
+                    </div>
+                    <!-- //list -->
+                </div>
+                <!-- //qna -->
+                <script>
+                    $(function(){
+                        $('.qsn').on('click', function(){
+                            $('.anw').slideUp();
+                            $(this).next('.anw').slideDown();
+                        });
+                    });
+                </script>
+            </div>
+            <!-- //con -->
+            <script src="./js/common.js"></script>
+            <!-- //반드시 하단에 들어가야함 -->
+        </div>
+        <!-- //container -->
+        <hr>
+
+        <div id="footer_w">
+            <div id="footer">
+                <div class="fnb">
+                    <ul>
+                        <li class="first"><a href="#">회사소개</a></li>
+                        <li><a href="#">서비스이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">블로그</a></li>
+                    </ul>
+                </div>
+                <!-- //fnb -->
+
+                <address>
+                    <span><em>씽크풀</em> 서울시 영등포구 국제금융로 70, 15층(여의도동, 미원빌딩)</span>
+                    <span class="info first">사업자 등록번호 : 116-81-54775</span>
+                    <span class="info">대표:김동진</span>
+                    <span class="info">고객센터:1666-6300</span>
+                </address>
+            </div>
+            <!-- // -->
+        </div>
+        <!-- //footer -->
+
+    </div>
+    <!-- //wrap -->
+</body>
+</html>

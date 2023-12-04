@@ -1,0 +1,510 @@
+.btn-outline-primary {
+    border: 1px solid #7975f7
+}
+
+.btn-primary {
+    background: #7975f7
+}
+
+.w100 {
+    width: 100% !important
+}
+
+.w150 {
+    width: 15rem !important
+}
+
+.w200 {
+    width: 20rem !important
+}
+
+.mr20 {
+    margin-right: 2rem !important
+}
+
+* {
+    font-family: 'Nanum Gothic', sans-serif
+}
+
+body,
+html {
+    font-size: 62.5%
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+#header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 10.6rem;
+    line-height: 10.6rem;
+    background: #7975f7;
+    text-align: center
+}
+
+#header h1 {
+    padding-left: 4.5rem;
+    height: 4.7rem;
+    line-height: 4.7rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 3rem 0 0 0;
+    background: url(img/admin_logo.png) no-repeat 0 0;
+    overflow: hidden
+}
+
+#header .admin_biz {
+    position: absolute;
+    height: 3rem;
+    line-height: 3rem;
+    top: 6.5rem;
+    left: 50%;
+    margin-left: 41rem;
+    font-size: 2.4rem;
+    color: #fff
+}
+
+#header .user{
+    position:absolute;
+    top:8rem;
+    left:50%;
+    height:1.6rem;
+    line-height:1.6rem;
+    margin-left:48rem;
+    z-index:99;
+    font-size:1.4rem;
+    color:#fff;
+    text-decoration: none;
+    font-weight:700;
+}
+
+#container {
+    position: relative;
+    width: 144rem;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.login {
+    display: block;
+    width: 58.5rem;
+    height: 51.5rem;
+    border: 1px solid #d6d6d6;
+    margin: 15rem auto 0;
+    padding: 6.5rem 0;
+    text-align: center
+}
+
+.login strong {
+    display: inline-block;
+    line-height: 3.6rem;
+    font-size: 3rem;
+    color: #333;
+    font-weight: 700
+}
+
+.login .input_user {
+    display: inline-block;
+    width: 36rem;
+    margin-top: 5.5rem
+}
+
+.login .input_user .input-group {
+    display: block;
+    width: 100%;
+    padding-bottom: 2rem;
+    float: left
+}
+
+.login .input_user .input-group:last-child {
+    padding-bottom: 0;
+    margin-top: 2rem
+}
+
+.login .input_user .input-group input[type=text] {
+    display: block;
+    width: 23.5rem;
+    height: 4.5rem;
+    border: 1px solid #ededed;
+    float: left;
+    font-size: 1.4rem
+}
+
+.login .input_user .input-group .btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    padding: 0;
+    border-radius: .5rem .5rem .5rem .5rem !important;
+    float: right
+}
+
+.login .input_user .input-group .btn-outline-primary {
+    width: 11.5rem;
+    height: 4.5rem;
+    color: #7975f7
+}
+
+.login .input_user .input-group .btn-outline-primary:hover {
+    color: #fff;
+    background: #7975f7
+}
+
+.login .input_user .input-group .btn-primary {
+    width: 100%;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    border: 0;
+    color: #fff
+}
+
+.admin {
+    display: block;
+    width: 100%;
+    overflow: hidden
+}
+
+.admin-title {
+    display: block;
+    width: 100%;
+    height: 4.5rem;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 0;
+    margin: 7rem 0 0 0
+}
+
+.admin-title::before {
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 1rem;
+    background: #0f68e1;
+    float: left;
+    margin-top: .8rem;
+    margin-right: .5rem
+}
+
+.admin-title li {
+    list-style-type: none;
+    display: block;
+    height: 4.5rem;
+    line-height: 4rem;
+    float: left;
+    margin: 0;
+    padding: 0 0 .5rem 0
+}
+
+.admin-title li::after {
+    content: '';
+    height: 2.6rem;
+    width: 1px;
+    border-right: 2px solid #9e9e9e;
+    float: left;
+    margin: .8rem 1.5rem 0 1.5rem
+}
+
+.admin-title li:last-child::after {
+    border: 0;
+    margin: 0
+}
+
+.admin-title li a {
+    display: block;
+    font-size: 2.4rem;
+    color: #666;
+    text-decoration: none;
+    float: left
+}
+
+.admin-title li.on a {
+    font-size: 2.8rem;
+    color: #333;
+    font-weight: 700
+}
+
+.admin-content {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 3rem
+}
+
+.sch-group {
+    display: block;
+    width: 100%
+}
+
+.sch-group .input-group {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    float: left
+}
+
+.sch-group .input-group input,
+.sch-group .input-group select,
+.sch-group .input-group span {
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    color: #666;
+    float: left
+}
+
+.sch-group .input-group input,
+.sch-group .input-group select {
+    border: 1px solid #d6d6d6;
+    text-align: center;
+    cursor: pointer
+}
+
+.sch-group .input-group select {
+    padding: 0;
+    min-width: 15rem
+}
+
+.sch-group .input-group span {
+    margin: 0 2rem !important
+}
+
+.sch-group .input-group .btn {
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0;
+    border: 0;
+    width: 60px;
+    border-radius: 0;
+    font-size: 1.4rem;
+    background: #333
+}
+
+.table-secondary {
+    background: #e6eaed
+}
+
+.table-secondary th {
+    background: #e6eaed
+}
+
+.table-bordered {
+    border-color: #ccc
+}
+
+.table-hover tbody tr:hover {
+    background: #f7f3dd
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover td:hover {
+    background: #f7f3dd;
+    box-shadow: none
+}
+
+.table thead tr th {
+    font-size: 1.2rem;
+    color: #666;
+    height: 3.3rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0
+}
+
+.table tbody tr td {
+    font-size: 1.2rem;
+    color: #666;
+    vertical-align: middle;
+    padding: 1.3rem .5rem 1.5rem .5rem
+}
+
+.table tbody tr td .btn {
+    font-size: 1.2rem
+}
+
+.table tfoot tr td {
+    height: 4rem;
+    font-size: 1.2rem;
+    padding: 0 1rem
+}
+
+.paging {
+    display: block;
+    width: 100%;
+    margin-top: 4rem;
+    float: left
+}
+
+.paging ul {
+    display: inline-block
+}
+
+.paging ul li {
+    display: block;
+    margin: 0 .5rem;
+    float: left
+}
+
+.paging ul li:first-child a,
+.paging ul li:last-child a {
+    border-radius: 0
+}
+
+.paging ul li.on a {
+    background: #333;
+    color: #fff
+}
+
+.paging ul li a {
+    width: 3.8rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    border: 1px solid #d6d6d6;
+    text-align: Center;
+    font-size: 1.6rem;
+    color: #333;
+    border-radius: 0 !important;
+    padding: 0;
+    font-weight: 700
+}
+
+.modal#Termination .modal-content {
+    border: 1px solid red
+}
+
+.modal#refund .modal-content {
+    border: 1px solid red
+}
+
+.modal-dialog {
+    margin-top: 20rem
+}
+
+.modal-header {
+    border-bottom: 0
+}
+
+.modal-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-indent: -9999em
+}
+
+.modal-body {
+    text-align: center
+}
+
+.modal-body span {
+    display: block;
+    font-size: 1.4rem;
+    color: #666
+}
+
+.modal-body strong {
+    display: block;
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 700;
+    margin: 3rem 0
+}
+
+.modal-footer {
+    display: block;
+    border-top: 0;
+    padding: 2rem 0 4rem 0
+}
+
+.modal-footer .btn {
+    width: 8rem;
+    height: 3rem;
+    margin: 0 1rem;
+    font-size: 1.4rem
+}
+
+.modal .btn-close {
+    font-size: 1.2rem
+}
+
+#refund .modal-dialog {
+    max-width: 400px
+}
+
+#refund .modal-body {
+    padding: 2.9rem
+}
+
+#refund .modal-body dl {
+    display: block;
+    width: 100%;
+    float: left
+}
+
+#refund .modal-body dl dt {
+    display: block;
+    width: 7.5rem;
+    height: 4.6rem;
+    line-height: 4.6rem;
+    float: left;
+    clear: left;
+    font-size: 1.4rem;
+    color: #000
+}
+
+#refund .modal-body dl dd {
+    display: block;
+    width: calc(100% - 7.5rem);
+    height: 4.6rem;
+    line-height: 4.6rem;
+    margin-bottom: 1rem;
+    float: left
+}
+
+#refund .modal-body dl dd input[type=text] {
+    display: block;
+    width: 100%;
+    height: 4.6rem;
+    border: 1px solid #d6d6d6;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 1.5rem
+}
+
+#refund .modal-body dl dd input::placeholder {
+    font-size: 14px;
+    color: #999
+}
+
+#refund .modal-body dl dd input[type=checkbox] {
+    float: left;
+    margin: 1.7rem .5rem 0 0
+}
+
+#refund .modal-body dl dd label {
+    font-size: 1.4rem;
+    color: #000;
+    float: left
+}
+
+#refund .modal-body .modal-guide {
+    position: relative;
+    display: block;
+    padding-left: 1.3rem;
+    font-size: 1.4rem;
+    color: #000;
+    float: left
+}
+
+#refund .modal-body .modal-guide::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '※';
+    float: left
+}

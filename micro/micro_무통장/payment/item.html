@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font Css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/custom.css">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>라씨매매신호 결제</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <section id="content">
+            <!-- /////////////////////////변경사항///////////////////////// -->
+            <div class="top">
+                <span><img src="img/top.png" alt="top.png"></span>
+                <strong>라씨 매매비서 상품 안내</strong>
+            </div>
+            <!-- /////////////////////////변경사항///////////////////////// -->
+            <!-- //top -->
+
+            <div class="con">
+                <div class="guide">
+                    <div class="top">
+                        <span>무제한</span>
+                        <strong>
+                            전종목 매매내역 보기 및 <br>
+                            <span>매매신호 실시간</span> 받기
+                        </strong>
+                    </div>
+                    <!-- //top -->
+
+                    <div class="itemList">
+                        <!-- 
+                            // 결제 목록 radio 선택입니다. 
+                         -->
+                        <div class="list">
+                            <strong>
+                                <span class="float-start"><em>상품을 선택하세요</em></span>
+                                <span class="float-end">1개월 이용 정상가 : <em>77,000</em>원</span>
+                            </strong>
+                            <!-- // -->
+
+                            <input type="radio" name="chkitem" id="chkitem01" class="rdo-item" data-bs-toggle="modal"
+                                data-bs-target="#caution">
+                            <label for="chkitem01" class="box box-cho">
+                                <div class="price">
+                                    <strong><em>59,400</em>원</strong>
+                                    <span>(23%할인!)</span>
+                                </div>
+
+                                <div class="date">1개월(정기결제)</div>
+                            </label>
+                            <!-- // -->
+
+                            <input type="radio" name="chkitem" id="chkitem02" class="rdo-item" data-bs-toggle="modal"
+                                data-bs-target="#caution">
+                            <label for="chkitem02" class="box box-cho">
+                                <div class="price">
+                                    <strong><em>338,000</em>원</strong>
+                                    <span>(27%할인!)</span>
+                                </div>
+
+                                <div class="date">6개월(1회)</div>
+                            </label>
+                            <!-- // -->
+
+                            <input type="radio" name="chkitem" id="chkitem03" class="rdo-item" data-bs-toggle="modal"
+                                data-bs-target="#caution">
+                            <label for="chkitem03" class="box box-cho">
+                                <div class="price">
+                                    <strong><em>605,000</em>원</strong>
+                                    <span>(35%할인!)</span>
+                                </div>
+
+                                <div class="date">12개월(1회)</div>
+                            </label>
+                            <!-- // -->
+
+                            <div id="caution" class="custom1 modal fade" tabindex="-1" aria-labelledby="BC카드 결제 중단 안내"
+                                data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="caution">
+                                                <div class="top">
+                                                    <img src="./img/caution.png" alt="">
+                                                    <span class="d-block">안내드립니다.</span>
+                                                </div>
+                                                <div class="txt">
+                                                    <div class="">
+                                                        현재 <em>BC카드</em>는 정기결제 지원이 되지 않습니다. <br>
+                                                        (BC제외 모든 카드 사용 가능)
+                                                    </div>
+                                                    <!-- // -->
+
+                                                    <div class="">
+                                                        BC카드로 결제를 원하는 고객님께서는 <br>
+                                                        <em class="fw-bold">라씨 매매비서앱</em>을 다운로드 하신 후 <br>
+                                                        인앱 결제를 이용하시기 바랍니다. <br><br>
+                                                        문의 02-2174-6446
+                                                    </div>
+                                                </div>
+                                                <div class="button">
+                                                    <a href="#">결제하기</a>
+                                                </div>
+                                            </div>
+                                            <!-- //안내 -->
+                                        </div>
+                                        <!-- //body -->
+                                    </div>
+                                    <!-- //content -->
+                                </div>
+                                <!-- //dialog -->
+                            </div>
+                        </div>
+                        <!-- //list -->
+
+                        <!-- ////////////////////////////추가////////////////////////// -->
+
+                        <div class="noBank">
+
+                            <div class="noBank_title">무통장 결제</div>
+
+                            <button class="noBank-btn" data-bs-toggle="modal" data-bs-target="#noBankPop" type="button">
+                                <div class="btn-left">
+                                    <div class="btn-pri">
+                                        <span>508,000원</span>
+                                        <em>(45% 할인)</em>
+                                    </div>
+                                </div>
+                                <div class="btn-right">
+                                    <span>무통장</span> 단건 결제(12개월)
+                                </div>
+                            </button>
+
+                        </div>
+
+                        <div class="modal fade custom modalNoBank" id="noBankPop" data-bs-backdrop="static"
+                            data-bs-keyboard="false" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="popTitle">안내드립니다.</div>
+                                        <div class="popTxt">
+                                            무통장 프리미엄 가입은 입금 후 <br>
+                                            고객센터를 통한 프리미엄 서비스 등록 <br>
+                                            방식으로 이루어지기 때문에 <br>
+                                            처리 시간이 소요됩니다. <br>
+                                            처리 시간을 확인 후 가입을 진행해 주세요.
+                                        </div>
+                                        <div class="popBox">
+                                            <p>영업시간 내 : 확인 즉시 처리 <br> 영업시간 외 : 영업개시 후 즉시 처리</p>
+                                        </div>
+                                        <div class="popTime">
+                                            <strong>영업시간</strong>
+                                            <span>월~금요일 (공휴일 제외) <br> 오전 8시30분~오후 5시</span>
+                                        </div>
+                                        <div class="popBtn">
+                                            <button>가입하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ////////////////////////////추가////////////////////////// -->
+
+                        <div class="txt">
+                            <span><em>라씨매매비서는 안드로이드 앱과 IOS앱을 통해 이용 하는 서비스입니다. </em></span>
+                            <span><em>사용하는 휴대폰 앱스토어에서 어플을 다운받아 이용해주세요 .</em></span>
+                            <span><em>앱 접속후 가입하신 휴대폰번호로 로그인 하시기 바랍니다.</em></span>
+                            <span><em>정기결제는 매월 자동결제를 통해 서비스기간이 갱신 됩니다. </em></span>
+                            <span><em>서비스 문의전화는 02-2174-6446 입니다.</em></span>
+                        </div>
+                    </div>
+                    <!-- //itemList -->
+                </div>
+                <!-- //guide -->
+            </div>
+            <!-- //con -->
+
+
+        </section>
+        <!-- // -->
+        <footer>
+            <div class="fnb">
+                <menu type="list">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">메인화면으로</a></li>
+                </menu>
+            </div>
+            <!-- // fnb -->
+            <address>
+                <strong>㈜ 씽크풀</strong> 서울시 영등포구 국제금융로 70, 15층(여의도동, 미원빌딩) <br>
+                사업자 등록번호 : 116-81-54775<em>대표 : 김동진</em> <br>
+                고객센터: <a href="tel:1666-6300">1666-6300</a>
+            </address>
+            <!-- //address -->
+        </footer>
+        <!-- // -->
+    </div>
+</body>
+
+</html>
