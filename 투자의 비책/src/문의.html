@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+    user-scalable=0"">
+    <title>투자의 비책</title>
+    <!-- font -->
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <!-- 바닐라캘린더 -->
+      <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.js" defer></script>
+      <!-- css -->
+    <link rel="stylesheet" href="../dist/output.css">
+  </head>
+<body>
+  
+  <div class="wrap">
+
+    <header class="header">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M15.5 19L9.20711 12.7071C8.81658 12.3166 8.81658 11.6834 9.20711 11.2929L15.5 5" stroke="#141414"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="title">1:1문의</div>
+    </header>
+
+    <div class="container">
+
+      <div class="content">
+
+        <div class="inquiry">
+
+          <div class="inqReg">
+            <button>1:1문의 등록하기</button>
+          </div>
+
+          <div class="q_list">
+            <div class="title">나의 질문 리스트</div>
+            <button class="box noQbox">
+              질문이 없습니다.
+            </button>
+            <button class="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#expected">
+              <div class="txt">
+                <em>2023.08.31</em>
+                <span><strong>Q</strong> 알람은 어디서 끄나요?</span>
+              </div>
+              <div class="state">
+                답변예정
+              </div>
+            </button>
+            <button class="box" type="button" data-bs-toggle="offcanvas" data-bs-target="#end">
+              <div class="txt">
+                <em>2023.08.31</em>
+                <span><strong>Q</strong> 알람은 어디서 끄나요?</span>
+              </div>
+              <div class="state end">
+                답변종료
+              </div>
+            </button>
+          </div>
+
+          <div class="q_listMore">
+            <button>더보기</button>
+          </div>
+
+          <div class="offcanvas inqOff offcanvas-bottom" id="expected">
+            <div class="offcanvas-header">
+              <button type="button" data-bs-dismiss="offcanvas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24" fill="none">
+                  <path d="M7.5 5L14.5 12M21.5 19L14.5 12M14.5 12L21.5 5M14.5 12L7.5 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="title">1:1 문의</div>
+              <div class="date">2023.08.31</div>
+              <div class="question">
+                <span><strong>Q</strong> 알람은 어디서 끄나요?</span>
+                <em>너무 많이 알림이 와서 알람을 끄고 싶은데 어디서 끄나요?</em>
+              </div>
+              <div class="answerList">
+                <div class="answer">
+                  <strong>A</strong>
+                  <span>답변준비중입니다.</span>
+                </div>
+              </div>
+              <div class="check"><button data-bs-dismiss="offcanvas">확인</button></div>
+            </div>
+          </div>
+
+          <div class="offcanvas inqOff offcanvas-bottom" id="end">
+            <div class="offcanvas-header">
+              <button type="button" data-bs-dismiss="offcanvas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24" viewBox="0 0 28 24" fill="none">
+                  <path d="M7.5 5L14.5 12M21.5 19L14.5 12M14.5 12L21.5 5M14.5 12L7.5 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="title">1:1 문의</div>
+              <div class="date">2023.08.31</div>
+              <div class="question">
+                <span><strong>Q</strong> 알람은 어디서 끄나요?</span>
+                <em>너무 많이 알림이 와서 알람을 끄고 싶은데 어디서 끄나요?</em>
+              </div>
+              <div class="answerList">
+                <div class="answer">
+                  <strong>A</strong>
+                  <span>
+                    안녕하세요 회원님 <br>
+                    알람은 마이페이지 알람설정에서 끄시면 됩니다. <br>
+                    좋은 하루 되세요
+                  </span>
+                </div>
+                <div class="answer">
+                  <strong>A</strong>
+                  <span>
+                    안녕하세요 회원님 <br>
+                    알람은 마이페이지 알람설정에서 끄시면 됩니다. <br>
+                    좋은 하루 되세요
+                  </span>
+                </div>
+              </div>
+              <div class="check"><button data-bs-dismiss="offcanvas">확인</button></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- inquiry -->
+        
+      </div>
+      <!-- content -->
+
+    </div>
+    <!-- container -->
+
+  </div>
+  <!-- wrap -->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+
+</body>
+</html>

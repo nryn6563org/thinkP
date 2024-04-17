@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+  user-scalable=0"">
+  <title>투자의 비책</title>
+  <!-- font -->
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- 바닐라캘린더 -->
+    <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.js" defer></script>
+    <!-- css -->
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+  
+  <div class="wrap">
+
+    <header class="header">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M15.5 19L9.20711 12.7071C8.81658 12.3166 8.81658 11.6834 9.20711 11.2929L15.5 5" stroke="#141414"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="title">결제관리</div>
+    </header>
+
+    <div class="container">
+
+      <div class="content">
+
+        <div class="payment">
+          <div class="paymentTitle">
+            <div>정기결제 내역</div>
+            <div class="years">
+              <button class="yearsSel" onclick="showYears()">
+                <span>2023년</span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></span>
+              </button>
+              <div class="yearsCon hidden">
+                <button>2020년</button>
+                <button>2021년</button>
+                <button>2022년</button>
+                <button>2023년</button>
+                <button>2024년</button>
+                <button>2025년</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="box">
+              <div class="use">사용중</div>
+              <div class="txt">
+                <strong>결제일</strong>
+                <span>2023.07.13</span>
+              </div>
+              <div class="txt">
+                <strong>서비스</strong>
+                <span>투자의비책 프리미엄</span>
+              </div>
+              <div class="txt">
+                <strong>서비스기간</strong>
+                <span>2023.09.13 ~ 2023.10.12</span>
+              </div>
+              <div class="txt">
+                <strong>결제금액</strong>
+                <span>55,000 (토스 정기결제)</span>
+              </div>
+            </div>
+            <div class="box">
+              <div class="noUse">사용종료</div>
+              <div class="txt">
+                <strong>결제일</strong>
+                <span>2023.07.13</span>
+              </div>
+              <div class="txt">
+                <strong>서비스</strong>
+                <span>투자의비책 프리미엄</span>
+              </div>
+              <div class="txt">
+                <strong>서비스기간</strong>
+                <span>2023.09.13 ~ 2023.10.12</span>
+              </div>
+              <div class="txt">
+                <strong>결제금액</strong>
+                <span>55,000 (토스 정기결제)</span>
+              </div>
+            </div>
+            <div class="box">
+              <div class="use">사용중</div>
+              <div class="txt">
+                <strong>결제일</strong>
+                <span>2023.07.13</span>
+              </div>
+              <div class="txt">
+                <strong>서비스</strong>
+                <span>투자의비책 프리미엄</span>
+              </div>
+              <div class="txt">
+                <strong>서비스기간</strong>
+                <span>2023.09.13 ~ 2023.10.12</span>
+              </div>
+              <div class="txt">
+                <strong>결제금액</strong>
+                <span>55,000 (토스 정기결제)</span>
+              </div>
+            </div>
+            <div class="box noPayment">
+              결제된 내역이 없습니다.
+            </div>
+          </div>
+
+          <div class="more"><button>더보기</button></div>
+        </div>
+        <!-- payment -->
+
+        <script>
+          const yearsCon = document.querySelector('.yearsCon');
+
+          function showYears() {
+            yearsCon.classList.toggle('hidden');
+            yearsCon.classList.toggle('block');
+          }
+        </script>
+
+      </div>
+      <!-- content -->
+
+    </div>
+    <!-- container -->
+
+  </div>
+  <!-- wrap -->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+
+</body>
+</html>

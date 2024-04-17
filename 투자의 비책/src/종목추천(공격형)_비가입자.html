@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+    user-scalable=0"">
+    <title>투자의 비책</title>
+    <!-- font -->
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <!-- 바닐라캘린더 -->
+      <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.js" defer></script>
+      <!-- css -->
+    <link rel="stylesheet" href="../dist/output.css">
+  </head>
+<body>
+  
+  <div class="wrap">
+
+    <header class="header">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M15.5 19L9.20711 12.7071C8.81658 12.3166 8.81658 11.6834 9.20711 11.2929L15.5 5" stroke="#141414"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="title">종목추천</div>
+      <button class="alarm">알림설정</button>
+    </header>
+
+    <div class="container">
+
+      <div class="content">
+
+        <div class="itemRecom">
+
+          <div class="recomNav">
+            <button>전체</button>
+            <button class="active">공격형</button>
+            <button>안정형</button>
+            <button>위험중립형</button>
+          </div>
+
+          <div class="recomTxt">
+            증권사 리서치 종목들 중 전문가의 수급,가격,공시등을 분석하여 엄선한 추천 종목입니다.
+          </div>
+
+          <div class="beRecom">
+
+            <div class="title">
+              <span>공격형 매매</span>
+              <span>
+                <button data-bs-toggle="modal" data-bs-target="#s001Modal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M11.95 18C12.3 18 12.596 17.879 12.838 17.637C13.08 17.395 13.2007 17.0993 13.2 16.75C13.2 16.4 13.0793 16.104 12.838 15.862C12.5967 15.62 12.3007 15.4993 11.95 15.5C11.6 15.5 11.3043 15.621 11.063 15.863C10.8217 16.105 10.7007 16.4007 10.7 16.75C10.7 17.1 10.821 17.396 11.063 17.638C11.305 17.88 11.6007 18.0007 11.95 18ZM12 22C10.6167 22 9.31667 21.7373 8.1 21.212C6.88333 20.6867 5.825 19.9743 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26333 14.6833 2.00067 13.3833 2 12C2 10.6167 2.26267 9.31667 2.788 8.1C3.31333 6.88333 4.02567 5.825 4.925 4.925C5.825 4.025 6.88333 3.31267 8.1 2.788C9.31667 2.26333 10.6167 2.00067 12 2C13.3833 2 14.6833 2.26267 15.9 2.788C17.1167 3.31333 18.175 4.02567 19.075 4.925C19.975 5.825 20.6877 6.88333 21.213 8.1C21.7383 9.31667 22.0007 10.6167 22 12C22 13.3833 21.7373 14.6833 21.212 15.9C20.6867 17.1167 19.9743 18.175 19.075 19.075C18.175 19.975 17.1167 20.6877 15.9 21.213C14.6833 21.7383 13.3833 22.0007 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20ZM12.1 7.7C12.5167 7.7 12.8793 7.83333 13.188 8.1C13.4967 8.36667 13.6507 8.7 13.65 9.1C13.65 9.46667 13.5377 9.79167 13.313 10.075C13.0883 10.3583 12.834 10.625 12.55 10.875C12.1667 11.2083 11.8293 11.575 11.538 11.975C11.2467 12.375 11.1007 12.825 11.1 13.325C11.1 13.5583 11.1877 13.7543 11.363 13.913C11.5383 14.0717 11.7423 14.1507 11.975 14.15C12.225 14.15 12.4377 14.0667 12.613 13.9C12.7883 13.7333 12.9007 13.525 12.95 13.275C13.0167 12.925 13.1667 12.6127 13.4 12.338C13.6333 12.0633 13.8833 11.8007 14.15 11.55C14.5333 11.1833 14.8627 10.7833 15.138 10.35C15.4133 9.91667 15.5507 9.43333 15.55 8.9C15.55 8.05 15.2043 7.35433 14.513 6.813C13.8217 6.27167 13.0173 6.00067 12.1 6C11.4667 6 10.8627 6.13333 10.288 6.4C9.71333 6.66667 9.27567 7.075 8.975 7.625C8.85833 7.825 8.821 8.03767 8.863 8.263C8.905 8.48833 9.01733 8.659 9.2 8.775C9.43333 8.90833 9.675 8.95 9.925 8.9C10.175 8.85 10.3833 8.70833 10.55 8.475C10.7333 8.225 10.9627 8.03333 11.238 7.9C11.5133 7.76667 11.8007 7.7 12.1 7.7Z"
+                      fill="#CCCCCC" />
+                  </svg>
+                </button>
+              </span>
+            </div>
+
+            <div class="bestPer">
+              <div class="headname">BEST 수익률 (최근 3개월)</div>
+              <div class="swiper itemSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button class="itemBox">
+                      <div class="alName"><span>공</span></div>
+                      <div class="per up">+32.02%</div>
+                      <div class="name text-truncate">폴라리스오피폴라리스오피</div>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <script>
+              var swiper = new Swiper('.itemSwiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 15,
+                // freeMode: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable : true,
+                },
+                // autoplay: {
+                //   delay: 2000,
+                //   disableOnInteraction: false,
+                // },
+                // loop: true,
+              });
+            </script>
+
+            <div class="modal sModal fade" id="s001Modal" aria-hiddn="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button data-bs-dismiss="modal">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
+                        <path d="M3.32458 5L10.3246 12M17.3246 19L10.3246 12M10.3246 12L17.3246 5M10.3246 12L3.32458 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="titleTag">
+                      <span>공격형 알고리즘</span>
+                    </div>
+                    <div class="txt">
+                      업종별 주도주부터 중소형주까지, <br>
+                      실시간 분석, 시장의 모든 기회 포착! <br>
+                      정확한 매수/매도 포인트 제시
+                    </div>
+                    <div class="img">
+                      <img src="../img/s001.png" alt="공격형 알고리즘 소개">
+                    </div>
+                    <div class="txt2">
+                      <span>적극투자형 단기매매</span>
+                      <em>High Risk High Return</em>
+                    </div>
+                    <div class="conTxtBox">
+                      <strong>대리님 비책</strong>
+                      <span>
+                        시장 평균 수익률을 상회하는 고수익 추구. <br>
+                        일시적 평가 손실의 수용 가능성. 강인한 멘탈. <br>
+                        공격적인 투자 결정을 내리는데 필요한 <br>
+                        용기와 자신감.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="recomItem">
+
+            <!-- 추천 탭 -->
+            <div class="recomItemToday">
+
+              <div class="recomItemNav">
+                <button class="active">추천</button>
+                <button>매도</button>
+              </div>
+
+              <div class="todayTitle">
+                <strong>오늘의 공격형 매수종목</strong>
+                <span>2024.01.15 기준</span>
+              </div>
+
+              <div class="todayEvent">
+
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴*********</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state upbg">매수</div>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ****** 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="todayEventPri">
+                      <span>증권사 목표가 23,000</span>
+                      <span class="line"></span>
+                      <span>투자의견 <em class="up">BUY</em></span>
+                    </div>
+                  </div>
+                  <div class="bot bgGray">
+                    <div class="flexsb">
+                      <div class="txtPri">매수가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">목표가 &nbsp; <span>*******</span></div>
+                    </div>
+                    <div class="flexsb">
+                      <div class="txtPri">손절가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">현재가대비 &nbsp; <span class="up">+32.02%</span></div>
+                    </div>
+                  </div>
+                </button>
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴*********</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state upbg">매수</div>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ****** 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="todayEventPri">
+                      <span>증권사 목표가 23,000</span>
+                      <span class="line"></span>
+                      <span>투자의견 <em class="up">BUY</em></span>
+                    </div>
+                  </div>
+                  <div class="bot bgGray">
+                    <div class="flexsb">
+                      <div class="txtPri">매수가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">목표가 &nbsp; <span>*******</span></div>
+                    </div>
+                    <div class="flexsb">
+                      <div class="txtPri">손절가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">현재가대비 &nbsp; <span class="up">+32.02%</span></div>
+                    </div>
+                  </div>
+                </button>
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴*********</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state upbg">매수</div>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ****** 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="todayEventPri">
+                      <span>증권사 목표가 23,000</span>
+                      <span class="line"></span>
+                      <span>투자의견 <em class="up">BUY</em></span>
+                    </div>
+                  </div>
+                  <div class="bot bgGray">
+                    <div class="flexsb">
+                      <div class="txtPri">매수가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">목표가 &nbsp; <span>*******</span></div>
+                    </div>
+                    <div class="flexsb">
+                      <div class="txtPri">손절가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">현재가대비 &nbsp; <span class="up">+32.02%</span></div>
+                    </div>
+                  </div>
+                </button>
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴*********</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state upbg">매수</div>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ****** 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="todayEventPri">
+                      <span>증권사 목표가 23,000</span>
+                      <span class="line"></span>
+                      <span>투자의견 <em class="up">BUY</em></span>
+                    </div>
+                  </div>
+                  <div class="bot bgGray">
+                    <div class="flexsb">
+                      <div class="txtPri">매수가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">목표가 &nbsp; <span>*******</span></div>
+                    </div>
+                    <div class="flexsb">
+                      <div class="txtPri">손절가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">현재가대비 &nbsp; <span class="up">+32.02%</span></div>
+                    </div>
+                  </div>
+                </button>
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴*********</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state upbg">매수</div>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ****** 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="todayEventPri">
+                      <span>증권사 목표가 23,000</span>
+                      <span class="line"></span>
+                      <span>투자의견 <em class="up">BUY</em></span>
+                    </div>
+                  </div>
+                  <div class="bot bgGray">
+                    <div class="flexsb">
+                      <div class="txtPri">매수가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">목표가 &nbsp; <span>*******</span></div>
+                    </div>
+                    <div class="flexsb">
+                      <div class="txtPri">손절가 &nbsp; <span>*******</span></div>
+                      <div class="txtPri">현재가대비 &nbsp; <span class="up">+32.02%</span></div>
+                    </div>
+                  </div>
+                </button>
+
+              </div>
+              <!-- todayEvent -->
+
+              <div class="beAlMore"><button>더보기</button></div>
+
+            </div>
+            <!-- recomItemToday -->
+
+            <!-- 매도 탭 -->
+            <div class="recomItemToday">
+
+              <div class="recomItemNav">
+                <button>추천</button>
+                <button class="active">매도</button>
+              </div>
+
+              <div class="todayTitle">
+                <strong>오늘의 공격형 매도 종목</strong>
+                <span>2024.01.15 기준</span>
+              </div>
+
+              <div class="todayEvent">
+
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state downbg">매도</div>
+                    </div>
+                    <div class="beAlTxt text-truncate mb-0">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                  </div>
+                  <div class="bot bgGray pt-0">
+                    <div class="list">
+                      <div class="listNum">
+                        <div class="mt-18">
+                          <div class="txt2">매수</div>
+                          <div class="num">
+                            <strong>230,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">매도</div>
+                          <div class="num">
+                            <strong>178,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">수익률</div>
+                          <div class="num">
+                            <strong class="up">+32.02%</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state downbg">매도</div>
+                    </div>
+                    <div class="beAlTxt text-truncate mb-0">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                  </div>
+                  <div class="bot bgGray pt-0">
+                    <div class="list">
+                      <div class="listNum">
+                        <div class="mt-18">
+                          <div class="txt2">매수</div>
+                          <div class="num">
+                            <strong>230,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">매도</div>
+                          <div class="num">
+                            <strong>178,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">수익률</div>
+                          <div class="num">
+                            <strong class="up">+32.02%</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state downbg">매도</div>
+                    </div>
+                    <div class="beAlTxt text-truncate mb-0">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                  </div>
+                  <div class="bot bgGray pt-0">
+                    <div class="list">
+                      <div class="listNum">
+                        <div class="mt-18">
+                          <div class="txt2">매수</div>
+                          <div class="num">
+                            <strong>230,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">매도</div>
+                          <div class="num">
+                            <strong>178,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">수익률</div>
+                          <div class="num">
+                            <strong class="up">+32.02%</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state downbg">매도</div>
+                    </div>
+                    <div class="beAlTxt text-truncate mb-0">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                  </div>
+                  <div class="bot bgGray pt-0">
+                    <div class="list">
+                      <div class="listNum">
+                        <div class="mt-18">
+                          <div class="txt2">매수</div>
+                          <div class="num">
+                            <strong>230,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">매도</div>
+                          <div class="num">
+                            <strong>178,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">수익률</div>
+                          <div class="num">
+                            <strong class="up">+32.02%</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button class="todayEventBox">
+                  <div class="top">
+                    <div class="flexsb">
+                      <div class="itemName">
+                        <span class="eventName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <div class="state downbg">매도</div>
+                    </div>
+                    <div class="beAlTxt text-truncate mb-0">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                  </div>
+                  <div class="bot bgGray pt-0">
+                    <div class="list">
+                      <div class="listNum">
+                        <div class="mt-18">
+                          <div class="txt2">매수</div>
+                          <div class="num">
+                            <strong>230,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">매도</div>
+                          <div class="num">
+                            <strong>178,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div class="mt-18">
+                          <div class="txt2">수익률</div>
+                          <div class="num">
+                            <strong class="up">+32.02%</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                
+
+              </div>
+              <!-- todayEvent -->
+
+              <div class="beAlMore"><button>더보기</button></div>
+
+            </div>
+            <!-- recomItemToday -->
+
+            <!-- 추천 탭 -->          
+            <div class="buyAll">
+
+              <div class="title">추천 보기</div>
+
+              <div class="select">
+                <div class="all">
+                  <button class="allSel" onclick="showAll()">
+                    <span>전체</span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg></span>
+                  </button>
+                  <div class="allCon hidden">
+                    <button>전체</button>
+                    <button>보유</button>
+                    <button>매도완료</button>
+                  </div>
+                </div>
+                <div class="years">
+                  <button class="yearsSel" onclick="showYears()">
+                    <span>12개월</span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg></span>
+                  </button>
+                  <div class="yearsCon hidden">
+                    <button>12개월</button>
+                    <button>6개월</button>
+                    <button>3개월</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buyAllItem">
+
+                <button class="buyAllItemBox">
+                  <div class="top">
+                    <div class="itemName">
+                      <div class="name text-truncate">S*********</div>
+                      <div class="code">******</div>
+                    </div>
+                    <div class="date">
+                      <span>보유</span>
+                      <em>23.12.30</em>
+                    </div>
+                  </div>
+                  <div class="bot">
+                    <div class="listNum">
+                      <div>
+                        <div class="txt2">매수가</div>
+                        <div class="pri">*******</div>
+                      </div>
+                      <div>
+                        <div class="txt2">목표가</div>
+                        <div class="pri">*******</div>
+                      </div>
+                      <div>
+                        <div class="txt2">현재가대비</div>
+                        <div class="pri up">+32.02%</div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button class="buyAllItemBox">
+                  <div class="top">
+                    <div class="itemName">
+                      <div class="name text-truncate">S*********</div>
+                      <div class="code">******</div>
+                    </div>
+                    <div class="date">
+                      <span>보유</span>
+                      <em>23.12.30</em>
+                    </div>
+                  </div>
+                  <div class="bot">
+                    <div class="listNum">
+                      <div>
+                        <div class="txt2">매수가</div>
+                        <div class="pri">*******</div>
+                      </div>
+                      <div>
+                        <div class="txt2">목표가</div>
+                        <div class="pri">*******</div>
+                      </div>
+                      <div>
+                        <div class="txt2">현재가대비</div>
+                        <div class="pri up">+32.02%</div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button class="buyAllItemBox">
+                  <div class="top">
+                    <div class="itemName">
+                      <div class="name text-truncate">S*********</div>
+                      <div class="code">******</div>
+                    </div>
+                    <div class="date">
+                      <span>보유</span>
+                      <em>23.12.30</em>
+                    </div>
+                  </div>
+                  <div class="bot">
+                    <div class="listNum">
+                      <div>
+                        <div class="txt2">매수가</div>
+                        <div class="pri">*******</div>
+                      </div>
+                      <div>
+                        <div class="txt2">목표가</div>
+                        <div class="pri">*******</div>
+                      </div>
+                      <div>
+                        <div class="txt2">현재가대비</div>
+                        <div class="pri up">+32.02%</div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+              </div>
+
+              <div class="beAlMore"><button>더보기</button></div>
+
+            </div>
+            <!-- buyAll -->
+
+            <!-- 매도 탭 -->          
+            <div class="buyAll">
+
+              <div class="title">매도 보기</div>
+
+              <div class="select">
+                <div class="all">
+                  <button class="allSel" onclick="showAll()">
+                    <span>전체</span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg></span>
+                  </button>
+                  <div class="allCon hidden">
+                    <button>전체</button>
+                    <button>보유</button>
+                    <button>매도완료</button>
+                  </div>
+                </div>
+                <div class="years">
+                  <button class="yearsSel" onclick="showYears()">
+                    <span>12개월</span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg></span>
+                  </button>
+                  <div class="yearsCon hidden">
+                    <button>12개월</button>
+                    <button>6개월</button>
+                    <button>3개월</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buyAllItem">
+
+                <button class="buyAllItemBox">
+                  <div class="top">
+                    <div class="itemName">
+                      <div class="name text-truncate">SK아이이테크놀로지</div>
+                      <div class="code">361610</div>
+                    </div>
+                  </div>
+                  <div class="bot">
+                    <div class="list">
+                      <div class="listNum">
+                        <div>
+                          <div class="txt2">매수</div>
+                          <div class="num">
+                            <strong>230,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="txt2">매도</div>
+                          <div class="num">
+                            <strong>178,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="txt2">수익률</div>
+                          <div class="num">
+                            <strong class="up">+32.02%</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button class="buyAllItemBox">
+                  <div class="top">
+                    <div class="itemName">
+                      <div class="name text-truncate">SK아이이테크놀로지</div>
+                      <div class="code">361610</div>
+                    </div>
+                  </div>
+                  <div class="bot">
+                    <div class="list">
+                      <div class="listNum">
+                        <div>
+                          <div class="txt2">매수</div>
+                          <div class="num">
+                            <strong>230,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="txt2">매도</div>
+                          <div class="num">
+                            <strong>178,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="txt2">수익률</div>
+                          <div class="num">
+                            <strong class="up">+32.02%</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <button class="buyAllItemBox">
+                  <div class="top">
+                    <div class="itemName">
+                      <div class="name text-truncate">SK아이이테크놀로지</div>
+                      <div class="code">361610</div>
+                    </div>
+                  </div>
+                  <div class="bot">
+                    <div class="list">
+                      <div class="listNum">
+                        <div>
+                          <div class="txt2">매수</div>
+                          <div class="num">
+                            <strong>230,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="txt2">매도</div>
+                          <div class="num">
+                            <strong>178,000</strong>
+                            <span>01/15 14:10</span>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="txt2">수익률</div>
+                          <div class="num">
+                            <strong class="up">+32.02%</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+
+              </div>
+
+              <div class="beAlMore"><button>더보기</button></div>
+
+            </div>
+            <!-- buyAll -->
+
+          </div>
+          <!-- recomItem -->
+
+          <div class="contentBanner">
+            <button><img src="../img/banner.png" alt="배너"></button>
+          </div>
+
+        </div>
+        <!-- itemRecom -->
+
+        <div class="footerTxt">
+          ※ 유의사항안내 <br>
+          본서비스는 (주)씽크풀과 SBSBiz와의 제휴를 통해 제공되는 서비스입니다. <br>
+          서비스 신청 시 (주)씽크풀의 투자정보가제공됩니다. <br>
+          또한 이용자는 본 정보를 무단 복사, 전재 및 재배포 할 수 없습니다. <br>
+          투자결과에 따라 투자원금의 손실이 발생할 수 있으며, 투자 결정과 결과에 대한 책임은 투자자 본인에게 있음을 알려드립니다
+        </div>
+
+        <script>
+          const yearsCon = document.querySelector('.yearsCon');
+          const allCon = document.querySelector('.allCon');
+
+          function showYears() {
+            yearsCon.classList.toggle('hidden');
+            yearsCon.classList.toggle('block');
+          }
+
+          function showAll() {
+            allCon.classList.toggle('hidden');
+            allCon.classList.toggle('block');
+          }
+        </script>
+
+<div class="bottomMenu">
+  <div class="menuList">
+    <button class="menulistBox">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M1 9.5L8.5 2L16 9.5M2.875 8.09375V16.0625C2.875 16.625 3.25 17 3.8125 17H6.625V14.1875C6.625 13.625 7 13.25 7.5625 13.25H9.4375C10 13.25 10.375 13.625 10.375 14.1875V17H13.1875C13.75 17 14.125 16.625 14.125 16.0625V8.09375" stroke="#141414" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>홈</span>
+    </button>
+    <button class="menulistBox">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60229 1C9.96995 1 11.3039 1.4248 12.4196 2.21568C13.5354 3.00657 14.378 4.1245 14.831 5.41498C15.284 6.70546 15.3249 8.10476 14.9482 9.41952C14.5715 10.7343 13.7957 11.8996 12.7281 12.7544V16.5583C12.7281 16.705 12.6925 16.8494 12.6245 16.9793C12.5565 17.1093 12.458 17.2207 12.3375 17.3043C12.217 17.3878 12.078 17.4409 11.9325 17.459C11.7869 17.4771 11.6392 17.4597 11.5019 17.4082L8.60229 16.3223L5.70269 17.4099C5.56531 17.4614 5.41749 17.4788 5.27191 17.4606C5.12632 17.4425 4.9873 17.3893 4.86676 17.3057C4.74622 17.2221 4.64775 17.1105 4.57978 16.9804C4.51182 16.8504 4.47638 16.7059 4.4765 16.5592V12.7552C3.40855 11.9005 2.63247 10.7351 2.25555 9.42023C1.87864 8.10532 1.91951 6.70579 2.3725 5.41511C2.8255 4.12444 3.66825 3.00636 4.78426 2.21543C5.90028 1.4245 7.23443 0.999786 8.60229 1ZM11.0778 13.7231C10.2912 14.0409 9.45063 14.2037 8.60229 14.2025C7.75395 14.2037 6.91338 14.0409 6.12682 13.7231V15.4873L8.02303 14.776C8.39651 14.636 8.80807 14.636 9.18155 14.776L11.0778 15.4873V13.7231ZM8.60229 2.65031C7.28922 2.65031 6.02993 3.17193 5.10145 4.10041C4.17296 5.02889 3.65135 6.28819 3.65135 7.60126C3.65135 8.91433 4.17296 10.1736 5.10145 11.1021C6.02993 12.0306 7.28922 12.5522 8.60229 12.5522C9.91536 12.5522 11.1747 12.0306 12.1031 11.1021C13.0316 10.1736 13.5532 8.91433 13.5532 7.60126C13.5532 6.28819 13.0316 5.02889 12.1031 4.10041C11.1747 3.17193 9.91536 2.65031 8.60229 2.65031ZM8.60229 4.30063C9.47767 4.30063 10.3172 4.64837 10.9362 5.26736C11.5552 5.88635 11.9029 6.72588 11.9029 7.60126C11.9029 8.47664 11.5552 9.31616 10.9362 9.93515C10.3172 10.5541 9.47767 10.9019 8.60229 10.9019C7.72691 10.9019 6.88738 10.5541 6.26839 9.93515C5.64941 9.31616 5.30166 8.47664 5.30166 7.60126C5.30166 6.72588 5.64941 5.88635 6.26839 5.26736C6.88738 4.64837 7.72691 4.30063 8.60229 4.30063ZM8.60229 5.95094C8.1646 5.95094 7.74484 6.12481 7.43534 6.43431C7.12585 6.7438 6.95198 7.16357 6.95198 7.60126C6.95198 8.03895 7.12585 8.45871 7.43534 8.7682C7.74484 9.0777 8.1646 9.25157 8.60229 9.25157C9.03998 9.25157 9.45974 9.0777 9.76924 8.7682C10.0787 8.45871 10.2526 8.03895 10.2526 7.60126C10.2526 7.16357 10.0787 6.7438 9.76924 6.43431C9.45974 6.12481 9.03998 5.95094 8.60229 5.95094Z" fill="#141414"/>
+        </svg>
+      </span>
+      <span>종목추천</span>
+    </button>
+    <button class="menulistBox">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+          <path d="M11.8266 2.6C11.7579 2.1437 11.5405 1.7243 11.2089 1.41401C10.8557 1.08345 10.3975 0.900015 9.92188 0.9H7.07812C6.6025 0.900015 6.14434 1.08345 5.79108 1.41401C5.45949 1.7243 5.24214 2.14369 5.17344 2.6H3.82812C3.31526 2.6 2.82437 2.81318 2.46316 3.19106C2.1021 3.56879 1.9 4.08017 1.9 4.6125V16.0875C1.9 16.6198 2.1021 17.1312 2.46316 17.5089C2.82437 17.8868 3.31526 18.1 3.82812 18.1H13.1719C13.4257 18.1 13.677 18.0477 13.9112 17.9462C14.1455 17.8447 14.358 17.696 14.5368 17.5089C14.7157 17.3219 14.8573 17.1 14.9538 16.8562C15.0504 16.6124 15.1 16.3512 15.1 16.0875V4.6125C15.1 4.34883 15.0504 4.08764 14.9538 3.8438C14.8573 3.59997 14.7157 3.37813 14.5368 3.19106C14.358 3.00398 14.1455 2.85533 13.9112 2.75382C13.677 2.65231 13.4257 2.6 13.1719 2.6H11.8266ZM7.07812 4.925H9.92188C10.5732 4.925 11.1472 4.58805 11.4959 4.075H13.1719C13.3055 4.075 13.4346 4.13048 13.5305 4.23082C13.6265 4.33131 13.6812 4.46853 13.6812 4.6125V16.0875C13.6812 16.2315 13.6265 16.3687 13.5305 16.4692C13.4346 16.5695 13.3055 16.625 13.1719 16.625H3.82812C3.69452 16.625 3.56543 16.5695 3.46952 16.4692C3.37346 16.3687 3.31875 16.2315 3.31875 16.0875V4.6125C3.31875 4.46853 3.37346 4.33131 3.46952 4.23082C3.56543 4.13048 3.69452 4.075 3.82812 4.075H5.50412C5.85277 4.58805 6.42683 4.925 7.07812 4.925ZM7.07812 2.375H9.92188C10.0555 2.375 10.1846 2.43048 10.2805 2.53082C10.3765 2.63131 10.4312 2.76853 10.4312 2.9125C10.4312 3.05647 10.3765 3.19369 10.2805 3.29418C10.1846 3.39452 10.0555 3.45 9.92188 3.45H7.07812C6.94452 3.45 6.81543 3.39452 6.71952 3.29418C6.62346 3.19369 6.56875 3.05647 6.56875 2.9125C6.56875 2.76853 6.62346 2.63131 6.71952 2.53082C6.81543 2.43048 6.94452 2.375 7.07812 2.375ZM12.2563 11.4125C12.2563 11.2183 12.1826 11.0312 12.0501 10.8926C11.9174 10.7538 11.7365 10.675 11.5469 10.675C11.3572 10.675 11.1763 10.7538 11.0437 10.8926C10.9112 11.0312 10.8375 11.2183 10.8375 11.4125V13.9625C10.8375 14.1567 10.9112 14.3438 11.0437 14.4824C11.1763 14.6212 11.3572 14.7 11.5469 14.7C11.7365 14.7 11.9174 14.6212 12.0501 14.4824C12.1826 14.3438 12.2563 14.1567 12.2563 13.9625V11.4125ZM9.00318 8.76762C8.87053 8.62885 8.68963 8.55 8.5 8.55C8.31037 8.55 8.12947 8.62885 7.99682 8.76762C7.86432 8.90624 7.79063 9.09332 7.79063 9.2875V13.9625C7.79063 14.1567 7.86432 14.3438 7.99682 14.4824C8.12947 14.6212 8.31037 14.7 8.5 14.7C8.68963 14.7 8.87053 14.6212 9.00318 14.4824C9.13568 14.3438 9.20937 14.1567 9.20937 13.9625V9.2875C9.20937 9.09332 9.13568 8.90624 9.00318 8.76762ZM6.1625 7.5875C6.1625 7.39332 6.08881 7.20624 5.95631 7.06762C5.82366 6.92885 5.64276 6.85 5.45312 6.85C5.26349 6.85 5.08259 6.92885 4.94994 7.06762C4.81744 7.20624 4.74375 7.39332 4.74375 7.5875V13.9625C4.74375 14.1567 4.81744 14.3438 4.94994 14.4824C5.08259 14.6212 5.26349 14.7 5.45312 14.7C5.64276 14.7 5.82366 14.6212 5.95631 14.4824C6.08881 14.3438 6.1625 14.1567 6.1625 13.9625V7.5875Z" fill="#141414" stroke="#141414" stroke-width="0.2"/>
+        </svg>
+      </span>
+      <span>서비스소개</span>
+    </button>
+    <button class="menulistBox">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M12.5714 2H5.42857C5.04969 2 4.68633 2.17919 4.41842 2.49815C4.15051 2.81711 4 3.24971 4 3.70079V16.5741C4.00002 16.6485 4.01646 16.7217 4.04769 16.7862C4.07891 16.8507 4.12381 16.9044 4.17791 16.9417C4.232 16.9791 4.29339 16.9989 4.35594 16.9991C4.41848 16.9994 4.47998 16.9801 4.53429 16.9432L8.29143 14.3877C8.50723 14.241 8.75147 14.1638 9 14.1638C9.24853 14.1638 9.49276 14.241 9.70857 14.3877L13.4657 16.944C13.5201 16.981 13.5816 17.0003 13.6442 17C13.7068 16.9997 13.7683 16.9798 13.8224 16.9424C13.8765 16.9049 13.9214 16.8511 13.9526 16.7865C13.9838 16.7219 14.0001 16.6486 14 16.5741V3.70079C14 3.24971 13.8495 2.81711 13.5816 2.49815C13.3137 2.17919 12.9503 2 12.5714 2Z" stroke="#141414" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span>구독하기</span>
+    </button>
+  </div>
+</div>
+
+        <!-- 회원가입 팝업창 -->
+        <div class="modal fade joinModal" id="joinModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" data-bs-dismiss="modal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
+                    <path d="M3.32458 5L10.3246 12M17.3246 19L10.3246 12M10.3246 12L17.3246 5M10.3246 12L3.32458 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="txt">투자의 비책 가입 후 서비스 <br> 이용 가능합니다.</div>
+                <div class="btn">
+                  <button data-bs-dismiss="modal">취소</button>
+                  <button class="active">가입하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 회원가입 팝업창 -->
+
+      </div>
+      <!-- content -->
+
+      <footer class="footer">
+        <div class="mainFooter">
+          Copyright ⓒ SBS미디어넷 & Thinkpool
+          2023 All Rights Reserved <br><br>
+
+          본사이트에서 게재되는 정보는 오류 및 지연이 있을 수 있으며,
+          그 이용에 따르는 책임은 이용자 본인에게 있습니다.     
+        </div>
+      </footer>
+
+      <div class="pt55"></div>
+
+    </div>
+    <!-- container -->
+
+  </div>
+  <!-- wrap -->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+
+</body>
+</html>

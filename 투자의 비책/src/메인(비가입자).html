@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+  user-scalable=0"">
+  <title>투자의 비책</title>
+  <!-- font -->
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- 바닐라캘린더 -->
+    <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/build/vanilla-calendar.min.js" defer></script>
+    <!-- css -->
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+  
+  <div class="wrap">
+
+    <div class="container">
+
+      <div class="content">
+
+        <div class="main">
+
+          <div class="gradientBg"></div>
+          <div class="mainHeader">
+            <div class="mainMenu">
+              <button>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                  <path d="M1 17H19M1 9H19M1 1H19" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <div class="mainTitle">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.0124C0 14.3623 1.05351 15.4662 2.38322 15.5467C3.40714 18.7112 6.37811 20.9997 9.8836 20.9997H15.0648C18.5693 20.9997 21.5396 18.7125 22.5643 15.5494C23.9187 15.4952 25 14.3801 25 13.0124C25 11.6205 23.8799 10.4901 22.4918 10.4736C21.405 7.4214 18.4901 5.23645 15.0648 5.23645H9.8836C6.45795 5.23645 3.54275 7.42192 2.45619 10.4746C1.09226 10.5184 0 11.6378 0 13.0124Z" fill="#FF5050"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8726 2.36241C13.3289 2.1941 13.6553 1.74465 13.6553 1.21663C13.6553 0.544704 13.1267 0 12.4746 0C11.8226 0 11.2939 0.544704 11.2939 1.21663C11.2939 1.71513 11.5849 2.1436 12.0014 2.33158L11.8066 6.29444H13.09L12.8726 2.36241Z" fill="#FF5050"/>
+                  <rect x="5.28711" y="9.41541" width="14.3737" height="7.35268" rx="3.67634" fill="white"/>
+                  <rect x="7.75098" y="11.4785" width="1.59137" height="3.27961" rx="0.795686" fill="black"/>
+                  <rect x="15.5029" y="11.4785" width="1.59137" height="3.27961" rx="0.795686" fill="black"/>
+                </svg>
+              </span>
+              <span>투자의 비책</span>
+            </div>
+          </div>
+          <div class="mainIntro">
+            <b>여</b><b>의</b><b>도</b>가 찍어주고<br>
+            <span class="up">칼 같은 매수!</span>
+            <span class="down">칼 같은 매도!</span>
+            <div class="introImg">
+              <img src="../img/mainLoading.png" alt="">
+            </div>
+          </div>
+
+          <div class="mainCon">
+            
+            <div class="calendar">
+              <div class="calendarWrap">
+                <div id="mainCalendar" class="w-full"></div>
+                <!-- //calendar -->
+              </div>
+              <button class="calendarMore" onclick="rotate()">
+                <svg id="moreBtn" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M5.25 7.5L9 11.25L12.75 7.5" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+            <!-- //달력 -->
+
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                const classes = {
+                  header: "vanilla-calendar-header",
+                  headerContent: "vanilla-calendar-header__content",
+                  wrapper: "vanilla-calendar-wrapper",
+                  content: "vanilla-calendar-content",
+                };
+
+                const calendar = new VanillaCalendar("#mainCalendar", {
+                  settings: {
+                    lang: "define",
+                    iso8601: false,
+                    selection: {
+                      time: false,
+                      controlTime: false,
+                      day: "multiple",
+                    },
+                    selected: {},
+                  },
+                  locale: {
+                    months: [
+                      "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12",
+                    ],
+                    weekday: ["일", "월", "화", "수", "목", "금", "토"],
+                  },
+                  DOMTemplates: {
+                    default: `
+                      <div class="${classes.header}">
+                          <#ArrowPrev />
+                          <div class="${classes.headerContent}">
+                              <#Year />
+                              <#Month />
+                          </div>
+                          <#ArrowNext />
+                      </div>
+                      <div class="${classes.wrapper}">
+                          <div class="${classes.content}">
+                              <#Week />
+                              <#Days />
+                          </div>
+                      </div>
+                  `,
+                  },
+                });
+                calendar.init();
+
+                // 현재 주의 시작일과 종료일을 계산
+                const getWeekRange = () => {
+                  const today = new Date();
+                  const sunday = new Date(today);
+                  sunday.setDate(sunday.getDate() - today.getDay() - 1);
+                  const saturday = new Date(sunday);
+                  saturday.setDate(saturday.getDate() + 7);
+                  return { start: sunday, end: saturday };
+                };
+
+                // 현재 주의 시작일과 종료일을 가져옴
+                const { start, end } = getWeekRange();
+
+                // 모든 달력 일자 요소를 가져옴
+                const calendarDayElements = document.querySelectorAll('.vanilla-calendar-day');
+
+                // 각 일자 요소를 순회하면서 현재 주에 속하지 않는 경우 숨김 처리
+                calendarDayElements.forEach(dayElement => {
+                  const dateString = dayElement.querySelector('.vanilla-calendar-day__btn').getAttribute('data-calendar-day');
+                  const dayDate = new Date(dateString);
+                  if (dayDate < start || dayDate > end) {
+                    dayElement.classList.toggle('hidden');
+                  }
+                  else {
+                    dayElement.classList.add('flex');
+                  }
+                });
+
+                // "더보기" 버튼 클릭 시 숨겨진 요소들을 보이게 하거나 숨김 처리
+                const toggleHiddenElements = () => {
+                  const hiddenElements = document.querySelectorAll('.vanilla-calendar-day');
+                  hiddenElements.forEach(element => {
+                    const dateString = element.querySelector('.vanilla-calendar-day__btn').getAttribute('data-calendar-day');
+                    const dayDate = new Date(dateString);
+                    if (dayDate < start || dayDate > end) {
+                      element.classList.toggle('hidden');
+                    }
+                    else {
+                      element.classList.add('flex');
+                    }
+                  });
+                };
+
+                // "더보기" 버튼 클릭
+                const calendarMoreButton = document.querySelector('.calendarMore');
+                calendarMoreButton.addEventListener('click', () => {
+                  toggleHiddenElements();
+                  const rotateBtn = document.querySelector('#moreBtn');
+                  rotateBtn.classList.toggle('rotate');
+                });
+
+                // 오늘 매수/매도 건수
+                const todayButton = document.querySelector('.vanilla-calendar-day__btn_today');
+                const todayBuy = document.createElement('span');
+                const todaySell = document.createElement('em');
+                todayBuy.textContent = '17'; // 매수 건수
+                todaySell.textContent = '19'; // 매도 건수
+                todayBuy.classList.add('up'); 
+                todaySell.classList.add('down'); 
+                todayButton.appendChild(todayBuy);
+                todayButton.appendChild(todaySell);
+              
+              });
+
+            </script>
+
+            <div class="contentBanner">
+              <img src="../img/checkBanner.png" alt="출석체크배너">
+            </div>
+
+            <div class="todayItem">
+
+              <div class="title">
+                <strong>1월 19일 오늘의 추천종목</strong>
+                <span>매수 <em class="up">12</em> / 매도 <em class="down">29</em></span>
+              </div>
+              <div class="itemList">
+                <button class="itemlistBox noItem">
+                  <span>오늘의 추천종목이 없습니다.</span>
+                </button>
+                <button class="itemlistBox" data-bs-toggle="modal" data-bs-target="#joinModal">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum down">-72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2" />
+                        <path
+                          d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574"
+                          stroke="#5886FE" />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+                <button class="itemlistBox">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum down">-72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2" />
+                        <path
+                          d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574"
+                          stroke="#5886FE" />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+                <button class="itemlistBox">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum up">+72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2"/>
+                        <path d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574" stroke="#FF5050"/>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+                <div class="itemlistBox">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum up">+72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2"/>
+                        <path d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574" stroke="#FF5050"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <button class="itemlistBox">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum down">-72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2" />
+                        <path
+                          d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574"
+                          stroke="#5886FE" />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+                <button class="itemlistBox">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum up">+72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2"/>
+                        <path d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574" stroke="#FF5050"/>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+                <button class="itemlistBox">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum down">-72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2" />
+                        <path
+                          d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574"
+                          stroke="#5886FE" />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+                <button class="itemlistBox">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum up">+72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2"/>
+                        <path d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574" stroke="#FF5050"/>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+                <button class="itemlistBox">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum down">-72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2" />
+                        <path
+                          d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574"
+                          stroke="#5886FE" />
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+                <button class="itemlistBox">
+                  <div class="name">
+                    <div class="alName">
+                      <span>공</span>
+                      <span>안</span>
+                      <span>위</span>
+                    </div>
+                    <div class="itemName">
+                      <span class="text-truncate">제*******</span>
+                      <em>******</em>
+                    </div>
+                  </div>
+                  <div class="numGraph">
+                    <div class="itemNum up">+72,700</div>
+                    <div class="itemGraph">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="32" viewBox="0 0 55 32" fill="none">
+                        <line x1="4" y1="16.5" x2="50" y2="16.5" stroke="#D7D1D1" stroke-dasharray="2 2"/>
+                        <path d="M4 14.8915L4.73333 14.639C5.46667 14.3865 6.93333 13.8814 8.4 17.0059C9.86667 20.1304 11.3333 26.8844 12.8 28.5574C14.2667 30.2304 15.7333 26.8224 17.2 23.9778C18.6667 21.1331 20.1333 18.8519 21.6 14.6258C23.0667 10.3996 24.5333 4.22865 26 6.19815C27.4667 8.16765 29.0333 19.7615 30.5 21C31.9667 22.2385 33.0333 10.9603 34.5 9.94303C35.9667 8.92573 39.0333 17.5507 40.5 16C41.9667 14.4493 42.1333 4.88389 43.6 3.28573C45.0667 1.68757 46.5333 7.19121 47.2667 9.94303L49.5 28.5574" stroke="#FF5050"/>
+                      </svg>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <!-- todayItem -->
+
+            <div class="bestItem">
+
+              <div class="title">
+                <strong>칼매수 최근 30일 BEST 수익률</strong>
+                <span>01/05 장마감</span>
+              </div>
+
+              <div class="bestItemList">
+
+                <div class="swiper bestSwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide bestSlide">
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                    </div>
+                    <div class="swiper-slide bestSlide">
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                    </div>
+                    <div class="swiper-slide bestSlide">
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                      <button class="bestListBox">
+                        <div class="bestItemName">
+                          <div class="listName">
+                            <div class="name text-truncate">제*******</div>
+                            <span class="code">******</span>
+                          </div>
+                          <div class="listNum">
+                            <span>22.12.26 9,999,150</span>
+                            <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                <path d="M1 3.5L10 3.5M10 3.5L7.57692 6M10 3.5L7.57692 1" stroke="#CCCCCC" stroke-linecap="round"
+                                  stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>23.07.18 9,999,150</span>
+                          </div>
+                        </div>
+                        <div class="bestItemPer upbg">+100.12%</div>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+
+                <script>
+                  var swiper = new Swiper('.bestSwiper', {
+                    spaceBetween: 20,
+                    pagination: {
+                      el: '.swiper-pagination',
+                      clickable : true,
+                    },
+                    autoplay: {
+                      delay: 2000,
+                      disableOnInteraction: false,
+                    },
+                    loop: true,
+                  });
+                </script>
+
+              </div>
+
+            </div>
+            <!-- bestItem -->
+
+            <div class="bgg15"></div>
+
+            <div class="beAlItem">
+
+              <div class="title">비책알고리즘 추천종목</div>
+
+              <div class="beAlCon">
+
+                <div class="beAlNav">
+                  <button class="active">매수종목</button>
+                  <button>매도종목</button>
+                </div>
+
+                <div class="beAlList">
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span>제*******</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state upbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ************* 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; ******원</span>
+                      <span>투자의견&nbsp; <em class="up">BUY</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div>
+                        <span class="up">공격형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                      <div>
+                        <span class="up">안정형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                    </div>
+
+                  </button>
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span>제*******</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state upbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ************* 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; ******원</span>
+                      <span>투자의견&nbsp; <em class="up">BUY</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div>
+                        <span class="up">공격형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                      <div>
+                        <span class="up">안정형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                    </div>
+
+                  </button>
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span>제*******</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state upbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ************* 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; ******원</span>
+                      <span>투자의견&nbsp; <em class="up">BUY</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div>
+                        <span class="up">공격형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                      <div>
+                        <span class="up">안정형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                    </div>
+
+                  </button>
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span>제*******</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state upbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ************* 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; ******원</span>
+                      <span>투자의견&nbsp; <em class="up">BUY</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div>
+                        <span class="up">공격형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                      <div>
+                        <span class="up">안정형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                    </div>
+
+                  </button>
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span>제*******</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state upbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      ************* 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; ******원</span>
+                      <span>투자의견&nbsp; <em class="up">BUY</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div>
+                        <span class="up">공격형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                      <div>
+                        <span class="up">안정형 매수가&nbsp; ******</span>
+                        <span>목표가 ******</span>
+                      </div>
+                    </div>
+
+                  </button>
+
+                  <div class="beAlMore">
+                    <button>더보기</button>
+                  </div>
+                </div>
+
+                <div class="beAlNav">
+                  <button>매수종목</button>
+                  <button class="active">매도종목</button>
+                </div>
+
+                <div class="beAlList">
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span class="beAlItemName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state downbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; 230,000원</span>
+                      <span>수익률&nbsp; <em class="up">15.28%</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>공</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>안</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </button>
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span class="beAlItemName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state downbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; 230,000원</span>
+                      <span>수익률&nbsp; <em class="up">15.28%</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>공</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>안</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </button>
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span class="beAlItemName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state downbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; 230,000원</span>
+                      <span>수익률&nbsp; <em class="up">15.28%</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>공</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>안</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </button>
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span class="beAlItemName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state downbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; 230,000원</span>
+                      <span>수익률&nbsp; <em class="up">15.28%</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>공</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>안</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </button>
+                  <button class="beAlListBox">
+
+                    <div class="beAlName">
+                      <div class="name">
+                        <span class="beAlItemName text-truncate">폴라리스오피스폴라리스오피스</span>
+                        <span class="tag high highbg">고평가</span>
+                      </div>
+                      <span class="state downbg">매수</span>
+                    </div>
+                    <div class="beAlTxt text-truncate">
+                      공급자 위주 시장 전환 등으로 수주 큰 폭 증가
+                    </div>
+                    <div class="beAlGoal">
+                      <span>증권사 목표가&nbsp; 230,000원</span>
+                      <span>수익률&nbsp; <em class="up">15.28%</em></span>
+                    </div>
+
+                    <div class="beAlPri">
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>공</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                      <div class="beAlPriFlex">
+                        <div class="flexGroup">
+                          <div class="alName"><span>안</span></div>
+                          <div class="date">
+                            <span>2023/01/08</span>
+                            <span>2023/01/05</span>
+                          </div>
+                        </div>
+                        <div class="date">
+                          <span class="up">매수 257,000</span>
+                          <span class="down">매도 257,000</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </button>
+
+                  <div class="beAlMore">
+                    <button>더보기</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+            <!-- beAlItem -->
+
+            
+            <div class="contentBanner">
+              <img src="../img/banner.png" alt="배너">
+            </div>
+
+            <div class="pt35"></div>
+
+
+          </div>
+
+        </div>
+        <!-- main -->
+
+        <div class="bottomMenu">
+          <div class="menuList">
+            <button class="menulistBox">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M1 9.5L8.5 2L16 9.5M2.875 8.09375V16.0625C2.875 16.625 3.25 17 3.8125 17H6.625V14.1875C6.625 13.625 7 13.25 7.5625 13.25H9.4375C10 13.25 10.375 13.625 10.375 14.1875V17H13.1875C13.75 17 14.125 16.625 14.125 16.0625V8.09375" stroke="#141414" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>홈</span>
+            </button>
+            <button class="menulistBox">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60229 1C9.96995 1 11.3039 1.4248 12.4196 2.21568C13.5354 3.00657 14.378 4.1245 14.831 5.41498C15.284 6.70546 15.3249 8.10476 14.9482 9.41952C14.5715 10.7343 13.7957 11.8996 12.7281 12.7544V16.5583C12.7281 16.705 12.6925 16.8494 12.6245 16.9793C12.5565 17.1093 12.458 17.2207 12.3375 17.3043C12.217 17.3878 12.078 17.4409 11.9325 17.459C11.7869 17.4771 11.6392 17.4597 11.5019 17.4082L8.60229 16.3223L5.70269 17.4099C5.56531 17.4614 5.41749 17.4788 5.27191 17.4606C5.12632 17.4425 4.9873 17.3893 4.86676 17.3057C4.74622 17.2221 4.64775 17.1105 4.57978 16.9804C4.51182 16.8504 4.47638 16.7059 4.4765 16.5592V12.7552C3.40855 11.9005 2.63247 10.7351 2.25555 9.42023C1.87864 8.10532 1.91951 6.70579 2.3725 5.41511C2.8255 4.12444 3.66825 3.00636 4.78426 2.21543C5.90028 1.4245 7.23443 0.999786 8.60229 1ZM11.0778 13.7231C10.2912 14.0409 9.45063 14.2037 8.60229 14.2025C7.75395 14.2037 6.91338 14.0409 6.12682 13.7231V15.4873L8.02303 14.776C8.39651 14.636 8.80807 14.636 9.18155 14.776L11.0778 15.4873V13.7231ZM8.60229 2.65031C7.28922 2.65031 6.02993 3.17193 5.10145 4.10041C4.17296 5.02889 3.65135 6.28819 3.65135 7.60126C3.65135 8.91433 4.17296 10.1736 5.10145 11.1021C6.02993 12.0306 7.28922 12.5522 8.60229 12.5522C9.91536 12.5522 11.1747 12.0306 12.1031 11.1021C13.0316 10.1736 13.5532 8.91433 13.5532 7.60126C13.5532 6.28819 13.0316 5.02889 12.1031 4.10041C11.1747 3.17193 9.91536 2.65031 8.60229 2.65031ZM8.60229 4.30063C9.47767 4.30063 10.3172 4.64837 10.9362 5.26736C11.5552 5.88635 11.9029 6.72588 11.9029 7.60126C11.9029 8.47664 11.5552 9.31616 10.9362 9.93515C10.3172 10.5541 9.47767 10.9019 8.60229 10.9019C7.72691 10.9019 6.88738 10.5541 6.26839 9.93515C5.64941 9.31616 5.30166 8.47664 5.30166 7.60126C5.30166 6.72588 5.64941 5.88635 6.26839 5.26736C6.88738 4.64837 7.72691 4.30063 8.60229 4.30063ZM8.60229 5.95094C8.1646 5.95094 7.74484 6.12481 7.43534 6.43431C7.12585 6.7438 6.95198 7.16357 6.95198 7.60126C6.95198 8.03895 7.12585 8.45871 7.43534 8.7682C7.74484 9.0777 8.1646 9.25157 8.60229 9.25157C9.03998 9.25157 9.45974 9.0777 9.76924 8.7682C10.0787 8.45871 10.2526 8.03895 10.2526 7.60126C10.2526 7.16357 10.0787 6.7438 9.76924 6.43431C9.45974 6.12481 9.03998 5.95094 8.60229 5.95094Z" fill="#141414"/>
+                </svg>
+              </span>
+              <span>종목추천</span>
+            </button>
+            <button class="menulistBox">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                  <path d="M11.8266 2.6C11.7579 2.1437 11.5405 1.7243 11.2089 1.41401C10.8557 1.08345 10.3975 0.900015 9.92188 0.9H7.07812C6.6025 0.900015 6.14434 1.08345 5.79108 1.41401C5.45949 1.7243 5.24214 2.14369 5.17344 2.6H3.82812C3.31526 2.6 2.82437 2.81318 2.46316 3.19106C2.1021 3.56879 1.9 4.08017 1.9 4.6125V16.0875C1.9 16.6198 2.1021 17.1312 2.46316 17.5089C2.82437 17.8868 3.31526 18.1 3.82812 18.1H13.1719C13.4257 18.1 13.677 18.0477 13.9112 17.9462C14.1455 17.8447 14.358 17.696 14.5368 17.5089C14.7157 17.3219 14.8573 17.1 14.9538 16.8562C15.0504 16.6124 15.1 16.3512 15.1 16.0875V4.6125C15.1 4.34883 15.0504 4.08764 14.9538 3.8438C14.8573 3.59997 14.7157 3.37813 14.5368 3.19106C14.358 3.00398 14.1455 2.85533 13.9112 2.75382C13.677 2.65231 13.4257 2.6 13.1719 2.6H11.8266ZM7.07812 4.925H9.92188C10.5732 4.925 11.1472 4.58805 11.4959 4.075H13.1719C13.3055 4.075 13.4346 4.13048 13.5305 4.23082C13.6265 4.33131 13.6812 4.46853 13.6812 4.6125V16.0875C13.6812 16.2315 13.6265 16.3687 13.5305 16.4692C13.4346 16.5695 13.3055 16.625 13.1719 16.625H3.82812C3.69452 16.625 3.56543 16.5695 3.46952 16.4692C3.37346 16.3687 3.31875 16.2315 3.31875 16.0875V4.6125C3.31875 4.46853 3.37346 4.33131 3.46952 4.23082C3.56543 4.13048 3.69452 4.075 3.82812 4.075H5.50412C5.85277 4.58805 6.42683 4.925 7.07812 4.925ZM7.07812 2.375H9.92188C10.0555 2.375 10.1846 2.43048 10.2805 2.53082C10.3765 2.63131 10.4312 2.76853 10.4312 2.9125C10.4312 3.05647 10.3765 3.19369 10.2805 3.29418C10.1846 3.39452 10.0555 3.45 9.92188 3.45H7.07812C6.94452 3.45 6.81543 3.39452 6.71952 3.29418C6.62346 3.19369 6.56875 3.05647 6.56875 2.9125C6.56875 2.76853 6.62346 2.63131 6.71952 2.53082C6.81543 2.43048 6.94452 2.375 7.07812 2.375ZM12.2563 11.4125C12.2563 11.2183 12.1826 11.0312 12.0501 10.8926C11.9174 10.7538 11.7365 10.675 11.5469 10.675C11.3572 10.675 11.1763 10.7538 11.0437 10.8926C10.9112 11.0312 10.8375 11.2183 10.8375 11.4125V13.9625C10.8375 14.1567 10.9112 14.3438 11.0437 14.4824C11.1763 14.6212 11.3572 14.7 11.5469 14.7C11.7365 14.7 11.9174 14.6212 12.0501 14.4824C12.1826 14.3438 12.2563 14.1567 12.2563 13.9625V11.4125ZM9.00318 8.76762C8.87053 8.62885 8.68963 8.55 8.5 8.55C8.31037 8.55 8.12947 8.62885 7.99682 8.76762C7.86432 8.90624 7.79063 9.09332 7.79063 9.2875V13.9625C7.79063 14.1567 7.86432 14.3438 7.99682 14.4824C8.12947 14.6212 8.31037 14.7 8.5 14.7C8.68963 14.7 8.87053 14.6212 9.00318 14.4824C9.13568 14.3438 9.20937 14.1567 9.20937 13.9625V9.2875C9.20937 9.09332 9.13568 8.90624 9.00318 8.76762ZM6.1625 7.5875C6.1625 7.39332 6.08881 7.20624 5.95631 7.06762C5.82366 6.92885 5.64276 6.85 5.45312 6.85C5.26349 6.85 5.08259 6.92885 4.94994 7.06762C4.81744 7.20624 4.74375 7.39332 4.74375 7.5875V13.9625C4.74375 14.1567 4.81744 14.3438 4.94994 14.4824C5.08259 14.6212 5.26349 14.7 5.45312 14.7C5.64276 14.7 5.82366 14.6212 5.95631 14.4824C6.08881 14.3438 6.1625 14.1567 6.1625 13.9625V7.5875Z" fill="#141414" stroke="#141414" stroke-width="0.2"/>
+                </svg>
+              </span>
+              <span>서비스소개</span>
+            </button>
+            <button class="menulistBox">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M12.5714 2H5.42857C5.04969 2 4.68633 2.17919 4.41842 2.49815C4.15051 2.81711 4 3.24971 4 3.70079V16.5741C4.00002 16.6485 4.01646 16.7217 4.04769 16.7862C4.07891 16.8507 4.12381 16.9044 4.17791 16.9417C4.232 16.9791 4.29339 16.9989 4.35594 16.9991C4.41848 16.9994 4.47998 16.9801 4.53429 16.9432L8.29143 14.3877C8.50723 14.241 8.75147 14.1638 9 14.1638C9.24853 14.1638 9.49276 14.241 9.70857 14.3877L13.4657 16.944C13.5201 16.981 13.5816 17.0003 13.6442 17C13.7068 16.9997 13.7683 16.9798 13.8224 16.9424C13.8765 16.9049 13.9214 16.8511 13.9526 16.7865C13.9838 16.7219 14.0001 16.6486 14 16.5741V3.70079C14 3.24971 13.8495 2.81711 13.5816 2.49815C13.3137 2.17919 12.9503 2 12.5714 2Z" stroke="#141414" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>구독하기</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 회원가입 팝업창 -->
+        <div class="modal fade joinModal" id="joinModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" data-bs-dismiss="modal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
+                    <path d="M3.32458 5L10.3246 12M17.3246 19L10.3246 12M10.3246 12L17.3246 5M10.3246 12L3.32458 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="txt">투자의 비책 가입 후 서비스 <br> 이용 가능합니다.</div>
+                <div class="btn">
+                  <button data-bs-dismiss="modal">취소</button>
+                  <button class="active">가입하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 회원가입 팝업창 -->
+
+        <div class="fixBanner">
+          <button><img src="../img/checkBanner_fix.png" alt=""></button>
+        </div>
+        
+      </div>
+      <!-- content -->
+
+      <footer class="footer">
+        <div class="mainFooter">
+          Copyright ⓒ SBS미디어넷 & Thinkpool
+          2023 All Rights Reserved <br><br>
+
+          본사이트에서 게재되는 정보는 오류 및 지연이 있을 수 있으며,
+          그 이용에 따르는 책임은 이용자 본인에게 있습니다.     
+        </div>
+      </footer>
+      
+      <div class="pt55"></div>
+
+    </div>
+    <!-- container -->
+
+  </div>
+  <!-- wrap -->
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+
+</body>
+</html>
