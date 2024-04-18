@@ -93,7 +93,7 @@
                     selection: {
                       time: false,
                       controlTime: false,
-                      day: "multiple",
+                      day: "single",
                     },
                     selected: {},
                   },
@@ -127,8 +127,9 @@
                 // 현재 주의 시작일과 종료일을 계산
                 const getWeekRange = () => {
                   const today = new Date();
+                  today.setHours(0, 0, 0, 0); // 현재 시간을 자정으로 설정
                   const sunday = new Date(today);
-                  sunday.setDate(sunday.getDate() - today.getDay() - 1);
+                  sunday.setDate(sunday.getDate() - today.getDay());
                   const saturday = new Date(sunday);
                   saturday.setDate(saturday.getDate() + 7);
                   return { start: sunday, end: saturday };
