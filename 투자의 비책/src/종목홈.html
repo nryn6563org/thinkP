@@ -534,16 +534,16 @@
                     매매기간 <span>2023.01.14~2024.01.15</span>
                   </div>
                   <div class="all">
-                    <button class="allSel" onclick="showAll()">
+                    <button class="allSel" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <span>전체</span>
                       <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                           <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg></span>
                     </button>
-                    <div class="allCon hidden">
-                      <button>전체</button>
-                      <button>보유</button>
-                      <button>매도완료</button>
+                    <div class="allCon dropdown-menu">
+                      <button class="dropdown-item">전체</button>
+                      <button class="dropdown-item">보유</button>
+                      <button class="dropdown-item">매도완료</button>
                     </div>
                   </div>
                 </div>
@@ -633,16 +633,16 @@
                     매매기간 <span>2023.01.14~2024.01.15</span>
                   </div>
                   <div class="all">
-                    <button class="allSel" onclick="showAll2()">
+                    <button class="allSel" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <span>전체</span>
                       <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                           <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg></span>
                     </button>
-                    <div class="allCon2 hidden">
-                      <button>전체</button>
-                      <button>보유</button>
-                      <button>매도완료</button>
+                    <div class="allCon dropdown-menu">
+                      <button class="dropdown-item">전체</button>
+                      <button class="dropdown-item">보유</button>
+                      <button class="dropdown-item">매도완료</button>
                     </div>
                   </div>
                 </div>
@@ -732,16 +732,16 @@
                     매매기간 <span>2023.01.14~2024.01.15</span>
                   </div>
                   <div class="all">
-                    <button class="allSel" onclick="showAll3()">
+                    <button class="allSel" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <span>전체</span>
                       <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                           <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg></span>
                     </button>
-                    <div class="allCon3 hidden">
-                      <button>전체</button>
-                      <button>보유</button>
-                      <button>매도완료</button>
+                    <div class="allCon dropdown-menu">
+                      <button class="dropdown-item">전체</button>
+                      <button class="dropdown-item">보유</button>
+                      <button class="dropdown-item">매도완료</button>
                     </div>
                   </div>
                 </div>
@@ -831,28 +831,6 @@
         </div>
         <!-- eventHome -->
 
-
-
-        <script>
-          const allCon = document.querySelector('.allCon');
-          const allCon2 = document.querySelector('.allCon2');
-          const allCon3 = document.querySelector('.allCon3');
-
-          function showAll() {
-            allCon.classList.toggle('hidden');
-            allCon.classList.toggle('block');
-          }
-
-          function showAll2() {
-            allCon2.classList.toggle('hidden');
-            allCon2.classList.toggle('block');
-          }
-
-          function showAll3() {
-            allCon3.classList.toggle('hidden');
-            allCon3.classList.toggle('block');
-          }
-        </script>
 
 <div class="bottomMenu">
   <div class="menuList">

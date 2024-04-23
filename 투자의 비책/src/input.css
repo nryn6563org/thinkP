@@ -32,6 +32,14 @@ em{
   @apply w-[72px] h-[28px] text-center rounded-[8px] border border-black bg-white text-black text-[14px] font-normal right-[20px];
 }
 
+.dropdown-menu{
+  @apply p-0 m-0;
+}
+
+.dropdown-item{
+  @apply p-0 m-0;
+}
+
 .modal-dialog{
   @apply max-w-[720px] m-[0px_auto] p-[0px_20px];
 }
@@ -359,11 +367,11 @@ em{
   @apply text-black text-[14px] font-medium leading-[20px];
 }
 
-.yearsCon, .allCon, .allCon2, .allCon3{
-  @apply absolute z-[99] w-[98px] bg-white right-0 top-[25px] border border-[#d2d2d2] rounded-[6px] border-t-0 pt-[10px] rounded-t-none;
+.yearsCon, .allCon{
+  @apply absolute z-[99] min-w-[98px] w-[98px] bg-white right-0 top-[25px] border border-[#d2d2d2] rounded-[6px] border-t-0 pt-[10px] rounded-t-none !translate-y-[25px];
 }
 
-.yearsCon button, .allCon button, .allCon2 button, .allCon3 button{
+.yearsCon button, .allCon button{
   @apply block w-[98px] text-black text-[14px] font-medium leading-[20px] pl-[8px] text-left pb-[6px];
 }
 

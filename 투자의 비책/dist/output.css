@@ -698,6 +698,16 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
+.dropdown-menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+.dropdown-item {
+  margin: 0px;
+  padding: 0px;
+}
+
 .modal-dialog {
   margin: 0px auto;
   max-width: 720px;
@@ -1321,12 +1331,15 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.yearsCon, .allCon, .allCon2, .allCon3 {
+.yearsCon, .allCon {
   position: absolute;
   right: 0px;
   top: 25px;
   z-index: 99;
   width: 98px;
+  min-width: 98px;
+  --tw-translate-y: 25px !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
   border-radius: 6px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -1339,7 +1352,7 @@ em {
   padding-top: 10px;
 }
 
-.yearsCon button, .allCon button, .allCon2 button, .allCon3 button {
+.yearsCon button, .allCon button {
   display: block;
   width: 98px;
   padding-left: 8px;
