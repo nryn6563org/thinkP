@@ -37,7 +37,7 @@ em{
 }
 
 .dropdown-item{
-  @apply p-0 m-0;
+  @apply p-0 m-0 hover:bg-inherit active:text-black rounded-[6px];
 }
 
 .modal-dialog{
@@ -372,7 +372,7 @@ em{
 }
 
 .yearsCon button, .allCon button{
-  @apply block w-[98px] text-black text-[14px] font-medium leading-[20px] pl-[8px] text-left pb-[6px];
+  @apply block w-[96px] text-black text-[14px] font-medium leading-[20px] pl-[8px] text-left pb-[6px];
 }
 
 .payment .box{

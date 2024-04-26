@@ -41,19 +41,20 @@
           <div class="paymentTitle">
             <div>정기결제 내역</div>
             <div class="years">
-              <button class="yearsSel" onclick="showYears()">
+              <button class="yearsSel" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span>2023년</span>
                 <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg></span>
+                    <path d="M8 10L12 14L16 10" stroke="#141414" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg></span>
               </button>
-              <div class="yearsCon hidden">
-                <button>2020년</button>
-                <button>2021년</button>
-                <button>2022년</button>
-                <button>2023년</button>
-                <button>2024년</button>
-                <button>2025년</button>
+              <div class="yearsCon dropdown-menu">
+                <button class="dropdown-item">2020년</button>
+                <button class="dropdown-item">2021년</button>
+                <button class="dropdown-item">2022년</button>
+                <button class="dropdown-item">2023년</button>
+                <button class="dropdown-item">2024년</button>
+                <button class="dropdown-item">2025년</button>
               </div>
             </div>
           </div>

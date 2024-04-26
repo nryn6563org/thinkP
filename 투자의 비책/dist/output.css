@@ -705,7 +705,17 @@ em {
 
 .dropdown-item {
   margin: 0px;
+  border-radius: 6px;
   padding: 0px;
+}
+
+.dropdown-item:hover {
+  background-color: inherit;
+}
+
+.dropdown-item:active {
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
 .modal-dialog {
@@ -1354,7 +1364,7 @@ em {
 
 .yearsCon button, .allCon button {
   display: block;
-  width: 98px;
+  width: 96px;
   padding-left: 8px;
   padding-bottom: 6px;
   text-align: left;
