@@ -1487,7 +1487,7 @@ em{
 }
 
 .eventYearSignal .ch_rdo{
-  @apply w-full mb-[15px];
+  @apply w-full mb-[15px] flex;
 }
 
 input[type=radio].custom-radio{

@@ -3857,6 +3857,7 @@ em {
 
 .eventYearSignal .ch_rdo {
   margin-bottom: 15px;
+  display: flex;
   width: 100%;
 }
 
