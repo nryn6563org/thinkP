@@ -13,7 +13,7 @@ em{
 }
 
 .container{
-  @apply w-full h-full max-w-[720px] m-[0_auto] p-0;
+  @apply w-full h-full max-w-[720px] m-[0_auto] !p-0;
 }
 
 .header{
@@ -184,6 +184,10 @@ em{
 
 .flexsb{
   @apply w-full flex justify-between items-center;
+}
+
+.hidden{
+  @apply !hidden;
 }
 
 /* index / 로그인 */
@@ -741,23 +745,23 @@ em{
 }
 
 .vanilla-calendar {
-  @apply !bg-white p-[35px_20px_10px] !rounded-t-[20px];
+  @apply !w-full !bg-white !p-[35px_20px_10px] !rounded-t-[20px];
 }
 
 .vanilla-calendar-header{
-  @apply justify-center gap-[25px];
+  @apply !justify-center !gap-[25px];
 }
 
 .vanilla-calendar-header__content{
-  @apply flex flex-grow-0 p-0;
+  @apply !flex !flex-grow-0 !p-0;
 }
 
 .vanilla-calendar-days{
-  row-gap: .8rem;
+  row-gap: .8rem !important;
 }
 
 .vanilla-calendar-day__btn, .vanilla-calendar-years__year, .vanilla-calendar-months__month{
-  @apply !bg-white !text-black text-center text-[14px] font-normal;
+  @apply !bg-white !text-black !text-center !text-[14px] !font-normal;
 }
 
 .vanilla-calendar-week__day_weekend, .vanilla-calendar-week__day, 
@@ -766,7 +770,7 @@ em{
 }
 
 .vanilla-calendar-header {
-  @apply mb-[30px];
+  @apply !mb-[30px];
 }
 
 .vanilla-calendar-month, .vanilla-calendar-year{
@@ -774,7 +778,7 @@ em{
 }
 
 .vanilla-calendar-week{
-  @apply mb-4;
+  @apply !mb-4;
 }
 
 .vanilla-calendar-day__btn_today{
@@ -787,13 +791,13 @@ em{
 }
 
 .vanilla-calendar-arrow {
-  @apply w-[18px] h-[18px];
+  @apply !w-[18px] !h-[18px];
 }
 
 .vanilla-calendar-arrow:before {
   background-image: url(../img/arrow-side.png) !important;
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
+  background-size: 18px 18px !important;
+  background-repeat: no-repeat !important;
 }
 
 .vanilla-calendar-day__btn_selected{

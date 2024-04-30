@@ -192,6 +192,16 @@
                 todayButton.appendChild(todayBuy);
                 todayButton.appendChild(todaySell);
               
+
+                var targetDate = '2024-04-20';
+
+                var buttons = document.querySelectorAll('.vanilla-calendar-day__btn');
+
+                buttons.forEach(function(button) {
+                  if(button.getAttribute('data-calendar-day') === targetDate) {
+                    button.click();
+                  }
+                });
               });
 
             </script>
