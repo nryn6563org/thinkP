@@ -1646,7 +1646,7 @@ input[type=radio].custom-radio:checked + label {
 }
 
 .subscribe .title{
-  @apply w-full pt-[15px] pb-[10px] text-black text-[16px] font-bold leading-[20px];
+  @apply w-full pt-[15px] pb-[30px] text-black text-[16px] font-bold leading-[20px];
 }
 
 .subscribe .box{
@@ -1715,8 +1715,8 @@ input[type=radio].checkPay:checked + label {
   @apply block text-black text-[16px] font-normal leading-[20px] mb-[3px];
 }
 
-.subscribe .infoForm input{
-  @apply block w-full border-b-[1px] border-[#d2d2d2] p-[11px_13px] placeholder:text-[#666] placeholder:text-[14px] placeholder:leading-[18px] text-[#666] text-[14px] leading-[18px];
+.subscribe .infoForm .checkInfo{
+  @apply block w-full border-b-[1px] border-[#d2d2d2] p-[11px_13px] text-[#666] text-[14px] leading-[18px];
 }
 
 .subscribe .guide{

@@ -4204,7 +4204,7 @@ input[type=radio].custom-radio:checked + label {
 .subscribe .title {
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -4336,27 +4336,13 @@ input[type=radio].checkPay:checked + label {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.subscribe .infoForm input {
+.subscribe .infoForm .checkInfo {
   display: block;
   width: 100%;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(210 210 210 / var(--tw-border-opacity));
   padding: 11px 13px;
-  font-size: 14px;
-  line-height: 18px;
-  --tw-text-opacity: 1;
-  color: rgb(102 102 102 / var(--tw-text-opacity));
-}
-
-.subscribe .infoForm input::-moz-placeholder {
-  font-size: 14px;
-  line-height: 18px;
-  --tw-text-opacity: 1;
-  color: rgb(102 102 102 / var(--tw-text-opacity));
-}
-
-.subscribe .infoForm input::placeholder {
   font-size: 14px;
   line-height: 18px;
   --tw-text-opacity: 1;
