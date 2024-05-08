@@ -1635,6 +1635,14 @@ input[type=radio].custom-radio:checked + label {
 .eventSignal .signalTable tbody tr td span{
   @apply text-[#999] text-[12px] leading-[12px];
 }
+
+.noSignal{
+  @apply mb-[20px];
+}
+
+.noSignal .noSignalTxt{
+  @apply py-[60px] border-b-[1px] border-[#f0f0f0] text-center text-[#999] text-[14px] font-normal leading-[18px];
+}
 /* /////////////////// */
 /* 구독 */
 .subscribe{
