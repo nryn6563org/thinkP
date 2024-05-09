@@ -2556,6 +2556,10 @@ em {
   font-weight: 400;
 }
 
+.itemlistBox .itemGraph {
+  width: 70px;
+}
+
 .bestItem {
   width: 100%;
   padding: 30px 20px 20px;
