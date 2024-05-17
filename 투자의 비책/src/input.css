@@ -246,7 +246,19 @@ em{
 }
 
 .userTxt{
-  @apply w-full text-center text-black text-[20px] font-normal mb-[24px]; 
+  @apply w-full text-center text-black text-[20px] font-normal mb-[8px]; 
+}
+
+.logOut{
+  @apply w-full flex justify-center mb-[24px];
+}
+
+.logOut button{
+  @apply flex justify-center items-center gap-[2px];
+}
+
+.logOut button span{
+  @apply block text-[#999] text-[14px] font-normal leading-[17px];
 }
 
 .myPageCon .box{
@@ -705,7 +717,7 @@ em{
 }
 
 .mainMenu{
-  @apply absolute flex justify-center items-center mt-[2px];
+  @apply absolute flex justify-center items-center mt-[2px] top-[20px] left-[20px];
 }
 
 .mainTitle{
@@ -714,6 +726,10 @@ em{
 
 .mainTitle span{
   @apply block text-mainColor text-[20px] font-bold leading-[20px];
+}
+
+.user{
+  @apply absolute ;
 }
 
 .mainIntro{
@@ -1395,7 +1411,7 @@ em{
 }
 
 .eventBox{
-  @apply w-full flex justify-between items-start gap-[30px] pb-[40px];
+  @apply w-full flex justify-between items-start gap-[10px] pb-[40px];
 }
 
 .eventBox .name{

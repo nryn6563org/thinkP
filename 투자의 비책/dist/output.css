@@ -1042,13 +1042,36 @@ em {
 }
 
 .userTxt {
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   width: 100%;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
+.logOut {
+  margin-bottom: 24px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.logOut button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.logOut button span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
 }
 
 .myPageCon .box {
@@ -2147,6 +2170,8 @@ em {
 
 .mainMenu {
   position: absolute;
+  top: 20px;
+  left: 20px;
   margin-top: 2px;
   display: flex;
   align-items: center;
@@ -2168,6 +2193,10 @@ em {
   line-height: 20px;
   --tw-text-opacity: 1;
   color: rgb(255 80 80 / var(--tw-text-opacity));
+}
+
+.user {
+  position: absolute;
 }
 
 .mainIntro {
@@ -3661,7 +3690,7 @@ em {
   width: 100%;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 30px;
+  gap: 10px;
   padding-bottom: 40px;
 }
 
