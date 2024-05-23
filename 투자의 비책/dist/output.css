@@ -3123,6 +3123,22 @@ em {
   padding-bottom: 15px;
 }
 
+.todayEvent .noRecom {
+  display: flex;
+  height: 125px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(210 210 210 / var(--tw-border-opacity));
+  font-size: 16px;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
 .todayEventBox {
   width: 100%;
   border-radius: 16px;
@@ -3149,7 +3165,7 @@ em {
 }
 
 .todayEventBox .top .name {
-  width: calc(100% - 45px);
+  width: calc(100% - 65px);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

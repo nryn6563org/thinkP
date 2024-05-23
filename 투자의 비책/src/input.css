@@ -1158,6 +1158,10 @@ em{
   @apply flex flex-col gap-[15px] pb-[15px];
 }
 
+.todayEvent .noRecom{
+  @apply w-full h-[125px] flex justify-center items-center border-[1px] border-[#d2d2d2] rounded-[12px] text-black text-[16px] font-normal;
+}
+
 .todayEventBox{
   @apply w-full rounded-[16px] shadow-[0px_2px_10px_rgba(0,0,0,0.15)] text-left;
 }
@@ -1171,7 +1175,7 @@ em{
 }
 
 .todayEventBox .top .name{
-  @apply w-[calc(100%-45px)] text-black text-[16px] font-normal leading-[20px];
+  @apply w-[calc(100%-65px)] text-black text-[16px] font-normal leading-[20px];
 }
 
 .todayEventBox .top .pri{
