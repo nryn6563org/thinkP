@@ -929,6 +929,13 @@ em {
   justify-content: space-between;
 }
 
+.flexend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
 .hidden {
   display: none !important;
 }
@@ -2833,7 +2840,7 @@ em {
   display: block;
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px;
   --tw-text-opacity: 1;
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
@@ -2847,13 +2854,14 @@ em {
 }
 
 .beAlPri div {
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.beAlPri div span {
-  display: block;
+.beAlPri div:last-child {
+  margin-bottom: 0px;
 }
 
 .beAlPriFlex {
@@ -2885,6 +2893,8 @@ em {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
 .beAlMore {
@@ -3377,7 +3387,10 @@ em {
 }
 
 .buyAllItemBox .bot {
+  display: flex;
   width: 100%;
+  flex-direction: column;
+  gap: 5px;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
   --tw-bg-opacity: 1;
