@@ -1493,7 +1493,11 @@ em{
 }
 
 .eventScore .gaugeChart .top{
-  @apply w-full bg-white rounded-t-[6px] p-[10px];
+  @apply w-full bg-white rounded-t-[6px] p-[10px] flex justify-center;
+}
+
+.eventScore .gaugeChart .top img{
+  @apply w-full max-w-[360px];
 }
 
 .eventScore .gaugeChart .bot{
@@ -1501,11 +1505,11 @@ em{
 }
 
 .eventScore .gaugeChart .bot .state{
-  @apply p-[2px_4px] rounded-[3px] bg-black text-white text-[12px] font-normal leading-[15px] ;
+  @apply p-[2px_4px] rounded-[3px] bg-black text-white text-[13px] font-normal leading-[15px] ;
 }
 
 .eventScore .gaugeChart .bot .eva{
-  @apply text-black text-[16px] font-bold leading-[19px];
+  @apply text-black text-[17px] font-bold leading-[19px];
 }
 
 .eventYearSignal{
