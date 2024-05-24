@@ -126,12 +126,20 @@ em{
   @apply !bg-[#FFF5D8];
 }
 
+.somelow{
+  @apply !text-[#5688B6];
+}
+
 .highbg{
   @apply !bg-[#FFDADA];
 }
 
 .lowbg{
   @apply !bg-[#D6DAFC];
+}
+
+.somelowbg{
+  @apply !bg-[#D2EEEC];
 }
 
 .up{
@@ -187,11 +195,21 @@ em{
 }
 
 .flexend{
-  @apply flex justify-end items-center gap-[4px];
+  @apply flex justify-end items-start gap-[4px];
 }
 
 .hidden{
   @apply !hidden;
+}
+
+.minbr{
+  @apply hidden ;
+}
+
+@media (max-width: 360px){
+  .minbr{
+    @apply !block;
+  }
 }
 
 /* index / 로그인 */
@@ -1025,7 +1043,7 @@ em{
 }
 
 .beAlGoal span{
-  @apply block text-black text-[16px] font-normal leading-[24px];
+  @apply block text-black text-[16px] font-normal leading-[24px] last:text-right;
 }
 
 .beAlPri{
@@ -1037,7 +1055,7 @@ em{
 }
 
 .beAlPriFlex{
-  @apply flex justify-between items-center mb-[10px] last:mb-0;
+  @apply flex justify-between items-center !mb-[10px] last:!mb-0;
 }
 
 .beAlPriFlex .flexGroup{

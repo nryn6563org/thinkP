@@ -853,6 +853,11 @@ em {
   background-color: rgb(255 245 216 / var(--tw-bg-opacity)) !important;
 }
 
+.somelow {
+  --tw-text-opacity: 1 !important;
+  color: rgb(86 136 182 / var(--tw-text-opacity)) !important;
+}
+
 .highbg {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 218 218 / var(--tw-bg-opacity)) !important;
@@ -861,6 +866,11 @@ em {
 .lowbg {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(214 218 252 / var(--tw-bg-opacity)) !important;
+}
+
+.somelowbg {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(210 238 236 / var(--tw-bg-opacity)) !important;
 }
 
 .up {
@@ -931,13 +941,23 @@ em {
 
 .flexend {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
   gap: 4px;
 }
 
 .hidden {
   display: none !important;
+}
+
+.minbr {
+  display: none !important;
+}
+
+@media (max-width: 360px){
+  .minbr {
+    display: block !important;
+  }
 }
 
 /* index / 로그인 */
@@ -2845,6 +2865,10 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
+.beAlGoal span:last-child {
+  text-align: right;
+}
+
 .beAlPri {
   width: 100%;
   border-radius: 10px;
@@ -2865,14 +2889,14 @@ em {
 }
 
 .beAlPriFlex {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .beAlPriFlex:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 
 .beAlPriFlex .flexGroup {
