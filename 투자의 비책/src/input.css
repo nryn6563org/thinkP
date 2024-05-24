@@ -1942,7 +1942,7 @@ input[type=radio].checkPay:checked + label {
 }
 
 .joinBanner{
-  @apply w-full max-w-[720px] h-[55px] fixed bottom-0 text-center;
+  @apply w-full max-w-[720px] h-[55px] fixed bottom-0 text-center z-[9999];
 }
 
 .joinBanner button{

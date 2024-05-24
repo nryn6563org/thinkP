@@ -4664,6 +4664,7 @@ input[type=radio].checkPay:checked + label {
 .joinBanner {
   position: fixed;
   bottom: 0px;
+  z-index: 9999;
   height: 55px;
   width: 100%;
   max-width: 720px;
