@@ -1067,7 +1067,7 @@ em{
 }
 
 .beAlPri div span{
-  @apply block text-[14px] font-normal leading-[20px] text-black;
+  @apply block text-[14px] font-normal leading-[20px] text-black last:text-right;
 }
 
 .beAlMore{

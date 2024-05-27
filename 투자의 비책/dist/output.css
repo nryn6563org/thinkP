@@ -2921,6 +2921,10 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
+.beAlPri div span:last-child {
+  text-align: right;
+}
+
 .beAlMore {
   width: 100%;
   text-align: center;
