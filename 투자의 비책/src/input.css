@@ -1384,6 +1384,10 @@ em{
   @apply text-black text-[14px] font-normal leading-[17px];
 }
 
+.todayEventBox .bot .flexsb{
+  @apply mb-[5px] last:mb-0;
+}
+
 .todayEventBox .bot .txtPri span{
   @apply text-[16px] font-bold;
 }

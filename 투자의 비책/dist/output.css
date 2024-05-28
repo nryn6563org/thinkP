@@ -3644,6 +3644,14 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
+.todayEventBox .bot .flexsb {
+  margin-bottom: 5px;
+}
+
+.todayEventBox .bot .flexsb:last-child {
+  margin-bottom: 0px;
+}
+
 .todayEventBox .bot .txtPri span {
   font-size: 16px;
   font-weight: 700;
