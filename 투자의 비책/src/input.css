@@ -1575,7 +1575,7 @@ input[type=radio].custom-radio:checked + label {
 }
 
 .eventYearSignal .shame{
-  @apply w-full flex justify-evenly items-center gap-[20px] p-[0px_10px] mb-[40px];
+  @apply w-full flex justify-evenly items-center gap-[10px] mb-[40px];
 }
 
 .eventYearSignal .shame .txt{
@@ -1583,7 +1583,7 @@ input[type=radio].custom-radio:checked + label {
 }
 
 .eventYearSignal .shame .per{
-  @apply text-[24px] font-normal leading-[30px] text-center;
+  @apply text-[22px] font-normal leading-[30px] text-center;
 }
 
 .eventYearSignal .shame .line{

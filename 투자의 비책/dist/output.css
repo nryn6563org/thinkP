@@ -4012,8 +4012,7 @@ input[type=radio].custom-radio:checked + label {
   width: 100%;
   align-items: center;
   justify-content: space-evenly;
-  gap: 20px;
-  padding: 0px 10px;
+  gap: 10px;
 }
 
 .eventYearSignal .shame .txt {
@@ -4028,7 +4027,7 @@ input[type=radio].custom-radio:checked + label {
 
 .eventYearSignal .shame .per {
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 30px;
 }
