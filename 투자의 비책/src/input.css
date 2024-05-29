@@ -118,12 +118,16 @@ em{
   @apply !text-[#477E2D];
 }
 
+.somehigh{
+  @apply !text-[#A62929];
+}
+
 .avgbg{
   @apply !bg-[#DEF4C8];
 }
 
-.somehigh{
-  @apply !bg-[#FFF5D8];
+.somehighbg{
+  @apply !bg-[#F9B5A0];
 }
 
 .somelow{
@@ -1027,7 +1031,7 @@ em{
 }
 
 .beAlName .name .beAlItemName{
-  @apply block text-black text-[16px] font-normal leading-[20px] w-auto max-w-[calc(100%-62px)];
+  @apply block text-black text-[16px] font-normal leading-[20px] w-auto max-w-[calc(100%-65px)];
 }
 
 .beAlName .state{

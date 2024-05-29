@@ -843,14 +843,19 @@ em {
   color: rgb(71 126 45 / var(--tw-text-opacity)) !important;
 }
 
+.somehigh {
+  --tw-text-opacity: 1 !important;
+  color: rgb(166 41 41 / var(--tw-text-opacity)) !important;
+}
+
 .avgbg {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(222 244 200 / var(--tw-bg-opacity)) !important;
 }
 
-.somehigh {
+.somehighbg {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(255 245 216 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(249 181 160 / var(--tw-bg-opacity)) !important;
 }
 
 .somelow {
@@ -2817,7 +2822,7 @@ em {
 .beAlName .name .beAlItemName {
   display: block;
   width: auto;
-  max-width: calc(100% - 62px);
+  max-width: calc(100% - 65px);
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
