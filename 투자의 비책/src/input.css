@@ -32,6 +32,22 @@ em{
   @apply w-[72px] h-[28px] text-center rounded-[8px] border border-black bg-white text-black text-[14px] font-normal right-[20px];
 }
 
+.header .eventName{
+  @apply w-full h-[50px] flex justify-center items-center;
+}
+
+.header .nameBox{
+  @apply w-[calc(100%-60px)] h-[50px] text-center flex justify-center items-center gap-[5px];
+}
+
+.header .nameBox .name{
+  @apply w-auto max-w-[calc(100%-50px)] text-black text-[16px] font-bold leading-[24px];
+}
+
+.header .nameBox .code{
+  @apply text-[#999] text-[12px] font-normal leading-[24px] mt-[5px];
+}
+
 .dropdown-menu{
   @apply p-0 m-0;
 }
@@ -1444,20 +1460,16 @@ em{
   @apply w-full flex justify-between items-start gap-[10px] pb-[40px];
 }
 
-.eventBox .name{
-  @apply w-[calc(100%-160px)];
+.eventBox .dateBox{
+  @apply flex justify-start items-center gap-[5px] mb-[5px];
 }
 
-.eventBox .nameBox{
-  @apply w-full flex justify-start items-center gap-[5px] mb-[8px];
+.eventBox .dateBox .date{
+  @apply text-[14px] text-black font-normal leading-[18px];
 }
 
-.eventBox .nameBox .name{
-  @apply w-auto max-w-[calc(100%-50px)] text-black text-[16px] font-normal leading-[19px];
-}
-
-.eventBox .nameBox .code{
-  @apply text-[#999] text-[12px] font-normal leading-[15px]
+.eventBox .dateBox .time{
+  @apply text-[12px] text-[#999] font-normal leading-[16px];
 }
 
 .eventBox .pri{

@@ -698,6 +698,43 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
+.header .eventName {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .nameBox {
+  display: flex;
+  height: 50px;
+  width: calc(100% - 60px);
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.header .nameBox .name {
+  width: auto;
+  max-width: calc(100% - 50px);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
+.header .nameBox .code {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
 .dropdown-menu {
   margin: 0px;
   padding: 0px;
@@ -3763,33 +3800,26 @@ em {
   padding-bottom: 40px;
 }
 
-.eventBox .name {
-  width: calc(100% - 160px);
-}
-
-.eventBox .nameBox {
-  margin-bottom: 8px;
+.eventBox .dateBox {
+  margin-bottom: 5px;
   display: flex;
-  width: 100%;
   align-items: center;
   justify-content: flex-start;
   gap: 5px;
 }
 
-.eventBox .nameBox .name {
-  width: auto;
-  max-width: calc(100% - 50px);
-  font-size: 16px;
+.eventBox .dateBox .date {
+  font-size: 14px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 18px;
   --tw-text-opacity: 1;
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.eventBox .nameBox .code {
+.eventBox .dateBox .time {
   font-size: 12px;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 16px;
   --tw-text-opacity: 1;
   color: rgb(153 153 153 / var(--tw-text-opacity));
 }
