@@ -755,7 +755,7 @@ em{
 }
 
 .mainHeader{
-  @apply p-[20px_20px_0];
+  @apply relative p-[20px_20px_0];
 }
 
 .mainMenu{
@@ -768,6 +768,10 @@ em{
 
 .mainTitle span{
   @apply block text-mainColor text-[20px] font-bold leading-[20px];
+}
+
+.mainHeader .logOut{
+  @apply absolute top-[24px] right-[20px] w-[auto];
 }
 
 .user{

@@ -2234,6 +2234,7 @@ em {
 }
 
 .mainHeader {
+  position: relative;
   padding: 20px 20px 0;
 }
 
@@ -2262,6 +2263,13 @@ em {
   line-height: 20px;
   --tw-text-opacity: 1;
   color: rgb(255 80 80 / var(--tw-text-opacity));
+}
+
+.mainHeader .logOut {
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: auto;
 }
 
 .user {
