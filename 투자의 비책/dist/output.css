@@ -2560,7 +2560,7 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.todayItem .title span {
+.todayItem .title button {
   display: block;
   font-size: 14px;
   font-weight: 400;

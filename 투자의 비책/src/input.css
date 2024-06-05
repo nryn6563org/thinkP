@@ -894,7 +894,7 @@ em{
   @apply block text-black text-[18px] font-bold;
 }
 
-.todayItem .title span{
+.todayItem .title button{
   @apply block text-black text-[14px] font-normal;
 } 
 
