@@ -234,7 +234,7 @@ em{
 
 /* index / 로그인 */
 .mainLoading, .logIn{
-  @apply w-full h-[100vh] bg-[#ebf0ff] pt-[150px] flex flex-col justify-between items-center;
+  @apply w-full h-[100dvh] bg-[#ebf0ff] flex flex-col justify-center items-center gap-[110px] pt-[100px];
 }
 
 .logo{
@@ -242,7 +242,7 @@ em{
 }
 
 .mainTxt{
-  @apply text-center mb-[80px];
+  @apply text-center;
 }
 
 .mainTxt span{
@@ -262,15 +262,19 @@ em{
 }
 
 .subTxt{
-  @apply text-center pt-[20px] text-black text-[16px] font-[300] mb-[35px];
+  @apply text-center text-black text-[16px] font-[300] mb-[35px];
 }
 
 .startBtn{
-  @apply w-full text-center mb-[85px];
+  @apply w-full text-center mb-[40px];
 }
 
 .startBtn button{
   @apply w-[273px] h-[40px] rounded-[18px] bg-mainColor text-white text-[16px] font-normal leading-[22px];
+}
+
+.guideTxt{
+  @apply text-center text-[#7e8bae] text-[14px] font-normal leading-[18px] mb-[35px];
 }
 /* ////////////////////////// */
 
