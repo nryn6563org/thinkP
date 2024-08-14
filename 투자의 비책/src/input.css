@@ -115,7 +115,7 @@ em{
 }
 
 .alName span{
-  @apply !inline-block !w-[20px] !h-[20px] !leading-[20px] !rounded-[5px] !border !border-black !bg-[#f7f7f8] !text-black !text-[12px] !font-normal !text-center;
+  @apply !inline-block !w-[20px] !h-[20px] !leading-[20px] !rounded-[5px] bg-[#f7f7f8] !text-white !text-[12px] !font-normal !text-center;
 }
 
 .bgGray{
@@ -184,6 +184,18 @@ em{
 
 .sellbg{
   @apply !bg-[#ECF1FF];
+}
+
+.type01{
+  @apply !bg-[#65D27D];
+}
+
+.type02{
+  @apply !bg-[#F99474];
+}
+
+.type03{
+  @apply !bg-[#929DFB];
 }
 
 .mb-78{
