@@ -767,7 +767,7 @@ em{
 
 .gradientBg{
   background: linear-gradient(129deg, #EBF0FF 56.76%, #FFE4E4 100%);
-  @apply w-full h-[330px] absolute top-0 z-[-99];
+  @apply w-full h-[260px] absolute top-0 z-[-99];
 }
 
 .mainHeader{
@@ -807,7 +807,7 @@ em{
 }
 
 .introImg{
-  @apply absolute right-[10px] bottom-0;
+  @apply absolute right-[10px] bottom-[-13px];
 }
 
 .introImg img{

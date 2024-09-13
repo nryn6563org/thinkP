@@ -2250,7 +2250,7 @@ em {
   position: absolute;
   top: 0px;
   z-index: -99;
-  height: 330px;
+  height: 260px;
   width: 100%;
 }
 
@@ -2335,7 +2335,7 @@ em {
 .introImg {
   position: absolute;
   right: 10px;
-  bottom: 0px;
+  bottom: -13px;
 }
 
 .introImg img {
