@@ -663,3 +663,204 @@ a { @apply cursor-pointer; }
 .mobileSection10 .loanProduct .btn-group button.active{
   @apply border-none bg-[#333] text-[#fff];
 }
+
+/* 웹 레이어 팝업 공통 */
+.layer_popup.web{
+  @apply hidden fixed top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-[650px] min-h-[540px] bg-[#fff] p-[20px] border-[2px] border-[#0087fa] z-[99];
+}
+.layer_popup.mobile{
+  @apply hidden fixed top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] w-[320px] max-h-[510px] bg-[#fff] p-[16px] border-[1px] border-[#0087fa] z-[9999] overflow-y-auto;
+}
+.layer_popup.web .pop_close{
+  @apply absolute top-[10px] right-[20px] z-[999];
+}
+.layer_popup.mobile .pop_close{
+  @apply absolute top-[8px] right-[12px] z-[99999];
+}
+
+/* 계산하기 레이어 팝업 */
+.layer_popup.web .layer_calcInput{
+  @apply relative flex flex-col gap-[20px] justify-start items-start;
+}
+.layer_popup.mobile .layer_calcInput{
+  @apply relative flex flex-col gap-[15px] justify-start items-start;
+}
+.layer_popup.web .layer_calcInput .title{
+  @apply block w-full text-[20px] leading-[20px] text-[#333] font-bold;
+}
+.layer_popup.mobile .layer_calcInput .title{
+  @apply block w-full text-[14px] leading-[14px] text-[#333] font-bold;
+}
+.layer_popup.web .layer_calcInput .layer_calcInput-group{
+  @apply w-full flex justify-between items-center;
+}
+.layer_popup.mobile .layer_calcInput .layer_calcInput-group{
+  @apply w-full flex flex-col justify-between items-end gap-[10px];
+}
+.layer_popup.web .layer_calcInput .layer_calcInput-group input.input_c01{
+  @apply w-[211px] h-[52px] border border-[#d7d7d7] leading-[52px] text-[18px] p-[0px_40px_0_10px] text-right text-[#666] placeholder:text-[#666];
+}
+.layer_popup.mobile .layer_calcInput .layer_calcInput-group input.input_c01{
+  @apply w-full h-[42px] border border-[#d7d7d7] leading-[52px] text-[14px] p-[0px_40px_0_10px] text-right text-[#666] placeholder:text-[#666];
+}
+.layer_popup.web .layer_calcInput .layer_calcInput-group label{
+  @apply absolute bottom-0 left-[186px] h-[51px] leading-[51px] text-[16px] text-[#999];
+}
+.layer_popup.mobile .layer_calcInput .layer_calcInput-group label{
+  @apply pr-[10px] absolute top-0 right-0 h-[42px] leading-[43px] text-[14px] text-[#999];
+}
+.layer_popup.web .layer_calcInput .layer_calcInput-group button{
+  @apply inline-block w-[180px] h-[52px] leading-[52px] border border-[#0087fa] text-[18px] text-[#0087fa] font-normal text-center ml-[10px];
+}
+.layer_popup.mobile .layer_calcInput .layer_calcInput-group .calcInput_btn-group{
+  @apply w-full flex justify-center items-center gap-[10px];
+}
+.layer_popup.mobile .layer_calcInput .layer_calcInput-group button{
+  @apply inline-block w-[50%] h-[42px] leading-[42px] border border-[#0087fa] text-[14px] text-[#0087fa] font-normal text-center;
+}
+.layer_popup.web .layer_calcInput .layer_calcInput-group button.active{
+  @apply bg-[#0087fa] text-[#fff];
+}
+.layer_popup.mobile .layer_calcInput .layer_calcInput-group button.active{
+  @apply bg-[#0087fa] text-[#fff];
+}
+.layer_popup.web .layer_calcResult{
+  @apply w-full mt-[45px];
+}
+.layer_popup.mobile .layer_calcResult{
+  @apply w-full mt-[30px];
+}
+.layer_popup.web .layer_calcResult .title{
+  @apply block w-full text-[20px] leading-[20px] text-[#333] font-bold;
+}
+.layer_popup.mobile .layer_calcResult .title{
+  @apply block w-full text-[14px] leading-[14px] text-[#333] font-bold mb-[12px];
+}
+.layer_popup .layer_calcResult .layer_calcChart{
+  @apply min-w-[286px] h-[288px];
+}
+.layer_popup.web .layer_calcResult .layer_calcResult-group{
+  @apply flex justify-between items-start
+}
+.layer_popup.web .layer_calcResult .layer_calcResult-group .layer_moneyList{
+  @apply w-[50%] flex flex-col justify-start items-center gap-[25px];
+}
+.layer_popup.mobile .layer_calcResult .layer_calcResult-group .layer_moneyList{
+  @apply w-full flex flex-col justify-start items-start gap-[15px];
+}
+.layer_popup.web .layer_calcResult .layer_calcResult-group .layer_moneyList p{
+  @apply w-full text-left text-[18px] leading-[18px] text-[#333] font-normal;
+}
+.layer_popup.mobile .layer_calcResult .layer_calcResult-group .layer_moneyList p{
+  @apply w-full text-left text-[14px] leading-[14px] text-[#333] font-normal;
+}
+.layer_popup.web .layer_calcResult .layer_calcResult-group .layer_moneyList p strong{
+  @apply inline-block font-bold text-[30px] leading-[40px] mt-[10px];
+}
+.layer_popup.mobile .layer_calcResult .layer_calcResult-group .layer_moneyList p strong{
+  @apply inline-block font-bold text-[24px] leading-[30px] mt-[10px];
+}
+.layer_popup.web .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_moneyList-group{
+  @apply w-full flex flex-col gap-[20px];
+}
+.layer_popup.mobile .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_moneyList-group{
+  @apply w-full flex flex-col gap-[10px];
+}
+.layer_popup .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_moneyList-group .moneyList{
+  @apply w-full flex justify-between items-end;
+}
+.layer_popup.web .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_moneyList-group .moneyList strong{
+  @apply font-normal text-[30px] text-[#333] leading-[19px];
+}
+.layer_popup.mobile .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_moneyList-group .moneyList strong{
+  @apply font-normal text-[24px] text-[#333] leading-[19px];
+}
+.layer_popup.web .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_moneyList-group .moneyList strong span{
+  @apply text-[18px] leading-[19px] text-[#333] font-normal;
+}
+.layer_popup.mobile .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_moneyList-group .moneyList strong span{
+  @apply text-[14px] leading-[15px] text-[#333] font-normal;
+}
+.layer_popup.web .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_joinMoney button{
+  @apply w-[230px] h-[54px] leading-[54px] text-center text-[18px] text-[#fff] font-normal bg-[#e85245];
+}
+.layer_popup.mobile .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_joinMoney{
+  @apply w-full;
+}
+.layer_popup.mobile .layer_calcResult .layer_calcResult-group .layer_moneyList .layer_joinMoney button{
+  @apply w-full h-[44px] leading-[44px] text-center text-[14px] text-[#fff] font-normal bg-[#e85245];
+}
+.layer_popup .layer_calcResult .guide{
+  @apply flex flex-col justify-start items-start gap-[10px] mt-[30px];
+}
+.layer_popup .layer_calcResult .guide em{
+  @apply not-italic font-bold text-[14px] leading-[14px] text-[#333];
+}
+.layer_popup .layer_calcResult .guide span{
+  @apply text-[14px] font-normal text-[#333] leading-[22px];
+}
+/* 상세보기 레이어팝업 */
+.layer_popup.detail table{
+  @apply w-full;
+}
+.layer_popup.detail.web table tbody tr th{
+  @apply h-[44px] leading-[44px] p-[0px_25px] text-[16px] text-[#333] font-normal bg-[#f8f8f8] border border-[#e5e5e5];
+}
+.layer_popup.detail.web table tbody tr td{
+  @apply h-[44px] leading-[44px] p-[0px_25px] text-[16px] text-[#333] font-normal bg-[#fff] border border-[#e5e5e5];
+}
+.layer_popup.detail.mobile table tbody tr th{
+  @apply h-[34px] p-[5px_10px] text-[14px] text-[#333] font-normal bg-[#f8f8f8] border border-[#e5e5e5];
+}
+.layer_popup.detail.mobile table tbody tr td{
+  @apply h-[34px] p-[5px_10px] text-[14px] text-[#333] font-normal bg-[#fff] border border-[#e5e5e5];
+}
+/* 상담신청 레이어팝업 */
+.layer_popup.counsel.web{
+  @apply w-[380px] min-h-[250px] bg-[#fff] p-[29px] border border-[#d6d6d6];
+}
+.layer_popup.counsel.mobile{
+  @apply w-[320px] min-h-[250px] bg-[#fff] p-[16px] border border-[#d6d6d6];
+}
+.layer_popup.counsel.web .title{
+  @apply w-full mt-[15px] text-[16px] text-[#333] leading-[16px] text-center font-normal;
+}
+.layer_popup.counsel.mobile .title{
+  @apply w-full mt-[25px] text-[14px] text-[#333] leading-[16px] text-center font-normal;
+}
+.layer_popup.counsel .counsel_input-group{
+  @apply w-full flex flex-col justify-start items-start gap-[5px] mt-[20px];
+}
+.layer_popup.counsel .counsel_input-group .counsel_input{
+  @apply w-full flex justify-between items-center;
+}
+.layer_popup.counsel.web .counsel_input-group .counsel_input p{
+  @apply w-[70px] h-[51px] leading-[51px] font-normal text-[16px] text-[#888];
+}
+.layer_popup.counsel.mobile .counsel_input-group .counsel_input p{
+  @apply w-[50px] h-[41px] leading-[41px] font-normal text-[14px] text-[#888];
+}
+.layer_popup.counsel.web .counsel_input-group .counsel_input .input_cl{
+  @apply w-[246.16px] h-[51px] border border-[#d7d7d7] p-[0px_10px]
+}
+.layer_popup.counsel.mobile .counsel_input-group .counsel_input .input_cl{
+  @apply w-[236px] h-[41px] border border-[#d7d7d7] p-[0px_10px] text-[14px] font-normal;
+}
+.layer_popup.counsel .counsel_check{
+  @apply w-full flex justify-end items-center gap-[5px] mt-[15px];
+}
+.layer_popup.counsel .counsel_check label{
+  @apply text-[13px] text-[#333] leading-[13px] font-normal;
+}
+.layer_popup.counsel .counsel_check button{
+  @apply text-[12px] text-[#333] leading-[13px] font-normal underline;
+}
+.layer_popup.counsel .counsel_btn{
+  @apply w-full mt-[15px];
+}
+.layer_popup.counsel.web .counsel_btn button{
+  @apply w-full h-[50px] leading-[50px] text-center text-[16px] text-[#fff] font-normal bg-[#e85245];
+}
+.layer_popup.counsel.mobile .counsel_btn button{
+  @apply w-full h-[40px] leading-[40px] text-center text-[14px] text-[#fff] font-normal bg-[#e85245];
+}
