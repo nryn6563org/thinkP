@@ -183,7 +183,7 @@ a { @apply cursor-pointer; }
 .product.product-after .product_after-txt{
   @apply block w-[92px] absolute top-[8px] right-[27px] text-center z-[99] text-[#562D16] text-[14px] font-bold leading-[18px];
 }
-.product.product-bg01{
+.product.product-bg04{
   @apply bg-[#6741D9];
 }
 .product.product-bg02{
@@ -192,7 +192,7 @@ a { @apply cursor-pointer; }
 .product.product-bg03{
   @apply bg-[#3E74FF];
 }
-.product.product-bg04{
+.product.product-bg01{
   @apply bg-[#FF4E4E];
 }
 .product.product-bg05{
