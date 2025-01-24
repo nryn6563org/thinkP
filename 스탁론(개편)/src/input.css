@@ -174,19 +174,28 @@ a { @apply cursor-pointer; }
 .product{
   @apply w-[262px] h-[376px] p-[69px_16px_30px] flex flex-col justify-between items-center gap-[20px] rounded-[20px] shadow-[0px_4px_10px_0px_rgba(0,0,0,0.25)];
 }
-.product.hana{
-  @apply relative bg-[#6741D9] after:content-[''] after:w-[91.42px] after:h-[67px] after:bg-[url(../img/product_after-hana.png)] after:bg-center after:bg-[length:91.42px_67px] after:absolute after:top-0 after:right-[23px];
+.product.product-after{
+  @apply relative after:content-[''] after:w-[100px] after:h-[75px] after:bg-[url(../img/product_after.png)] after:bg-center after:bg-[length:100px_75px] after:absolute after:top-0 after:right-[23px];
 }
-.product.kiwoom{
-  @apply relative bg-[#313859] after:content-[''] after:w-[91.42px] after:h-[67px] after:bg-[url(../img/product_after-kiwoom.png)] after:bg-center after:bg-[length:91.42px_67px] after:absolute after:top-0 after:right-[23px];
+.product_after-txt{
+  @apply hidden;
 }
-.product.mirae{
+.product.product-after .product_after-txt{
+  @apply block w-[92px] absolute top-[8px] right-[27px] text-center z-[99] text-[#562D16] text-[14px] font-bold leading-[18px];
+}
+.product.product-bg01{
+  @apply bg-[#6741D9];
+}
+.product.product-bg02{
+  @apply bg-[#313859];
+}
+.product.product-bg03{
   @apply bg-[#3E74FF];
 }
-.product.tp{
+.product.product-bg04{
   @apply bg-[#FF4E4E];
 }
-.product.hana02{
+.product.product-bg05{
   @apply bg-[#AE4DEA];
 }
 .product .title{

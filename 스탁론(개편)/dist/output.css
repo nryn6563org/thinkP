@@ -1081,55 +1081,63 @@ a {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.product.hana {
+.product.product-after {
   position: relative;
+}
+
+.product.product-after::after {
+  position: absolute;
+  top: 0px;
+  right: 23px;
+  height: 75px;
+  width: 100px;
+  background-image: url(../img/product_after.png);
+  background-size: 100px 75px;
+  background-position: center;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.product_after-txt {
+  display: none;
+}
+
+.product.product-after .product_after-txt {
+  position: absolute;
+  top: 8px;
+  right: 27px;
+  z-index: 99;
+  display: block;
+  width: 92px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  --tw-text-opacity: 1;
+  color: rgb(86 45 22 / var(--tw-text-opacity, 1));
+}
+
+.product.product-bg01 {
   --tw-bg-opacity: 1;
   background-color: rgb(103 65 217 / var(--tw-bg-opacity, 1));
 }
 
-.product.hana::after {
-  position: absolute;
-  top: 0px;
-  right: 23px;
-  height: 67px;
-  width: 91.42px;
-  background-image: url(../img/product_after-hana.png);
-  background-size: 91.42px 67px;
-  background-position: center;
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-.product.kiwoom {
-  position: relative;
+.product.product-bg02 {
   --tw-bg-opacity: 1;
   background-color: rgb(49 56 89 / var(--tw-bg-opacity, 1));
 }
 
-.product.kiwoom::after {
-  position: absolute;
-  top: 0px;
-  right: 23px;
-  height: 67px;
-  width: 91.42px;
-  background-image: url(../img/product_after-kiwoom.png);
-  background-size: 91.42px 67px;
-  background-position: center;
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-.product.mirae {
+.product.product-bg03 {
   --tw-bg-opacity: 1;
   background-color: rgb(62 116 255 / var(--tw-bg-opacity, 1));
 }
 
-.product.tp {
+.product.product-bg04 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 78 78 / var(--tw-bg-opacity, 1));
 }
 
-.product.hana02 {
+.product.product-bg05 {
   --tw-bg-opacity: 1;
   background-color: rgb(174 77 234 / var(--tw-bg-opacity, 1));
 }
