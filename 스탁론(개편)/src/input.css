@@ -691,13 +691,25 @@ a { @apply cursor-pointer; }
   @apply w-full py-[60px] flex flex-col justify-center items-center gap-[35px] border-t border-b border-[#9CA5AD];
 }
 .webSection11 .input-group .search-input{
-  @apply flex justify-center items-center gap-[20px];
+  @apply relative flex justify-center items-center gap-[20px];
 }
 .webSection11 .input-group .search-input input{
   @apply w-[400px] h-[60px] p-[9px_20px] rounded-[6px] border border-[#9CA5AD] text-[#1e1e1e] text-[24px] font-normal leading-[42px] placeholder:text-[#1e1e1e]
 }
 .webSection11 .input-group .search-input button{
   @apply w-[140px] h-[60px] p-[9px_20px] rounded-[6px] bg-[#387CFF] text-[#fff] text-[24px] font-normal leading-[42px];
+}
+.webSection11 .input-group .search-input span{
+  @apply block w-max absolute left-[580px] text-[24px] font-normal leading-[42px] text-[#1e1e1e];
+}
+.webSection11 .input-group .search-input span.suc{
+  @apply text-[#0087fa];
+}
+.webSection11 .input-group .search-input span.fil{
+  @apply text-[#e85245];
+}
+.webSection11 .input-group .search-input div{
+  @apply top-[12px] left-0;
 }
 .webSection11 .tagBox{
   @apply mt-[20px] flex flex-col justify-start items-start gap-[20px] text-[#1e1e1e] text-[24px] font-normal leading-[31px];
@@ -727,7 +739,13 @@ a { @apply cursor-pointer; }
   @apply w-[200px] h-[40px] p-[9px_10px] rounded-[6px] border border-[#9CA5AD] text-[#1e1e1e] text-[14px] font-normal leading-[18px] placeholder:text-[#1e1e1e]
 }
 .mobileSection11 .input-group .search-input button{
-  @apply w-[70px] h-[40px] p-[9px_10px] rounded-[6px] bg-[#387CFF] text-[#fff] text-[14px] font-normal leading-[18px];
+  @apply w-[70px] h-[40px] p-[9px_2px] rounded-[6px] bg-[#387CFF] text-[#fff] text-[14px] font-normal leading-[18px] text-center;
+}
+.mobileSection11 .input-group .search-input button.suc{
+  @apply bg-[#53be6a];
+}
+.mobileSection11 .input-group .search-input button.fil{
+  @apply bg-[#e85245];
 }
 .mobileSection11 .tagBox{
   @apply mt-[20px] flex flex-col justify-start items-start gap-[15px] text-[#1e1e1e] text-[14px] font-normal leading-[18px];
