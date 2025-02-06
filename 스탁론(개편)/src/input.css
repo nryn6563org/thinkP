@@ -733,7 +733,7 @@ a { @apply cursor-pointer; }
   @apply w-full py-[30px] flex flex-col justify-center items-center gap-[20px] border-t border-b border-[#9CA5AD];
 }
 .mobileSection11 .input-group .search-input{
-  @apply flex justify-center items-center gap-[10px];
+  @apply relative flex flex-wrap justify-center items-center gap-[5px_10px];
 }
 .mobileSection11 .input-group .search-input input{
   @apply w-[200px] h-[40px] p-[9px_10px] rounded-[6px] border border-[#9CA5AD] text-[#1e1e1e] text-[14px] font-normal leading-[18px] placeholder:text-[#1e1e1e]
@@ -741,11 +741,23 @@ a { @apply cursor-pointer; }
 .mobileSection11 .input-group .search-input button{
   @apply w-[70px] h-[40px] p-[9px_2px] rounded-[6px] bg-[#387CFF] text-[#fff] text-[14px] font-normal leading-[18px] text-center;
 }
-.mobileSection11 .input-group .search-input button.suc{
-  @apply bg-[#53be6a];
+.mobileSection11 .input-group .search-input span{
+  @apply block text-[12px] font-normal leading-[14px] text-[#1e1e1e];
 }
-.mobileSection11 .input-group .search-input button.fil{
-  @apply bg-[#e85245];
+.mobileSection11 .input-group .search-input span.suc{
+  @apply text-[#0087fa];
+}
+.mobileSection11 .input-group .search-input span.fil{
+  @apply text-[#e85245];
+}
+.mobileSection11 .input-group .search-input div{
+  @apply top-[-8px] left-0;
+}
+.mobileSection11 .input-group .search-input div p{
+  @apply text-[#1e1e1e] text-[14px] font-normal leading-[18px];
+}
+.mobileSection11 .input-group .search-input div table{
+  @apply !w-[200px];
 }
 .mobileSection11 .tagBox{
   @apply mt-[20px] flex flex-col justify-start items-start gap-[15px] text-[#1e1e1e] text-[14px] font-normal leading-[18px];
