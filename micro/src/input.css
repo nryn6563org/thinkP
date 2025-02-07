@@ -135,6 +135,16 @@
 
 /* 헤더 */
 
+/* swiper */
+.swiper-pagination-bullet{
+  @apply w-[9px] h-[9px] bg-[#D3D4D6] opacity-100 max-md:w-[4px] max-md:h-[4px] max-md:!mx-[2px];
+}
+
+.swiper-pagination-bullet-active{
+  @apply bg-[#6565FF] w-[36px] rounded-[5px] max-md:w-[16px];
+}
+/* swiper */
+
 .section{
   @apply relative w-full h-[100vh] flex justify-center items-center max-md:h-full;
 }
@@ -168,11 +178,11 @@
 }
 
 .md_none{
-  @apply not-italic max-md:hidden;
+  @apply not-italic max-md:!hidden;
 }
 
 .md_block{
-  @apply not-italic hidden max-md:inline;
+  @apply not-italic !hidden max-md:!block;
 }
 
 .lg_br{
@@ -344,10 +354,6 @@
 
 .chart_swiper .swiper-slide{
   @apply relative;
-}
-
-.swiper-pagination-bullet-active{
-  @apply bg-[#6565FF] w-[36px] rounded-[5px];
 }
 
 .swiper-button-next, .swiper-button-prev{
@@ -534,14 +540,6 @@
   @apply relative mt-[60px];
 }
 
-.lgaiSwiper .swiper-pagination-bullet{
-  @apply bg-[#D3D4D6] opacity-100;
-}
-
-.lgaiSwiper .swiper-pagination-bullet-active{
-  @apply bg-[#6565FF] w-[36px] rounded-[5px];
-}
-
 .lgaiSwiper .swiper-button-prev,.lgaiSwiper .swiper-button-next{
   @apply absolute;
 } 
@@ -621,7 +619,7 @@
 
 /* section7 */
 .sec07-headtxt{
-  @apply w-full text-center mb-[150px] mt-[50px] max-md:mb-[60px];
+  @apply w-full text-center mb-[100px] mt-[40px] max-md:mb-[60px] max-md:mt-[50px];
 }
 
 .sec07-headtxt strong{
@@ -640,6 +638,18 @@
   @apply text-left;
 }
 
+.lgbriSwier{
+  @apply w-full;
+}
+
+.lgbriSwiper .swiper-slide{
+  @apply w-full flex justify-center items-center gap-[30px];
+}
+
+.lgbriSwiper .swiper-pagination{
+  @apply relative mt-[50px];
+}
+
 .md-sec07-con{
   @apply hidden max-md:block p-[0px_30px];
 }
@@ -654,14 +664,6 @@
 
 .briSwiper .swiper-pagination{
   @apply relative mt-[40px];
-}
-
-.briSwiper .swiper-pagination-bullet{
-  @apply bg-[#D3D4D6] opacity-100;
-}
-
-.briSwiper .swiper-pagination-bullet-active{
-  @apply bg-mainColor w-[20px];
 }
 
 .bri-tag{
@@ -683,7 +685,7 @@
 
 /* section8 */
 .sec08-headtxt{
-  @apply w-full text-center mb-[100px] mt-[50px] max-md:mb-[40px];
+  @apply w-full text-center mb-[80px] mt-[50px] max-md:mb-[40px];
 }
 
 .sec08-headtxt strong{
@@ -711,7 +713,7 @@
 }
 
 .lgrevSwiper .swiper-pagination{
-  @apply relative mt-[40px];
+  @apply relative mt-[30px];
 }
 
 .mb-sec08-con{
@@ -775,6 +777,36 @@
 }
 /* section8 */
 
+/* section-new01 */
+.sec_new01-btn button{
+  @apply p-[17px_27px] rounded-[50px] border border-mainColor text-mainColor text-[20px] font-normal mt-[30px] max-md:p-[7px_12px] max-md:text-[14px] max-md:mt-0;
+}
+
+.sec_new01-mainImg{
+  @apply relative mt-[200px] max-md:mt-[34px] max-md:flex max-md:justify-end max-md:mr-[13px];
+}
+
+.sec_new01-mainImg img{
+  @apply w-[347px] max-md:w-[168px];
+}
+
+.sec_new01-mainImg .pick-card{
+  @apply absolute left-[30px] top-[125px] max-md:left-auto max-md:right-[86px] max-md:top-[62px];
+}
+
+.sec_new01-mainImg .pick-card img{
+  @apply w-[141px] max-md:w-[67px];
+}
+
+.sec_new01-subImg{
+  @apply absolute bottom-[-50px] right-[-20px] max-md:right-[-10px] max-md:bottom-[-15px];
+}
+
+.sec_new01-subImg img{
+  @apply w-[138px] max-md:w-[60px];
+}
+/* section-new01 */
+
 /* footer */
 .mainFooter{
   @apply w-full flex justify-center items-center bg-[#1F2237] max-md:p-[0px_20px];
@@ -805,7 +837,7 @@
 }
 
 .footer-chat{
-  @apply text-right max-md:text-left max-md:mb-[190px];
+  @apply text-right max-md:text-left max-md:mb-[100px];
 }
 
 .chat-txt strong{
@@ -835,14 +867,14 @@
 }
 
 .modal-content{
-  @apply w-[400px] p-[15px_30px_70px] border-none bg-white rounded-[20px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.15)] max-md:p-[15px_20px_46px] max-md:w-[300px];
+  @apply w-[400px] p-[15px_30px_40px] border-none bg-white rounded-[20px] shadow-[0px_0px_10px_0px_rgba(0,0,0,0.15)] max-md:p-[15px_20px_35px] max-md:w-[300px];
 }
 
 .modal-body{
   @apply p-0;
 }
 
-.modal-body button{
+.modal-body button.btn-close{
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
   @apply p-[4px] opacity-100 float-right;
 }
@@ -857,6 +889,14 @@
 
 .pop-subtxt{
   @apply w-full text-black text-[16px] font-normal leading-[24px];
+}
+
+.app-download{
+  @apply w-full flex justify-center items-center mt-[30px] max-md:mt-[25px];
+}
+
+.app-download button{
+  @apply w-[189px] h-[40px] flex justify-center items-center rounded-[20px] bg-mainColor text-[16px] font-normal text-[#fff] leading-[24px];
 }
 /* 팝업창 */
 
@@ -1009,6 +1049,8 @@
   }
 }
 /* section3 */
+
+/* section5 */
 .appear{
   animation: appear 1s;
 }
@@ -1025,7 +1067,96 @@
 }
 /* section5 */
 
-/* section5 */
+/* section_new01 */
+.pick{
+  @apply animate-[pick_4s_infinite_ease-in-out] max-md:animate-none;
+}
+
+.md-pick{
+  @apply max-md:animate-[md-pick_4s_infinite_ease-in-out];
+}
+
+@keyframes pick{
+  0%{
+    transform: translate(0);
+  }
+  20%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(-140px, -150px);
+  }
+  70%{
+    transform: translate(-140px, -150px);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+
+@keyframes md-pick{
+  0%{
+    transform: translate(0);
+  }
+  20%{
+    transform: translate(0);
+  }
+  50%{
+    transform: translate(-90px, -70px);
+  }
+  70%{
+    transform: translate(-90px, -70px);
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+
+.pick-card{
+  @apply w-[141px] h-[166px] max-md:w-[67px] max-md:h-[79px];
+  perspective: 1000px;
+}
+
+.card {
+  @apply w-full h-full border-none relative;
+  transform-style: preserve-3d;
+  animation: flip 8s infinite ease-in-out; /* 무한 반복 애니메이션 */
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden; /* 뒷면 숨기기 */
+}
+
+.card-back {
+  transform: rotateY(180deg); 
+}
+
+@keyframes flip {
+  0%{
+    transform: rotateY(0deg);
+  }
+  30% {
+    transform: rotateY(0deg);
+  }
+  35% {
+    transform: rotateY(180deg);
+  }
+  80% {
+    transform: rotateY(180deg);
+  }
+  85% {
+    transform: rotateY(360deg);
+  }
+  100%{
+    transform: rotateY(360deg);
+  }
+}
+/* section_new01 */
+
 /* 애니메이션 */
 
 @media (max-width: 1400px) and (min-width: 1100px){
