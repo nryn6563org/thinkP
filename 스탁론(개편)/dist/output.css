@@ -3539,6 +3539,10 @@ a {
   font-weight: 400;
 }
 
+.layer_popup.counsel.mobile .counsel_input-group .counsel_input .input_num-group select {
+  width: 75px !important;
+}
+
 .layer_popup.counsel .counsel_check {
   margin-top: 15px;
   display: flex;
