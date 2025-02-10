@@ -2473,10 +2473,10 @@ video {
   .sec07-con {
     display: none;
   }
-}
 
-.sec07-con_box {
-  text-align: left;
+  .sec07-con_box {
+    max-width: 137px;
+  }
 }
 
 .lgbriSwier {
@@ -2517,7 +2517,7 @@ video {
 
 .bri-con {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 28px;
 }

@@ -635,7 +635,7 @@
 }
 
 .sec07-con_box{
-  @apply text-left;
+  @apply max-md:max-w-[137px];
 }
 
 .lgbriSwier{
@@ -659,7 +659,7 @@
 }
 
 .bri-con{
-  @apply flex justify-center gap-[28px] items-center;
+  @apply flex justify-center gap-[28px] items-start;
 }
 
 .briSwiper .swiper-pagination{
