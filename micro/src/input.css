@@ -667,7 +667,7 @@
 }
 
 .bri-tag{
-  @apply w-full mt-[30px] mb-[13px] max-md:mt-[10px] max-md:mb-[3px];
+  @apply w-full mt-[30px] mb-[13px] flex justify-center items-center max-md:mt-[10px] max-md:mb-[3px];
 }
 
 .bri-tag span{
@@ -679,7 +679,7 @@
 }
 
 .bri-txt span{
-  @apply block text-black text-[20px] font-normal max-md:text-[12px];
+  @apply block text-black text-[20px] font-normal text-center max-md:text-[12px];
 }
 /* section7 */
 
