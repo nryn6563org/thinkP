@@ -720,6 +720,11 @@ a {
   display: none;
 }
 
+.webHeader .logo img {
+  height: 32px;
+  width: auto !important;
+}
+
 .webHeader .tab {
   display: flex;
   align-items: center;
@@ -756,6 +761,11 @@ a {
   justify-content: center;
   padding-top: 19.5px;
   padding-bottom: 19.5px;
+}
+
+.mobileHeader .logo img {
+  height: 16px !important;
+  width: auto !important;
 }
 
 .mobileHeader .tab {

@@ -43,6 +43,9 @@ a { @apply cursor-pointer; }
 .header .logo a span{
   @apply hidden;
 }
+.webHeader .logo img{
+  @apply !w-auto h-[32px];
+}
 .webHeader .tab{
   @apply flex justify-end items-center gap-[8px];
 }
@@ -57,6 +60,9 @@ a { @apply cursor-pointer; }
 }
 .mobileHeader .logo{
   @apply w-full flex justify-center items-center py-[19.5px];
+}
+.mobileHeader .logo img{
+  @apply !w-auto !h-[16px];
 }
 .mobileHeader .tab{
   @apply w-full flex justify-center items-center;
