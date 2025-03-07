@@ -211,7 +211,7 @@ em{
 }
 
 .pt55{
-  @apply w-full pt-[55px];
+  @apply w-full pt-[58px];
 }
 
 .pt35{
@@ -220,6 +220,10 @@ em{
 
 .mt-18{
   @apply mt-[18px];
+}
+
+.pt-27{
+  @apply pt-[27px];
 }
 
 .flexsb{
@@ -307,15 +311,19 @@ em{
   @apply w-full text-center text-black text-[20px] font-normal mb-[8px]; 
 }
 
-.logOut{
+.logOut, .main-logIn{
   @apply w-full flex justify-center mb-[24px];
 }
 
-.logOut button{
+.logOut button, .main-logIn button{
   @apply flex justify-center items-center gap-[2px];
 }
 
-.logOut button span{
+.main-logIn button{
+  @apply gap-[5px];
+}
+
+.logOut button span, .main-logIn button span{
   @apply block text-[#999] text-[14px] font-normal leading-[17px];
 }
 
@@ -562,6 +570,10 @@ em{
 .alarmModal .modal-body .check button{
   @apply w-[190px] h-[40px] rounded-[18px] bg-mainColor text-white text-[14px] font-normal;
 }
+
+.alarmModal .modal-body .period{
+  @apply w-full py-[10px] rounded-[10px] bg-[#F3F3F4] text-center text-[#000] text-[16px] font-normal leading-[20px];
+}
 /* ///////////// */
 
 /* 1:1문의 */
@@ -786,7 +798,7 @@ em{
   @apply block text-mainColor text-[20px] font-bold leading-[20px];
 }
 
-.mainHeader .logOut{
+.mainHeader .logOut, .mainHeader .main-logIn{
   @apply absolute top-[24px] right-[20px] w-[auto];
 }
 
@@ -1916,15 +1928,15 @@ input[type=radio].checkPay:checked + label {
 }
 
 .bottomMenu{
-  @apply w-full h-[55px] max-w-[720px] bg-white z-[999] fixed bottom-0 shadow-[0px_-5px_6px_0px_rgba(0,0,0,0.05)];
+  @apply w-full h-[58px] max-w-[720px] bg-white z-[999] fixed bottom-0 shadow-[0px_-5px_6px_0px_rgba(0,0,0,0.05)];
 }
 
 .menuList{
-  @apply w-full h-[55px] flex justify-between items-center;
+  @apply w-full h-[58px] flex justify-between items-center;
 }
 
 .menulistBox{
-  @apply w-[calc(100%/4)] flex flex-col gap-[5px] justify-center items-center;
+  @apply w-[calc(100%/5)] flex flex-col gap-[5px] justify-center items-center;
 }
 
 .menulistBox span{
@@ -1967,6 +1979,14 @@ input[type=radio].checkPay:checked + label {
   background-position: center;
 }
 
+.menulistBox .menuIcon-chat{
+  width: 20px;
+  height: 20px;
+  background: url(../img/menuIcon-chat.png);
+  background-size: 20px 20px;
+  background-position: center;
+}
+
 .menulistBox.active .menuIcon01{
   width: 20px;
   height: 20px;
@@ -1995,6 +2015,14 @@ input[type=radio].checkPay:checked + label {
   width: 20px;
   height: 20px;
   background: url(../img/menuIcon04_on.png);
+  background-size: 20px 20px;
+  background-position: center;
+}
+
+.menulistBox.active .menuIcon-chat{
+  width: 20px;
+  height: 20px;
+  background: url(../img/menuIcon-chat_on.png);
   background-size: 20px 20px;
   background-position: center;
 }
