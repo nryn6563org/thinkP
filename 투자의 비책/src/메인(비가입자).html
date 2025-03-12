@@ -202,7 +202,7 @@
                 <button class="itemlistBox noItem">
                   <span>오늘의 추천종목이 없습니다.</span>
                 </button>
-                <button class="itemlistBox" data-bs-toggle="modal" data-bs-target="#joinModal">
+                <button class="itemlistBox" data-bs-toggle="modal" data-bs-target="#logOutModal">
                   <div class="name">
                     <div class="alName">
                       <span>공</span>
@@ -226,7 +226,7 @@
                     </div>
                   </div>
                 </button>
-                <button class="itemlistBox">
+                <button class="itemlistBox" data-bs-toggle="modal" data-bs-target="#logInModal">
                   <div class="name">
                     <div class="alName">
                       <span>공</span>
@@ -1268,6 +1268,56 @@
           </div>
         </div>
         <!-- 회원가입 팝업창 -->
+
+        <!-- 로그인 전 팝업 -->
+        <div class="modal alarmModal fade" id="logOutModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button data-bs-dismiss="modal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
+                    <path d="M3.32458 5L10.3246 12M17.3246 19L10.3246 12M10.3246 12L17.3246 5M10.3246 12L3.32458 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="title">
+                  투자의비책 로그인 해주세요.
+                </div>
+                <div class="txt">
+                  아직 회원이 아니신가요?<br>
+                  신규 무료회원가입을 하시면 투자의비책을 미리 체험 해보실 수 있습니다.
+                </div>
+                <div class="check"><button type="button" data-bs-dismiss="modal">무료회원가입하기</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 로그인 전 팝업 -->
+
+        <!-- 로그인 후 팝업 -->
+        <div class="modal alarmModal fade" id="logInModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button data-bs-dismiss="modal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
+                    <path d="M3.32458 5L10.3246 12M17.3246 19L10.3246 12M10.3246 12L17.3246 5M10.3246 12L3.32458 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="txt">
+                  투자의비책 프리미엄에 가입 후<br>
+                  AI 종목추천, 매도신호 서비스를 <br>
+                  이용해 보세요.
+                </div>
+                <div class="check"><button type="button" data-bs-dismiss="modal">프리미엄 가입하기</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 로그인 후 팝업 -->
 
         <div class="fixBanner">
           <button><img src="../img/checkBanner_fix.png" alt=""></button>
