@@ -58,7 +58,123 @@
             <div class="introImg">
               <img src="../img/mainLoading.png" alt="">
             </div>
+            <div class="introSearch">
+              <input id="introSearch" type="text" placeholder="종목검색(종목코드)">
+              <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M10.708 4C14.4128 4 17.4168 7.00323 17.417 10.708C17.417 12.2905 16.8668 13.7434 15.9502 14.8906L18.8994 17.8389L18.9502 17.8965C19.1905 18.1911 19.174 18.6258 18.8994 18.9004C18.6248 19.1746 18.1899 19.1913 17.8955 18.9512L17.8379 18.9004L14.8896 15.9512C13.7426 16.8673 12.29 17.417 10.708 17.417C7.00326 17.4167 4 14.4128 4 10.708C4.00023 7.00339 7.0034 4.00025 10.708 4ZM10.708 5.5C7.83182 5.50025 5.50023 7.83182 5.5 10.708C5.5 13.5844 7.83167 15.9167 10.708 15.917C13.5846 15.917 15.917 13.5845 15.917 10.708C15.9168 7.83167 13.5844 5.5 10.708 5.5Z" fill="#141414"/>
+                </svg>
+              </button>
+            </div>
+
+            <!-- 종목검색 팝업창 -->
+            <div class="search-screen">
+              <div class="title">
+                <strong>종목검색</strong>
+                <button class="close">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path d="M5.5 5L12.5 12M19.5 19L12.5 12M12.5 12L19.5 5M12.5 12L5.5 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="search-input">
+                <input id="searchInput" type="text" placeholder="종목검색(종목코드)">
+                <button class="search-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M10.708 4C14.4128 4 17.4168 7.00323 17.417 10.708C17.417 12.2905 16.8668 13.7434 15.9502 14.8906L18.8994 17.8389L18.9502 17.8965C19.1905 18.1911 19.174 18.6258 18.8994 18.9004C18.6248 19.1746 18.1899 19.1913 17.8955 18.9512L17.8379 18.9004L14.8896 15.9512C13.7426 16.8673 12.29 17.417 10.708 17.417C7.00326 17.4167 4 14.4128 4 10.708C4.00023 7.00339 7.0034 4.00025 10.708 4ZM10.708 5.5C7.83182 5.50025 5.50023 7.83182 5.5 10.708C5.5 13.5844 7.83167 15.9167 10.708 15.917C13.5846 15.917 15.917 13.5845 15.917 10.708C15.9168 7.83167 13.5844 5.5 10.708 5.5Z" fill="#141414"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="search-item">
+                <div class="box">
+                  <div class="title">나의 최근 검색 종목</div>
+                  <div class="item-group">
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                  </div>
+                  <!-- 검색된 종목 없을 떄 -->
+                  <!-- <div class="noItem">
+                    검색된 종목이 없습니다.
+                  </div> -->
+                </div>
+                <div class="box">
+                  <div class="title">인기 검색 종목</div>
+                  <div class="item-group">
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                    <button class="text-truncate">브랜드엑스코퍼레이션</button>
+                  </div>
+                  <!-- 검색된 종목 없을 떄 -->
+                  <!-- <div class="noItem">
+                    검색된 종목이 없습니다.
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const introSearchInput = document.getElementById("introSearch");
+                const searchScreen = document.querySelector(".search-screen");
+                const searchPopupInput = document.getElementById("searchInput");
+            
+                introSearchInput.addEventListener("click", function () {
+                  // 팝업 보이기
+                  searchScreen.style.display = "block";
+                  document.body.style.overflow = "hidden";
+            
+                  // introSearch 포커스 제거
+                  introSearchInput.blur();
+            
+                  setTimeout(() => {
+                    searchPopupInput.focus();
+                  }, 0);
+                });
+            
+                document.querySelector(".search-screen .close").addEventListener("click", function () {
+                  searchScreen.style.display = "none";
+                  document.body.style.overflow = "";
+                });
+              });
+            </script>            
+
           </div>
+          <!-- mainIntro -->
 
           <div class="mainCon">
             
@@ -435,6 +551,263 @@
               </div>
             </div>
             <!-- todayItem -->
+
+            <!-- 오늘의 AI이슈 -->
+            <div class="aiIssue">
+              <div class="title">오늘의 AI이슈</div>
+              <button class="date">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+                    <path d="M1 3.68321C1.12247 3.68323 1.24067 3.73194 1.33219 3.8201C1.4237 3.90826 1.48217 4.02974 1.4965 4.1615L1.5 4.22488V4.76655C1.49997 5.60742 1.80078 6.41557 2.33923 7.02122C2.87768 7.62686 3.61186 7.98285 4.3875 8.01438L4.5 8.01655H6.293L5.8965 7.587C5.80683 7.48953 5.75476 7.35873 5.75089 7.22117C5.74701 7.08362 5.79161 6.94962 5.87562 6.8464C5.95964 6.74317 6.07678 6.67846 6.20324 6.66541C6.3297 6.65236 6.456 6.69195 6.5565 6.77613L6.6035 6.82109L7.8535 8.17525C7.92865 8.25673 7.97786 8.36204 7.994 8.47588L8 8.56363C7.99893 8.68269 7.96168 8.79806 7.894 8.89188L7.8515 8.94334L6.6035 10.2953C6.51352 10.3925 6.39278 10.4489 6.26581 10.4531C6.13883 10.4573 6.01514 10.409 5.91986 10.318C5.82458 10.2269 5.76485 10.1 5.7528 9.96304C5.74075 9.82604 5.77729 9.68921 5.855 9.58034L5.8965 9.52942L6.293 9.09988H4.5C3.46079 9.09987 2.46237 8.6617 1.71615 7.87817C0.969923 7.09463 0.534475 6.02723 0.502 4.90196L0.5 4.76655V4.22488C0.5 4.08122 0.552678 3.94344 0.646447 3.84186C0.740215 3.74028 0.867392 3.68321 1 3.68321ZM3.3965 0.321087C3.48648 0.22394 3.60722 0.167539 3.73419 0.163339C3.86117 0.159138 3.98486 0.207454 4.08014 0.298472C4.17542 0.38949 4.23515 0.516386 4.2472 0.653386C4.25925 0.790386 4.22271 0.927217 4.145 1.03609L4.1035 1.087L3.707 1.51655H5.5C6.53921 1.51656 7.53763 1.95472 8.28385 2.73826C9.03008 3.5218 9.46552 4.5892 9.498 5.71446L9.5 5.84988V6.39155C9.49986 6.52961 9.45106 6.6624 9.36358 6.76279C9.27609 6.86318 9.15652 6.92359 9.0293 6.93168C8.90208 6.93977 8.77681 6.89493 8.67908 6.80632C8.58136 6.71771 8.51855 6.59201 8.5035 6.45492L8.5 6.39155V5.84988C8.50003 5.00901 8.19922 4.20085 7.66077 3.59521C7.12232 2.98956 6.38814 2.63358 5.6125 2.60205L5.5 2.59988H3.707L4.1035 3.02942C4.19317 3.1269 4.24524 3.2577 4.24911 3.39525C4.25299 3.53281 4.20839 3.66681 4.12438 3.77003C4.04036 3.87325 3.92322 3.93796 3.79676 3.95101C3.6703 3.96406 3.544 3.92448 3.4435 3.8403L3.3965 3.79534L2.1465 2.44117C2.06041 2.3479 2.0087 2.2238 2.00106 2.09216C1.99341 1.96053 2.03037 1.83039 2.105 1.72617L2.1465 1.67525L3.3965 0.321087Z" fill="#999999"/>
+                  </svg>
+                </span>
+                <em>15/30 15:30</em>
+              </button>
+              <div class="bubble-chart">
+                <img data-bs-toggle="modal" data-bs-target="#bubbleModal" src="../img/bubble-chart.png" alt="버블차트">
+              </div>
+
+              <!-- 버블차트 모달 창 -->
+              <div class="modal bubbleModal fade" id="bubbleModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span>가스</span>
+                      <button data-bs-dismiss="modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M5 5L12 12M19 19L12 12M12 12L19 5M12 12L5 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="state">
+                        <!-- 상승중일 때 'down' 삭제 'up' 추가 -->
+                        <span class="down">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                            <g clip-path="url(#clip0_253_1337)">
+                              <path d="M4 7.75L7.75 4L5.5 4L5.5 9.17939e-07L2.5 3.93402e-07L2.5 4L0.249999 4L4 7.75Z" fill="white"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_253_1337">
+                                <rect width="8" height="8" fill="white"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <em>하락중</em>
+                        </span>
+                      </div>
+                      <div class="title text-truncate2">스트레이 키즈, 미국 빌보드 앨범 차트 6회 연속 1위</div>
+                      <div class="issue-chart">
+                        <div class="modal-issue-tab">
+                          <button class="active">이슈 검색추이</button>
+                          <button>이슈 수급동향</button>
+                        </div>
+                        <!-- 이슈 검색추이 -->
+                        <div class="modal-issue-tabContent">
+                          <div class="chart-img">
+                            <img src="../img/sigChart.png" alt="차트 이미지">
+                          </div>
+                          <div class="chart_ex">
+                            <div class="cht01">
+                              <span>HBM</span>
+                            </div> 
+                            <div class="cht02">
+                              <span>위드텍</span>
+                            </div>
+                            <div class="cht03">
+                              <span>제우스</span>
+                            </div>
+                            <div class="cht04">
+                              <span>디아이</span>
+                            </div>
+                            <div class="cht05">
+                              <span>디아이티</span>
+                            </div>
+                            <div class="cht06">
+                              <span>엠케이전자</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 이슈 수급동향 -->
+                        <!-- <div class="modal-issue-tabContent">
+                          <div class="chart-img">
+                            <img src="../img/sigChart.png" alt="차트 이미지">
+                          </div>
+                          <div class="chart_ex2">
+                            <div class="cht01">
+                              <span>기관</span>
+                            </div> 
+                            <div class="cht02">
+                              <span>외국인</span>
+                            </div> 
+                            <div class="cht03">
+                              <span>이슈 강도</span>
+                            </div>
+                          </div>
+                        </div> -->
+
+                        <div class="issue-list">
+                          <button class="list">
+                            <div class="name text-truncate">디어유</div>
+                            <div class="numPer">
+                              <div class="num">12,436,879</div>
+                              <div class="per up">+11.22%</div>
+                            </div>
+                          </button>
+                          <button class="list">
+                            <div class="name text-truncate">디어유</div>
+                            <div class="numPer">
+                              <div class="num">12,436,879</div>
+                              <div class="per up">+11.22%</div>
+                            </div>
+                          </button>
+                          <button class="list">
+                            <div class="name text-truncate">디어유</div>
+                            <div class="numPer">
+                              <div class="num">12,436,879</div>
+                              <div class="per up">+11.22%</div>
+                            </div>
+                          </button>
+                          <button class="list">
+                            <div class="name text-truncate">디어유</div>
+                            <div class="numPer">
+                              <div class="num">12,436,879</div>
+                              <div class="per up">+11.22%</div>
+                            </div>
+                          </button>
+                          <button class="list">
+                            <div class="name text-truncate">디어유</div>
+                            <div class="numPer">
+                              <div class="num">12,436,879</div>
+                              <div class="per down">-11.22%</div>
+                            </div>
+                          </button>
+                        </div>
+
+                        <div class="detail">
+                          <button>자세히보기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 버블차트 모달 창 -->
+            </div>
+            <!-- aiIssue -->
+
+            <div class="bgg15"></div>
+
+            <!-- 주요 이슈 헤드라인 -->
+            <div class="headLine">
+              <div class="title">
+                <strong>주요 이슈 헤드라인</strong>
+                <button>이슈모아보기</button>
+              </div>
+              <div class="swiper headLineSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="top">
+                      <div class="name text-truncate">양자기술</div>
+                      <div class="per up">+221.23%</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="txt text-truncate2">
+                        현대차, 자율주행 서비스 집중 운영…”노하우 노하우 노하우
+                      </div>
+                      <div class="keyword">
+                        <span>시큐센</span>
+                        <span>바이오로그디바이스</span>
+                        <span>한국첨단소재</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="top">
+                      <div class="name text-truncate">양자기술</div>
+                      <div class="per up">+221.23%</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="txt text-truncate2">
+                        현대차, 자율주행 서비스 집중 운영…”노하우 노하우 노하우
+                      </div>
+                      <div class="keyword">
+                        <span>시큐센</span>
+                        <span>바이오로그디바이스</span>
+                        <span>한국첨단소재</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="top">
+                      <div class="name text-truncate">양자기술</div>
+                      <div class="per up">+221.23%</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="txt text-truncate2">
+                        현대차, 자율주행 서비스 집중 운영…”노하우 노하우 노하우
+                      </div>
+                      <div class="keyword">
+                        <span>시큐센</span>
+                        <span>바이오로그디바이스</span>
+                        <span>한국첨단소재</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="top">
+                      <div class="name text-truncate">양자기술</div>
+                      <div class="per up">+221.23%</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="txt text-truncate2">
+                        현대차, 자율주행 서비스 집중 운영…”노하우 노하우 노하우
+                      </div>
+                      <div class="keyword">
+                        <span>시큐센</span>
+                        <span>바이오로그디바이스</span>
+                        <span>한국첨단소재</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="top">
+                      <div class="name text-truncate">양자기술</div>
+                      <div class="per up">+221.23%</div>
+                    </div>
+                    <div class="bottom">
+                      <div class="txt text-truncate2">
+                        현대차, 자율주행 서비스 집중 운영…”노하우 노하우 노하우
+                      </div>
+                      <div class="keyword">
+                        <span>시큐센</span>
+                        <span>바이오로그디바이스</span>
+                        <span>한국첨단소재</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <script>
+                var swiper = new Swiper('.headLineSwiper', {
+                  spaceBetween: 20,
+                  pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                  },
+                  autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                  },
+                  loop: true,
+                });
+              </script>
+            </div>
+            <!-- headLine -->
+
+            <div class="bgg15"></div>
 
             <div class="bestItem">
 
@@ -1196,6 +1569,55 @@
             </div>
             <!-- beAlItem -->
 
+            <div class="bgg15"></div>
+
+            <!-- AI 주요속보 -->
+            <div class="aiNews">
+              
+              <div class="title">
+                <strong>AI 주요속보</strong>
+              </div>
+
+              <div class="newsList">
+                <button class="list">
+                  <div class="listTitle text-truncate2">
+                    <em>NEW</em>[실시간 인기키워드]이재명, 한동훈, 우원식, 양자컴퓨터 관련 종목 투자자 관심 ↑ 
+                  </div>
+                  <div class="listDate">12/23 13:43</div>
+                </button>
+                <button class="list">
+                  <div class="listTitle text-truncate2">
+                    <em>NEW</em>[실시간 인기키워드]이재명, 한동훈, 우원식, 양자컴퓨터 관련 종목 투자자 관심 ↑ 
+                  </div>
+                  <div class="listDate">12/23 13:43</div>
+                </button>
+                <button class="list">
+                  <div class="listTitle text-truncate2">
+                    [실시간 인기키워드]이재명, 한동훈, 우원식, 양자컴퓨터 관련 종목 투자자 관심 ↑
+                  </div>
+                  <div class="listDate">12/23 13:43</div>
+                </button>
+                <button class="list">
+                  <div class="listTitle text-truncate2">
+                    [실시간 인기키워드]이재명, 한동훈, 우원식, 양자컴퓨터 관련 종목 투자자 관심 ↑
+                  </div>
+                  <div class="listDate">12/23 13:43</div>
+                </button>
+                <button class="list">
+                  <div class="listTitle text-truncate2">
+                    [실시간 인기키워드]이재명, 한동훈, 우원식, 양자컴퓨터 관련 종목 투자자 관심 ↑
+                  </div>
+                  <div class="listDate">12/23 13:43</div>
+                </button>
+              </div>
+
+              <div class="newsMore">
+                <button>더보기</button>
+              </div>
+
+            </div>
+            <!-- aiNews -->
+
             
             <div class="contentBanner">
               <img src="../img/banner.png" alt="배너">
@@ -1211,36 +1633,24 @@
 
         <div class="bottomMenu">
           <div class="menuList">
-            <button class="menulistBox">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M1 9.5L8.5 2L16 9.5M2.875 8.09375V16.0625C2.875 16.625 3.25 17 3.8125 17H6.625V14.1875C6.625 13.625 7 13.25 7.5625 13.25H9.4375C10 13.25 10.375 13.625 10.375 14.1875V17H13.1875C13.75 17 14.125 16.625 14.125 16.0625V8.09375" stroke="#141414" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
+            <button class="menulistBox active">
+              <div class="menuIcon01"></div>
               <span>홈</span>
             </button>
             <button class="menulistBox">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.60229 1C9.96995 1 11.3039 1.4248 12.4196 2.21568C13.5354 3.00657 14.378 4.1245 14.831 5.41498C15.284 6.70546 15.3249 8.10476 14.9482 9.41952C14.5715 10.7343 13.7957 11.8996 12.7281 12.7544V16.5583C12.7281 16.705 12.6925 16.8494 12.6245 16.9793C12.5565 17.1093 12.458 17.2207 12.3375 17.3043C12.217 17.3878 12.078 17.4409 11.9325 17.459C11.7869 17.4771 11.6392 17.4597 11.5019 17.4082L8.60229 16.3223L5.70269 17.4099C5.56531 17.4614 5.41749 17.4788 5.27191 17.4606C5.12632 17.4425 4.9873 17.3893 4.86676 17.3057C4.74622 17.2221 4.64775 17.1105 4.57978 16.9804C4.51182 16.8504 4.47638 16.7059 4.4765 16.5592V12.7552C3.40855 11.9005 2.63247 10.7351 2.25555 9.42023C1.87864 8.10532 1.91951 6.70579 2.3725 5.41511C2.8255 4.12444 3.66825 3.00636 4.78426 2.21543C5.90028 1.4245 7.23443 0.999786 8.60229 1ZM11.0778 13.7231C10.2912 14.0409 9.45063 14.2037 8.60229 14.2025C7.75395 14.2037 6.91338 14.0409 6.12682 13.7231V15.4873L8.02303 14.776C8.39651 14.636 8.80807 14.636 9.18155 14.776L11.0778 15.4873V13.7231ZM8.60229 2.65031C7.28922 2.65031 6.02993 3.17193 5.10145 4.10041C4.17296 5.02889 3.65135 6.28819 3.65135 7.60126C3.65135 8.91433 4.17296 10.1736 5.10145 11.1021C6.02993 12.0306 7.28922 12.5522 8.60229 12.5522C9.91536 12.5522 11.1747 12.0306 12.1031 11.1021C13.0316 10.1736 13.5532 8.91433 13.5532 7.60126C13.5532 6.28819 13.0316 5.02889 12.1031 4.10041C11.1747 3.17193 9.91536 2.65031 8.60229 2.65031ZM8.60229 4.30063C9.47767 4.30063 10.3172 4.64837 10.9362 5.26736C11.5552 5.88635 11.9029 6.72588 11.9029 7.60126C11.9029 8.47664 11.5552 9.31616 10.9362 9.93515C10.3172 10.5541 9.47767 10.9019 8.60229 10.9019C7.72691 10.9019 6.88738 10.5541 6.26839 9.93515C5.64941 9.31616 5.30166 8.47664 5.30166 7.60126C5.30166 6.72588 5.64941 5.88635 6.26839 5.26736C6.88738 4.64837 7.72691 4.30063 8.60229 4.30063ZM8.60229 5.95094C8.1646 5.95094 7.74484 6.12481 7.43534 6.43431C7.12585 6.7438 6.95198 7.16357 6.95198 7.60126C6.95198 8.03895 7.12585 8.45871 7.43534 8.7682C7.74484 9.0777 8.1646 9.25157 8.60229 9.25157C9.03998 9.25157 9.45974 9.0777 9.76924 8.7682C10.0787 8.45871 10.2526 8.03895 10.2526 7.60126C10.2526 7.16357 10.0787 6.7438 9.76924 6.43431C9.45974 6.12481 9.03998 5.95094 8.60229 5.95094Z" fill="#141414"/>
-                </svg>
-              </span>
+              <div class="menuIcon02"></div>
               <span>종목추천</span>
             </button>
             <button class="menulistBox">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-                  <path d="M11.8266 2.6C11.7579 2.1437 11.5405 1.7243 11.2089 1.41401C10.8557 1.08345 10.3975 0.900015 9.92188 0.9H7.07812C6.6025 0.900015 6.14434 1.08345 5.79108 1.41401C5.45949 1.7243 5.24214 2.14369 5.17344 2.6H3.82812C3.31526 2.6 2.82437 2.81318 2.46316 3.19106C2.1021 3.56879 1.9 4.08017 1.9 4.6125V16.0875C1.9 16.6198 2.1021 17.1312 2.46316 17.5089C2.82437 17.8868 3.31526 18.1 3.82812 18.1H13.1719C13.4257 18.1 13.677 18.0477 13.9112 17.9462C14.1455 17.8447 14.358 17.696 14.5368 17.5089C14.7157 17.3219 14.8573 17.1 14.9538 16.8562C15.0504 16.6124 15.1 16.3512 15.1 16.0875V4.6125C15.1 4.34883 15.0504 4.08764 14.9538 3.8438C14.8573 3.59997 14.7157 3.37813 14.5368 3.19106C14.358 3.00398 14.1455 2.85533 13.9112 2.75382C13.677 2.65231 13.4257 2.6 13.1719 2.6H11.8266ZM7.07812 4.925H9.92188C10.5732 4.925 11.1472 4.58805 11.4959 4.075H13.1719C13.3055 4.075 13.4346 4.13048 13.5305 4.23082C13.6265 4.33131 13.6812 4.46853 13.6812 4.6125V16.0875C13.6812 16.2315 13.6265 16.3687 13.5305 16.4692C13.4346 16.5695 13.3055 16.625 13.1719 16.625H3.82812C3.69452 16.625 3.56543 16.5695 3.46952 16.4692C3.37346 16.3687 3.31875 16.2315 3.31875 16.0875V4.6125C3.31875 4.46853 3.37346 4.33131 3.46952 4.23082C3.56543 4.13048 3.69452 4.075 3.82812 4.075H5.50412C5.85277 4.58805 6.42683 4.925 7.07812 4.925ZM7.07812 2.375H9.92188C10.0555 2.375 10.1846 2.43048 10.2805 2.53082C10.3765 2.63131 10.4312 2.76853 10.4312 2.9125C10.4312 3.05647 10.3765 3.19369 10.2805 3.29418C10.1846 3.39452 10.0555 3.45 9.92188 3.45H7.07812C6.94452 3.45 6.81543 3.39452 6.71952 3.29418C6.62346 3.19369 6.56875 3.05647 6.56875 2.9125C6.56875 2.76853 6.62346 2.63131 6.71952 2.53082C6.81543 2.43048 6.94452 2.375 7.07812 2.375ZM12.2563 11.4125C12.2563 11.2183 12.1826 11.0312 12.0501 10.8926C11.9174 10.7538 11.7365 10.675 11.5469 10.675C11.3572 10.675 11.1763 10.7538 11.0437 10.8926C10.9112 11.0312 10.8375 11.2183 10.8375 11.4125V13.9625C10.8375 14.1567 10.9112 14.3438 11.0437 14.4824C11.1763 14.6212 11.3572 14.7 11.5469 14.7C11.7365 14.7 11.9174 14.6212 12.0501 14.4824C12.1826 14.3438 12.2563 14.1567 12.2563 13.9625V11.4125ZM9.00318 8.76762C8.87053 8.62885 8.68963 8.55 8.5 8.55C8.31037 8.55 8.12947 8.62885 7.99682 8.76762C7.86432 8.90624 7.79063 9.09332 7.79063 9.2875V13.9625C7.79063 14.1567 7.86432 14.3438 7.99682 14.4824C8.12947 14.6212 8.31037 14.7 8.5 14.7C8.68963 14.7 8.87053 14.6212 9.00318 14.4824C9.13568 14.3438 9.20937 14.1567 9.20937 13.9625V9.2875C9.20937 9.09332 9.13568 8.90624 9.00318 8.76762ZM6.1625 7.5875C6.1625 7.39332 6.08881 7.20624 5.95631 7.06762C5.82366 6.92885 5.64276 6.85 5.45312 6.85C5.26349 6.85 5.08259 6.92885 4.94994 7.06762C4.81744 7.20624 4.74375 7.39332 4.74375 7.5875V13.9625C4.74375 14.1567 4.81744 14.3438 4.94994 14.4824C5.08259 14.6212 5.26349 14.7 5.45312 14.7C5.64276 14.7 5.82366 14.6212 5.95631 14.4824C6.08881 14.3438 6.1625 14.1567 6.1625 13.9625V7.5875Z" fill="#141414" stroke="#141414" stroke-width="0.2"/>
-                </svg>
-              </span>
+              <div class="menuIcon-chat"></div>
+              <span>채팅</span>
+            </button>
+            <button class="menulistBox">
+              <div class="menuIcon03"></div>
               <span>서비스소개</span>
             </button>
             <button class="menulistBox">
-              <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M12.5714 2H5.42857C5.04969 2 4.68633 2.17919 4.41842 2.49815C4.15051 2.81711 4 3.24971 4 3.70079V16.5741C4.00002 16.6485 4.01646 16.7217 4.04769 16.7862C4.07891 16.8507 4.12381 16.9044 4.17791 16.9417C4.232 16.9791 4.29339 16.9989 4.35594 16.9991C4.41848 16.9994 4.47998 16.9801 4.53429 16.9432L8.29143 14.3877C8.50723 14.241 8.75147 14.1638 9 14.1638C9.24853 14.1638 9.49276 14.241 9.70857 14.3877L13.4657 16.944C13.5201 16.981 13.5816 17.0003 13.6442 17C13.7068 16.9997 13.7683 16.9798 13.8224 16.9424C13.8765 16.9049 13.9214 16.8511 13.9526 16.7865C13.9838 16.7219 14.0001 16.6486 14 16.5741V3.70079C14 3.24971 13.8495 2.81711 13.5816 2.49815C13.3137 2.17919 12.9503 2 12.5714 2Z" stroke="#141414" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
+              <div class="menuIcon04"></div>
               <span>구독하기</span>
             </button>
           </div>

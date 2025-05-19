@@ -32,6 +32,10 @@ em{
   @apply w-[72px] h-[28px] text-center rounded-[8px] border border-black bg-white text-black text-[14px] font-normal right-[20px];
 }
 
+.header button.search{
+  @apply right-[12px];
+}
+
 .header .eventName{
   @apply w-full h-[50px] flex justify-center items-center;
 }
@@ -57,7 +61,7 @@ em{
 }
 
 .modal-dialog{
-  @apply max-w-[720px] m-[0px_auto] p-[0px_20px];
+  @apply max-w-[720px] m-[0px_auto] p-[20px];
 }
 
 .modal-content{
@@ -196,6 +200,26 @@ em{
 
 .type03{
   @apply !bg-[#929DFB];
+}
+
+.state01{
+  @apply text-[#11D73F];
+}
+
+.state02{
+  @apply text-[#36B49A];
+}
+
+.state03{
+  @apply text-[#5886FE];
+}
+
+.state04{
+  @apply text-[#B059BB];
+}
+
+.state05{
+  @apply text-[#FE2676];
 }
 
 .mb-78{
@@ -779,7 +803,7 @@ em{
 
 .gradientBg{
   background: linear-gradient(129deg, #EBF0FF 56.76%, #FFE4E4 100%);
-  @apply w-full h-[260px] absolute top-0 z-[-99];
+  @apply w-full h-[280px] absolute top-0 z-[-99];
 }
 
 .mainHeader{
@@ -807,7 +831,7 @@ em{
 }
 
 .mainIntro{
-  @apply relative w-full p-[50px_24px_80px] text-black text-[20px] font-[300] leading-[25px];
+  @apply relative w-full p-[50px_24px_15px] text-black text-[20px] font-[300] leading-[25px];
 }
 
 .mainIntro b{
@@ -819,11 +843,87 @@ em{
 }
 
 .introImg{
-  @apply absolute right-[10px] bottom-[-13px];
+  @apply absolute right-[34px] bottom-[-28px];
 }
 
 .introImg img{
   @apply w-[128px];
+}
+
+.introSearch{
+  @apply relative w-full h-[50px] mt-[32px] bg-[#fff] z-[99] rounded-[50px] gradient-border01;
+}
+
+.gradient-border01{
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(64.54deg, #FF537E 32.29%, #325BFF 83.48%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.introSearch input{
+  @apply w-full h-[46px] rounded-[50px] p-[12px_16px_13px] pr-[50px] text-[#141414] text-[14px] leading-[18px] font-normal placeholder:text-[#999] placeholder:text-[14px] placeholder:font-light placeholder:leading-[18px]
+}
+
+.introSearch button{
+  @apply absolute right-[13px] top-[12px];
+}
+
+.search-screen{
+  @apply fixed top-0 left-0 right-0 bottom-0 bg-[#fff] z-[9999] p-[30px_20px] max-w-[720px] m-[0_auto];
+  display: none;
+}
+
+.search-screen .title{
+  @apply w-full flex justify-between items-center mb-[20px];
+}
+
+.search-screen .title strong{
+  @apply font-bold text-[18px] text-[#000] leading-[21px];
+}
+
+.search-input{
+  @apply relative w-full h-[40px] bg-[#fff] z-[99] rounded-[50px] gradient-border02 mb-[40px];
+}
+
+.gradient-border02{
+  border: 1px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(64.54deg, #FF537E 32.29%, #325BFF 83.48%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.search-input input{
+  @apply w-full h-[38px] rounded-[50px] p-[12px_16px_13px] pr-[44px] text-[#141414] text-[14px] leading-[18px] font-normal placeholder:text-[#999] placeholder:text-[14px] placeholder:font-light placeholder:leading-[18px]
+}
+
+.search-input button{
+  @apply absolute right-[13px] top-[7px];
+}
+
+.search-item{
+  @apply w-full h-[calc(100dvh-182px)] flex flex-col justify-start items-start gap-[40px] overflow-y-auto;
+}
+
+.search-item .box{
+  @apply w-full flex flex-col justify-start items-start gap-[30px];
+}
+.search-item .box .title{
+  @apply w-full font-bold text-[#141414] text-[16px] leading-[20px] mb-0;
+}
+
+.search-item .box .item-group{
+  @apply w-full flex justify-start items-center gap-[12px_20px] flex-wrap
+}
+
+.search-item .box .item-group button{
+  @apply w-[150px] text-[#141414] font-normal text-[16px] leading-[20px] text-left;
+}
+
+.search-item .box .noItem{
+  @apply w-full h-[150px] flex justify-center items-center rounded-[16px] border border-[#d2d2d2] bg-[#fff] font-normal text-[#141414] text-[16px]  leading-[20px];
 }
 
 .mainCon{
@@ -978,6 +1078,384 @@ em{
   @apply w-[70px];
 }
 
+/* aiIssue */
+.aiIssue{
+  @apply w-full p-[30px_20px];
+}
+
+.aiIssue .title{
+  @apply text-black text-[16px] font-bold mb-[16px];
+}
+
+.aiIssue .date{
+  @apply w-full flex justify-end items-center gap-[3px];
+}
+
+.aiIssue .date span{
+  @apply flex justify-center items-center;
+}
+
+.aiIssue .date em{
+  @apply font-normal text-[#999] text-[11px] leading-[14px];
+}
+
+.aiIssue .bubble-chart{
+  @apply w-full h-full max-w-[400px] m-[0_auto];
+}
+
+.bubbleModal .modal-content{
+  @apply w-full p-[30px_20px];
+}
+
+.bubbleModal .modal-header{
+  @apply w-full flex justify-between items-center mb-[30px];
+}
+
+.bubbleModal .modal-header span{
+  @apply font-bold text-[18px] leading-[21px] text-[#000];
+}
+
+.bubbleModal .state{
+  @apply flex justify-end items-center mb-[10px];
+}
+
+.bubbleModal .state span{
+  @apply flex justify-center items-center gap-[3px] p-[1px_5px] rounded-[20px] bg-[#CCCCCC]; 
+}
+
+.bubbleModal .state span.down{
+  @apply bg-[#5886FE];
+}
+
+.bubbleModal .state span.up{
+  @apply bg-[#FF5050];
+}
+
+.bubbleModal .state span.up svg{
+  @apply rotate-180;
+}
+
+.bubbleModal .state span em{
+  @apply font-normal text-[11px] leading-[14px] text-[#fff];
+}
+
+.bubbleModal .title{
+  @apply w-full font-bold text-[18px] leading-[23px] text-[#141414] mb-[15px];
+}
+
+.bubbleModal .modal-issue-tab{
+  @apply w-full flex justify-start items-center gap-[10px] mb-[15px];
+}
+
+.bubbleModal .modal-issue-tab button{
+  @apply flex justify-center items-center min-w-[106px] h-[30px] leading-[24px] border border-[#cfd3d9] bg-none rounded-[4px] text-[14px] text-[#999];
+}
+
+.bubbleModal .modal-issue-tab button.active{
+  @apply border-[#FF5050] font-bold text-[#FF5050];
+}
+
+.bubbleModal .modal-issue-tabContent{
+  @apply w-full mb-[30px];
+}
+
+.chart-img{
+  @apply w-full h-full;
+}
+
+.bubbleModal .chart_ex{
+  @apply w-full flex justify-start items-center flex-wrap gap-[0px_15px] bg-[#f6f6f7] mt-[15px] p-[10px];
+}
+
+.bubbleModal .chart_ex > div > span{
+  @apply block h-[23px] leading-[23px] text-[13px] text-[#999] float-left;
+}
+
+.bubbleModal .chart_ex > div::before{
+  @apply content-[''] block w-[14px] h-[3px] mt-[10px] mr-[10px] float-left;
+}
+
+.bubbleModal .chart_ex > div.cht01::before{
+  @apply bg-[#fb6b77];
+}
+
+.bubbleModal .chart_ex > div.cht02::before{
+  @apply bg-[#1d5bcd];
+}
+
+.bubbleModal .chart_ex > div.cht03::before{
+  @apply bg-[#1d5bcd];
+}
+
+.bubbleModal .chart_ex > div.cht04::before{
+  @apply bg-[#72b7fc];
+}
+
+.bubbleModal .chart_ex > div.cht05::before{
+  @apply bg-[#a1d2fd];
+}
+
+.bubbleModal .chart_ex > div.cht06::before{
+  @apply bg-[#c2def4];
+}
+
+.bubbleModal .chart_ex2{
+  @apply w-full flex justify-center items-center gap-[0px_15px] mt-[15px];
+}
+
+.bubbleModal .chart_ex2 > div > span{
+  @apply block h-[24px] leading-[24px] text-[13px] text-[#999] float-left;
+}
+
+.bubbleModal .chart_ex2 > div::before{
+  @apply content-[''] block w-[8px] h-[8px] rounded-full float-left mt-[8px] mr-[5px];
+}
+
+.bubbleModal .chart_ex2 > div.cht01::before{
+  @apply bg-[#fb4755];
+}
+
+.bubbleModal .chart_ex2 > div.cht02::before{
+  @apply bg-[#568bfb];
+}
+
+.bubbleModal .chart_ex2 > div.cht03::before{
+  @apply w-[20px] h-[12px] border border-[#c3cdee] rounded-none bg-[#f3f7ff] mt-[6px];
+}
+
+.bubbleModal .issue-list{
+  @apply w-full flex flex-col justify-start items-center mb-[30px];
+}
+
+.bubbleModal .issue-list .list{
+  @apply w-full flex justify-between items-center py-[10px] border-b border-[#D2D2D2];
+}
+
+.bubbleModal .issue-list .list .name{
+  @apply w-[calc(100%-170px)] text-left text-[#141414] font-normal text-[14px] leading-[16px];
+}
+
+.bubbleModal .issue-list .list .numPer{
+  @apply flex justify-end items-center gap-[20px];
+}
+
+.bubbleModal .issue-list .list .numPer .num{
+  @apply text-[#141414] font-normal text-[14px] leading-[16px];
+}
+
+.bubbleModal .issue-list .list .numPer .per{
+  @apply min-w-[70px] rounded-[6px] p-[3px_5px] font-normal text-[14px] leading-[21px] text-[#141414] bg-[#F5F5F5];
+}
+
+.bubbleModal .issue-list .list .numPer .per.up{
+  @apply bg-[#FFE9E9];
+}
+
+.bubbleModal .issue-list .list .numPer .per.down{
+  @apply bg-[#E6EDFF];
+}
+
+.bubbleModal .detail{
+  @apply w-full flex justify-center items-center;
+}
+
+.bubbleModal .detail button{
+  @apply w-[156px] h-[30px] rounded-[20px] border border-[#d2d2d2] bg-[#fff] text-[#141414] text-[12px] font-normal leading-[20px];
+}
+/* ///////////////////////////////// */
+
+/* 이슈 상세보기 */
+.issueDetail{
+  @apply w-full p-[30px_20px];
+}
+
+.issueDetail .title{
+  @apply w-full flex justify-between items-center mb-[30px];
+}
+
+.issueDetail .title strong{
+  @apply text-[#141414] font-bold text-[16px] leading-[20px];
+}
+
+.issueDetail .state span{
+  @apply flex justify-center items-center gap-[3px] p-[1px_5px] rounded-[20px] bg-[#CCCCCC]; 
+}
+
+.issueDetail .state span.down{
+  @apply bg-[#5886FE];
+}
+
+.issueDetail .state span.up{
+  @apply bg-[#FF5050];
+}
+
+.issueDetail .state span.up svg{
+  @apply rotate-180;
+}
+
+.issueDetail .state span em{
+  @apply font-normal text-[11px] leading-[14px] text-[#fff];
+}
+
+.issueDetail .issueBox{
+  @apply w-full mb-[30px];
+}
+
+.issueDetail .issueHeader{
+  @apply w-full flex flex-col justify-start items-start gap-[10px] pb-[20px] border-b border-[#d2d2d2] mb-[20px];
+}
+
+.issueDetail .issueHeader h1{
+  @apply w-full text-[#141414] text-[16px] font-bold leading-[20px];
+}
+
+.issueDetail .issueHeader .date{
+  @apply w-full text-[#999] text-[12px] font-normal leading-[21px];
+}
+
+.issueDetail .issueTxt{
+  @apply w-full mb-[30px];
+}
+
+.issueDetail .issueTxt p{
+  @apply text-[#141414] text-[15px] font-normal leading-[20px];
+}
+
+.issueDetail .issueTxt p a{
+  @apply text-[#999];
+}
+
+.issueDetail .issueChart{
+  @apply w-full flex flex-col justify-start items-start gap-[15px];
+}
+
+.issueDetail .issueChart .title{
+  @apply m-0 text-[#141414] text-[16px] font-bold leading-[20px];
+}
+
+.issueDetail .issueList{
+  @apply w-full mb-[30px];
+}
+
+.issueDetail .issueList .title{
+  @apply mb-[15px];
+}
+
+.issueDetail .issueList .title span{
+  @apply font-normal text-[12px] text-[#999] leading-[18px];
+}
+
+.issueDetail .issueList .listBox{
+  @apply w-full flex flex-col justify-start items-center gap-[15px];
+}
+
+.issueDetail .issueList .listBox .list{
+  @apply w-full flex flex-col justify-start items-start gap-[10px] p-[15px_12px] rounded-[16px] bg-[#fff] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.1)];
+}
+
+.issueDetail .issueList .listBox .list .top{
+  @apply w-full flex justify-between items-center;
+}
+
+.issueDetail .issueList .listBox .list .top .name{
+  @apply w-[calc(100%-100px)] text-left text-[#141414] text-[16px] font-bold leading-[20px];
+}
+
+.issueDetail .issueList .listBox .list .top .per{
+  @apply min-w-[70px] rounded-[6px] p-[3px_5px] font-normal text-[14px] leading-[21px] text-[#141414] bg-[#F5F5F5];
+}
+
+.issueDetail .issueList .listBox .list .top .per.up{
+  @apply bg-[#FFE9E9];
+}
+
+.issueDetail .issueList .listBox .list .top .per.down{
+  @apply bg-[#E6EDFF];
+}
+
+.issueDetail .issueList .listBox .list .bottom{
+  @apply w-full text-left text-[#333] text-[15px] font-normal leading-[20px];
+}
+
+.issueDetail .detail{
+  @apply w-full flex justify-center items-center;
+}
+
+.issueDetail .detail button{
+  @apply w-[156px] h-[30px] rounded-[20px] border border-[#d2d2d2] bg-[#fff] text-[#141414] text-[12px] font-normal leading-[20px];
+}
+/* /////////////////////////////////////// */
+
+/* 주요 이슈 헤드라인 */
+.headLine{
+  @apply w-full p-[30px_20px_20px];
+}
+
+.headLine .title{
+  @apply w-full flex justify-between items-center mb-[15px];
+}
+
+.headLine .title strong{
+  @apply text-[#141414] text-[16px] font-bold leading-[24px];
+}
+
+.headLine .title button{
+  @apply font-normal text-[#999] text-[14px] leading-[18px];
+}
+
+.headLine .headLineNav{
+  @apply w-full flex justify-center items-center mb-[15px];
+}
+
+.headLine .headLineNav button{
+  @apply w-[calc(100%/2)] p-[8px_0] text-[#999] text-[14px] font-normal leading-[17px] border-b-[1px] border-[#d2d2d2];
+}
+
+.headLine .headLineNav button.active{
+  @apply text-black font-bold border-b-[2px] border-black ;
+}
+
+.headLine .headLineSwiper{
+  @apply w-full relative;
+}
+
+.headLine .headLineSwiper .swiper-slide{
+  @apply w-full flex flex-col justify-start items-start gap-[8px] p-[15px] rounded-[16px] bg-[#f9f9f9] text-left;
+}
+
+.headLine .headLineSwiper .swiper-slide .top{
+  @apply w-full flex justify-between items-center;
+}
+
+.headLine .headLineSwiper .swiper-slide .top .name{
+  @apply w-[calc(100%-70px)] text-[#141414] text-[16px] leading-[20px] font-bold;
+}
+
+.headLine .headLineSwiper .swiper-slide .top .per{
+  @apply text-[12px] font-normal leading-[16px] text-[#141414];
+}
+
+.headLine .headLineSwiper .swiper-slide .bottom{
+  @apply w-full flex flex-col justify-start items-start gap-[8px];
+}
+
+.headLine .headLineSwiper .swiper-slide .bottom .txt{
+  @apply w-full text-[#8c8c8c] text-[15px] font-normal leading-[20px];
+}
+
+.headLine .headLineSwiper .swiper-slide .bottom .keyword{
+  @apply w-full flex justify-start items-center gap-[0px_8px] flex-wrap;
+}
+
+.headLine .headLineSwiper .swiper-slide .bottom .keyword span{
+  @apply text-[#5886FE] text-[12px] font-normal leading-[20px];
+}
+
+.headLine .headLineSwiper .swiper-pagination{
+  @apply mt-[20px];
+}
+/* //////////////////////////////////// */
+
 .bestItem{
   @apply w-full p-[30px_20px_20px];
 }
@@ -1007,7 +1485,7 @@ em{
 }
 
 .bestItemList .bestListBox .listName .name{
-  @apply w-auto max-w-[calc(100%-55px)] text-black text-[16px] font-normal leading-[20px];
+  @apply w-auto max-w-[calc(100%-85px)] text-black text-[16px] font-normal leading-[20px];
 }
 
 .bestItemList .bestListBox .listName .code{
@@ -1043,7 +1521,7 @@ em{
 }
 
 .beAlItem{
-  @apply w-full p-[30px_20px_0px];
+  @apply w-full p-[30px_20px];
 }
 
 .beAlItem .title{
@@ -1130,6 +1608,228 @@ em{
   @apply rounded-[18px] w-[164px] h-[36px] border border-[#d2d2d2] bg-white text-black text-[12px] font-normal leading-[20px] mt-[10px];
 }
 /* /////////////////// */
+
+/* AI 주오속보 */
+.aiNews{
+  @apply w-full p-[30px_20px_0];
+}
+
+.aiNews .title{
+  @apply w-full mb-[15px] text-[#141414] text-[16px] font-bold leading-[24px];
+}
+
+.aiNews .aiNews-tab{
+  @apply w-full flex justify-start items-center gap-[10px] mb-[20px];
+}
+
+.aiNews .aiNews-tab button{
+  @apply p-[8px_9px] rounded-[20px] border border-[#141414] bg-[#fff] text-[#141414] font-normal leading-[18px] text-[14px];
+}
+
+.aiNews .aiNews-tab button.active{
+  @apply bg-[#FF5050] text-[#fff] border-0;
+}
+
+.aiNews .explanation{
+  @apply w-full flex justify-start items-start gap-[5px] px-[5px] pb-[10px] border-b border-[#d2d2d2];
+}
+
+.aiNews .explanation span{
+  @apply inline-block rounded-[5px] p-[2px_5px] bg-[#8B7EFF] text-[#fff] font-normal text-[12px] leading-[16px] mt-[2px];
+}
+
+.aiNews .explanation p{
+  @apply text-[#141414] text-[14px] font-normal leading-[23px];
+}
+
+.aiNews .newsList{
+  @apply w-full flex flex-col justify-start items-start;
+}
+
+.aiNews .newsList .list{
+  @apply w-full flex flex-col justify-start items-start gap-[10px] text-left py-[10px] border-b border-[#d2d2d2];
+}
+
+.aiNews .newsList .list .listTitle{
+  @apply w-full text-[#141414] text-[16px] font-normal leading-[24px];
+}
+
+.aiNews .newsList .list .listTitle em{
+  @apply inline-block rounded-[5px] bg-[#FF7A52] p-[2px_5px] text-[#fff] font-normal mr-[3px] text-[12px] leading-[16px] align-middle mb-[2px];
+}
+
+.aiNews .newsList .list .listTitle span{
+  @apply inline-block rounded-[5px] p-[2px_5px] bg-[#8B7EFF] text-[#fff] font-normal text-[12px] leading-[16px] mr-[3px] align-middle mb-[3px];
+}
+
+.aiNews .newsList .list .listDate{
+  @apply text-[#999] text-[14px] font-normal leading-[18px];
+}
+
+.aiNews .newsList .list .listDate span{
+  @apply inline-block leading-[12px] ml-[6px] pl-[6px] border-l border-[#999];
+}
+
+.aiNews .newsMore{
+  @apply w-full text-center mt-[30px];
+}
+
+.aiNews .newsMore button{
+  @apply rounded-[18px] w-[164px] h-[36px] border border-[#d2d2d2] bg-white text-black text-[12px] font-normal leading-[20px];
+}
+/* //////////////////////////// */
+
+/* AI 주요속보 상세보기 */
+.newsDetail{
+  @apply w-full p-[30px_20px];
+}
+
+.newsDetail .title{
+  @apply w-full flex justify-between items-center mb-[30px];
+}
+
+.newsDetail .title strong{
+  @apply text-[#141414] font-bold text-[16px] leading-[20px];
+}
+
+.newsDetail .board{
+  @apply w-full mb-[30px];
+}
+
+.newsDetail .board-header{
+  @apply w-full flex flex-col justify-start items-start gap-[10px] pb-[20px] border-b border-[#d2d2d2];
+}
+
+.newsDetail .board-header strong{
+  @apply w-full text-[#141414] text-[16px] font-bold leading-[20px];
+}
+
+.newsDetail .board-header .board-date{
+  @apply w-full text-[#999] text-[12px] font-normal leading-[21px];
+}
+
+.newsDetail .board-item .viewContent{
+  @apply w-full p-[10px_0] text-[16px] text-[#141414] leading-[26px];
+}
+
+.newsDetail .board-item .viewContent img{
+  @apply max-w-[100%];
+}
+
+.newsDetail .share{
+  @apply w-full pt-[20px] border-t border-[#d2d2d2] flex flex-col justify-center items-center gap-[10px];
+}
+
+.newsDetail .share button{
+  @apply flex justify-center items-center gap-[10px] w-[186px] h-[45px] rounded-[50px] border border-[#d2d2d2] bg-[#fff] text-[#141414] text-[16px] leading-[20px] font-normal;
+}
+
+.shareModal .modal-content{
+  @apply w-full max-w-[300px] m-[0_auto] p-[45px_20px_25px];
+}
+
+.shareModal .modal-body{
+  @apply w-full flex flex-col justify-start items-center gap-[32px];
+}
+
+.shareModal .modal-body .modal-title{
+  @apply text-[#141414] text-[18px] font-bold leading-[21px];
+}
+
+.shareModal .modal-body .icon-group{
+  @apply w-full flex justify-center items-center gap-[31px];
+}
+
+.shareModal .modal-body .link{
+  @apply w-full flex justify-start items-center gap-[6px];
+}
+
+.shareModal .modal-body .link input{
+  @apply w-[calc(100%-65px)] h-[32px] p-[6px_8px] rounded-[6px] bg-[#f3f3f3] text-[#8c8c8c] text-[14px] font-normal leading-[20px];
+}
+
+.shareModal .modal-body .link button{
+  @apply w-[59px] h-[32px] flex justify-center items-center rounded-[6px] border border-[#d2d2d2] bg-[#fff] text-[#141414] text-[12px] font-normal leading-[20px];
+}
+/* //////////////////////////// */
+
+/* 이슈 모아보기 */
+.issueCollect{
+  @apply w-full p-[20px_20px_30px];
+}
+
+.issueCollect .title{
+  @apply w-full flex justify-between items-center mb-[15px];
+}
+
+.issueCollect .title .date{
+  @apply text-[#141414] text-[16px] font-bold leading-[20px];
+}
+
+.issueCollect .title .num{
+  @apply text-[#999] text-[12px] font-normal leading-[18px];
+}
+
+.issueCollect .issueList{
+  @apply w-full flex flex-col justify-start items-start gap-[15px];
+}
+
+.issueCollect .issueList .list{
+  @apply w-full p-[15px_12px] flex flex-col gap-[10px] justify-start items-start rounded-[16px] bg-[#fff] shadow-[0px_0px_8px_0px_rgba(0,0,0,0.1)];
+}
+
+.issueCollect .issueList .list .name{
+  @apply w-full flex justify-between items-center
+}
+
+.issueCollect .issueList .list .name strong{
+  @apply block w-[calc(100%-60px)] text-left text-[#141414] text-[16px] font-bold leading-[20px];
+}
+
+.issueCollect .issueList .list .txt{
+  @apply w-full flex justify-start items-center gap-[10px]
+}
+
+.issueCollect .issueList .list .txt p{
+  @apply w-[calc(100%-60px)] text-left text-[#333] text-[15px] font-normal leading-[20px];
+}
+
+.issueCollect .issueList .list .perBox{
+  @apply w-full p-[10px] flex justify-start items-start gap-[10px] flex-wrap rounded-[6px] bg-[#f7f7f8];
+}
+
+.issueCollect .issueList .list .perBox .per{
+  @apply flex justify-start items-center gap-[5px];
+}
+
+.issueCollect .issueList .list .perBox .per span, .issueCollect .issueList .list .perBox .per em{
+  @apply  text-[#606569] text-[14px] font-normal leading-[18px];
+}
+
+.issueCollect .state{
+  @apply flex justify-end items-center;
+}
+
+.issueCollect .state span{
+  @apply flex justify-center items-center gap-[3px] p-[1px_5px] rounded-[20px] bg-[#CCCCCC]; 
+}
+
+.issueCollect .state span.down{
+  @apply bg-[#5886FE];
+}
+
+.issueCollect .state span.up{
+  @apply bg-[#FF5050];
+}
+
+.issueCollect .state span.up svg{
+  @apply rotate-180;
+}
+
+.issueCollect .state span em{
+  @apply font-normal text-[11px] leading-[14px] text-[#fff];
+}
+/* ///////////////////////// */
 
 /* 종목추천 */
 .recomNav{
@@ -1485,43 +2185,63 @@ em{
 
 /* 종목홈 */
 .eventHome{
-  @apply w-full p-[10px_20px_40px];
-}
-
-.eventBox{
-  @apply w-full flex justify-between items-start gap-[10px] pb-[40px];
-}
-
-.eventBox .dateBox{
-  @apply flex justify-start items-center gap-[5px] mb-[5px];
-}
-
-.eventBox .dateBox .date{
-  @apply text-[14px] text-black font-normal leading-[18px];
-}
-
-.eventBox .dateBox .time{
-  @apply text-[12px] text-[#999] font-normal leading-[16px];
-}
-
-.eventBox .pri{
-  @apply text-black text-[32px] font-bold leading-[40px] mb-[5px];
-}
-
-.eventBox .per{
-  @apply text-[16px] font-normal leading-[20px];
-}
-
-.eventBox .per span{
-  @apply text-[13px] leading-[16px];
-}
-
-.eventBox .chart img{
   @apply w-full;
 }
 
+.eventBox{
+  @apply w-full flex flex-col justify-start items-start gap-[20px] p-[20px];
+}
+
+.eventBox .top{
+  @apply w-full flex justify-between items-start gap-[10px];
+}
+
+.eventBox .top .dateBox{
+  @apply flex justify-start items-center gap-[5px] mb-[5px];
+}
+
+.eventBox .top .dateBox .date{
+  @apply text-[14px] text-black font-normal leading-[18px];
+}
+
+.eventBox .top .dateBox .time{
+  @apply text-[12px] text-[#999] font-normal leading-[16px];
+}
+
+.eventBox .top .pri{
+  @apply text-black text-[32px] font-bold leading-[40px] mb-[5px];
+}
+
+.eventBox .top .per{
+  @apply text-[16px] font-normal leading-[20px];
+}
+
+.eventBox .top .per span{
+  @apply text-[13px] leading-[16px];
+}
+
+.eventBox .top .chart img{
+  @apply w-full;
+}
+
+.eventBox .bottom{
+  @apply w-full p-[15px] rounded-[16px] bg-[#f9f9f9];
+}
+
+.eventBox .bottom .title{
+  @apply w-full mb-[8px] text-[#141414] text-[16px] font-bold leading-[20px];
+}
+
+.eventBox .bottom .txt{
+  @apply w-full flex justify-start items-start gap-[8px] flex-col;
+}
+
+.eventBox .bottom .txt span{
+  @apply pl-[14px] text-[#8c8c8c] text-[15px] font-normal leading-[20px] relative block before:content-[''] before:absolute before:w-[2.5px] before:h-[2.5px] before:rounded-full before:bg-[#8c8c8c] before:left-[6px] before:top-[8px];
+}
+
 .eventScore{
-  @apply w-full pb-[50px];
+  @apply w-full p-[20px];
 }
 
 .eventScore .title{
@@ -1540,32 +2260,378 @@ em{
   @apply w-full flex justify-center items-center bg-[#f7f7f8] p-[20px] mb-[25px];
 }
 
+.eventScore .scoreChart .chart-box{
+  @apply  max-w-[400px];
+}
+
 .eventScore .gaugeChart{
-  @apply w-full rounded-[6px] shadow-[0px_2px_10px_rgba(0,0,0,0.15)];
+  @apply w-full flex flex-col justify-start items-start gap-[10px];
 }
 
-.eventScore .gaugeChart .top{
-  @apply w-full bg-white rounded-t-[6px] p-[10px] flex justify-center;
+.eventScore .gaugeChart .state{
+  @apply text-[#141414] text-[17px] font-normal leading-[22px];
 }
 
-.eventScore .gaugeChart .top img{
-  @apply w-full max-w-[360px];
+.eventScore .gaugeChart .state span{
+  @apply font-bold;
 }
 
-.eventScore .gaugeChart .bot{
-  @apply w-full bg-[#f7f7f8] rounded-b-[6px] p-[24px_0] flex justify-center items-center gap-[6px];
+/* 차트분석 */
+.chartAnalyze{
+  @apply w-full p-[20px];
 }
 
-.eventScore .gaugeChart .bot .state{
-  @apply p-[2px_4px] rounded-[3px] bg-black text-white text-[13px] font-normal leading-[15px] ;
+.chartAnalyze .title{
+  @apply w-full mb-[20px] text-black text-[18px] font-bold leading-[22px];
 }
 
-.eventScore .gaugeChart .bot .eva{
-  @apply text-black text-[17px] font-bold leading-[19px];
+.chartAnalyze .pprn.ct-range{
+  @apply relative h-[122px] p-[16px] pt-[56px] rounded-[6px] bg-[#f7f7f8] mb-[20px];
+}
+
+.chartAnalyze .pprn input[type=range] {
+  @apply w-full h-[9px] rounded-[20px] bg-[#E3E3E9];
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.chartAnalyze .pprn input[type=range][disabled]{
+  @apply opacity-100;
+}
+
+.chartAnalyze .pprn input[type=range]::-webkit-slider-thumb{
+  width: 19px;
+  height: 19px;
+  transform: translateY(2px);
+  background: url('https://img.thinkpool.com/secret/img/range-thumb.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+.chartAnalyze .pprn label{
+  @apply p-[7px] bg-[#5A5B6C] rounded-[8px] absolute top-[16px] inline-block leading-[16px] !m-0 text-[12px] text-[#fff] text-center font-normal z-[2];
+}
+
+.chartAnalyze .pprn label span{
+  @apply font-bold;
+}
+
+.chartAnalyze .pprn.ct-range .min{
+  @apply absolute bottom-[16px] left-[18px] text-[9px] text-[#999] font-normal leading-[11px];
+}
+
+.chartAnalyze .pprn.ct-range .min.day{
+  @apply bottom-auto top-[35px] z-[1];
+}
+
+.chartAnalyze .pprn.ct-range .max{
+  @apply absolute bottom-[16px] right-[18px] text-[9px] text-[#999] font-normal text-right leading-[11px];
+}
+
+.chartAnalyze .pprn.ct-range .max.day{
+  @apply bottom-auto top-[35px] z-[1];
+}
+
+.chartAnalyze .chartbox{
+  @apply w-full mb-[20px];
+}
+
+.chartAnalyze .chartbox .chart-tab{
+  @apply w-full flex justify-center items-center gap-[6px] mb-[20px];
+}
+
+.chartAnalyze .chartbox .chart-tab li{
+  @apply w-[calc(100%/6.7)] h-[30px];
+}
+
+.chartAnalyze .chartbox .chart-tab li button{
+  @apply w-full h-[30px] p-0 text-[#999] text-[12px] font-medium leading-[20px] rounded-[20px] border border-[#d2d2d2] bg-[#f5f5f5];
+}
+
+.chartAnalyze .chartbox .chart-tab li button.active{
+  @apply bg-[#fff] text-[#141414]
+}
+
+.chartAnalyze .todaySummary{
+  @apply w-full;
+}
+
+.chartAnalyze .todaySummary .list{
+  @apply w-full flex flex-col justify-start items-start gap-[12px];
+}
+
+.chartAnalyze .todaySummary .list p{
+  @apply text-[#141414] text-[13px] font-normal leading-[16px];
+}
+
+/* 당일수급동향 */
+.supplyDemandTrends{
+  @apply w-full p-[20px];
+}
+
+.supplyDemandTrends .title{
+  @apply w-full flex justify-between items-center mb-[20px];
+}
+
+.supplyDemandTrends .title strong{
+  @apply text-black text-[18px] font-bold leading-[22px];
+}
+
+.supplyDemandTrends .title .date{
+  @apply flex justify-end items-center gap-[5px];
+}
+
+.supplyDemandTrends .title .date span{
+  @apply text-[#999] text-[12px] font-normal leading-[18px];
+}
+
+.supplyDemandTrends .sdtModal .modal-content{
+  @apply w-full max-w-[300px] m-[0_auto] p-[54px_20px_30px];
+}
+
+.supplyDemandTrends .sdtModal .modal-body{
+  @apply text-[#141414] text-[16px] font-normal leading-[20px] text-center;
+}
+
+.supplyDemandTrends .sdtNav{
+  @apply w-full flex justify-center items-center mb-[15px];
+}
+
+.supplyDemandTrends .sdtNav button{
+  @apply w-[calc(100%/3)] p-[8px_0] text-[#999] text-[14px] font-normal leading-[17px] border-b-[1px] border-[#d2d2d2];
+}
+
+.supplyDemandTrends .sdtNav button.active{
+  @apply text-black font-bold border-b-[2px] border-black ;
+}
+
+.supplyDemandTrends .sdt01-chart{
+  @apply w-full rounded-[16px] p-[20px] flex justify-center items-center bg-[#f7f7f8] mb-[15px];
+}
+
+.supplyDemandTrends .acTxt{
+  @apply w-full mb-[15px] text-center text-[#141414] text-[16px] font-bold leading-[20px];
+}
+
+.supplyDemandTrends .sdt-etc{
+  @apply w-full flex justify-normal items-center mb-[8px];
+}
+
+.supplyDemandTrends .sdt-etc span{
+  @apply inline-block p-[5px_10px] border border-[#d9d9d9] rounded-[50px] text-[#666] text-[12px] leading-[15px] font-normal;
+}
+
+.supplyDemandTrends .acTxt strong{
+  @apply text-[#FF5050];
+}
+
+.supplyDemandTrends .txt{
+  @apply w-full text-[#141414] text-[15px] font-normal leading-[23px];
+}
+
+.supplyDemandTrends .sdt-chart{
+  @apply w-full mb-[15px];
+}
+
+.supplyDemandTrends .sdt_tbl{
+  @apply relative block w-full pt-[15px];
+}
+
+.supplyDemandTrends .pr{
+  @apply w-full flex justify-end items-center text-[14px] text-[#999] leading-[18px] font-normal;
+}
+
+.supplyDemandTrends .sdt_tbl > div{
+  @apply block w-full overflow-hidden;
+}
+
+.supplyDemandTrends .sdt_tbl .sdt_tbl_left{
+  @apply w-[144px] block float-left;
+}
+
+.supplyDemandTrends .sdt_tbl table{
+  @apply m-0;
+}
+
+.supplyDemandTrends .sdt_tbl thead tr th{
+  @apply h-[35px] border-b border-b-[#dcdcdc] bg-[#f5f5f5] text-center border-t border-t-[#999] text-[#999] text-[14px] font-normal leading-[18px];
+}
+
+.supplyDemandTrends .sdt_tbl tbody tr td{
+  @apply p-[4px_12px] text-[#999] text-[12px] font-normal leading-[16px] border-b border-r border-[#f0f0f0] bg-[#F9FAFA];
+}
+
+.supplyDemandTrends .sdt_tbl .sdt_tbl_left tbody tr td{
+  @apply first:py-[10px];
+}
+
+.supplyDemandTrends .sdt_tbl .sdt_tbl_right tbody tr td{
+  @apply bg-[#fff] align-middle last:border-r-0;
+}
+
+.supplyDemandTrends .sdt_tbl .sdt_tbl_right{
+  @apply w-[calc(100%-144px)] block overflow-x-auto float-left;
+}
+
+/* AI속보 */
+.breakingNews{
+  @apply w-full p-[30px_20px_20px];
+}
+
+.breakingNews .title{
+  @apply w-full text-[#141414] text-[18px] font-bold leading-[24px] mb-[15px];
+}
+
+.breakingNews .title button{
+  @apply font-normal text-[#999] text-[14px] leading-[18px];
+}
+
+.breakingNews .breakingNewsNav{
+  @apply w-full flex justify-center items-center mb-[15px];
+}
+
+.breakingNews .breakingNewsNav button{
+  @apply w-[calc(100%/2)] p-[8px_0] text-[#999] text-[14px] font-normal leading-[17px] border-b-[1px] border-[#d2d2d2];
+}
+
+.breakingNews .breakingNewsNav button.active{
+  @apply text-black font-bold border-b-[2px] border-black ;
+}
+
+.breakingNews .newsList{
+  @apply w-full flex flex-col justify-start items-start gap-[12px];
+}
+
+.breakingNews .newsList .list{
+  @apply w-full flex justify-between items-center;
+}
+
+.breakingNews .newsList .list .txt{
+  @apply w-[calc(100%-40px)] flex justify-start items-center gap-[5px];
+}
+
+.breakingNews .newsList .list .txt p{
+  @apply w-auto max-w-[calc(100%-30px)] text-[#141414] text-[13px] font-normal leading-[16px] text-left;
+}
+
+.breakingNews .newsList .list .txt span{
+  @apply w-[20px] h-[20px] flex justify-center items-center rounded-[5px] bg-[#8B7EFF] text-[#fff] text-[12px] font-normal leading-[14px];
+}
+
+.breakingNews .newsList .list .date{
+  @apply text-[#999] text-[12px] font-normal leading-[15px];
+}
+
+.reportAnalysis{
+  @apply w-full p-[20px];
+}
+
+.reportAnalysis .title{
+  @apply w-full mb-[17px] text-black text-[18px] font-bold leading-[22px];
+}
+
+.reportAnalysis .reportAnalysisNav{
+  @apply w-full flex justify-center items-center mb-[15px];
+}
+
+.reportAnalysis .reportAnalysisNav button{
+  @apply w-[calc(100%/2)] p-[8px_0] text-[#999] text-[14px] font-normal leading-[17px] border-b-[1px] border-[#d2d2d2];
+}
+
+.reportAnalysis .reportAnalysisNav button.active{
+  @apply text-black font-bold border-b-[2px] border-black ;
+}
+
+.reportAnalysis .range{
+  @apply w-full mb-[20px];
+}
+
+.reportAnalysis .list{
+  @apply w-full flex flex-col justify-start items-start gap-[12px] mt-[20px];
+}
+
+.reportAnalysis .list button{
+  @apply w-full flex justify-start items-center gap-[8px];
+}
+
+.reportAnalysis .list button span{
+  @apply text-[#999] text-[12px] font-normal leading-[12px];
+}
+
+.reportAnalysis .list button p{
+  @apply w-[calc(100%-60px)] text-[#141414] text-[13px] font-normal leading-[20px] text-left;
+}
+
+.reportAnalysis .recent-list{
+  @apply w-full flex flex-col justify-start items-start gap-[12px];
+}
+
+.reportAnalysis .recent-list button{
+  @apply w-full flex justify-between items-center;
+}
+
+.reportAnalysis .recent-list button p{
+  @apply w-[calc(100%-100px)] text-[#141414] text-[13px] font-normal leading-[20px] text-left;
+}
+
+.reportAnalysis .recent-list button .date{
+  @apply flex justify-end items-center gap-[8px];
+}
+
+.reportAnalysis .recent-list button .date span{
+  @apply text-left inline-block text-[#999] text-[12px] font-normal leading-[12px] first:max-w-[60px];
+}
+
+.reportAnalysis .reportModal .modal-content{
+  @apply w-full p-[60px_20px_30px];
+}
+
+.reportAnalysis .reportModal .modal-title{
+  @apply w-full flex flex-col justify-start items-start gap-[10px] pb-[20px] border-b border-[#d2d2d2] mb-[20px];
+}
+
+.reportAnalysis .reportModal .modal-title h5{
+  @apply w-full text-[#141414] text-[16px] font-bold leading-[20x];
+}
+
+.reportAnalysis .reportModal .modal-title .rmInfo{
+  @apply w-full flex justify-start items-center gap-[8px];
+}
+
+.reportAnalysis .reportModal .modal-title .rmInfo span{
+  @apply text-[#141414] text-[12px] font-normal leading-[21px];
+}
+
+.reportAnalysis .reportModal .modal-title .rmInfo em{
+  @apply text-[#999] text-[12px] font-normal leading-[21px];
+}
+
+.reportAnalysis .reportModal .modal-title .rmInfo .line{
+  @apply w-[1px] h-[10px] bg-[#999];
+}
+
+.reportAnalysis .reportModal .rmCont{
+  @apply w-full flex flex-col justify-start items-start gap-[30px];
+}
+
+.reportAnalysis .reportModal .rmCont .sgn{
+  @apply w-full flex flex-col justify-start items-start;
+}
+
+.reportAnalysis .reportModal .rmCont .sgn span{
+  @apply text-[#141414] text-[16px] font-normal leading-[24px];
+}
+
+.reportAnalysis .reportModal .rmCont .text{
+  @apply text-[#141414] text-[16px] font-normal leading-[24px];
 }
 
 .eventYearSignal{
-  @apply w-full pb-[40px];
+  @apply w-full p-[20px];
 }
 
 .eventYearSignal .title, .eventSignal .title{
@@ -1584,7 +2650,7 @@ em{
   @apply text-black font-bold border-b-[2px] border-black ;
 }
 
-.eventYearSignal .ch_rdo{
+.eventYearSignal .ch_rdo, .supplyDemandTrends .sdt_rdo{
   @apply w-full mb-[15px] flex;
 }
 
@@ -1698,6 +2764,10 @@ input[type=radio].custom-radio:checked + label {
   @apply relative text-[#999] text-[14px] font-normal leading-[17px] mb-[5px] pl-[11px] last:mb-0 before:content-[''] before:inline-block before:absolute before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#d9d9d9] before:top-[7px] before:left-0;
 }
 
+.eventSignal{
+  @apply w-full p-[20px];
+}
+
 .eventSignal .signalDate{
   @apply w-full flex justify-between items-center mb-[15px];
 }
@@ -1735,7 +2805,7 @@ input[type=radio].custom-radio:checked + label {
 }
 
 .noSignal .noSignalTxt{
-  @apply py-[60px] border-b-[1px] border-[#f0f0f0] text-center text-[#999] text-[14px] font-normal leading-[18px];
+  @apply py-[65px] text-center text-[#999] text-[14px] font-normal leading-[18px];
 }
 /* /////////////////// */
 /* 구독 */
@@ -1876,44 +2946,6 @@ input[type=radio].checkPay:checked + label {
 }
 /* ////////////////// */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 배너 및 하단 메뉴 */
 .footerTxt{
   @apply w-full p-[25px_20px_30px] text-left text-[#666] text-[14px] font-normal leading-[18px];
@@ -1932,7 +2964,7 @@ input[type=radio].checkPay:checked + label {
 }
 
 .menuList{
-  @apply w-full h-[58px] flex justify-between items-center;
+  @apply w-full h-[58px] px-[10px] flex justify-between items-center;
 }
 
 .menulistBox{
