@@ -2511,11 +2511,15 @@ em{
 }
 
 .breakingNews .newsList .list .txt{
-  @apply w-[calc(100%-40px)] flex justify-start items-center gap-[5px];
+  @apply w-[calc(100%-105px)] flex justify-start items-center gap-[5px];
 }
 
 .breakingNews .newsList .list .txt p{
-  @apply w-auto max-w-[calc(100%-30px)] text-[#141414] text-[13px] font-normal leading-[16px] text-left;
+  @apply w-auto max-w-[calc(100%-25px)] text-[#141414] text-[13px] font-normal leading-[16px] text-left;
+}
+
+.breakingNews .newsList .list .txt.today{
+  @apply w-[calc(100%-40px)];
 }
 
 .breakingNews .newsList .list .txt span{
@@ -2523,7 +2527,7 @@ em{
 }
 
 .breakingNews .newsList .list .date{
-  @apply text-[#999] text-[12px] font-normal leading-[15px];
+  @apply text-[#999] text-[12px] font-normal leading-[15px] whitespace-nowrap;
 }
 
 .reportAnalysis{

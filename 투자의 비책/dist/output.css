@@ -6077,7 +6077,7 @@ em {
 
 .breakingNews .newsList .list .txt {
   display: flex;
-  width: calc(100% - 40px);
+  width: calc(100% - 105px);
   align-items: center;
   justify-content: flex-start;
   gap: 5px;
@@ -6085,13 +6085,17 @@ em {
 
 .breakingNews .newsList .list .txt p {
   width: auto;
-  max-width: calc(100% - 30px);
+  max-width: calc(100% - 25px);
   text-align: left;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
   --tw-text-opacity: 1;
   color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
+.breakingNews .newsList .list .txt.today {
+  width: calc(100% - 40px);
 }
 
 .breakingNews .newsList .list .txt span {
@@ -6111,6 +6115,7 @@ em {
 }
 
 .breakingNews .newsList .list .date {
+  white-space: nowrap;
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
