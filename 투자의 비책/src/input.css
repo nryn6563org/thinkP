@@ -1144,15 +1144,7 @@ em{
 }
 
 .bubbleModal .modal-issue-tab{
-  @apply w-full flex justify-start items-center gap-[10px] mb-[15px];
-}
-
-.bubbleModal .modal-issue-tab button{
-  @apply flex justify-center items-center min-w-[106px] h-[30px] leading-[24px] border border-[#cfd3d9] bg-none rounded-[4px] text-[14px] text-[#999];
-}
-
-.bubbleModal .modal-issue-tab button.active{
-  @apply border-[#FF5050] font-bold text-[#FF5050];
+  @apply w-full flex justify-start items-center gap-[10px] mb-[15px] text-[#141414] text-[16px] font-bold leading-[20px];
 }
 
 .bubbleModal .modal-issue-tabContent{
@@ -1163,63 +1155,63 @@ em{
   @apply w-full h-full;
 }
 
-.bubbleModal .chart_ex{
+.chart_ex{
   @apply w-full flex justify-start items-center flex-wrap gap-[0px_15px] bg-[#f6f6f7] mt-[15px] p-[10px];
 }
 
-.bubbleModal .chart_ex > div > span{
+.chart_ex > div > span{
   @apply block h-[23px] leading-[23px] text-[13px] text-[#999] float-left;
 }
 
-.bubbleModal .chart_ex > div::before{
+.chart_ex > div::before{
   @apply content-[''] block w-[14px] h-[3px] mt-[10px] mr-[10px] float-left;
 }
 
-.bubbleModal .chart_ex > div.cht01::before{
+.chart_ex > div.cht01::before{
   @apply bg-[#fb6b77];
 }
 
-.bubbleModal .chart_ex > div.cht02::before{
+.chart_ex > div.cht02::before{
   @apply bg-[#1d5bcd];
 }
 
-.bubbleModal .chart_ex > div.cht03::before{
+.chart_ex > div.cht03::before{
   @apply bg-[#1d5bcd];
 }
 
-.bubbleModal .chart_ex > div.cht04::before{
+.chart_ex > div.cht04::before{
   @apply bg-[#72b7fc];
 }
 
-.bubbleModal .chart_ex > div.cht05::before{
+.chart_ex > div.cht05::before{
   @apply bg-[#a1d2fd];
 }
 
-.bubbleModal .chart_ex > div.cht06::before{
+.chart_ex > div.cht06::before{
   @apply bg-[#c2def4];
 }
 
-.bubbleModal .chart_ex2{
+.chart_ex2{
   @apply w-full flex justify-center items-center gap-[0px_15px] mt-[15px];
 }
 
-.bubbleModal .chart_ex2 > div > span{
+.chart_ex2 > div > span{
   @apply block h-[24px] leading-[24px] text-[13px] text-[#999] float-left;
 }
 
-.bubbleModal .chart_ex2 > div::before{
+.chart_ex2 > div::before{
   @apply content-[''] block w-[8px] h-[8px] rounded-full float-left mt-[8px] mr-[5px];
 }
 
-.bubbleModal .chart_ex2 > div.cht01::before{
+.chart_ex2 > div.cht01::before{
   @apply bg-[#fb4755];
 }
 
-.bubbleModal .chart_ex2 > div.cht02::before{
+.chart_ex2 > div.cht02::before{
   @apply bg-[#568bfb];
 }
 
-.bubbleModal .chart_ex2 > div.cht03::before{
+.chart_ex2 > div.cht03::before{
   @apply w-[20px] h-[12px] border border-[#c3cdee] rounded-none bg-[#f3f7ff] mt-[6px];
 }
 
