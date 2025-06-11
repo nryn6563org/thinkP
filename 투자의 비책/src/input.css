@@ -2357,7 +2357,7 @@ em{
 }
 
 .chartAnalyze .todaySummary .list p{
-  @apply text-[#141414] text-[13px] font-normal leading-[16px];
+  @apply text-[#141414] text-[13px] font-normal leading-[26px];
 }
 
 /* 당일수급동향 */
