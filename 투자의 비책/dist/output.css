@@ -5502,6 +5502,16 @@ em {
   content: var(--tw-content);
 }
 
+.eventBox .bottom .txt span em {
+  margin-right: 4px;
+  display: inline-block;
+}
+
+.eventBox .bottom .txt span em::before {
+  --tw-content: '#';
+  content: var(--tw-content);
+}
+
 .eventScore {
   width: 100%;
   padding: 20px;

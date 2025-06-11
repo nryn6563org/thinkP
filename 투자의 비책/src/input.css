@@ -2232,6 +2232,10 @@ em{
   @apply pl-[14px] text-[#8c8c8c] text-[15px] font-normal leading-[20px] relative block before:content-[''] before:absolute before:w-[2.5px] before:h-[2.5px] before:rounded-full before:bg-[#8c8c8c] before:left-[6px] before:top-[8px];
 }
 
+.eventBox .bottom .txt span em{
+  @apply inline-block mr-[4px] before:content-['#']
+}
+
 .eventScore{
   @apply w-full p-[20px];
 }
