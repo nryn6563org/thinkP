@@ -3719,6 +3719,47 @@ em {
   margin-top: 20px;
 }
 
+.headLine .headLineSwiper .swiper-pagination-tab {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-x: auto;
+  padding-top: 8px;
+  scrollbar-width: none;
+}
+
+.headLine .headLineSwiper .swiper-pagination-tab .swiper-pagination-bullet {
+  margin: 0px;
+  display: block;
+  height: 36px;
+  width: auto;
+  white-space: nowrap;
+  border-radius: 20px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(217 217 217 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 9px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  --tw-text-opacity: 1;
+  color: rgb(140 140 140 / var(--tw-text-opacity));
+  opacity: 1;
+}
+
+.headLine .headLineSwiper .swiper-pagination-tab .swiper-pagination-bullet-active {
+  --tw-border-opacity: 1;
+  border-color: rgb(20 20 20 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
 /* //////////////////////////////////// */
 
 .bestItem {

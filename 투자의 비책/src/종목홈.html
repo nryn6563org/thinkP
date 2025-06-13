@@ -514,16 +514,13 @@
             <div class="title">
               <strong>AI 이슈테마</strong>
             </div>
-            <div class="headLineNav">
-              <button class="active">로봇</button>
-              <button>전력반도체</button>
-            </div>
             <div class="tabContent">
               <div class="swiper headLineSwiper">
+                <div class="swiper-pagination-tab"></div>
                 <div class="swiper-wrapper">
                   <button class="swiper-slide">
                     <div class="top">
-                      <div class="name text-truncate">양자기술</div>
+                      <div class="name text-truncate">전력반도체</div>
                       <div class="per up">+221.23%</div>
                     </div>
                     <div class="bottom">
@@ -539,7 +536,7 @@
                   </button>
                   <button class="swiper-slide">
                     <div class="top">
-                      <div class="name text-truncate">양자기술</div>
+                      <div class="name text-truncate">로봇</div>
                       <div class="per up">+221.23%</div>
                     </div>
                     <div class="bottom">
@@ -555,7 +552,7 @@
                   </button>
                   <button class="swiper-slide">
                     <div class="top">
-                      <div class="name text-truncate">양자기술</div>
+                      <div class="name text-truncate">신재생에너지</div>
                       <div class="per up">+221.23%</div>
                     </div>
                     <div class="bottom">
@@ -571,7 +568,7 @@
                   </button>
                   <button class="swiper-slide">
                     <div class="top">
-                      <div class="name text-truncate">양자기술</div>
+                      <div class="name text-truncate">태양광</div>
                       <div class="per up">+221.23%</div>
                     </div>
                     <div class="bottom">
@@ -612,13 +609,52 @@
                 pagination: {
                   el: '.swiper-pagination',
                   clickable: true,
+                  type: 'bullets',
                 },
                 autoplay: {
                   delay: 2000,
                   disableOnInteraction: false,
                 },
-                loop: true,
+                loop: false,
               });
+
+              var tabName = ['전력반도체', '로봇', '신재생에너지', '태양광', '양자기술'];
+
+              var tabSwiper = new Swiper('.headLineSwiper', {
+                pagination: {
+                  el: '.swiper-pagination-tab',
+                  clickable: true,
+                  renderBullet: function (index, className) {
+                    return '<div class="' + className + '">' + (tabName[index]) + "</div>";
+                  }
+                },
+                loop: false,
+                on: {
+                  slideChange: function () {
+                    setTimeout(() => {
+                      const container = document.querySelector('.swiper-pagination-tab');
+                      const activeBullet = container.querySelector('.swiper-pagination-bullet-active');
+
+                      if (activeBullet && container) {
+                        const containerRect = container.getBoundingClientRect();
+                        const bulletRect = activeBullet.getBoundingClientRect();
+
+                        if (bulletRect.left < containerRect.left) {
+                          // 왼쪽 밖에 있는 경우
+                          const offset = container.scrollLeft - (containerRect.left - bulletRect.left + 10);
+                          container.scrollTo({ left: offset, behavior: 'smooth' });
+                        } else if (bulletRect.right > containerRect.right) {
+                          // 오른쪽 밖에 있는 경우
+                          const offset = container.scrollLeft + (bulletRect.right - containerRect.right + 10);
+                          container.scrollTo({ left: offset, behavior: 'smooth' });
+                        }
+                      }
+                    }, 10);
+                  }
+                }
+              });
+
+              swiper.controller.control = tabSwiper;
             </script>
           </div>
           <!-- headLine -->
