@@ -36,7 +36,7 @@
           <div class="code">361610</div>
         </div>
       </div>
-      <button id="searchBtn" class="search">
+      <button id="searchBtn" class="search" data-bs-toggle="offcanvas" data-bs-target="#searchScreen" type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path d="M10.708 4C14.4128 4 17.4168 7.00323 17.417 10.708C17.417 12.2905 16.8668 13.7434 15.9502 14.8906L18.8994 17.8389L18.9502 17.8965C19.1905 18.1911 19.174 18.6258 18.8994 18.9004C18.6248 19.1746 18.1899 19.1913 17.8955 18.9512L17.8379 18.9004L14.8896 15.9512C13.7426 16.8673 12.29 17.417 10.708 17.417C7.00326 17.4167 4 14.4128 4 10.708C4.00023 7.00339 7.0034 4.00025 10.708 4ZM10.708 5.5C7.83182 5.50025 5.50023 7.83182 5.5 10.708C5.5 13.5844 7.83167 15.9167 10.708 15.917C13.5846 15.917 15.917 13.5845 15.917 10.708C15.9168 7.83167 13.5844 5.5 10.708 5.5Z" fill="#141414"/>
         </svg>
@@ -1341,10 +1341,10 @@
 
 
       <!-- 종목검색 팝업창 -->
-      <div class="search-screen">
+      <div class="search-screen offcanvas offcanvas-bottom" id="searchScreen">
         <div class="title">
           <strong>종목검색</strong>
-          <button class="close">
+          <button class="close" data-bs-dismiss="offcanvas">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
               <path d="M5.5 5L12.5 12M19.5 19L12.5 12M12.5 12L19.5 5M12.5 12L5.5 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -1420,7 +1420,7 @@
         </div>
       </div>
 
-      <script>
+      <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
           const searchBtn = document.getElementById("searchBtn");
           const searchScreen = document.querySelector(".search-screen");
@@ -1441,7 +1441,7 @@
             document.body.style.overflow = "";
           });
         });
-      </script>
+      </script> -->
 
         <div class="bottomMenu">
           <div class="menuList">

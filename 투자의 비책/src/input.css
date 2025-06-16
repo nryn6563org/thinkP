@@ -862,17 +862,24 @@ em{
   background-clip: padding-box, border-box;
 }
 
-.introSearch input{
-  @apply w-full h-[46px] rounded-[50px] p-[12px_16px_13px] pr-[50px] text-[#141414] text-[14px] leading-[18px] font-normal placeholder:text-[#999] placeholder:text-[14px] placeholder:font-light placeholder:leading-[18px]
+.introSearch button{
+  @apply w-full;
 }
 
-.introSearch button{
+.introSearch button p{
+  @apply w-full h-[46px] rounded-[50px] pl-[18px] pr-[50px] text-[#999] text-[14px] font-light text-left leading-[46px];
+}
+
+.introSearch .search-btn{
   @apply absolute right-[13px] top-[12px];
+}
+
+.offcanvas.offcanvas-bottom.search-screen{
+  @apply h-full max-h-full rounded-none;
 }
 
 .search-screen{
   @apply fixed top-0 left-0 right-0 bottom-0 bg-[#fff] z-[9999] p-[30px_20px] max-w-[720px] m-[0_auto];
-  display: none;
 }
 
 .search-screen .title{
