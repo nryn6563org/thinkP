@@ -1419,7 +1419,7 @@ em{
 }
 
 .headLine .headLineSwiper .swiper-slide{
-  @apply w-full flex flex-col justify-start items-start gap-[8px] p-[15px] rounded-[16px] bg-[#f9f9f9] text-left;
+  @apply w-full flex flex-col justify-start items-start gap-[8px] p-[20px] rounded-[16px] bg-[#f9f9f9] text-left;
 }
 
 .headLine .headLineSwiper .swiper-slide .top{
@@ -1427,7 +1427,7 @@ em{
 }
 
 .headLine .headLineSwiper .swiper-slide .top .name{
-  @apply w-[calc(100%-70px)] text-[#141414] text-[16px] leading-[20px] font-bold;
+  @apply w-auto max-w-[calc(100%-70px)] text-[#141414] text-[18px] leading-[22px] font-bold;
 }
 
 .headLine .headLineSwiper .swiper-slide .top .per{
@@ -1451,7 +1451,7 @@ em{
 }
 
 .headLine .headLineSwiper .swiper-pagination{
-  @apply mt-[20px];
+  @apply block mt-[20px];
 }
 
 .headLine .headLineSwiper .swiper-pagination-tab{
@@ -1460,8 +1460,9 @@ em{
 }
 
 .headLine .headLineSwiper .swiper-pagination-tab .swiper-pagination-bullet{
-  @apply w-auto h-[36px] block opacity-100 m-0 rounded-[20px] border border-[#d9d9d9] bg-[#fff] p-[9px_15px] text-[#8c8c8c] text-[14px] font-normal leading-[18px] whitespace-nowrap;
+  @apply w-auto h-[36px] !block opacity-100 m-0 rounded-[20px] border border-[#d9d9d9] bg-[#fff] p-[9px_15px] text-[#8c8c8c] text-[14px] font-normal leading-[18px] whitespace-nowrap;
 }
+
 .headLine .headLineSwiper .swiper-pagination-tab .swiper-pagination-bullet-active{
   @apply border-[#141414] text-[#141414];
 }
@@ -2284,11 +2285,15 @@ em{
 }
 
 .eventScore .gaugeChart .state{
-  @apply text-[#141414] text-[17px] font-normal leading-[22px];
+  @apply w-full text-center text-[#141414] text-[18px] font-normal leading-[22px];
 }
 
 .eventScore .gaugeChart .state span{
   @apply font-bold;
+}
+
+.eventScore .gaugeChart img{
+  @apply w-full max-w-[450px] m-[0_auto];
 }
 
 /* 차트분석 */
@@ -2336,7 +2341,7 @@ em{
 }
 
 .chartAnalyze .pprn.ct-range .min{
-  @apply absolute bottom-[16px] left-[18px] text-[9px] text-[#999] font-normal leading-[11px];
+  @apply absolute bottom-[16px] left-[18px] text-[10px] text-[#999] font-normal leading-[11px];
 }
 
 .chartAnalyze .pprn.ct-range .min.day{
@@ -2344,7 +2349,7 @@ em{
 }
 
 .chartAnalyze .pprn.ct-range .max{
-  @apply absolute bottom-[16px] right-[18px] text-[9px] text-[#999] font-normal text-right leading-[11px];
+  @apply absolute bottom-[16px] right-[18px] text-[10px] text-[#999] font-normal text-right leading-[11px];
 }
 
 .chartAnalyze .pprn.ct-range .max.day{
@@ -2530,7 +2535,7 @@ em{
 }
 
 .breakingNews .newsList .list .txt p{
-  @apply w-auto max-w-[calc(100%-25px)] text-[#141414] text-[13px] font-normal leading-[16px] text-left;
+  @apply w-auto max-w-[calc(100%-25px)] text-[#141414] text-[14px] font-normal leading-[20px] text-left;
 }
 
 .breakingNews .newsList .list .txt.today{
@@ -2582,7 +2587,7 @@ em{
 }
 
 .reportAnalysis .list button p{
-  @apply w-[calc(100%-60px)] text-[#141414] text-[13px] font-normal leading-[20px] text-left;
+  @apply w-[calc(100%-60px)] text-[#141414] text-[14px] font-normal leading-[20px] text-left;
 }
 
 .reportAnalysis .recent-list{
@@ -2594,7 +2599,7 @@ em{
 }
 
 .reportAnalysis .recent-list button p{
-  @apply w-[calc(100%-100px)] text-[#141414] text-[13px] font-normal leading-[20px] text-left;
+  @apply w-[calc(100%-100px)] text-[#141414] text-[14px] font-normal leading-[20px] text-left;
 }
 
 .reportAnalysis .recent-list button .date{
