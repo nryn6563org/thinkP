@@ -1455,7 +1455,7 @@ em{
 }
 
 .headLine .headLineSwiper .swiper-pagination-tab{
-  @apply relative w-full flex justify-start items-center gap-[10px] overflow-x-auto mb-[10px] pt-[8px];
+  @apply relative w-full flex justify-start items-center gap-[10px] mb-[10px] pt-[8px] flex-wrap;
   scrollbar-width: none;
 }
 

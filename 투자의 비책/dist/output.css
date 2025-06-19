@@ -3720,10 +3720,10 @@ em {
   margin-bottom: 10px;
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  overflow-x: auto;
   padding-top: 8px;
   scrollbar-width: none;
 }
