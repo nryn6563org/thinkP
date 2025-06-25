@@ -879,7 +879,7 @@ em{
 }
 
 .search-screen{
-  @apply fixed top-0 left-0 right-0 bottom-0 bg-[#fff] z-[9999] p-[30px_20px] max-w-[720px] m-[0_auto];
+  @apply fixed top-0 left-0 right-0 bottom-0 bg-[#fff] p-[30px_20px] max-w-[720px] m-[0_auto];
 }
 
 .search-screen .title{
@@ -1419,7 +1419,7 @@ em{
 }
 
 .headLine .headLineSwiper .swiper-slide{
-  @apply w-full flex flex-col justify-start items-start gap-[8px] p-[20px] rounded-[16px] bg-[#f9f9f9] text-left;
+  @apply w-full flex flex-col justify-start items-start gap-[8px] p-[24px] rounded-[16px] bg-[#f9f9f9] text-left;
 }
 
 .headLine .headLineSwiper .swiper-slide .top{
@@ -2201,7 +2201,7 @@ em{
 }
 
 .eventBox{
-  @apply w-full flex flex-col justify-start items-start gap-[20px] p-[20px];
+  @apply w-full flex flex-col justify-start items-start gap-[20px] p-[30px_20px];
 }
 
 .eventBox .top{
@@ -2237,7 +2237,7 @@ em{
 }
 
 .eventBox .bottom{
-  @apply w-full p-[15px] rounded-[16px] bg-[#f9f9f9];
+  @apply w-full p-[25px_20px] rounded-[16px] bg-[#f9f9f9];
 }
 
 .eventBox .bottom .title{
@@ -2257,7 +2257,7 @@ em{
 }
 
 .eventScore{
-  @apply w-full p-[20px];
+  @apply w-full p-[30px_20px];
 }
 
 .eventScore .title{
@@ -2281,7 +2281,7 @@ em{
 }
 
 .eventScore .gaugeChart{
-  @apply w-full flex flex-col justify-start items-start gap-[10px];
+  @apply w-full flex flex-col justify-start items-start gap-[20px];
 }
 
 .eventScore .gaugeChart .state{
@@ -2298,7 +2298,7 @@ em{
 
 /* 차트분석 */
 .chartAnalyze{
-  @apply w-full p-[20px];
+  @apply w-full p-[30px_20px];
 }
 
 .chartAnalyze .title{
@@ -2306,7 +2306,7 @@ em{
 }
 
 .chartAnalyze .pprn.ct-range{
-  @apply relative h-[122px] p-[16px] pt-[56px] rounded-[6px] bg-[#f7f7f8] mb-[20px];
+  @apply relative h-[142px] p-[16px] pt-[66px] rounded-[6px] bg-[#f7f7f8] mb-[20px];
 }
 
 .chartAnalyze .pprn input[type=range] {
@@ -2333,7 +2333,7 @@ em{
 }
 
 .chartAnalyze .pprn label{
-  @apply p-[7px] bg-[#5A5B6C] rounded-[8px] absolute top-[16px] inline-block leading-[16px] !m-0 text-[12px] text-[#fff] text-center font-normal z-[2];
+  @apply p-[7px] bg-[#5A5B6C] rounded-[8px] absolute top-[26px] inline-block leading-[16px] !m-0 text-[12px] text-[#fff] text-center font-normal z-[2];
 }
 
 .chartAnalyze .pprn label span{
@@ -2341,19 +2341,19 @@ em{
 }
 
 .chartAnalyze .pprn.ct-range .min{
-  @apply absolute bottom-[16px] left-[18px] text-[10px] text-[#999] font-normal leading-[11px];
+  @apply absolute bottom-[24px] left-[18px] text-[10px] text-[#999] font-normal leading-[11px];
 }
 
 .chartAnalyze .pprn.ct-range .min.day{
-  @apply bottom-auto top-[35px] z-[1];
+  @apply bottom-auto top-[40px] z-[1];
 }
 
 .chartAnalyze .pprn.ct-range .max{
-  @apply absolute bottom-[16px] right-[18px] text-[10px] text-[#999] font-normal text-right leading-[11px];
+  @apply absolute bottom-[24px] right-[18px] text-[10px] text-[#999] font-normal text-right leading-[11px];
 }
 
 .chartAnalyze .pprn.ct-range .max.day{
-  @apply bottom-auto top-[35px] z-[1];
+  @apply bottom-auto top-[40px] z-[1];
 }
 
 .chartAnalyze .chartbox{
@@ -2390,7 +2390,7 @@ em{
 
 /* 당일수급동향 */
 .supplyDemandTrends{
-  @apply w-full p-[20px];
+  @apply w-full p-[30px_20px];
 }
 
 .supplyDemandTrends .title{
@@ -2434,7 +2434,7 @@ em{
 }
 
 .supplyDemandTrends .acTxt{
-  @apply w-full mb-[15px] text-center text-[#141414] text-[16px] font-bold leading-[20px];
+  @apply w-full mb-[20px] text-center text-[#141414] text-[16px] font-bold leading-[20px];
 }
 
 .supplyDemandTrends .sdt-etc{
@@ -2499,7 +2499,7 @@ em{
 
 /* AI속보 */
 .breakingNews{
-  @apply w-full p-[30px_20px_20px];
+  @apply w-full p-[30px_20px];
 }
 
 .breakingNews .title{
@@ -2511,7 +2511,7 @@ em{
 }
 
 .breakingNews .breakingNewsNav{
-  @apply w-full flex justify-center items-center mb-[15px];
+  @apply w-full flex justify-center items-center mb-[20px];
 }
 
 .breakingNews .breakingNewsNav button{
@@ -2551,7 +2551,7 @@ em{
 }
 
 .reportAnalysis{
-  @apply w-full p-[20px];
+  @apply w-full p-[30px_20px];
 }
 
 .reportAnalysis .title{
@@ -2655,7 +2655,7 @@ em{
 }
 
 .eventYearSignal{
-  @apply w-full p-[20px];
+  @apply w-full p-[30px_20px];
 }
 
 .eventYearSignal .title, .eventSignal .title{
@@ -2725,7 +2725,7 @@ input[type=radio].custom-radio:checked + label {
 }
 
 .eventYearSignal .box{
-  @apply w-full p-[20px_15px] rounded-[16px] shadow-[0px_2px_10px_rgba(0,0,0,0.15)] mb-[20px] last:mb-0;
+  @apply w-full p-[20px] rounded-[16px] shadow-[0px_2px_10px_rgba(0,0,0,0.15)] mb-[20px] last:mb-0;
 }
 
 .eventYearSignal .box .boxTitle{
@@ -2789,7 +2789,7 @@ input[type=radio].custom-radio:checked + label {
 }
 
 .eventSignal{
-  @apply w-full p-[20px];
+  @apply w-full p-[30px_20px];
 }
 
 .eventSignal .signalDate{
