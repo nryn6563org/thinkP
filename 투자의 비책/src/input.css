@@ -1029,12 +1029,16 @@ em{
   @apply block text-black text-[18px] font-bold;
 }
 
-.todayItem .title button{
-  @apply block text-black text-[14px] font-normal;
-} 
+.todayItem .title span{
+  @apply flex justify-end items-center gap-[4px] text-black text-[14px] font-normal leading-[20px];
+}
 
-.todayItem .title span em{
-  @apply inline-block font-bold;
+.todayItem .title span button{
+  @apply flex justify-center items-center gap-[2px];
+}
+
+.todayItem .title span button strong{
+  @apply text-[14px] font-bold leading-[20px] text-black;
 }
 
 .itemList{
