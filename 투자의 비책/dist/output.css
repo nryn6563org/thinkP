@@ -6959,6 +6959,120 @@ input[type=radio].checkPay:checked + label {
   color: rgb(102 102 102 / var(--tw-text-opacity));
 }
 
+.subscribe .compared {
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.subscribe .compared p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.subscribe .compared .cmp-table {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 16px;
+}
+
+.subscribe .compared .cmp-table .column {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.subscribe .compared .cmp-table .column:first-child {
+  width: 35%;
+}
+
+.subscribe .compared .cmp-table .column:last-child {
+  width: 35%;
+}
+
+.subscribe .compared .cmp-table .column .table-th {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(188 188 194 / var(--tw-bg-opacity));
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.subscribe .compared .cmp-table .column:first-child .table-th {
+  border-top-left-radius: 16px;
+}
+
+.subscribe .compared .cmp-table .column .table-td {
+  display: flex;
+  height: 53px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(238 238 238 / var(--tw-border-opacity));
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.subscribe .compared .cmp-table .column .table-td:last-child {
+  border-bottom-left-radius: 16px;
+  border-bottom-width: 1px;
+}
+
+.subscribe .compared .cmp-table .column .table-td:nth-child(2) {
+  padding-top: 12px;
+}
+
+.subscribe .compared .cmp-table .column:nth-child(2) .table-td {
+  border-radius: 0px;
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.subscribe .compared .cmp-table .column.premium .table-th {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 80 80 / var(--tw-bg-opacity));
+  border-top-right-radius: 16px;
+}
+
+.subscribe .compared .cmp-table .column.premium .table-td {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 80 80 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 224 224 / var(--tw-bg-opacity));
+}
+
+.subscribe .compared .cmp-table .column.premium .table-td:last-child {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 16px;
+}
+
 /* //////////////////////// */
 
 /* 서비스소개 */

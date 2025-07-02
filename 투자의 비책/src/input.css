@@ -2922,6 +2922,54 @@ input[type=radio].checkPay:checked + label {
 .subscribe .guide{
   @apply w-full p-[15px_0_40px] text-[#666] text-[14px] font-normal leading-[17px];
 }
+
+.subscribe .compared{
+  @apply w-full flex flex-col justify-start items-center gap-[20px] mb-[40px];
+}
+
+.subscribe .compared p{
+  @apply text-[#000] text-center text-[20px] font-normal leading-[25px];
+}
+
+.subscribe .compared .cmp-table{
+  @apply w-full flex justify-center items-start rounded-[16px];
+}
+
+.subscribe .compared .cmp-table .column{
+  @apply w-[30%] first:w-[35%] last:w-[35%] flex flex-col justify-start items-center;
+}
+
+.subscribe .compared .cmp-table .column .table-th{
+  @apply w-full h-[40px] flex justify-center items-center bg-[#BCBCC2] text-[#fff] text-[16px] font-normal leading-[20px];
+}
+
+.subscribe .compared .cmp-table .column:first-child .table-th{
+  @apply rounded-tl-[16px];
+}
+
+.subscribe .compared .cmp-table .column .table-td{
+  @apply w-full h-[53px] flex justify-center items-center text-center text-[#000] text-[16px] font-normal leading-[20px] border-l border-r border-[#eee] last:border-b last:rounded-bl-[16px];
+}
+
+.subscribe .compared .cmp-table .column .table-td:nth-child(2){
+  @apply pt-[12px];
+}
+
+.subscribe .compared .cmp-table .column:nth-child(2) .table-td{
+  @apply border-none bg-[#f5f5f5] rounded-none;
+}
+
+.subscribe .compared .cmp-table .column.premium .table-th{
+  @apply bg-[#FF5050];
+}
+
+.subscribe .compared .cmp-table .column.premium .table-th{
+  @apply rounded-tr-[16px];
+}
+
+.subscribe .compared .cmp-table .column.premium .table-td{
+  @apply bg-[#FFE0E0] border-[#ff5050] last:rounded-bl-none last:rounded-br-[16px];
+}
 /* //////////////////////// */
 
 /* 서비스소개 */
