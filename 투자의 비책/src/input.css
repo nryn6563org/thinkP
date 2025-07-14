@@ -250,6 +250,10 @@ em{
   @apply pt-[27px];
 }
 
+.pt-30{
+  @apply !pt-[30px];
+}
+
 .flexsb{
   @apply w-full flex justify-between items-center;
 }
@@ -396,11 +400,15 @@ em{
 }
 
 .menuBtn{
-  @apply flex flex-row gap-[30px] justify-start items-center pl-[15px];
+  @apply flex flex-row gap-[30px] justify-start items-center flex-wrap pl-[10px];
 }
 
 .menuBtn button{
-  @apply flex flex-col gap-[5px] justify-center items-center text-white text-[12px] font-normal;
+  @apply min-w-[50px] flex flex-col gap-[5px] justify-center items-center text-white text-[12px] font-normal;
+}
+
+.menuBtn button span:first-child{
+  @apply h-[30px] flex justify-center items-center;
 }
 
 .terms{
@@ -576,7 +584,7 @@ em{
 }
 
 .alarmModal .modal-content{
-  @apply p-[55px_35px_40px];
+  @apply p-[55px_35px_30px];
 }
 
 .alarmModal .modal-body .title{
@@ -597,6 +605,30 @@ em{
 
 .alarmModal .modal-body .period{
   @apply w-full py-[10px] rounded-[10px] bg-[#F3F3F4] text-center text-[#000] text-[16px] font-normal leading-[20px];
+}
+
+.alarmModal .modal-body .propensity{
+  @apply w-full flex flex-col justify-center items-center;
+}
+
+.alarmModal .modal-body .propensity .top{
+  @apply w-full h-[40px] bg-[#F6DBDB] rounded-t-[8px] flex justify-center items-center;
+}
+
+.alarmModal .modal-body .propensity .bottom{
+  @apply w-full h-[40px] bg-[#F3F3F3] rounded-b-[8px] flex justify-center items-center;
+}
+
+.alarmModal .modal-body .propensity span{
+  @apply w-[50%] text-center text-[#000] text-[14px] font-normal leading-[18px];
+}
+
+.alarmModal .modal-body .cer-img{
+  @apply w-full flex justify-center items-center mb-[40px];
+}
+
+.alarmModal .modal-body .note{
+  @apply w-full text-center text-[#8c8c8c] text-[12px] font-normal leading-[15px] mt-[30px];
 }
 /* ///////////// */
 
@@ -2178,7 +2210,7 @@ em{
 
 /* 비가입자 팝업 */
 .joinModal .modal-content{
-  @apply w-full p-[55px_40px_50px];
+  @apply w-full p-[55px_40px_30px];
 }
 
 .joinModal .modal-body .txt{
@@ -2850,7 +2882,7 @@ input[type=radio].custom-radio:checked + label {
 }
 
 .subscribe .box{
-  @apply relative w-full p-[20px_15px] rounded-[16px] border border-[#d2d2d2] mb-[15px];
+  @apply bg-[#FFF8F8] relative w-full p-[20px_15px] rounded-[16px] border border-[#FF5050] mb-[15px];
 }
 
 .subscribe .box .saleBg{
@@ -2866,7 +2898,7 @@ input[type=radio].custom-radio:checked + label {
 }
 
 .subscribe .box .payList .payTxt{
-  @apply inline-block p-[3px_12px] rounded-[16px] bg-[#f5f5f5] text-black text-center text-[14px] font-normal leading-[17px] mb-[10px];
+  @apply inline-block p-[3px_12px] rounded-[16px] bg-[#FFDEDE] text-black text-center text-[14px] font-normal leading-[17px] mb-[10px];
 }
 
 .subscribe .box .payList .num{
@@ -2897,10 +2929,30 @@ input[type=radio].checkPay + label {
 input[type=radio].checkPay:checked + label {
   display: inline-block;
   padding-left: 24px;
-  height: 24px;
+  height: 24px; 
   line-height: 24px;
   background: url(../img/bg_check_on.png) no-repeat 0 0;
   background-size: 24px auto;
+}
+
+.subscribe .sub-checkbox{
+  @apply w-full mb-[15px] flex justify-between items-center;
+}
+
+.subscribe .sub-checkbox .checkbox-group input{
+  @apply hidden;
+}
+
+.subscribe .sub-checkbox .checkbox-group input + label{
+  @apply pl-[26px] inline-block h-[20px] leading-[20px] bg-[url(../img/sub-checkbox.png)] bg-no-repeat bg-[length:20px] bg-left text-[14px] text-[#141414] font-normal cursor-pointer;
+}
+
+.subscribe .sub-checkbox .checkbox-group input:checked + label{
+  @apply bg-[url(../img/sub-checkbox-checked.png)] bg-no-repeat bg-[length:20px] bg-left;
+}
+
+.subscribe .sub-checkbox button{
+  @apply text-[#8C8C8C] text-[14px] font-normal leading-[18px];
 }
 
 .subscribe .checkTxt{
@@ -2924,11 +2976,11 @@ input[type=radio].checkPay:checked + label {
 }
 
 .subscribe .compared{
-  @apply w-full flex flex-col justify-start items-center gap-[20px] mb-[40px];
+  @apply w-full flex flex-col justify-start items-center gap-[15px] mb-[40px];
 }
 
 .subscribe .compared p{
-  @apply text-[#000] text-center text-[20px] font-normal leading-[25px];
+  @apply w-full text-[#000] text-[16px] font-normal leading-[20px];
 }
 
 .subscribe .compared .cmp-table{
@@ -2936,11 +2988,11 @@ input[type=radio].checkPay:checked + label {
 }
 
 .subscribe .compared .cmp-table .column{
-  @apply w-[30%] first:w-[35%] last:w-[35%] flex flex-col justify-start items-center;
+  @apply w-[28%] first:w-[36%] last:w-[36%] flex flex-col justify-start items-center;
 }
 
 .subscribe .compared .cmp-table .column .table-th{
-  @apply w-full h-[40px] flex justify-center items-center bg-[#BCBCC2] text-[#fff] text-[16px] font-normal leading-[20px];
+  @apply w-full h-[40px] flex justify-center items-center bg-[#BCBCC2] text-[#fff] text-[14px] font-normal leading-[18px];
 }
 
 .subscribe .compared .cmp-table .column:first-child .table-th{
@@ -2948,11 +3000,15 @@ input[type=radio].checkPay:checked + label {
 }
 
 .subscribe .compared .cmp-table .column .table-td{
-  @apply w-full h-[53px] flex justify-center items-center text-center text-[#000] text-[16px] font-normal leading-[20px] border-l border-r border-[#eee] last:border-b last:rounded-bl-[16px];
+  @apply w-full py-[5px] flex justify-center items-center text-center text-[#000] text-[14px] font-normal leading-[18px] border-l border-r border-[#eee] last:border-b last:rounded-bl-[16px];
 }
 
 .subscribe .compared .cmp-table .column .table-td:nth-child(2){
-  @apply pt-[12px];
+  @apply pt-[10px];
+}
+
+.subscribe .compared .cmp-table .column .table-td:last-child{
+  @apply pb-[10px];
 }
 
 .subscribe .compared .cmp-table .column:nth-child(2) .table-td{
@@ -2960,7 +3016,7 @@ input[type=radio].checkPay:checked + label {
 }
 
 .subscribe .compared .cmp-table .column.premium .table-th{
-  @apply bg-[#FF5050];
+  @apply bg-[#EBF1FF] border border-[#5087FF] border-b-0 text-[#5087FF];
 }
 
 .subscribe .compared .cmp-table .column.premium .table-th{
@@ -2968,9 +3024,163 @@ input[type=radio].checkPay:checked + label {
 }
 
 .subscribe .compared .cmp-table .column.premium .table-td{
-  @apply bg-[#FFE0E0] border-[#ff5050] last:rounded-bl-none last:rounded-br-[16px];
+  @apply bg-[#FFFFFF] border-[#5087FF] last:rounded-bl-none last:rounded-br-[16px];
 }
 /* //////////////////////// */
+
+/* 투자성향진단 */
+.guideModal .modal-content{
+  @apply p-[55px_35px_30px];
+}
+
+.guideModal .modal-body .title{
+  @apply text-center text-black text-[18px] font-bold mb-[30px] leading-[21px];
+}
+
+.guideModal .modal-body .txt{
+  @apply text-left text-black text-[14px] font-normal leading-[20px] mb-[30px];
+}
+
+.guideModal .modal-body .check{
+  @apply w-full text-center;
+}
+
+.guideModal .modal-body .check button{
+  @apply w-[190px] h-[40px] rounded-[18px] bg-mainColor text-white text-[14px] font-normal;
+}
+
+.diagnosis{
+  @apply w-full min-h-[calc(100dvh-50px)] p-[20px_20px_30px] flex flex-col justify-between items-center gap-[30px];
+}
+
+.diagnosis .top{
+  @apply w-full flex flex-col justify-start items-start gap-[40px];
+}
+
+.diagnosis .gauge{
+  @apply w-full flex justify-center items-center gap-[2px] px-[50px];
+}
+
+.diagnosis .gauge span{
+  @apply w-[calc(100%/7)] h-[5px] bg-[#E4E4E4] rounded-[16px];
+}
+
+.diagnosis .gauge span.active{
+  @apply bg-[#FF5050];
+}
+
+.diagnosis .question .score{
+  @apply w-full text-[#8C8C8C] text-[20px] font-normal leading-[25px] mb-[10px];
+}
+
+.diagnosis .question .score strong{
+  @apply text-mainColor text-[20px] font-bold leading-[25px];
+}
+
+.diagnosis .question .title{
+  @apply w-full text-left text-black text-[20px] font-bold leading-[25px] mb-[30px];
+}
+
+.diagnosis .question .answer{
+  @apply w-full flex flex-col justify-start items-start gap-[10px];
+}
+
+.diagnosis .question .answer .answer-rdo input{
+  @apply hidden;
+}
+
+.diagnosis .question .answer .answer-rdo input + label{
+  @apply w-auto p-[12px_15px] rounded-[50px] bg-[#f7f7f8] text-[#8c8c8c] text-[15px] font-normal leading-[21px] cursor-pointer;
+}
+
+.diagnosis .question .answer .answer-rdo input:checked + label{
+  @apply bg-[#ffeaea] text-mainColor border-[2px] border-mainColor;
+}
+
+.diagnosis .bottom{
+  @apply w-full flex flex-col justify-start items-start gap-[20px];
+}
+
+.diagnosis .note{
+  @apply w-full flex justify-start items-start gap-[10px];
+}
+
+.diagnosis .note span{
+  @apply text-black text-[14px] font-normal leading-[22px];
+}
+
+.diagnosis .btn-group{
+  @apply w-full flex justify-center items-center gap-[10px];
+}
+
+.diagnosis .btn-group button{
+  @apply h-[45px] w-[21%] rounded-[6px] border border-mainColor text-mainColor text-[14px] font-normal leading-[18px] last:w-[75%] last:bg-mainColor last:border-none last:text-[#fff];
+}
+
+.diagnosis .btn-group button.disabled{
+  @apply bg-[#FFC3C3];
+}
+
+.result{
+  @apply w-full min-h-[calc(100dvh-50px)] p-[20px_20px_30px] flex flex-col justify-between items-center gap-[15px];
+}
+
+.result .box{
+  @apply w-full p-[30px_20px] flex flex-col justify-center items-center gap-[30px] rounded-[12px] border border-[#ededed] bg-[#f9f9f9]
+}
+
+.result .box .title{
+  @apply w-full text-center text-black text-[18px] font-bold leading-[23px];
+}
+
+.result .box .title span{
+  @apply text-mainColor;
+}
+
+.result .box .box-img{
+  @apply w-full flex justify-center items-center py-[5px];
+}
+
+.result .box .box-img img{
+  @apply h-[100px];
+}
+
+.result .box .txt{
+  @apply w-full text-center text-black text-[15px] font-normal leading-[22px];
+}
+
+.result .box .txt span{
+  @apply text-mainColor;
+}
+
+.result .btn-group{
+  @apply w-full flex justify-center items-center;
+}
+
+.result .btn-group button{
+  @apply p-[9px_27px] rounded-[50px] bg-mainColor text-white text-[14px] font-normal leading-[22px];
+}
+
+.identification{
+  @apply w-full h-[calc(100dvh-50px)] flex justify-center items-center pb-[50px];
+}
+
+.contractModal .modal-content{
+  @apply p-[55px_20px_0px];
+}
+
+.contractModal .modal-content .title{
+  @apply text-black text-[16px] font-bold leading-[20px] mb-[8px];
+}
+
+.contractModal .modal-content .date{
+  @apply text-[#8c8c8c] text-[15px] font-normal leading-[20px] mb-[30px];
+}
+
+.contractModal .modal-content .txt{
+  @apply text-black text-[15px] font-normal leading-[20px] pb-[40px];
+}
+/* ///////////////////////////////// */
 
 /* 서비스소개 */
 .serIntro .section{
@@ -3140,7 +3350,7 @@ input[type=radio].checkPay:checked + label {
 }
 
 .joinBanner{
-  @apply w-full max-w-[720px] h-[55px] fixed bottom-0 text-center z-[9999];
+  @apply w-full max-w-[720px] h-[55px] fixed bottom-0 text-center z-[999];
 }
 
 .joinBanner button{
