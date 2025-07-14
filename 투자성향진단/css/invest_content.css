@@ -1,0 +1,498 @@
+* {
+  font-family: 'Noto Sans KR';
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+.invest-content{
+  width: 100%;
+  background: #F9FAFB;
+}
+
+.i-content{
+  width: 1030px;
+  margin: 0 auto;
+  padding: 50px 20px 100px;
+  box-sizing: content-box;
+}
+
+/* 투자자 성향진단 */
+
+.i-content .main-title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.i-content .main-title span{
+  color: #3e72ed;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.i-content p{
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.i-content .box{
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  background: #EEF1FF;
+  display: flex;
+  flex-direction: column;
+}
+
+.i-content .box span{
+  display: inline-block;
+  position: relative;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-left: 22px;
+}
+
+.i-content .box span::before{
+  content: '';
+  position: absolute;
+  width: 3.5px;
+  height: 3.5px;
+  background: #333;
+  border-radius: 100%;
+  top: 8px;
+  left: 9px;
+}
+
+.i-content .question-group{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.i-content .question-group .q-box{
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+}
+
+.i-content .question-group .q-box .question{
+  width: 100%;
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 15px;
+}
+
+.i-content .question-group .q-box .question span{
+  color: #3E72ED;
+}
+
+.i-content .question-group .q-box .answer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.i-content .question-group .q-box .answer .rdo-group {
+  width: 100%;
+}
+
+.i-content .question-group .q-box .answer .rdo-group input{
+  display: none;
+}
+
+.i-content .question-group .q-box .answer .rdo-group input + label{
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  padding-left: 52px;
+  border-radius: 8px;
+  border: 1px solid #EDEDED;
+  background-image: url('https://img.thinkpool.com/common/invest/invest_rdo.png');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 20px;
+  background-color: #fff;
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.i-content .question-group .q-box .answer .rdo-group input:checked + label{
+  background-image: url('https://img.thinkpool.com/common/invest/invest_rdo-checked.png');
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 20px;
+  border: 1px solid #B5C1FF;
+  background-color: #EEF1FF;
+}
+
+.i-content .submit{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.i-content .submit button{
+  width: 200px;
+  height: 50px;
+  border-radius: 100px;
+  background: #3e72ed;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.resultModal .modal-dialog{
+  max-width: 650px;
+  min-width: 650px;
+}
+
+.resultModal .modal-content{
+  border: none;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.resultModal .modal-body{
+  width: 100%;
+  padding: 0;
+}
+
+.resultModal .modal-body .top{
+  width: 100%;
+  padding: 40px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  background: #fff0f0;
+  border-radius: 16px 16px 0 0;
+}
+
+.resultModal .modal-body .top .title{
+  color: #333;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+.resultModal .modal-body .top .result{
+  color: #3E72ED;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.resultModal .modal-body .top p{
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.resultModal .modal-body .bottom{
+  width: 100%;
+  padding: 30px 40px 50px;
+  background: #fff;
+}
+
+.resultModal .modal-body .bottom .title{
+  width: 100%;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.resultModal .modal-body .bottom .score{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 27px;
+  margin-bottom: 40px;
+}
+
+.resultModal .modal-body .bottom .score .circle{
+  width: 114px;
+  height: 114px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 13px solid #ff4150;
+  border-radius: 100%;
+  padding-top: 10px;
+}
+
+.resultModal .modal-body .bottom .score .circle span{
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.resultModal .modal-body .bottom .score .circle p{
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.resultModal .modal-body .bottom .score .circle p strong{
+  color: #ff4040;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.resultModal .modal-body .bottom .score .box{
+  width: 430px;
+  padding: 24px 30px;
+  border-radius: 12px;
+  background: #FFF0F0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.resultModal .modal-body .bottom .checklist{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+}
+
+.resultModal .modal-body .bottom .checklist .type{
+  width: 105px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 2px solid #D2D2D2;
+  background: #FFF;
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.resultModal .modal-body .bottom .checklist .type.active{
+  color: #6695EE;
+  border: 2px solid #6695EE;
+}
+
+.resultModal .modal-body .btn-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 32px;
+}
+
+.resultModal .modal-body .btn-group button{
+  width: 160px;
+  height: 49px;
+  border-radius: 100px;
+  background: #EBEBEB;
+  border: none;
+  color: #666;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.resultModal .modal-body .btn-group button:first-child{
+  background: #3E72ED;
+  color: #fff;
+}
+
+.customModal .modal-dialog{
+  max-width: 430px;
+  min-width: 430px;
+}
+
+.customModal .modal-content{
+  position: relative;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.customModal .modal-content .modal-header{
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.customModal .modal-content .modal-header button{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+}
+
+.customModal .modal-content .modal-body{
+  width: 100%;
+  padding: 50px 0px 40px;
+}
+
+.customModal .modal-content .modal-body .title{
+  width: 100%;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: center;
+}
+
+.customModal .modal-content .modal-body p{
+  width: 100%;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.customModal .modal-content .modal-body p strong{
+  font-weight: 700;
+}
+
+.customModal .modal-content .modal-body p span{
+  color: #fb5360;
+}
+
+.customModal .modal-content .modal-body b{
+  display: block;
+  width: 100%;
+  color: #3E72ED;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.customModal .modal-content .modal-body .btn-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.customModal .modal-content .modal-body .btn-group button{
+  padding: 10px 45px;
+  border-radius: 100px;
+  background: #EBEBEB;
+  border: none;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.customModal .modal-content .modal-body .btn-group button:first-child{
+  background: #3E72ED;
+  color: #fff;
+}
+
+/* 서비스 결제하기 */
+.i-content .content-title{
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+.i-content .content-box{
+  width: 100%;
+  padding: 40px 24px 70px;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.10));
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.i-content .content-box .bg-box{
+  width: 100%;
+  padding: 40px 50px;
+  border-radius: 12px;
+  background: #F9F9F9;
+}
+
+.i-content .content-box .title{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.i-content .content-box .step-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.i-content .content-box .step-group .step{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
