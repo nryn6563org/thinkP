@@ -44,11 +44,11 @@
           <div class="title">리서치리포트 보기 어려우시죠?</div>
           <div class="txt">언제 사고 팔아야하는지 어려움을 투자의 비책에서 쉽게 해결해 드립니다.</div>
           <div class="compared">
-            <p>투자의비책 프리미엄 서비스는 이렇게 다릅니다.</p>
+            <p>투자의비책 프리미엄 서비스는 <br> 이렇게 다릅니다.</p>
             <div class="cmp-table">
               <div class="column">
                 <div class="table-th">일반</div>
-                <div class="table-td">매일 5종목 무료</div>
+                <div class="table-td">매일 5종목<br>무료이용</div>
                 <div class="table-td">X</div>
                 <div class="table-td">X</div>
               </div>
@@ -81,21 +81,9 @@
               </label>
             </div>
           </div>
-          <!-- 체크박스 -->
-          <div class="sub-checkbox">
-            <div class="checkbox-group">
-              <input type="checkbox" name="mustRead" id="mustRead">
-              <label for="mustRead">투자자문계약(필독)</label>
-            </div>
-            <button data-bs-toggle="modal" data-bs-target="#contract">내용보기</button>
-          </div>
           <div class="contentBanner p-0">
             <button><img src="../img/subscribeBanner.png" alt="배너"></button>
           </div>
-
-          <!-- 팝업 여는 버튼 (생략O) -->
-          <!-- <button data-bs-toggle="modal" data-bs-target="#alert">투자자문계약 미동의 시 팝업</button>
-          <button data-bs-toggle="modal" data-bs-target="#goDia">투자성향진단 미회원일 경우 팝업</button> -->
         </div>
         <!-- subscribe -->
 
@@ -106,167 +94,8 @@
         </div>
 
         <div class="joinBanner">
-          <button data-bs-toggle="modal" data-bs-target="#certificationModal">투자의 비책 가입하기</button>
+          <button>투자의 비책 가입하기</button>
         </div>
-
-        <!-- 본인인증 팝업 -->
-        <div class="modal alarmModal fade" id="certificationModal">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button data-bs-dismiss="modal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
-                    <path d="M3.32458 5L10.3246 12M17.3246 19L10.3246 12M10.3246 12L17.3246 5M10.3246 12L3.32458 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="title">유료회원가입을 위해<br>본인인증을 진행해 주세요.</div>
-                <div class="cer-img">
-                  <img width="60" src="../img/certification-img.png" alt="본인인증 이미지">
-                </div>
-                <div class="txt">
-                  투자자문 서비스를 이용하기 위한 본인인증 단계입니다. <br>
-                  휴대폰으로 본인인증을 하시기 바랍니다.
-                </div>
-                <div class="check">
-                  <button type="button">휴대폰 번호로 본인인증</button>
-                </div>
-                <div class="note">
-                  ※ 인증에 관한 문의는 고객센터<br>
-                  02-2174-6442으로 문의 주시기 바랍니다.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ////////////////////// -->
-
-        <!-- 투자자문 계약서 팝업 -->
-        <div class="modal fade contractModal" id="contract">
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button data-bs-dismiss="modal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
-                    <path d="M3.32458 5L10.3246 12M17.3246 19L10.3246 12M10.3246 12L17.3246 5M10.3246 12L3.32458 19"
-                      stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="title">투자자문 계약서</div>
-                <div class="date">계약일자 : 2025/05/12</div>
-                <div class="txt">
-                  고객과(인증된고객이름) 씽크풀투자자문(이하 “회사”라 한다)은 다음과 같이 투자자문 계약을 체결한다.<br><br>
-                  
-                  제 1 조 (목적)<br>
-                  본 계약서는 회사가 계약기간 동안 고객에게 「자본시장과 금융투자업에 관한 법률」에서 정한 투자자문을 제공함과 관련하여 고객과 회사 간 제반 권리와 의무를 정하는 데에 목적이 있다.<br><br>
-                  
-                  제 2 조 (투자자문의 대상과 제공방법)<br>
-                  ① 본 계약은 고객이 이동통신 단말 장치에 설치된 앱(계약일 현재 ‘투자의비책’이라는 명칭으로 제공되며, 이하 ‘모바일앱’) 및 투자의비책 관련 웹사이트를 통해 제공받는 서비스에 한정하여 적용되는 계약이다.<br>
-                  ② 모바일앱은 안드로이드를 통해 제공되며, 고객은 각 플랫폼의 앱 마켓을 이용하여 모바일앱을 설치하고 사용할 수 있다.<br>
-                  ③ 웹사이트는 투자의비책 사이트를 통해 제공되며, 고객은 PC 및 모바일웹을 통해 사용할 수 있다.<br>
-                  ④ 회사가 고객에게 제공하는 투자자문의 대상은 자본시장법 제4조 및 제5조에 규정된 증권 및 파생상품 중, 모바일앱, 웹사이트에서 회사가 제공하는 것으로 명시된 상품(이하 “상품”)이다.<br><br>
-                  
-                  제 3 조 (투자자문의 범위)<br>
-                  회사가 고객에게 제공하는 투자자문서비스의 내용 및 범위는 다음 각 항과 같다.<br>
-                  ① 모바일앱의 상품에 명시된 투자자문 자산의 매매 시점(추천, 매도)에 관한 사항<br>
-                  ② 모바일앱의 상품에 명시된 투자자문 자산의 가치 판단에 관한 사항<br>
-                  ③ 웹사이트의 상품에 명시된 투자자문 자산 매매(추천, 매도)에 관한 사항<br><br>
-                  
-                  제 4 조 (투자자문의 기간)<br>
-                  ① 본 계약의 기간은 고객이 플랫폼사 및 웹사이트를 통한 PG사를 통해 결제한 후 상품 이용을 시작한 시점부터, 해당 결제에 따른 이용 기간이 종료되는 시점까지로 한다.<br>
-                  ② 고객이 플랫폼사 및 웹사이트를 통한 PG사에서 결제하는 시점, 회사의 투자자문 서비스가 개시된다.<br>
-                  ③ 고객은 플랫폼사 및 웹사이트에서 구독 취소 또는 해지, 환불 등의 방법을 통해 투자자문 서비스를 종료할 수 있다.<br>
-                  ④ 카드 결제, 무통장 입금 등 플랫폼사 외의 결제 시스템을 이용한 경우, 해당 결제를 통해 설정된 상품 이용 기간이 투자자문 서비스 기간으로 간주된다.<br><br>
-                  
-                  제 5 조 (수수료)<br>
-                  ① 고객은 상품을 이용함에 있어 플랫폼사의 결제를 통하여 수수료를 회사에 제공한다.<br>
-                  ② 플랫폼사를 이용하여 수수료를 지급하였을 경우 결제, 재결제, 해지, 환불 등 모든 수수료 관련 정책은 플랫폼사의 정책을 따른다.<br>
-                  ③ 플랫폼사 외의 웹사이트를 통한 PG사 결제를 이용했을 경우 금융소비자 보호법 및 관련 법률을 따른다.<br><br>
-                  
-                  제 6 조 (회사와 고객의 의무 및 책임)<br>
-                  ① 고객은 제공된 상품을 원형 그대로 또는 변형된 형태로 제3자에게 제공하거나 공유할 수 없다.<br>
-                  ② 회사는 어떠한 경우에도 투자 성과를 보장하지 않으며, 상품은 투자 판단을 보조하는 역할을 하며 모든 투자 결과에 대한 책임은 고객에게 귀속된다.<br><br>
-                  
-                  제 7 조 (비밀유지의무)<br>
-                  ① 본 계약과 관련하여 상대방으로부터 제공받은 정보 및 자료는 본 계약의 이행 이외의 목적으로 사용하거나 제3자에게 제공할 수 없다.<br>
-                  ② 회사는 계약과 관련하여 알게 된 고객의 정보를 사전 동의 없이 제3자에게 누설하여서는 안 된다.<br>
-                  ③ 본 조항의 비밀유지 의무는 계약 종료 후에도 유효하다.<br><br>
-                  
-                  제 8 조 (분쟁 해결)<br>
-                  ① 본 계약에서 정하지 않은 사항은 관련 법규, 상관례 또는 고객과 회사간 합의에 의해 처리한다.<br>
-                  ② 소송이 필요한 경우, 서울중앙지방법원을 관할 법원으로 한다.<br><br>
-                  
-                  계약서 작성 및 보관<br>
-                  본 계약의 성립을 증명하기 위해 계약서를 작성하고 고객은 계약기간 내 언제든지 모바일앱 또는 웹사이트에서 본 계약서를 확인할 수 있다.<br><br>
-                  
-                  
-                  2025년 월 일(결제한 당일 날짜 노출)<br><br>
-                  
-                  고객 <br>
-                  계약자 : 홍길동<br>
-                  핸드폰번호 : 010-1234-5678<br><br>
-
-                  회사 <br>
-                  대표 : 씽크풀투자자문 주식회사 대표 조완우<br>
-                  주소 : 서울시 영등포구 국제금융로 70 미원빌딩 17층
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- //////////////////////////// -->
-
-        <!-- 투자성향진단 미회원일 경우 팝업 -->
-        <div class="modal fade joinModal" id="goDia" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" data-bs-dismiss="modal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
-                    <path d="M3.32458 5L10.3246 12M17.3246 19L10.3246 12M10.3246 12L17.3246 5M10.3246 12L3.32458 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="txt mb-0">
-                  투자의비책 서비스를 이용 하시려면 자본시장법에 따라 투자자 성향진단 및 전자계약체결이 필요합니다.<br>진행하시겠습니까?
-                </div>
-                <div class="btn pt-30">
-                  <button data-bs-dismiss="modal">취소</button>
-                  <button class="active">확인</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /////////////////////////// -->
-
-        <!-- 투자자문계약 미동의 시 팝업 -->
-        <div class="modal alarmModal fade" id="alert">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button data-bs-dismiss="modal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24" fill="none">
-                    <path d="M3.32458 5L10.3246 12M17.3246 19L10.3246 12M10.3246 12L17.3246 5M10.3246 12L3.32458 19" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="txt">
-                  투자의비책 투자자문계약에 동의 해주셔야 결제가 가능합니다.
-                </div>
-                <div class="check">
-                  <button type="button" data-bs-dismiss="modal">확인</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- //////////////////////////// -->
 
       </div>
       <!-- content -->
