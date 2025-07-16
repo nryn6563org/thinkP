@@ -3154,10 +3154,14 @@ input[type=radio].checkPay:checked + label {
 }
 
 .result .btn-group{
-  @apply w-full flex justify-center items-center;
+  @apply w-full flex flex-col justify-center items-center gap-[10px];
 }
 
 .result .btn-group button{
+  @apply text-[#141414] text-[14px] font-normal leading-[22px] bg-transparent p-0;
+}
+
+.result .btn-group button.active{
   @apply p-[9px_27px] rounded-[50px] bg-mainColor text-white text-[14px] font-normal leading-[22px];
 }
 
