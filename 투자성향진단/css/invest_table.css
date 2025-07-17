@@ -1,0 +1,78 @@
+.table_w .sign-table tbody tr td{
+  padding: 15px 0 !important;
+  text-align: center;
+  line-height: 17px !important;
+}
+
+.table_w .sign-table tbody tr td button{
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #999;
+  background: #FFF;
+  color: #999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.table_w .sign-table tbody tr td button.active{
+  border: 1px solid #3E72ED;
+  color: #3E72ED;
+}
+
+.signModal .modal-dialog{
+  max-width: 430px;
+  min-width: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100% - 3rem * 2);
+}
+
+.signModal .modal-content{
+  position: relative;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.signModal .modal-content .modal-header{
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.signModal .modal-content .modal-header button{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+}
+
+.signModal .modal-content .modal-body{
+  width: 100%;
+  padding: 50px 50px 40px;
+}
+
+.signModal .modal-content .modal-body .title{
+  width: 100%;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: center;
+}
+
+.signModal .modal-content .modal-body p{
+  width: 100%;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}

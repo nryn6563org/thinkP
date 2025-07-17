@@ -120,11 +120,11 @@ p{
   width: 100%;
 }
 
-.i-content .question-group .q-box .answer .rdo-group input{
+.i-content .question-group .q-box .answer .rdo-group input[type=radio]{
   display: none;
 }
 
-.i-content .question-group .q-box .answer .rdo-group input + label{
+.i-content .question-group .q-box .answer .rdo-group input[type=radio] + label{
   display: block;
   cursor: pointer;
   padding: 10px 20px;
@@ -172,6 +172,36 @@ p{
   cursor: pointer;
 }
 
+.resultModal .modal-body.type01 .top{
+  background: #FFF0F0;
+}
+
+.resultModal .modal-body.type01 .bottom .score .box{
+  background: #FFF0F0;
+  padding: 0px 30px;
+}
+
+.resultModal .modal-body.type02 .top{
+  background: #FFF0DD;
+}
+
+.resultModal .modal-body.type02 .bottom .score .box{
+  background: #FFF0DD;
+  padding: 0px 30px;
+}
+
+.resultModal .modal-body.type03 .top{
+  background: #F2F9E2;
+}
+
+.resultModal .modal-body.type04 .top{
+  background: #EAFFF1;
+}
+
+.resultModal .modal-body.type05 .top{
+  background: #DBEAFE;
+}
+
 .resultModal .modal-dialog{
   max-width: 650px;
   min-width: 650px;
@@ -198,6 +228,10 @@ p{
   gap: 20px;
   background: #fff0f0;
   border-radius: 16px 16px 0 0;
+}
+
+.resultModal .modal-body .top span img{
+  height: 80px;
 }
 
 .resultModal .modal-body .top .title{
@@ -246,49 +280,29 @@ p{
   margin-bottom: 40px;
 }
 
-.resultModal .modal-body .bottom .score .circle{
-  width: 114px;
-  height: 114px;
+.resultModal .modal-body .bottom .score .box{
+  width: 430px;
+  height: 100px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 13px solid #ff4150;
-  border-radius: 100%;
-  padding-top: 10px;
-}
-
-.resultModal .modal-body .bottom .score .circle span{
-  color: #333;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-}
-
-.resultModal .modal-body .bottom .score .circle p{
-  color: #333;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  text-align: center;
-}
-
-.resultModal .modal-body .bottom .score .circle p strong{
-  color: #ff4040;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 31px;
-}
-
-.resultModal .modal-body .bottom .score .box{
-  width: 430px;
-  padding: 24px 30px;
+  align-items: flex-start;
   border-radius: 12px;
-  background: #FFF0F0;
+  background: #F5F5F5;
   color: #333;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.resultModal .modal-body .bottom .score .box span{
+  display: inline-block;
+  color: #C8212F;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-top: 5px;
 }
 
 .resultModal .modal-body .bottom .checklist{
@@ -341,7 +355,7 @@ p{
   line-height: 25px;
 }
 
-.resultModal .modal-body .btn-group button:first-child{
+.resultModal .modal-body .btn-group button.active{
   background: #3E72ED;
   color: #fff;
 }
@@ -473,6 +487,11 @@ p{
   background: #F9F9F9;
 }
 
+.i-content .content-box .bg-box.noBankBook{
+  width: 100%;
+  padding: 40px 121px;
+}
+
 .i-content .content-box .title{
   width: 100%;
   margin-bottom: 20px;
@@ -487,6 +506,8 @@ p{
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 .i-content .content-box .step-group .step{
@@ -495,4 +516,405 @@ p{
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+
+.i-content .content-box .step-group .step .num{
+  color: #3E55C8;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.i-content .content-box .step-group .step p{
+  margin: 0;
+  padding: 0;
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.i-content .content-box .step-group span{
+  margin-bottom: 24px;
+}
+
+.i-content .content-box .txt-group{
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.i-content .content-box .txt-group p{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding-left: 12px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.i-content .content-box .txt-group p::before{
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  border-radius: 100%;
+  background: #333;
+  top: 9px;
+  left: 0;
+}
+
+.caution .bg-box .txt-group, .refund-notice .bg-box .txt-group{
+  padding-top: 0;
+}
+
+.caution .bg-box .txt-group p, .refund-notice .bg-box .txt-group p{
+  font-weight: 300;
+}
+
+.refund-notice .bg-box .title{
+  color: #666;
+}
+
+.mb40{
+  margin-bottom: 40px;
+}
+
+.user-info .note{
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.user-info .note p{
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+}
+
+.user-info .note p span{
+  font-weight: 500;
+  color: #C8212F;
+}
+
+.user-info .note p strong{
+  font-weight: 500;
+}
+
+.custom-table{
+  width: 100%;
+}
+
+.custom-table tr:first-child{
+  border-top: 2px solid #7d8796;
+}
+
+.custom-table tr td{
+  padding: 13.5px 40px;
+  border-right: 1px solid #D8D8D8;
+  border-bottom: 1px solid #D8D8D8;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.custom-table tr td.bg-center{
+  text-align: center;
+  background: #ebebeb;
+  border-right: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.custom-table tr td.bg-center2{
+  text-align: center;
+  background: #FCFAEE;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.payment-amount .custom-table tr td.bg-center{
+  border-right: 1px solid #D8D8D8;
+  border-bottom: 1px solid #7D8796;
+}
+
+.payment-amount .custom-table tr td.bg-center:last-child{
+  border-right: none;
+}
+
+.custom-table tr td:last-child{
+  border-right: none;
+}
+
+.custom-table tr td button{
+  margin-left: 15px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #3E72ED;
+  background: #FFF;
+  color: #3E72ED;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.custom-table tr td strong{
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.custom-table tr td span{
+  color: #C8212F;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.custom-table tr td em{
+  text-decoration-line: line-through;
+  font-style: normal;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.input-group input[type=text]{
+  width: 270px;
+  height: 36px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #3E72ED;
+  background: #FFF;
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.input-group input[type=text]::placeholder{
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.form-select{
+  display: inline-block;
+  width: 216px;
+  margin-left: 10px;
+  padding: 8px 36px 8px 10px;
+  border: 1px solid #d2d2d2;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.form-select:focus{
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #d2d2d2;
+}
+
+.radio-group{
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 40px;
+}
+
+.input-radio input[type=radio]{
+  display: none;
+}
+
+.input-radio input[type=radio] + label{
+  display: inline-block;
+  padding-left: 26px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  background-image: url('https://img.thinkpool.com/common/invest/invest_rdo.png');
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: left;
+}
+
+.input-radio input[type=radio]:checked + label{
+  background-image: url('https://img.thinkpool.com/common/invest/invest_rdo-checked.png');
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: left;
+}
+
+.input-mix{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.input-mix .input-radio{
+  min-width: 130px;
+}
+
+.confirmation .note{
+  padding-left: 20px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-top: 26px;
+}
+
+.bg-box .sub-title{
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 23px;
+}
+
+.bg-box .way-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.bg-box .way-group .way{
+  width: 180px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 3px solid #BBD0EF;
+  background: #EDF5FE;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
+
+.bg-box .note{
+  margin-top: 15px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.bg-box .guide{
+  margin-bottom: 6px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.agreement{
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.agreement input[type=checkbox]{
+  display: none;
+}
+
+.agreement input[type=checkbox] + label{
+  display: inline-block;
+  padding-left: 30px;
+  background-image: url('https://img.thinkpool.com/common/invest/invest_checkbox.png');
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: left;
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.agreement input[type=checkbox]:checked + label{
+  background-image: url('https://img.thinkpool.com/common/invest/invest_checkbox-checked.png');
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: left;
+}
+
+.agreement button{
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-left: 8px;
+  border: none;
+  background: none;
+}
+
+.payment-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.payment-btn button{
+  width: 167px;
+  height: 47px;
+  background: #ebebeb;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.payment-btn button:last-child{
+  background: #3e72ed;
+  font-weight: 700;
+  color: #fff;
+}
+
+.refund-notice{
+  width: 100%;
+}
+
+.refund-notice .txt{
+  width: 100%;
+  margin-top: 16px;
+  margin-left: 20px;
+  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
 }
