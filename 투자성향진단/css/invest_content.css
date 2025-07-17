@@ -918,3 +918,98 @@ p{
   font-weight: 300;
   line-height: 21px;
 }
+
+
+/* 증권방송전문가 홈 투자자성향 진단 팝업 */
+.diagnosisModal{
+
+}
+
+.diagnosisModal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.diagnosisModal.show {
+  display: block;
+  opacity: 1;
+}
+
+.diagnosisModal .modal-dialog{
+  max-width: 430px;
+  min-width: 430px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.diagnosisModal .modal-content{
+  position: relative;
+  border: none;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.diagnosisModal .modal-content .modal-body{
+  width: 100%;
+  padding: 50px 0px 40px;
+}
+
+.diagnosisModal .modal-content .modal-body .title{
+  width: 100%;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: center;
+}
+
+.diagnosisModal .modal-content .modal-body p{
+  width: 100%;
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.diagnosisModal .modal-content .modal-body .btn-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.diagnosisModal .modal-content .modal-body .btn-group button{
+  padding: 10px 45px;
+  border-radius: 100px;
+  background: #EBEBEB;
+  border: none;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.diagnosisModal .modal-content .modal-body .btn-group button:first-child{
+  background: #3E72ED;
+  color: #fff;
+}
