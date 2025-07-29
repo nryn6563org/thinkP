@@ -3996,16 +3996,22 @@ em {
   --tw-border-opacity: 1;
   border-color: rgb(210 210 210 / var(--tw-border-opacity));
   padding: 10px 0px;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
   --tw-text-opacity: 1;
-  color: rgb(20 20 20 / var(--tw-text-opacity));
+  color: rgb(153 153 153 / var(--tw-text-opacity));
 }
 
 .beAlCon .beAlNav button.active {
-  border-bottom-width: 2px;
+  border-bottom-width: 3px;
   --tw-border-opacity: 1;
   border-color: rgb(20 20 20 / var(--tw-border-opacity));
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
 .beAlList {
@@ -4194,6 +4200,38 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
+.aiNews .aiNewsNav {
+  margin-bottom: 8px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.aiNews .aiNewsNav button {
+  width: 50%;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(210 210 210 / var(--tw-border-opacity));
+  padding: 10px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+.aiNews .aiNewsNav button.active {
+  border-bottom-width: 3px;
+  --tw-border-opacity: 1;
+  border-color: rgb(20 20 20 / var(--tw-border-opacity));
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
 .aiNews .aiNews-tab {
   margin-bottom: 20px;
   display: flex;
@@ -4260,6 +4298,80 @@ em {
   line-height: 23px;
   --tw-text-opacity: 1;
   color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
+.aiNews .reportList {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.aiNews .reportList .list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(210 210 210 / var(--tw-border-opacity));
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.aiNews .reportList .list .top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.aiNews .reportList .list .top .name {
+  width: auto;
+  max-width: calc(100% - 150px);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
+.aiNews .reportList .list .top .num {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  --tw-text-opacity: 1;
+  color: rgb(20 20 20 / var(--tw-text-opacity));
+}
+
+.aiNews .reportList .list .bottom {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
+.aiNews .note {
+  margin-top: 15px;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  --tw-text-opacity: 1;
+  color: rgb(102 102 102 / var(--tw-text-opacity));
 }
 
 .aiNews .newsList {
@@ -4345,7 +4457,7 @@ em {
 }
 
 .aiNews .newsMore {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   text-align: center;
 }
@@ -6378,12 +6490,12 @@ em {
   max-width: 60px;
 }
 
-.reportAnalysis .reportModal .modal-content {
+.reportModal .modal-content {
   width: 100%;
   padding: 60px 20px 30px;
 }
 
-.reportAnalysis .reportModal .modal-title {
+.reportModal .modal-title {
   margin-bottom: 20px;
   display: flex;
   width: 100%;
@@ -6397,7 +6509,7 @@ em {
   padding-bottom: 20px;
 }
 
-.reportAnalysis .reportModal .modal-title h5 {
+.reportModal .modal-title h5 {
   width: 100%;
   font-size: 16px;
   font-weight: 700;
@@ -6406,7 +6518,7 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.reportAnalysis .reportModal .modal-title .rmInfo {
+.reportModal .modal-title .rmInfo {
   display: flex;
   width: 100%;
   align-items: center;
@@ -6414,7 +6526,7 @@ em {
   gap: 8px;
 }
 
-.reportAnalysis .reportModal .modal-title .rmInfo span {
+.reportModal .modal-title .rmInfo span {
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
@@ -6422,7 +6534,7 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.reportAnalysis .reportModal .modal-title .rmInfo em {
+.reportModal .modal-title .rmInfo em {
   font-size: 12px;
   font-weight: 400;
   line-height: 21px;
@@ -6430,14 +6542,14 @@ em {
   color: rgb(153 153 153 / var(--tw-text-opacity));
 }
 
-.reportAnalysis .reportModal .modal-title .rmInfo .line {
+.reportModal .modal-title .rmInfo .line {
   height: 10px;
   width: 1px;
   --tw-bg-opacity: 1;
   background-color: rgb(153 153 153 / var(--tw-bg-opacity));
 }
 
-.reportAnalysis .reportModal .rmCont {
+.reportModal .rmCont {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -6446,7 +6558,7 @@ em {
   gap: 30px;
 }
 
-.reportAnalysis .reportModal .rmCont .sgn {
+.reportModal .rmCont .sgn {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -6454,7 +6566,7 @@ em {
   justify-content: flex-start;
 }
 
-.reportAnalysis .reportModal .rmCont .sgn span {
+.reportModal .rmCont .sgn span {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -6462,7 +6574,7 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
-.reportAnalysis .reportModal .rmCont .text {
+.reportModal .rmCont .text {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

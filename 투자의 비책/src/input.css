@@ -1581,11 +1581,11 @@ em{
 }
 
 .beAlCon .beAlNav button{
-  @apply w-[50%] p-[10px_0px] border-b-[1px] border-[#d2d2d2] text-black text-[14px] font-bold;
+  @apply w-[50%] p-[10px_0px] border-b-[1px] border-[#d2d2d2] text-[16px] font-normal leading-[22px] text-[#999999];
 }
 
 .beAlCon .beAlNav button.active{
-  @apply border-b-[2px] border-black;
+  @apply border-b-[3px] border-black text-black text-[16px] font-bold leading-[22px];
 }
 
 .beAlList{
@@ -1666,6 +1666,18 @@ em{
   @apply w-full mb-[15px] text-[#141414] text-[16px] font-bold leading-[24px];
 }
 
+.aiNews .aiNewsNav {
+  @apply w-full flex justify-center items-center mb-[8px];
+}
+
+.aiNews .aiNewsNav button{
+  @apply w-[50%] p-[10px_0px] border-b-[1px] border-[#d2d2d2] text-[16px] font-normal leading-[22px] text-[#999999];
+}
+
+.aiNews .aiNewsNav button.active{
+  @apply border-b-[3px] border-black text-black text-[16px] font-bold leading-[22px];
+}
+
 .aiNews .aiNews-tab{
   @apply w-full flex justify-start items-center gap-[10px] mb-[20px];
 }
@@ -1688,6 +1700,34 @@ em{
 
 .aiNews .explanation p{
   @apply text-[#141414] text-[14px] font-normal leading-[23px];
+}
+
+.aiNews .reportList{
+  @apply w-full flex flex-col justify-start items-start;
+}
+
+.aiNews .reportList .list{
+  @apply w-full flex flex-col justify-start items-start gap-[10px] text-left py-[10px] border-b border-[#d2d2d2];
+}
+
+.aiNews .reportList .list .top{
+  @apply w-full flex justify-between items-center gap-[10px];
+}
+
+.aiNews .reportList .list .top .name{
+  @apply w-auto max-w-[calc(100%-150px)] text-black text-[15px] font-normal leading-[19px];
+}
+
+.aiNews .reportList .list .top .num{
+  @apply flex justify-end items-center gap-[10px] text-black text-[15px] font-normal leading-[19px];
+}
+
+.aiNews .reportList .list .bottom{
+  @apply w-full text-left text-[#999] text-[14px] font-normal leading-[18px];
+}
+
+.aiNews .note{
+  @apply w-full text-left mt-[15px] text-[#666] text-[14px] font-normal leading-[18px];
 }
 
 .aiNews .newsList{
@@ -1719,7 +1759,7 @@ em{
 }
 
 .aiNews .newsMore{
-  @apply w-full text-center mt-[30px];
+  @apply w-full text-center mt-[20px];
 }
 
 .aiNews .newsMore button{
@@ -2646,47 +2686,47 @@ em{
   @apply text-left inline-block text-[#999] text-[12px] font-normal leading-[12px] first:max-w-[60px];
 }
 
-.reportAnalysis .reportModal .modal-content{
+.reportModal .modal-content{
   @apply w-full p-[60px_20px_30px];
 }
 
-.reportAnalysis .reportModal .modal-title{
+.reportModal .modal-title{
   @apply w-full flex flex-col justify-start items-start gap-[10px] pb-[20px] border-b border-[#d2d2d2] mb-[20px];
 }
 
-.reportAnalysis .reportModal .modal-title h5{
+.reportModal .modal-title h5{
   @apply w-full text-[#141414] text-[16px] font-bold leading-[20x];
 }
 
-.reportAnalysis .reportModal .modal-title .rmInfo{
+.reportModal .modal-title .rmInfo{
   @apply w-full flex justify-start items-center gap-[8px];
 }
 
-.reportAnalysis .reportModal .modal-title .rmInfo span{
+.reportModal .modal-title .rmInfo span{
   @apply text-[#141414] text-[12px] font-normal leading-[21px];
 }
 
-.reportAnalysis .reportModal .modal-title .rmInfo em{
+.reportModal .modal-title .rmInfo em{
   @apply text-[#999] text-[12px] font-normal leading-[21px];
 }
 
-.reportAnalysis .reportModal .modal-title .rmInfo .line{
+.reportModal .modal-title .rmInfo .line{
   @apply w-[1px] h-[10px] bg-[#999];
 }
 
-.reportAnalysis .reportModal .rmCont{
+.reportModal .rmCont{
   @apply w-full flex flex-col justify-start items-start gap-[30px];
 }
 
-.reportAnalysis .reportModal .rmCont .sgn{
+.reportModal .rmCont .sgn{
   @apply w-full flex flex-col justify-start items-start;
 }
 
-.reportAnalysis .reportModal .rmCont .sgn span{
+.reportModal .rmCont .sgn span{
   @apply text-[#141414] text-[16px] font-normal leading-[24px];
 }
 
-.reportAnalysis .reportModal .rmCont .text{
+.reportModal .rmCont .text{
   @apply text-[#141414] text-[16px] font-normal leading-[24px];
 }
 
