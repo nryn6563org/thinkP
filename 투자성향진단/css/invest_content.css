@@ -7,8 +7,15 @@ p{
   margin: 0;
 }
 
+.i-header h1.logo{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .invest-content{
-  width: 100%;
+  width: 100%; 
   background: #F9FAFB;
 }
 
@@ -726,7 +733,7 @@ p{
 
 .input-group input[type=text]::placeholder{
   color: #333;
-  font-size: 14px;
+  font-size: 14px;  
   font-weight: 300;
   line-height: 20px;
 }
