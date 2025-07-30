@@ -1722,6 +1722,10 @@ em{
   @apply flex justify-end items-center gap-[10px] text-black text-[15px] font-normal leading-[19px];
 }
 
+.aiNews .reportList .list .top .num .pri{
+  @apply w-[70px] text-center;
+}
+
 .aiNews .reportList .list .bottom{
   @apply w-full text-left text-[#999] text-[14px] font-normal leading-[18px];
 }

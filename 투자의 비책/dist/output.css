@@ -4353,6 +4353,11 @@ em {
   color: rgb(20 20 20 / var(--tw-text-opacity));
 }
 
+.aiNews .reportList .list .top .num .pri {
+  width: 70px;
+  text-align: center;
+}
+
 .aiNews .reportList .list .bottom {
   width: 100%;
   text-align: left;
