@@ -1,0 +1,151 @@
+.bg-box.payment{
+  width: 100%;
+  padding: 40px 50px;
+  border-radius: 12px;
+  background: #F9F9F9;
+  margin-bottom: 40px;
+}
+
+.bg-box.payment .title{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.bg-box.payment .step-group{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.bg-box.payment .step-group .step{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.bg-box.payment .step-group .step .num{
+  color: #3E55C8;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.bg-box.payment .step-group .step p{
+  margin: 0;
+  padding: 0;
+  min-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.bg-box.payment .step-group span{
+  margin-bottom: 24px;
+}
+
+.bg-box.payment .txt-group{
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.bg-box.payment .txt-group p{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding-left: 12px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.bg-box.payment .txt-group p::before{
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  border-radius: 100%;
+  background: #333;
+  top: 9px;
+  left: 0;
+}
+
+.pay-section .note{
+  width: 100%;
+  padding-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.pay-section .note p{
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+}
+
+.pay-section .note p input[type=checkbox]{
+  margin: 0;
+  display: none;
+}
+
+.pay-section .note p input[type=checkbox] + label{
+  cursor: pointer;
+  font-weight: 500;
+  color: #C8212F;
+  margin: 0;
+  display: inline-block;
+  padding-left: 20px;
+  background-image: url('https://img.thinkpool.com/common/invest/essentialAgree.png');
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: 0px 1.5px;
+}
+.pay-section .note p input[type=checkbox]:checked + label{
+  background-image: url('https://img.thinkpool.com/common/invest/essentialAgree_checked.png');
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: 0px 1px;
+}
+
+.pay-section .note p strong{
+  font-weight: 500;
+}
+
+.pay-section .table_w td button.change{
+  margin-left: 15px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #3E72ED;
+  background: #FFF;
+  color: #3E72ED;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
