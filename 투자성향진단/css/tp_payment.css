@@ -110,7 +110,7 @@
   line-height: 17px;
 }
 
-.pay-section .note p input[type=checkbox]{
+/* .pay-section .note p input[type=checkbox]{
   margin: 0;
   display: none;
 }
@@ -132,6 +132,11 @@
   background-repeat: no-repeat;
   background-size: 14px;
   background-position: 0px 1px;
+} */
+
+.pay-section .note p span{
+  font-weight: 500;
+  color: #C8212F;
 }
 
 .pay-section .note p strong{
