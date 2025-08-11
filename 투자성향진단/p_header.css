@@ -9,7 +9,7 @@ body {
 #p-header_w {
   display: inline-block;
   width: 100%;
-  height: 130px;
+  height: 120px;
   background: #3d404d;
   border-bottom: 1px solid #dadada;
   margin-bottom: 85px;
@@ -18,7 +18,7 @@ body {
 #p-header_w #p-header {
   position: relative;
   width: 1030px;
-  min-height: 130px;
+  min-height: 120px;
   margin: 0 auto;
   overflow: visible;
   background: url(../img/header/bg.png) no-repeat 0 0;
@@ -39,17 +39,15 @@ body {
 }
 
 #p-header_w #p-header .nav {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 85px;
+  display: inline-block;
+  width: 570px;
+  float: right;
+  margin-top: 75px;
 }
 
 #p-header_w #p-header .nav > ul {
   display: flex;
   margin: 0;
-  margin-top: 10px;
   padding: 0;
   width:100%;
   justify-content:flex-end;
@@ -70,7 +68,6 @@ body {
   font-weight: 300;
   color: #fff;
   padding: 0 0 10px 0;
-  cursor: pointer;
 }
 
 #p-header_w #p-header .nav > ul > li .nav1depth:hover {
@@ -109,7 +106,7 @@ body {
   justify-content: flex-end;
   width: 100%;
   gap: 30px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 #p-header_w #p-header .nav > ul > li .nav2depth ul li {
@@ -172,48 +169,6 @@ body {
   color: #c5c5c5;
   font-size: 13px;
   font-weight: 300;
-}
-
-/* 전문가관리페이지 */
-.adminMenu{
-  display: none;
-  background: white;
-  border-radius: 8px;
-  margin-top: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: 999;
-}
-
-.adminMenu.show{
-  display: block;
-}
-
-.adminMenu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.adminMenu li {
-  padding: 10px 15px;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.adminMenu li:last-child {
-  border-bottom: none;
-}
-
-.adminMenu li:hover {
-  background: #f9f9f9;
-}
-
-.adminMenu li a:hover{
-  text-decoration: none;
 }
 
 #p-content {
